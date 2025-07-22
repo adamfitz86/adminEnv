@@ -10,6 +10,7 @@ import Textfield from '@atlaskit/textfield';
 import DynamicTable from '@atlaskit/dynamic-table';
 import ModalDialog, { ModalHeader, ModalTitle, ModalBody, ModalFooter } from '@atlaskit/modal-dialog';
 import Select from '@atlaskit/select';
+import { RadioGroup } from '@atlaskit/radio';
 
 // Import Atlaskit icons
 import NotificationIcon from '@atlaskit/icon/glyph/notification';
@@ -278,6 +279,8 @@ const App: React.FC = () => {
 
   const [siteStatusOverrides, setSiteStatusOverrides] = useState<{[key:number]: 'inherited'|'custom'}>({});
 
+  const [orgAllowListMode, setOrgAllowListMode] = useState('recommended');
+
   // Debug modal state changes
   useEffect(() => {
     console.log('Modal state changed - isRevertModalOpen:', isRevertModalOpen);
@@ -536,119 +539,169 @@ const App: React.FC = () => {
             <div css={css({ marginTop: token('space.400') })}>
               <Tabs id="mcp-settings-tabs" defaultSelected={selectedSiteForEdit !== null ? 1 : 0}>
                 <TabList>
-                  <Tab>Org allow list</Tab>
-                  <Tab>Site Overrides</Tab>
+                  <Tab>Organisation settings</Tab>
+                  <Tab>Site settings</Tab>
                 </TabList>
                 <TabPanel>
                   <div css={css({ marginTop: token('space.300') })}>
-                    <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
+                    <div css={css({ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '24px' })}>
                       <div>
+                        <label htmlFor="org-allow-list-mode" css={css({ fontSize: '12px', color: token('color.text.subtle'), marginBottom: 4, display: 'block', fontWeight: 500 })}>
+                          Default settings
+                        </label>
+                        <RadioGroup
+                          name="org-allow-list-mode"
+                          options={[
+                            { label: 'Enable Atlassian recommended sites', value: 'recommended' },
+                            { label: 'Block all domains', value: 'block' },
+                            { label: 'Allow all domains', value: 'allow' },
+                          ]}
+                          value={orgAllowListMode}
+                          onChange={e => setOrgAllowListMode(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    {orgAllowListMode === 'recommended' && (
+                      <>
+                        <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' })}>
+                          <div>
+                            <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: 0, margin: 0 })}>Org allow list</h4>
+                            <p css={css({ margin: 0, marginTop: '8px' })}>Below is the list of allowed sites set by default in your organisation.</p>
+                          </div>
+                          <Button appearance="default" onClick={handleAddUrl}>
+                            Add URL
+                          </Button>
+                        </div>
+                        <div css={css({ 
+                          width: '100%',
+                          '& table': {
+                            width: '100% !important',
+                            minWidth: '800px',
+                          }
+                        })}>
+                          {defaultUrls.length === 0 ? (
+                            <div css={css({
+                              textAlign: 'center',
+                              padding: token('space.400', '32px'),
+                              color: token('color.text.subtle'),
+                              fontSize: '16px',
+                              border: `1px solid ${token('color.border')}`,
+                              borderRadius: token('border.radius.200'),
+                              backgroundColor: token('elevation.surface.raised'),
+                              minWidth: '735px',
+                              maxWidth:'735px',
+                            })}>
+                              No URLs have been added
+                            </div>
+                          ) : (
+                            <DynamicTable
+                              head={{
+                                cells: [
+                                  { key: 'url', content: 'URL', isSortable: false, width: 45 },
+                                  { key: 'status', content: 'Status', isSortable: false, width: 20 },
+                                  { key: 'lastUpdated', content: 'Last Updated', isSortable: false, width: 25 },
+                                  { key: 'actions', content: '', isSortable: false, width: 10 },
+                                ],
+                              }}
+                              rows={defaultUrls.map((url, index) => ({
+                                key: `url-${index}`,
+                                cells: [
+                                  {
+                                    key: 'url',
+                                    content: editingUrlId === index ? (
+                                      <Textfield
+                                        value={url}
+                                        onChange={(e) => handleTextfieldChange(e, index)}
+                                        onBlur={handleUrlSave}
+                                        onKeyDown={handleUrlKeyPress}
+                                        autoFocus
+                                        isCompact
+                                      />
+                                    ) : (
+                                      <span 
+                                        onClick={() => handleUrlClick(index)}
+                                        css={css({ 
+                                          cursor: 'pointer',
+                                          '&:hover': {
+                                            backgroundColor: token('color.background.neutral.subtle.hovered'),
+                                          },
+                                        })}
+                                      >
+                                        {url}
+                                      </span>
+                                    ),
+                                  },
+                                  {
+                                    key: 'status',
+                                    content: (
+                                      <span css={css({ 
+                                        color: token('color.text.success'), 
+                                        fontWeight: 500 
+                                      })}>
+                                        Active
+                                      </span>
+                                    ),
+                                  },
+                                  {
+                                    key: 'lastUpdated',
+                                    content: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+                                  },
+                                  {
+                                    key: 'actions',
+                                    content: (
+                                      <Button
+                                        appearance="default"
+                                        iconBefore={TrashIcon}
+                                        onClick={() => handleDeleteUrl(index)}
+                                        aria-label="Delete URL"
+                                        css={css({ minWidth: 'auto', padding: '4px 8px' })}
+                                      >
+                                        &nbsp;
+                                      </Button>
+                                    ),
+                                  },
+                                ],
+                              }))}
+                              testId="default-urls-table"
+                            />
+                          )}
+                        </div>
+                      </>
+                    )}
+                    {orgAllowListMode === 'block' && (
+                      <>
                         <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Org allow list</h4>
                         <p css={css({ margin: 0, marginTop: '12px' })}>Below is the list of allowed sites set by default in your organisation.</p>
-                      </div>
-                      <Button appearance="default" onClick={handleAddUrl}>Add URL</Button>
-                    </div>
-                    <div css={css({ 
-                      width: '100%',
-                      '& table': {
-                        width: '100% !important',
-                        minWidth: '800px',
-                      }
-                    })}>
-                      {defaultUrls.length === 0 ? (
                         <div css={css({
-                          textAlign: 'center',
-                          padding: token('space.400', '32px'),
-                          color: token('color.text.subtle'),
-                          fontSize: '16px',
-                          border: `1px solid ${token('color.border')}`,
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          minHeight: '320px',
+                          backgroundColor: token('color.background.neutral.subtle'),
                           borderRadius: token('border.radius.200'),
-                          backgroundColor: token('elevation.surface.raised'),
-                        minWidth: '735px',
-                        maxWidth:'735px',
-
+                          padding: token('space.400', '32px'),
+                          margin: '32px 0',
+                          boxShadow: `0 0 0 1px ${token('color.border')}`,
+                          minWidth: '735px',
+                          maxWidth: '735px',
                         })}>
-                          No URLs have been added
+                          <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Blocked" style={{ width: 96, height: 96, marginBottom: 24, opacity: 0.7 }} />
+                          <h3 css={css({ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: token('color.text.subtle') })}>
+                            All domains are blocked
+                          </h3>
+                          <p css={css({ fontSize: '16px', color: token('color.text.subtle'), textAlign: 'center', maxWidth: 400 })}>
+                            No sites are allowed. To permit access, switch to another mode or add exceptions in your organisation settings.
+                          </p>
                         </div>
-                      ) : (
-                        <DynamicTable
-                          head={{
-                            cells: [
-                              { key: 'url', content: 'URL', isSortable: false, width: 45 },
-                              { key: 'status', content: 'Status', isSortable: false, width: 20 },
-                              { key: 'lastUpdated', content: 'Last Updated', isSortable: false, width: 25 },
-                              { key: 'actions', content: '', isSortable: false, width: 10 },
-                            ],
-                          }}
-                          rows={defaultUrls.map((url, index) => ({
-                            key: `url-${index}`,
-                            cells: [
-                              {
-                                key: 'url',
-                                content: editingUrlId === index ? (
-                                  <Textfield
-                                    value={url}
-                                    onChange={(e) => handleTextfieldChange(e, index)}
-                                    onBlur={handleUrlSave}
-                                    onKeyDown={handleUrlKeyPress}
-                                    autoFocus
-                                    isCompact
-                                  />
-                                ) : (
-                                  <span 
-                                    onClick={() => handleUrlClick(index)}
-                                    css={css({ 
-                                      cursor: 'pointer',
-                                      '&:hover': {
-                                        backgroundColor: token('color.background.neutral.subtle.hovered'),
-                                      },
-                                    })}
-                                  >
-                                    {url}
-                                  </span>
-                                ),
-                              },
-                              {
-                                key: 'status',
-                                content: (
-                                  <span css={css({ 
-                                    color: token('color.text.success'), 
-                                    fontWeight: 500 
-                                  })}>
-                                    Active
-                                  </span>
-                                ),
-                              },
-                              {
-                                key: 'lastUpdated',
-                                content: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
-                              },
-                              {
-                                key: 'actions',
-                                content: (
-                                  <Button
-                                    appearance="default"
-                                    iconBefore={TrashIcon}
-                                    onClick={() => handleDeleteUrl(index)}
-                                    aria-label="Delete URL"
-                                    css={css({ minWidth: 'auto', padding: '4px 8px' })}
-                                  >
-                                    &nbsp;
-                                  </Button>
-                                ),
-                              },
-                            ],
-                          }))}
-                          testId="default-urls-table"
-                        />
-                      )}
-                    </div>
+                      </>
+                    )}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div css={css({ marginTop: token('space.300') })}>
                     <div css={css({ marginBottom: '24px' })}>
-                      <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site Overrides</h4>
+                      <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
                       <p css={css({ margin: 0, marginTop: '12px' })}>Set allow lists at a site level, these override your organisation's defaults.</p>
                     </div>
                     <div css={css({ 
@@ -788,7 +841,7 @@ const App: React.FC = () => {
             <div css={css({ marginTop: token('space.300') })}>
               <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
                 <div>
-                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site Overrides</h4>
+                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
                   <p css={css({ margin: 0, marginTop: '12px' })}>Configure the allowed URLs specifically for {siteToEdit.name}.</p>
                 </div>
                 <div css={css({ display: 'flex', gap: token('space.200', '16px') })}>

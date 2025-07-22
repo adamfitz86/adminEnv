@@ -493,6 +493,20 @@
     bind-event-listener "^3.0.0"
     tiny-invariant "^1.2.0"
 
+"@atlaskit/radio@^8.1.5":
+  version "8.1.5"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@atlaskit/radio/-/radio-8.1.5.tgz#b69af8d2c4b566477d5b67fa1c83674a7c6cede1"
+  integrity sha512-zVNM7CB9vOkkbzVulMiLJs8fMSOJl5me3OH2Wea6a7So6AFhJV0wjbPTHfVB+4cAKHnAJ7LwOymvMMVtDADL5A==
+  dependencies:
+    "@atlaskit/analytics-next" "^11.1.0"
+    "@atlaskit/css" "^0.12.0"
+    "@atlaskit/ds-lib" "^4.0.0"
+    "@atlaskit/platform-feature-flags" "^1.1.0"
+    "@atlaskit/theme" "^19.0.0"
+    "@atlaskit/tokens" "^5.5.0"
+    "@babel/runtime" "^7.0.0"
+    "@compiled/react" "^0.18.3"
+
 "@atlaskit/react-select@^3.2.0":
   version "3.2.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/@atlaskit/react-select/-/react-select-3.2.0.tgz#672886c66903b412c547a417c6a0dae14dc03caa"
