@@ -1,6 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, KeyboardEvent, FormEvent } from 'react';
 import { css } from '@compiled/react';
 import { token } from '@atlaskit/tokens';
+import '@atlaskit/css-reset';
+
+// Import Atlaskit components
+import Button from '@atlaskit/button/new';
+import Tabs, { Tab, TabList, TabPanel } from '@atlaskit/tabs';
+import Textfield from '@atlaskit/textfield';
+import DynamicTable from '@atlaskit/dynamic-table';
+
+// Import Atlaskit icons
+import NotificationIcon from '@atlaskit/icon/glyph/notification';
+import QuestionIcon from '@atlaskit/icon/glyph/question';
+import TrashIcon from '@atlaskit/icon/glyph/trash';
+import EditIcon from '@atlaskit/icon/glyph/edit';
+
+// Import Atlaskit logos
+import { ConfluenceIcon } from '@atlaskit/logo';
+import { JiraIcon } from '@atlaskit/logo';
+import { BitbucketIcon } from '@atlaskit/logo';
+import { TrelloIcon } from '@atlaskit/logo';
+
+// Import navigation system components for top nav only
+import { CreateButton, Search } from '@atlaskit/navigation-system/top-nav-items';
 
 // Main app layout with top navigation
 const appStyles = css({
@@ -13,48 +35,74 @@ const appStyles = css({
 // Top navigation styles
 const topNavStyles = css({
   height: '56px',
-  backgroundColor: token('color.background.brand.bold'),
+  backgroundColor: token('elevation.surface'),
   display: 'flex',
   alignItems: 'center',
   padding: `0 ${token('space.300', '24px')}`,
   borderBottom: `1px solid ${token('color.border')}`,
   zIndex: 10,
+  justifyContent: 'space-between', // Better space distribution
 });
 
 const topNavBrandStyles = css({
-  color: token('color.text.inverse'),
+  color: token('color.text'),
   fontSize: '18px',
   fontWeight: 600,
-  marginRight: token('space.400', '32px'),
+  flex: '1 1 0',
+  display: 'flex',
+  justifyContent: 'flex-start',
+  minWidth: '200px', // Ensure minimum space
 });
 
-const topNavItemsStyles = css({
+const topNavMiddleStyles = css({
   display: 'flex',
+  justifyContent: 'center',
   alignItems: 'center',
   gap: token('space.200', '16px'),
-  flex: 1,
+  flex: '0 0 auto', // Don't grow or shrink, use natural size
+  
+  // Make the search component wider
+  '& > * > *:first-child': {
+    minWidth: '500px',
+  },
 });
 
-const topNavItemStyles = css({
-  color: token('color.text.inverse'),
-  backgroundColor: 'transparent',
-  border: 'none',
-  padding: token('space.150', '12px'),
-  borderRadius: token('border.radius.100'),
-  cursor: 'pointer',
-  fontSize: '14px',
-  textDecoration: 'none',
+const searchStyles = css({
+  minWidth: '500px',
+  width: '500px',
   
-  '&:hover': {
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+  // Target the search input directly
+  '& input': {
+    minWidth: '450px !important',
+    width: '450px !important',
+  },
+  
+  // Target any container elements
+  '& > *': {
+    minWidth: '500px',
+    width: '500px',
+  },
+});
+
+const createButtonStyles = css({
+  flexShrink: 0,
+  flexGrow: 0,
+  width: 'auto',
+  
+  // Ensure the CreateButton doesn't stretch
+  '& > *': {
+    width: 'auto !important',
+    minWidth: 'auto !important',
   },
 });
 
 const topNavUserAreaStyles = css({
+  flex: '1 1 0',
   display: 'flex',
   alignItems: 'center',
   gap: token('space.200', '16px'),
-  marginLeft: 'auto',
+  justifyContent: 'flex-end',
+  minWidth: '200px', // Ensure minimum space
 });
 
 const avatarStyles = css({
@@ -65,28 +113,28 @@ const avatarStyles = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: token('color.text.inverse'),
+  color: token('color.text'),
   fontSize: '14px',
   fontWeight: 600,
 });
 
 // Main content area with sidebar
-const mainContentStyles = css({
+const mainLayoutStyles = css({
   display: 'flex',
   flex: 1,
-  overflow: 'hidden',
+  height: 'calc(100vh - 56px)', // Subtract top nav height
 });
 
 const sidebarStyles = css({
-  width: '240px',
-  backgroundColor: token('color.background.neutral.subtle'),
+  width: '280px',
+  backgroundColor: token('elevation.surface'),
   borderRight: `1px solid ${token('color.border')}`,
   display: 'flex',
   flexDirection: 'column',
-  paddingTop: token('space.200', '16px'),
+  overflow: 'auto',
 });
 
-const navStyles = css({
+const sidebarNavStyles = css({
   padding: token('space.200', '16px'),
   flex: 1,
 });
@@ -94,24 +142,31 @@ const navStyles = css({
 const navItemStyles = css({
   display: 'block',
   width: '100%',
-  padding: token('space.150', '12px'),
+  padding: `${token('space.150', '12px')} ${token('space.200', '16px')}`,
   marginBottom: token('space.050', '4px'),
   border: 'none',
   backgroundColor: 'transparent',
   color: token('color.text'),
+  fontSize: '14px',
+  fontWeight: 500,
   textAlign: 'left',
   cursor: 'pointer',
   borderRadius: token('border.radius.100'),
-  textDecoration: 'none',
+  transition: 'background-color 0.2s ease',
   
   '&:hover': {
     backgroundColor: token('color.background.neutral.subtle.hovered'),
+  },
+  
+  '&:active': {
+    backgroundColor: token('color.background.neutral.subtle.pressed'),
   },
 });
 
 const activeNavItemStyles = css({
   backgroundColor: token('color.background.selected'),
   color: token('color.text.selected'),
+  fontWeight: 600,
   
   '&:hover': {
     backgroundColor: token('color.background.selected.hovered'),
@@ -121,13 +176,13 @@ const activeNavItemStyles = css({
 const contentStyles = css({
   flex: 1,
   padding: token('space.400', '32px'),
-  backgroundColor: token('color.background.neutral'),
+  backgroundColor: token('elevation.surface'),
   overflow: 'auto',
 });
 
 const cardStyles = css({
   padding: token('space.300'),
-  backgroundColor: token('color.background.neutral.subtle'),
+  backgroundColor: token('elevation.surface.raised'),
   borderRadius: token('border.radius.200'),
   border: `1px solid ${token('color.border')}`,
 });
@@ -151,19 +206,216 @@ const listItemStyles = css({
 
 const App: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState('home');
-  const [selectedTopNavItem, setSelectedTopNavItem] = useState('projects');
+  const [editingUrlId, setEditingUrlId] = useState<number | null>(null);
+  const [selectedSiteForEdit, setSelectedSiteForEdit] = useState<number | null>(null);
+  const [defaultUrls, setDefaultUrls] = useState([
+    'https://api.github.com',
+    'https://api.atlassian.com',
+    'https://jsonplaceholder.typicode.com',
+    'https://httpbin.org',
+    'https://api.openweathermap.org',
+    'https://api.stripe.com',
+    'https://api.twilio.com',
+    'https://api.slack.com',
+    'https://graph.microsoft.com',
+    'https://api.dropbox.com',
+    'https://api.spotify.com',
+    'https://api.twitter.com',
+    'https://api.linkedin.com',
+    'https://api.facebook.com',
+    'https://api.instagram.com',
+    'https://api.youtube.com',
+    'https://api.google.com',
+    'https://api.amazon.com',
+    'https://api.salesforce.com',
+    'https://api.hubspot.com'
+  ]);
+
+  // Site-specific URL lists for each site
+  const [siteUrls, setSiteUrls] = useState<{[key: number]: string[]}>({
+    0: ['https://prod.api.example.com', 'https://prod.webhook.example.com'],
+    1: ['https://staging.api.example.com'],
+    2: ['https://dev.api.example.com', 'https://dev.test.example.com', 'https://dev.mock.example.com'],
+    3: ['https://test.api.example.com']
+  });
+
+  const [editingSiteUrlId, setEditingSiteUrlId] = useState<number | null>(null);
+
+  const [siteLists, setSiteLists] = useState([
+    {
+      name: 'Production Site',
+      url: 'prod.example.com',
+      servers: 3,
+      status: 'Active',
+      product: 'confluence'
+    },
+    {
+      name: 'Staging Site', 
+      url: 'staging.example.com',
+      servers: 2,
+      status: 'Active',
+      product: 'jira'
+    },
+    {
+      name: 'Development Site',
+      url: 'dev.example.com', 
+      servers: 1,
+      status: 'Active',
+      product: 'bitbucket'
+    },
+    {
+      name: 'Testing Site',
+      url: 'test.example.com',
+      servers: 2,
+      status: 'Inactive',
+      product: 'trello'
+    }
+  ]);
+
+  // Helper function to get the appropriate logo for each product
+  const getProductLogo = (product: string) => {
+    switch (product) {
+      case 'confluence':
+        return <ConfluenceIcon appearance="brand" size="small" />;
+      case 'jira':
+        return <JiraIcon appearance="brand" size="small" />;
+      case 'bitbucket':
+        return <BitbucketIcon appearance="brand" size="small" />;
+      case 'trello':
+        return <TrelloIcon appearance="brand" size="small" />;
+      default:
+        return <ConfluenceIcon appearance="brand" size="small" />;
+    }
+  };
+
+  const handleUrlClick = (index: number) => {
+    setEditingUrlId(index);
+  };
+
+  const handleUrlChange = (index: number, newValue: string) => {
+    const updatedUrls = [...defaultUrls];
+    updatedUrls[index] = newValue;
+    setDefaultUrls(updatedUrls);
+  };
+
+  const handleUrlSave = () => {
+    setEditingUrlId(null);
+  };
+
+  const handleUrlKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleUrlSave();
+    }
+    if (e.key === 'Escape') {
+      setEditingUrlId(null);
+    }
+  };
+
+  const handleTextfieldChange = (e: React.FormEvent<HTMLInputElement>, index: number) => {
+    const target = e.target as HTMLInputElement;
+    handleUrlChange(index, target.value);
+  };
+
+  const handleAddUrl = () => {
+    const newUrls = [...defaultUrls, ''];
+    setDefaultUrls(newUrls);
+    setEditingUrlId(newUrls.length - 1);
+  };
+
+  const handleDeleteUrl = (index: number) => {
+    const newUrls = defaultUrls.filter((_, i) => i !== index);
+    setDefaultUrls(newUrls);
+    // If we were editing the deleted row, clear the editing state
+    if (editingUrlId === index) {
+      setEditingUrlId(null);
+    }
+    // If we were editing a row after the deleted one, adjust the index
+    if (editingUrlId !== null && editingUrlId > index) {
+      setEditingUrlId(editingUrlId - 1);
+    }
+  };
+
+  // Site list handler for navigation
+  const handleEditSite = (index: number) => {
+    setSelectedSiteForEdit(index);
+    setSelectedItem('site-edit');
+  };
+
+  const handleBackToMCPSettings = () => {
+    setSelectedSiteForEdit(null);
+    setSelectedItem('mcp-settings');
+  };
+
+  const handleAddSite = () => {
+    const newSite = {
+      name: '',
+      url: '',
+      servers: 0,
+      status: 'Active',
+      product: 'confluence'
+    };
+    const newSites = [...siteLists, newSite];
+    setSiteLists(newSites);
+  };
+
+  // Site-specific URL handlers
+  const handleSiteUrlClick = (siteIndex: number, urlIndex: number) => {
+    setEditingSiteUrlId(siteIndex * 1000 + urlIndex); // Use unique ID for each site+url combo
+  };
+
+  const handleSiteUrlChange = (siteIndex: number, urlIndex: number, newValue: string) => {
+    const updatedSiteUrls = { ...siteUrls };
+    if (!updatedSiteUrls[siteIndex]) {
+      updatedSiteUrls[siteIndex] = [];
+    }
+    updatedSiteUrls[siteIndex] = [...updatedSiteUrls[siteIndex]];
+    updatedSiteUrls[siteIndex][urlIndex] = newValue;
+    setSiteUrls(updatedSiteUrls);
+  };
+
+  const handleSiteUrlSave = () => {
+    setEditingSiteUrlId(null);
+  };
+
+  const handleSiteUrlKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      setEditingSiteUrlId(null);
+    } else if (e.key === 'Escape') {
+      setEditingSiteUrlId(null);
+    }
+  };
+
+  const handleSiteTextfieldChange = (siteIndex: number, urlIndex: number) => (e: FormEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement;
+    handleSiteUrlChange(siteIndex, urlIndex, target.value);
+  };
+
+  const handleAddSiteUrl = (siteIndex: number) => {
+    const updatedSiteUrls = { ...siteUrls };
+    if (!updatedSiteUrls[siteIndex]) {
+      updatedSiteUrls[siteIndex] = [];
+    }
+    const newUrls = [...updatedSiteUrls[siteIndex], 'https://'];
+    updatedSiteUrls[siteIndex] = newUrls;
+    setSiteUrls(updatedSiteUrls);
+    // Set editing mode for the new URL
+    setEditingSiteUrlId(siteIndex * 1000 + (newUrls.length - 1));
+  };
+
+  const handleDeleteSiteUrl = (siteIndex: number, urlIndex: number) => {
+    const updatedSiteUrls = { ...siteUrls };
+    if (updatedSiteUrls[siteIndex]) {
+      updatedSiteUrls[siteIndex] = updatedSiteUrls[siteIndex].filter((_, i) => i !== urlIndex);
+      setSiteUrls(updatedSiteUrls);
+    }
+  };
 
   const navItems = [
-    { id: 'home', label: 'Dashboard', icon: '🏠' },
-    { id: 'users', label: 'Users', icon: '👥' },
-    { id: 'settings', label: 'Settings', icon: '⚙️' },
-    { id: 'reports', label: 'Reports', icon: '📊' },
-  ];
-
-  const topNavItems = [
-    { id: 'projects', label: 'Projects', icon: '📁' },
-    { id: 'teams', label: 'Teams', icon: '👥' },
-    { id: 'marketplace', label: 'Marketplace', icon: '🛒' },
+    { id: 'home', label: 'Dashboard' },
+    { id: 'users', label: 'Users' },
+    { id: 'mcp-settings', label: 'MCP Server Settings' },
+    { id: 'settings', label: 'Settings' },
+    { id: 'reports', label: 'Reports' },
   ];
 
   const renderContent = () => {
@@ -173,21 +425,6 @@ const App: React.FC = () => {
           <div>
             <h1>Dashboard</h1>
             <p>Welcome to your admin dashboard. Here you can manage all aspects of your application.</p>
-            <div css={css({
-              display: 'flex',
-              alignItems: 'center',
-              gap: token('space.200'),
-              marginBottom: token('space.400'),
-              padding: token('space.200'),
-              backgroundColor: token('color.background.accent.blue.subtle'),
-              borderRadius: token('border.radius.200'),
-              border: `1px solid ${token('color.border')}`,
-            })}>
-              <span css={css({ fontSize: '20px' })}>ℹ️</span>
-              <div>
-                <strong>Current Section:</strong> {topNavItems.find(item => item.id === selectedTopNavItem)?.label || 'Projects'}
-              </div>
-            </div>
             <div css={gridStyles}>
               <div css={cardStyles}>
                 <h3>Total Users</h3>
@@ -225,6 +462,363 @@ const App: React.FC = () => {
             </div>
           </div>
         );
+      case 'mcp-settings':
+        return (
+          <div>
+            <h1>MCP Server Settings</h1>
+            <p>Configure and manage Model Context Protocol server settings and connections.</p>
+            <div css={css({ marginTop: token('space.400') })}>
+              <Tabs id="mcp-settings-tabs" defaultSelected={selectedSiteForEdit !== null ? 1 : 0}>
+                <TabList>
+                  <Tab>Default List</Tab>
+                  <Tab>Site Lists</Tab>
+                </TabList>
+                <TabPanel>
+                  <div css={css({ marginTop: token('space.300') })}>
+                    <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
+                      <div>
+                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Default allow list</h4>
+                        <p css={css({ margin: 0, marginTop: '12px' })}>Below is the list of allowed sites set by default in your organisation.</p>
+                      </div>
+                      <Button appearance="default" onClick={handleAddUrl}>Add URL</Button>
+                    </div>
+                    <div css={css({ 
+                      width: '100%',
+                      '& table': {
+                        width: '100% !important',
+                        minWidth: '800px',
+                      }
+                    })}>
+                      {defaultUrls.length === 0 ? (
+                        <div css={css({
+                          textAlign: 'center',
+                          padding: token('space.400', '32px'),
+                          color: token('color.text.subtle'),
+                          fontSize: '16px',
+                          border: `1px solid ${token('color.border')}`,
+                          borderRadius: token('border.radius.200'),
+                          backgroundColor: token('elevation.surface.raised'),
+                        minWidth: '735px',
+                        maxWidth:'735px',
+
+                        })}>
+                          No URLs have been added
+                        </div>
+                      ) : (
+                        <DynamicTable
+                          head={{
+                            cells: [
+                              { key: 'url', content: 'URL', isSortable: false, width: 45 },
+                              { key: 'status', content: 'Status', isSortable: false, width: 20 },
+                              { key: 'lastUpdated', content: 'Last Updated', isSortable: false, width: 25 },
+                              { key: 'actions', content: '', isSortable: false, width: 10 },
+                            ],
+                          }}
+                          rows={defaultUrls.map((url, index) => ({
+                            key: `url-${index}`,
+                            cells: [
+                              {
+                                key: 'url',
+                                content: editingUrlId === index ? (
+                                  <Textfield
+                                    value={url}
+                                    onChange={(e) => handleTextfieldChange(e, index)}
+                                    onBlur={handleUrlSave}
+                                    onKeyDown={handleUrlKeyPress}
+                                    autoFocus
+                                    isCompact
+                                  />
+                                ) : (
+                                  <span 
+                                    onClick={() => handleUrlClick(index)}
+                                    css={css({ 
+                                      cursor: 'pointer',
+                                      '&:hover': {
+                                        backgroundColor: token('color.background.neutral.subtle.hovered'),
+                                      },
+                                    })}
+                                  >
+                                    {url}
+                                  </span>
+                                ),
+                              },
+                              {
+                                key: 'status',
+                                content: (
+                                  <span css={css({ 
+                                    color: token('color.text.success'), 
+                                    fontWeight: 500 
+                                  })}>
+                                    Active
+                                  </span>
+                                ),
+                              },
+                              {
+                                key: 'lastUpdated',
+                                content: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+                              },
+                              {
+                                key: 'actions',
+                                content: (
+                                  <Button
+                                    appearance="default"
+                                    iconBefore={TrashIcon}
+                                    onClick={() => handleDeleteUrl(index)}
+                                    aria-label="Delete URL"
+                                    css={css({ minWidth: 'auto', padding: '4px 8px' })}
+                                  >
+                                    &nbsp;
+                                  </Button>
+                                ),
+                              },
+                            ],
+                          }))}
+                          testId="default-urls-table"
+                        />
+                      )}
+                    </div>
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div css={css({ marginTop: token('space.300') })}>
+                    <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
+                      <div>
+                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
+                        <p css={css({ margin: 0, marginTop: '12px' })}>Set allow lists at a site level, these override your organisation's defaults.</p>
+                      </div>
+                      <Button appearance="default" onClick={handleAddSite}>Add Site</Button>
+                    </div>
+                    <div css={css({ 
+                      width: '100%',
+                      '& table': {
+                        width: '100% !important',
+                        minWidth: '800px',
+                      }
+                    })}>
+                      {siteLists.length === 0 ? (
+                        <div css={css({
+                          textAlign: 'center',
+                          padding: token('space.400', '32px'),
+                          color: token('color.text.subtle'),
+                          fontSize: '16px',
+                          border: `1px solid ${token('color.border')}`,
+                          borderRadius: token('border.radius.200'),
+                          backgroundColor: token('elevation.surface.raised'),
+                          minWidth: '735px',
+                          maxWidth:'735px',
+                        })}>
+                          No sites have been added
+                        </div>
+                      ) : (
+                        <DynamicTable
+                          head={{
+                            cells: [
+                              { key: 'name', content: 'Site Name', isSortable: false, width: 25 },
+                              { key: 'url', content: 'URL', isSortable: false, width: 30 },
+                              { key: 'servers', content: 'Servers', isSortable: false, width: 15 },
+                              { key: 'status', content: 'Status', isSortable: false, width: 20 },
+                              { key: 'actions', content: '', isSortable: false, width: 10 },
+                            ],
+                          }}
+                          rows={siteLists.map((site, index) => ({
+                            key: `site-${index}`,
+                            cells: [
+                              {
+                                key: 'name',
+                                content: (
+                                  <div css={css({ 
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: token('space.100', '8px'),
+                                  })}>
+                                    {getProductLogo(site.product)}
+                                    <span>{site.name}</span>
+                                  </div>
+                                ),
+                              },
+                              {
+                                key: 'url',
+                                content: <span>{site.url}</span>,
+                              },
+                              {
+                                key: 'servers',
+                                content: (
+                                  <span>
+                                    {site.servers} server{site.servers !== 1 ? 's' : ''} configured
+                                  </span>
+                                ),
+                              },
+                              {
+                                key: 'status',
+                                content: (
+                                  <span css={css({ 
+                                    color: site.status === 'Active' ? token('color.text.success') : token('color.text.warning'), 
+                                    fontWeight: 500 
+                                  })}>
+                                    {site.status}
+                                  </span>
+                                ),
+                              },
+                              {
+                                key: 'actions',
+                                content: (
+                                  <Button
+                                    appearance="default"
+                                    iconBefore={EditIcon}
+                                    onClick={() => handleEditSite(index)}
+                                    aria-label="Edit Site"
+                                    css={css({ minWidth: 'auto', padding: '4px 8px' })}
+                                  >
+                                    &nbsp;
+                                  </Button>
+                                ),
+                              },
+                            ],
+                          }))}
+                          testId="site-lists-table"
+                        />
+                      )}
+                    </div>
+                  </div>
+                </TabPanel>
+              </Tabs>
+            </div>
+          </div>
+        );
+      case 'site-edit':
+        const siteToEdit = selectedSiteForEdit !== null ? siteLists[selectedSiteForEdit] : null;
+        if (!siteToEdit) {
+          return <div>Site not found</div>;
+        }
+        return (
+          <div>
+            <div css={css({ marginBottom: token('space.400', '32px') })}>
+              <Button
+                appearance="subtle"
+                onClick={handleBackToMCPSettings}
+                css={css({ 
+                  padding: 0, 
+                  fontSize: '14px',
+                  color: token('color.link'),
+                  textDecoration: 'none',
+                  '&:hover': {
+                    textDecoration: 'underline',
+                    backgroundColor: 'transparent',
+                  },
+                })}
+              >
+                ← Back to MCP Server Settings
+              </Button>
+            </div>
+            <div css={css({ display: 'flex', alignItems: 'center', gap: token('space.200', '16px'), marginBottom: token('space.300', '24px') })}>
+              {getProductLogo(siteToEdit.product)}
+              <h1 css={css({ margin: 0 })}>Edit {siteToEdit.name}</h1>
+            </div>
+            <div css={css({ marginTop: token('space.300') })}>
+              <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
+                <div>
+                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow list</h4>
+                  <p css={css({ margin: 0, marginTop: '12px' })}>Configure the allowed URLs specifically for {siteToEdit.name}.</p>
+                </div>
+                <div css={css({ display: 'flex', gap: token('space.200', '16px') })}>
+                  <Button appearance="subtle">Revert to org defaults</Button>
+                  <Button appearance="default" onClick={() => handleAddSiteUrl(selectedSiteForEdit!)}>Add URL</Button>
+                </div>
+              </div>
+              <div css={css({ 
+                width: '100%',
+                '& table': {
+                  width: '100% !important',
+                  minWidth: '800px',
+                }
+              })}>
+                {(!siteUrls[selectedSiteForEdit!] || siteUrls[selectedSiteForEdit!].length === 0) ? (
+                  <div css={css({
+                    textAlign: 'center',
+                    padding: token('space.400', '32px'),
+                    color: token('color.text.subtle'),
+                    fontSize: '16px',
+                    border: `1px solid ${token('color.border')}`,
+                    borderRadius: token('border.radius.200'),
+                    backgroundColor: token('elevation.surface.raised'),
+                    minWidth: '735px',
+                    maxWidth:'735px',
+                    margin: '0 auto'
+                  })}>
+                    No URLs have been added
+                  </div>
+                ) : (
+                  <DynamicTable
+                    head={{
+                      cells: [
+                        { key: 'url', content: 'URL', isSortable: false, width: 60 },
+                        { key: 'status', content: 'Status', isSortable: false, width: 15 },
+                        { key: 'lastUpdated', content: 'Last Updated', isSortable: false, width: 15 },
+                        { key: 'actions', content: '', isSortable: false, width: 10 },
+                      ],
+                    }}
+                    rows={(siteUrls[selectedSiteForEdit!] || []).map((url: string, index: number) => ({
+                      key: `site-url-${selectedSiteForEdit}-${index}`,
+                      cells: [
+                        {
+                          key: 'url',
+                          content: editingSiteUrlId === selectedSiteForEdit! * 1000 + index ? (
+                            <Textfield
+                              value={url}
+                              onChange={handleSiteTextfieldChange(selectedSiteForEdit!, index)}
+                              onKeyDown={handleSiteUrlKeyPress}
+                              onBlur={handleSiteUrlSave}
+                              autoFocus
+                              placeholder="Enter URL"
+                              css={css({ width: '100%' })}
+                            />
+                          ) : (
+                            <span
+                              onClick={() => handleSiteUrlClick(selectedSiteForEdit!, index)}
+                              css={css({ cursor: 'pointer', '&:hover': { textDecoration: 'underline' } })}
+                            >
+                              {url}
+                            </span>
+                          ),
+                        },
+                        {
+                          key: 'status',
+                          content: (
+                            <span css={css({ color: token('color.text.success'), fontWeight: 500 })}>
+                              Active
+                            </span>
+                          ),
+                        },
+                        {
+                          key: 'lastUpdated',
+                          content: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+                        },
+                        {
+                          key: 'actions',
+                          content: (
+                            <Button
+                              appearance="default"
+                              iconBefore={TrashIcon}
+                              onClick={() => handleDeleteSiteUrl(selectedSiteForEdit!, index)}
+                              aria-label="Delete URL"
+                              css={css({ minWidth: 'auto', padding: '4px 8px' })}
+                            >
+                              &nbsp;
+                            </Button>
+                          ),
+                        },
+                      ],
+                    }))}
+                    testId="site-urls-table"
+                  />
+                )}
+              </div>
+            </div>
+            <div css={css({ marginTop: token('space.400', '32px') })}>
+              <Button appearance="subtle">Revert to org defaults</Button>
+            </div>
+          </div>
+        );
       case 'settings':
         return (
           <div>
@@ -253,7 +847,7 @@ const App: React.FC = () => {
         return (
           <div>
             <h1>Reports</h1>
-            <p>View analytics and generate reports for {topNavItems.find(item => item.id === selectedTopNavItem)?.label}.</p>
+            <p>View analytics and generate reports.</p>
             <div css={css({ marginTop: token('space.400') })}>
               <h3>Available Reports</h3>
               <ul css={listStyles}>
@@ -286,63 +880,66 @@ const App: React.FC = () => {
   return (
     <div css={appStyles}>
       {/* Top Navigation */}
-      <nav css={topNavStyles}>
+      <div css={topNavStyles}>
         <div css={topNavBrandStyles}>
           Admin MCP
         </div>
-        <div css={topNavItemsStyles}>
-          {topNavItems.map((item) => (
-            <button
-              key={item.id}
-              css={[
-                topNavItemStyles,
-                selectedTopNavItem === item.id && css({
-                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                  fontWeight: 600,
-                })
-              ]}
-              onClick={() => setSelectedTopNavItem(item.id)}
-            >
-              <span css={css({ marginRight: token('space.075') })}>{item.icon}</span>
-              {item.label}
-            </button>
-          ))}
+        
+        {/* Middle section with Search and Create */}
+        <div css={topNavMiddleStyles}>
+          <div css={searchStyles}>
+            <Search label="Search" />
+          </div>
+          <div css={createButtonStyles}>
+            <CreateButton>Create</CreateButton>
+          </div>
         </div>
+        
         <div css={topNavUserAreaStyles}>
-          <button css={topNavItemStyles}>
-            🔔
-          </button>
-          <button css={topNavItemStyles}>
-            ❓
-          </button>
+          <Button
+            appearance="subtle"
+            iconBefore={NotificationIcon}
+            aria-label="Notifications"
+          >
+            &nbsp;
+          </Button>
+          <Button
+            appearance="subtle"
+            iconBefore={QuestionIcon}
+            aria-label="Help"
+          >
+            &nbsp;
+          </Button>
           <div css={avatarStyles}>
             AF
           </div>
         </div>
-      </nav>
+      </div>
 
-      {/* Main Content Area */}
-      <div css={mainContentStyles}>
+      {/* Main Layout with Sidebar */}
+      <div css={mainLayoutStyles}>
         {/* Side Navigation */}
-        <aside css={sidebarStyles}>
-          <nav css={navStyles}>
+        <div css={sidebarStyles}>
+          <nav css={sidebarNavStyles}>
             {navItems.map((item) => (
               <button
                 key={item.id}
-                css={[navItemStyles, selectedItem === item.id && activeNavItemStyles]}
+                css={[
+                  navItemStyles,
+                  selectedItem === item.id && activeNavItemStyles
+                ]}
                 onClick={() => setSelectedItem(item.id)}
               >
-                <span css={css({ marginRight: token('space.100') })}>{item.icon}</span>
                 {item.label}
               </button>
             ))}
           </nav>
-        </aside>
+        </div>
 
         {/* Main Content */}
-        <main css={contentStyles}>
+        <div css={contentStyles}>
           {renderContent()}
-        </main>
+        </div>
       </div>
     </div>
   );
