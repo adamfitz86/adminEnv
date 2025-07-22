@@ -160,11 +160,11 @@
       });
     }
   }
-})({"7KwkS":[function(require,module,exports,__globalThis) {
+})({"4VwAv":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 3000;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -24967,6 +24967,8 @@ var _textfield = require("@atlaskit/textfield");
 var _textfieldDefault = parcelHelpers.interopDefault(_textfield);
 var _dynamicTable = require("@atlaskit/dynamic-table");
 var _dynamicTableDefault = parcelHelpers.interopDefault(_dynamicTable);
+var _modalDialog = require("@atlaskit/modal-dialog");
+var _modalDialogDefault = parcelHelpers.interopDefault(_modalDialog);
 // Import Atlaskit icons
 var _notification = require("@atlaskit/icon/glyph/notification");
 var _notificationDefault = parcelHelpers.interopDefault(_notification);
@@ -24982,72 +24984,71 @@ var _logo = require("@atlaskit/logo");
 var _topNavItems = require("@atlaskit/navigation-system/top-nav-items");
 var _s = $RefreshSig$();
 // Main app layout with top navigation
-const _114 = "._irr3i1yw:hover{background-color:var(--ds-background-selected-hovered,#cce0ff)}";
-const _113 = "._syazaqb7{color:var(--ds-text-selected,#0c66e4)}";
-const _112 = "._bfhkfg4m{background-color:var(--ds-background-selected,#e9f2ff)}";
-const _111 = "._1di61dty:active{background-color:var(--ds-background-neutral-subtle-pressed,#091e4224)}";
-const _110 = "._y3gn1e5h{text-align:left}";
-const _109 = "._bfhk1j28{background-color:transparent}";
-const _108 = "._otyr1b66{margin-bottom:var(--ds-space-050,4px)}";
-const _107 = "._v564mfn2{transition:background-color .2s ease}";
-const _106 = "._2rkoiti9{border-radius:var(--ds-border-radius-100,4px)}";
-const _105 = "._19itglyw{border:none}";
-const _104 = "._1yt49l6b{padding:var(--ds-space-150,9pt) var(--ds-space-200,1pc)}";
-const _103 = "._1bsb1178{width:280px}";
-const _102 = "._1s7zzgxb{border-right:1px solid var(--ds-border,#091e4224)}";
-const _101 = "._18m91wug{overflow-y:auto}";
-const _100 = "._1reo1wug{overflow-x:auto}";
-const _99 = "._4t3i1wtj{height:calc(100vh - 56px)}";
-const _98 = "._bfhk1j89{background-color:var(--ds-background-accent-blue-subtle,#579dff)}";
-const _97 = "._4t3izwfg{height:2pc}";
-const _96 = "._1bsbzwfg{width:2pc}";
-const _95 = "._2rko1ssb{border-radius:50%}";
-const _94 = "._1bahesu3{justify-content:flex-end}";
-const _93 = "._1ouw1h90>*{min-width:auto!important}";
-const _92 = "._1rfz1h90>*{width:auto!important}";
-const _91 = "._1bsb1wug{width:auto}";
-const _90 = "._1rfzdgin>*{width:500px}";
-const _89 = "._1ouwdgin>*{min-width:500px}";
-const _88 = "._5hv91e6m input{width:450px!important}";
-const _87 = "._w5k41e6m input{min-width:450px!important}";
-const _86 = "._1bsbdgin{width:500px}";
-const _85 = "._1ul9dgin{min-width:500px}";
-const _84 = "._agtsdgin>*>:first-child{min-width:500px}";
-const _83 = "._1bah1h6o{justify-content:center}";
-const _82 = "._i0dl1wug{flex-basis:auto}";
-const _81 = "._1o9zidpf{flex-shrink:0}";
-const _80 = "._16jlidpf{flex-grow:0}";
-const _79 = "._1ul9uuw1{min-width:200px}";
-const _78 = "._1bah1y6m{justify-content:flex-start}";
-const _77 = "._1wybf6fq{font-size:18px}";
-const _76 = "._syaz1fxt{color:var(--ds-text,#172b4d)}";
-const _75 = "._i0dlf1ug{flex-basis:0%}";
-const _74 = "._1o9zkb7n{flex-shrink:1}";
-const _73 = "._16jlkb7n{flex-grow:1}";
-const _72 = "._1pbyzo7u{z-index:10}";
-const _71 = "._bfhkvuon{background-color:var(--ds-surface,#fff)}";
-const _70 = "._4t3i8vuz{height:56px}";
-const _69 = "._1yt41e2i{padding:0 var(--ds-space-300,24px)}";
-const _68 = "._ect41vce{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif}";
-const _67 = "._4t3i1kxc{height:100vh}";
-const _66 = "._2lx21bp4{flex-direction:column}";
-const _65 = "._2hwxu2gc{margin-right:var(--ds-space-100,8px)}";
-const _64 = "._otyrpxbi{margin-bottom:var(--ds-space-200,1pc)}";
-const _63 = "._1e0c1ule{display:block}";
-const _62 = "._18u01wug{margin-left:auto}";
-const _61 = "._2hwx1wug{margin-right:auto}";
-const _60 = "._otyr1ejb{margin-bottom:var(--ds-space-300,24px)}";
-const _59 = "._zulppxbi{gap:var(--ds-space-200,1pc)}";
-const _58 = "._irr31j28:hover{background-color:transparent}";
-const _57 = "._jf4cnqa1:hover{text-decoration-style:solid}";
-const _56 = "._1bnx8stv:hover{text-decoration-line:underline}";
-const _55 = "._9oik1r31:hover{text-decoration-color:currentColor}";
-const _54 = "._syaz14q2{color:var(--ds-link,#0c66e4)}";
-const _53 = "._ajmmnqa1{text-decoration-style:solid}";
-const _52 = "._1hmsglyw{text-decoration-line:none}";
-const _51 = "._4bfu1r31{text-decoration-color:currentColor}";
-const _50 = "._otyrxy5q{margin-bottom:var(--ds-space-400,2pc)}";
-const _49 = "._syaz3lo6{color:var(--_hjmadm)}";
+const _113 = "._irr3i1yw:hover{background-color:var(--ds-background-selected-hovered,#cce0ff)}";
+const _112 = "._syazaqb7{color:var(--ds-text-selected,#0c66e4)}";
+const _111 = "._bfhkfg4m{background-color:var(--ds-background-selected,#e9f2ff)}";
+const _110 = "._1di61dty:active{background-color:var(--ds-background-neutral-subtle-pressed,#091e4224)}";
+const _109 = "._y3gn1e5h{text-align:left}";
+const _108 = "._bfhk1j28{background-color:transparent}";
+const _107 = "._otyr1b66{margin-bottom:var(--ds-space-050,4px)}";
+const _106 = "._v564mfn2{transition:background-color .2s ease}";
+const _105 = "._2rkoiti9{border-radius:var(--ds-border-radius-100,4px)}";
+const _104 = "._19itglyw{border:none}";
+const _103 = "._1yt49l6b{padding:var(--ds-space-150,9pt) var(--ds-space-200,1pc)}";
+const _102 = "._1bsb1178{width:280px}";
+const _101 = "._1s7zzgxb{border-right:1px solid var(--ds-border,#091e4224)}";
+const _100 = "._18m91wug{overflow-y:auto}";
+const _99 = "._1reo1wug{overflow-x:auto}";
+const _98 = "._4t3i1wtj{height:calc(100vh - 56px)}";
+const _97 = "._bfhk1j89{background-color:var(--ds-background-accent-blue-subtle,#579dff)}";
+const _96 = "._4t3izwfg{height:2pc}";
+const _95 = "._1bsbzwfg{width:2pc}";
+const _94 = "._2rko1ssb{border-radius:50%}";
+const _93 = "._1bahesu3{justify-content:flex-end}";
+const _92 = "._1ouw1h90>*{min-width:auto!important}";
+const _91 = "._1rfz1h90>*{width:auto!important}";
+const _90 = "._1bsb1wug{width:auto}";
+const _89 = "._1rfzdgin>*{width:500px}";
+const _88 = "._1ouwdgin>*{min-width:500px}";
+const _87 = "._5hv91e6m input{width:450px!important}";
+const _86 = "._w5k41e6m input{min-width:450px!important}";
+const _85 = "._1bsbdgin{width:500px}";
+const _84 = "._1ul9dgin{min-width:500px}";
+const _83 = "._agtsdgin>*>:first-child{min-width:500px}";
+const _82 = "._1bah1h6o{justify-content:center}";
+const _81 = "._i0dl1wug{flex-basis:auto}";
+const _80 = "._1o9zidpf{flex-shrink:0}";
+const _79 = "._16jlidpf{flex-grow:0}";
+const _78 = "._1ul9uuw1{min-width:200px}";
+const _77 = "._1bah1y6m{justify-content:flex-start}";
+const _76 = "._1wybf6fq{font-size:18px}";
+const _75 = "._syaz1fxt{color:var(--ds-text,#172b4d)}";
+const _74 = "._i0dlf1ug{flex-basis:0%}";
+const _73 = "._1o9zkb7n{flex-shrink:1}";
+const _72 = "._16jlkb7n{flex-grow:1}";
+const _71 = "._1pbyzo7u{z-index:10}";
+const _70 = "._bfhkvuon{background-color:var(--ds-surface,#fff)}";
+const _69 = "._4t3i8vuz{height:56px}";
+const _68 = "._1yt41e2i{padding:0 var(--ds-space-300,24px)}";
+const _67 = "._ect41vce{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif}";
+const _66 = "._4t3i1kxc{height:100vh}";
+const _65 = "._2lx21bp4{flex-direction:column}";
+const _64 = "._2hwxu2gc{margin-right:var(--ds-space-100,8px)}";
+const _63 = "._otyrpxbi{margin-bottom:var(--ds-space-200,1pc)}";
+const _62 = "._1e0c1ule{display:block}";
+const _61 = "._18u01wug{margin-left:auto}";
+const _60 = "._2hwx1wug{margin-right:auto}";
+const _59 = "._otyr1ejb{margin-bottom:var(--ds-space-300,24px)}";
+const _58 = "._zulppxbi{gap:var(--ds-space-200,1pc)}";
+const _57 = "._irr31j28:hover{background-color:transparent}";
+const _56 = "._jf4cnqa1:hover{text-decoration-style:solid}";
+const _55 = "._1bnx8stv:hover{text-decoration-line:underline}";
+const _54 = "._9oik1r31:hover{text-decoration-color:currentColor}";
+const _53 = "._syaz14q2{color:var(--ds-link,#0c66e4)}";
+const _52 = "._ajmmnqa1{text-decoration-style:solid}";
+const _51 = "._1hmsglyw{text-decoration-line:none}";
+const _50 = "._4bfu1r31{text-decoration-color:currentColor}";
+const _49 = "._otyrxy5q{margin-bottom:var(--ds-space-400,2pc)}";
 const _48 = "._zulpu2gc{gap:var(--ds-space-100,8px)}";
 const _47 = "._1ul91wug{min-width:auto}";
 const _46 = "._19bvftgi{padding-left:8px}";
@@ -25122,6 +25123,8 @@ const App = ()=>{
     const [selectedItem, setSelectedItem] = (0, _react.useState)('home');
     const [editingUrlId, setEditingUrlId] = (0, _react.useState)(null);
     const [selectedSiteForEdit, setSelectedSiteForEdit] = (0, _react.useState)(null);
+    const [isRevertModalOpen, setIsRevertModalOpen] = (0, _react.useState)(false);
+    const [siteIndexToRevert, setSiteIndexToRevert] = (0, _react.useState)(null);
     const [defaultUrls, setDefaultUrls] = (0, _react.useState)([
         'https://api.github.com',
         'https://api.atlassian.com',
@@ -25147,19 +25150,16 @@ const App = ()=>{
     // Site-specific URL lists for each site
     const [siteUrls, setSiteUrls] = (0, _react.useState)({
         0: [
-            'https://prod.api.example.com',
-            'https://prod.webhook.example.com'
+            ...defaultUrls
         ],
         1: [
-            'https://staging.api.example.com'
+            ...defaultUrls
         ],
         2: [
-            'https://dev.api.example.com',
-            'https://dev.test.example.com',
-            'https://dev.mock.example.com'
+            ...defaultUrls
         ],
         3: [
-            'https://test.api.example.com'
+            ...defaultUrls
         ]
     });
     const [editingSiteUrlId, setEditingSiteUrlId] = (0, _react.useState)(null);
@@ -25193,6 +25193,12 @@ const App = ()=>{
             product: 'trello'
         }
     ]);
+    // Debug modal state changes
+    (0, _react.useEffect)(()=>{
+        console.log('Modal state changed - isRevertModalOpen:', isRevertModalOpen);
+    }, [
+        isRevertModalOpen
+    ]);
     // Helper function to get the appropriate logo for each product
     const getProductLogo = (product)=>{
         switch(product){
@@ -25202,7 +25208,7 @@ const App = ()=>{
                     size: "small"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 211,
+                    lineNumber: 218,
                     columnNumber: 16
                 }, undefined);
             case 'jira':
@@ -25211,7 +25217,7 @@ const App = ()=>{
                     size: "small"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 213,
+                    lineNumber: 220,
                     columnNumber: 16
                 }, undefined);
             case 'bitbucket':
@@ -25220,7 +25226,7 @@ const App = ()=>{
                     size: "small"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 215,
+                    lineNumber: 222,
                     columnNumber: 16
                 }, undefined);
             case 'trello':
@@ -25229,7 +25235,7 @@ const App = ()=>{
                     size: "small"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 217,
+                    lineNumber: 224,
                     columnNumber: 16
                 }, undefined);
             default:
@@ -25238,7 +25244,7 @@ const App = ()=>{
                     size: "small"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 219,
+                    lineNumber: 226,
                     columnNumber: 16
                 }, undefined);
         }
@@ -25288,6 +25294,11 @@ const App = ()=>{
     const handleBackToMCPSettings = ()=>{
         setSelectedSiteForEdit(null);
         setSelectedItem('mcp-settings');
+        // Set the tab to Site Overrides when returning
+        setTimeout(()=>{
+            const tabs = document.querySelectorAll('[role="tab"]');
+            if (tabs && tabs.length > 1) tabs[1].click();
+        }, 0);
     };
     const handleAddSite = ()=>{
         const newSite = {
@@ -25352,6 +25363,51 @@ const App = ()=>{
             setSiteUrls(updatedSiteUrls);
         }
     };
+    const handleRevertToOrgDefaults = (siteIndex)=>{
+        setSiteIndexToRevert(siteIndex);
+        setIsRevertModalOpen(true);
+    };
+    const handleConfirmRevert = ()=>{
+        if (siteIndexToRevert !== null) {
+            const updatedSiteUrls = {
+                ...siteUrls
+            };
+            updatedSiteUrls[siteIndexToRevert] = [
+                ...defaultUrls
+            ];
+            setSiteUrls(updatedSiteUrls);
+        }
+        setIsRevertModalOpen(false);
+        setSiteIndexToRevert(null);
+    };
+    const handleCancelRevert = ()=>{
+        setIsRevertModalOpen(false);
+        setSiteIndexToRevert(null);
+    };
+    // Helper to check if a site is inherited from org
+    const isSiteInherited = (siteIndex)=>{
+        const siteUrlsForIndex = siteUrls[siteIndex] || [];
+        return siteUrlsForIndex.length === defaultUrls.length && siteUrlsForIndex.every((url, i)=>url === defaultUrls[i]);
+    };
+    // Update all inherited site lists when org allow list changes
+    (0, _react.useEffect)(()=>{
+        setSiteUrls((prevSiteUrls)=>{
+            const updated = {
+                ...prevSiteUrls
+            };
+            Object.keys(updated).forEach((key)=>{
+                const idx = Number(key);
+                const urls = prevSiteUrls[idx] || [];
+                // Only update if the site is currently inherited from org (matches the previous org list exactly)
+                if (urls.length === prevSiteUrls[0].length && urls.every((url, i)=>url === prevSiteUrls[0][i])) updated[idx] = [
+                    ...defaultUrls
+                ];
+            });
+            return updated;
+        });
+    }, [
+        defaultUrls
+    ]);
     const navItems = [
         {
             id: 'home',
@@ -25383,14 +25439,14 @@ const App = ()=>{
                             children: "Dashboard"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 355,
+                            lineNumber: 414,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Welcome to your admin dashboard. Here you can manage all aspects of your application."
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 356,
+                            lineNumber: 415,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25404,7 +25460,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 358,
+                                    lineNumber: 417,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25423,7 +25479,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 361,
+                                                    lineNumber: 420,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25435,7 +25491,7 @@ const App = ()=>{
                                                             children: "Total Users"
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 363,
+                                                            lineNumber: 422,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25447,7 +25503,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 365,
+                                                                    lineNumber: 424,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -25457,25 +25513,25 @@ const App = ()=>{
                                                                     children: "1,234"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 366,
+                                                                    lineNumber: 425,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 364,
+                                                            lineNumber: 423,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 362,
+                                                    lineNumber: 421,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 360,
+                                            lineNumber: 419,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25489,7 +25545,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 371,
+                                                    lineNumber: 430,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25501,7 +25557,7 @@ const App = ()=>{
                                                             children: "Active Sessions"
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 373,
+                                                            lineNumber: 432,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25513,7 +25569,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 375,
+                                                                    lineNumber: 434,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -25523,25 +25579,25 @@ const App = ()=>{
                                                                     children: "567"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 376,
+                                                                    lineNumber: 435,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 374,
+                                                            lineNumber: 433,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 372,
+                                                    lineNumber: 431,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 370,
+                                            lineNumber: 429,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25555,7 +25611,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 381,
+                                                    lineNumber: 440,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25567,7 +25623,7 @@ const App = ()=>{
                                                             children: "Active Projects"
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 383,
+                                                            lineNumber: 442,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25579,7 +25635,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 385,
+                                                                    lineNumber: 444,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -25589,43 +25645,43 @@ const App = ()=>{
                                                                     children: "23"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 386,
+                                                                    lineNumber: 445,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 443,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 382,
+                                                    lineNumber: 441,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 380,
+                                            lineNumber: 439,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 359,
+                                    lineNumber: 418,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 357,
+                            lineNumber: 416,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 354,
+                    lineNumber: 413,
                     columnNumber: 16
                 }, undefined);
             case 'users':
@@ -25635,14 +25691,14 @@ const App = ()=>{
                             children: "User Management"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 395,
+                            lineNumber: 454,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Manage users, roles, and permissions from this section."
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 396,
+                            lineNumber: 455,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25653,7 +25709,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 398,
+                                    lineNumber: 457,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25665,7 +25721,7 @@ const App = ()=>{
                                             children: "Recent Users"
                                         }, void 0, false, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 400,
+                                            lineNumber: 459,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25680,7 +25736,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 402,
+                                                    lineNumber: 461,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -25697,7 +25753,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 405,
+                                                                    lineNumber: 464,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -25707,13 +25763,13 @@ const App = ()=>{
                                                                     children: "John Doe - john@example.com - Project Manager"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 406,
+                                                                    lineNumber: 465,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 404,
+                                                            lineNumber: 463,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25725,7 +25781,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 411,
+                                                                    lineNumber: 470,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -25735,13 +25791,13 @@ const App = ()=>{
                                                                     children: "Jane Smith - jane@example.com - Developer"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 412,
+                                                                    lineNumber: 471,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 410,
+                                                            lineNumber: 469,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25753,7 +25809,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 417,
+                                                                    lineNumber: 476,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -25763,43 +25819,43 @@ const App = ()=>{
                                                                     children: "Bob Johnson - bob@example.com - Designer"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 418,
+                                                                    lineNumber: 477,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 416,
+                                                            lineNumber: 475,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 403,
+                                                    lineNumber: 462,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 401,
+                                            lineNumber: 460,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 399,
+                                    lineNumber: 458,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 397,
+                            lineNumber: 456,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 394,
+                    lineNumber: 453,
                     columnNumber: 16
                 }, undefined);
             case 'mcp-settings':
@@ -25809,14 +25865,14 @@ const App = ()=>{
                             children: "MCP Server Settings"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 429,
+                            lineNumber: 488,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Configure and manage Model Context Protocol server settings and connections."
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 430,
+                            lineNumber: 489,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25827,7 +25883,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 432,
+                                    lineNumber: 491,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25841,23 +25897,23 @@ const App = ()=>{
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.TabList), {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.Tab), {
-                                                        children: "Default List"
+                                                        children: "Org allow list"
                                                     }, void 0, false, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 436,
+                                                        lineNumber: 495,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.Tab), {
-                                                        children: "Site Lists"
+                                                        children: "Site Overrides"
                                                     }, void 0, false, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 437,
+                                                        lineNumber: 496,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 435,
+                                                lineNumber: 494,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.TabPanel), {
@@ -25869,7 +25925,7 @@ const App = ()=>{
                                                             ]
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 441,
+                                                            lineNumber: 500,
                                                             columnNumber: 3
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25888,7 +25944,7 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 444,
+                                                                            lineNumber: 503,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25912,23 +25968,23 @@ const App = ()=>{
                                                                                                     ]
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 448,
+                                                                                                    lineNumber: 507,
                                                                                                     columnNumber: 3
                                                                                                 }, undefined),
                                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                                                                     className: (0, _runtime.ax)([
                                                                                                         "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _1wybdlk8 _k48p8n31 _otyr1crf"
                                                                                                     ]),
-                                                                                                    children: "Default allow list"
+                                                                                                    children: "Org allow list"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 449,
+                                                                                                    lineNumber: 508,
                                                                                                     columnNumber: 4
                                                                                                 }, undefined)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "src/App.tsx",
-                                                                                            lineNumber: 447,
+                                                                                            lineNumber: 506,
                                                                                             columnNumber: 25
                                                                                         }, undefined),
                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25943,7 +25999,7 @@ const App = ()=>{
                                                                                                     ]
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 452,
+                                                                                                    lineNumber: 511,
                                                                                                     columnNumber: 3
                                                                                                 }, undefined),
                                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -25953,19 +26009,19 @@ const App = ()=>{
                                                                                                     children: "Below is the list of allowed sites set by default in your organisation."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 453,
+                                                                                                    lineNumber: 512,
                                                                                                     columnNumber: 4
                                                                                                 }, undefined)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "src/App.tsx",
-                                                                                            lineNumber: 451,
+                                                                                            lineNumber: 510,
                                                                                             columnNumber: 25
                                                                                         }, undefined)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 446,
+                                                                                    lineNumber: 505,
                                                                                     columnNumber: 23
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -25974,19 +26030,19 @@ const App = ()=>{
                                                                                     children: "Add URL"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 456,
+                                                                                    lineNumber: 515,
                                                                                     columnNumber: 23
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 445,
+                                                                            lineNumber: 504,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 443,
+                                                                    lineNumber: 502,
                                                                     columnNumber: 21
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -25999,7 +26055,7 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 460,
+                                                                            lineNumber: 519,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26022,7 +26078,7 @@ const App = ()=>{
                                                                                         ]
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/App.tsx",
-                                                                                        lineNumber: 463,
+                                                                                        lineNumber: 522,
                                                                                         columnNumber: 3
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26032,13 +26088,13 @@ const App = ()=>{
                                                                                         children: "No URLs have been added"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/App.tsx",
-                                                                                        lineNumber: 464,
+                                                                                        lineNumber: 523,
                                                                                         columnNumber: 4
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/App.tsx",
-                                                                                lineNumber: 462,
+                                                                                lineNumber: 521,
                                                                                 columnNumber: 51
                                                                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dynamicTableDefault.default), {
                                                                                 head: {
@@ -26083,7 +26139,7 @@ const App = ()=>{
                                                                                                     isCompact: true
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 493,
+                                                                                                    lineNumber: 552,
                                                                                                     columnNumber: 65
                                                                                                 }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                                                                     children: [
@@ -26094,7 +26150,7 @@ const App = ()=>{
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 494,
+                                                                                                            lineNumber: 553,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -26105,13 +26161,13 @@ const App = ()=>{
                                                                                                             children: url
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 495,
+                                                                                                            lineNumber: 554,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 493,
+                                                                                                    lineNumber: 552,
                                                                                                     columnNumber: 214
                                                                                                 }, void 0)
                                                                                             },
@@ -26126,7 +26182,7 @@ const App = ()=>{
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 502,
+                                                                                                            lineNumber: 561,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -26136,13 +26192,13 @@ const App = ()=>{
                                                                                                             children: "Active"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 503,
+                                                                                                            lineNumber: 562,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 501,
+                                                                                                    lineNumber: 560,
                                                                                                     columnNumber: 40
                                                                                                 }, void 0)
                                                                                             },
@@ -26164,7 +26220,7 @@ const App = ()=>{
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 513,
+                                                                                                            lineNumber: 572,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -26178,13 +26234,13 @@ const App = ()=>{
                                                                                                             children: "\xa0"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 514,
+                                                                                                            lineNumber: 573,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 512,
+                                                                                                    lineNumber: 571,
                                                                                                     columnNumber: 40
                                                                                                 }, void 0)
                                                                                             }
@@ -26193,35 +26249,35 @@ const App = ()=>{
                                                                                 testId: "default-urls-table"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/App.tsx",
-                                                                                lineNumber: 467,
+                                                                                lineNumber: 526,
                                                                                 columnNumber: 35
                                                                             }, undefined)
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 461,
+                                                                            lineNumber: 520,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 459,
+                                                                    lineNumber: 518,
                                                                     columnNumber: 21
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 442,
+                                                            lineNumber: 501,
                                                             columnNumber: 4
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 440,
+                                                    lineNumber: 499,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 439,
+                                                lineNumber: 498,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.TabPanel), {
@@ -26233,7 +26289,7 @@ const App = ()=>{
                                                             ]
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 527,
+                                                            lineNumber: 586,
                                                             columnNumber: 3
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26245,112 +26301,92 @@ const App = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                             children: [
-                                                                                _18,
-                                                                                _19,
-                                                                                _20,
                                                                                 _21
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 530,
+                                                                            lineNumber: 589,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                             className: (0, _runtime.ax)([
-                                                                                "_1e0c1txw _4cvr1h6o _1bah1yb4 _otyr1tcg"
+                                                                                "_otyr1tcg"
                                                                             ]),
                                                                             children: [
-                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                                                     children: [
-                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                             children: [
-                                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
-                                                                                                    children: [
-                                                                                                        _22,
-                                                                                                        _23,
-                                                                                                        _24,
-                                                                                                        _25,
-                                                                                                        _26,
-                                                                                                        _27,
-                                                                                                        _28
-                                                                                                    ]
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "src/App.tsx",
-                                                                                                    lineNumber: 534,
-                                                                                                    columnNumber: 3
-                                                                                                }, undefined),
-                                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                                                                    className: (0, _runtime.ax)([
-                                                                                                        "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _1wybdlk8 _k48p8n31 _otyr1crf"
-                                                                                                    ]),
-                                                                                                    children: "Site allow lists"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "src/App.tsx",
-                                                                                                    lineNumber: 535,
-                                                                                                    columnNumber: 4
-                                                                                                }, undefined)
+                                                                                                _22,
+                                                                                                _23,
+                                                                                                _24,
+                                                                                                _25,
+                                                                                                _26,
+                                                                                                _27,
+                                                                                                _28
                                                                                             ]
-                                                                                        }, void 0, true, {
+                                                                                        }, void 0, false, {
                                                                                             fileName: "src/App.tsx",
-                                                                                            lineNumber: 533,
-                                                                                            columnNumber: 25
+                                                                                            lineNumber: 592,
+                                                                                            columnNumber: 3
                                                                                         }, undefined),
-                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
-                                                                                            children: [
-                                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
-                                                                                                    children: [
-                                                                                                        _22,
-                                                                                                        _23,
-                                                                                                        _24,
-                                                                                                        _25,
-                                                                                                        _29
-                                                                                                    ]
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "src/App.tsx",
-                                                                                                    lineNumber: 538,
-                                                                                                    columnNumber: 3
-                                                                                                }, undefined),
-                                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                                                    className: (0, _runtime.ax)([
-                                                                                                        "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _19pk1crf"
-                                                                                                    ]),
-                                                                                                    children: "Set allow lists at a site level, these override your organisation's defaults."
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "src/App.tsx",
-                                                                                                    lineNumber: 539,
-                                                                                                    columnNumber: 4
-                                                                                                }, undefined)
-                                                                                            ]
-                                                                                        }, void 0, true, {
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                                                            className: (0, _runtime.ax)([
+                                                                                                "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _1wybdlk8 _k48p8n31 _otyr1crf"
+                                                                                            ]),
+                                                                                            children: "Site Overrides"
+                                                                                        }, void 0, false, {
                                                                                             fileName: "src/App.tsx",
-                                                                                            lineNumber: 537,
-                                                                                            columnNumber: 25
+                                                                                            lineNumber: 593,
+                                                                                            columnNumber: 4
                                                                                         }, undefined)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 532,
+                                                                                    lineNumber: 591,
                                                                                     columnNumber: 23
                                                                                 }, undefined),
-                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
-                                                                                    appearance: "default",
-                                                                                    onClick: handleAddSite,
-                                                                                    children: "Add Site"
-                                                                                }, void 0, false, {
+                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
+                                                                                            children: [
+                                                                                                _22,
+                                                                                                _23,
+                                                                                                _24,
+                                                                                                _25,
+                                                                                                _29
+                                                                                            ]
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "src/App.tsx",
+                                                                                            lineNumber: 596,
+                                                                                            columnNumber: 3
+                                                                                        }, undefined),
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                                            className: (0, _runtime.ax)([
+                                                                                                "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _19pk1crf"
+                                                                                            ]),
+                                                                                            children: "Set allow lists at a site level, these override your organisation's defaults."
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "src/App.tsx",
+                                                                                            lineNumber: 597,
+                                                                                            columnNumber: 4
+                                                                                        }, undefined)
+                                                                                    ]
+                                                                                }, void 0, true, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 542,
+                                                                                    lineNumber: 595,
                                                                                     columnNumber: 23
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 531,
+                                                                            lineNumber: 590,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 529,
+                                                                    lineNumber: 588,
                                                                     columnNumber: 21
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -26363,7 +26399,7 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 546,
+                                                                            lineNumber: 602,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26386,7 +26422,7 @@ const App = ()=>{
                                                                                         ]
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/App.tsx",
-                                                                                        lineNumber: 549,
+                                                                                        lineNumber: 605,
                                                                                         columnNumber: 3
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26396,13 +26432,13 @@ const App = ()=>{
                                                                                         children: "No sites have been added"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/App.tsx",
-                                                                                        lineNumber: 550,
+                                                                                        lineNumber: 606,
                                                                                         columnNumber: 4
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/App.tsx",
-                                                                                lineNumber: 548,
+                                                                                lineNumber: 604,
                                                                                 columnNumber: 49
                                                                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dynamicTableDefault.default), {
                                                                                 head: {
@@ -26420,12 +26456,6 @@ const App = ()=>{
                                                                                             width: 30
                                                                                         },
                                                                                         {
-                                                                                            key: 'servers',
-                                                                                            content: 'Servers',
-                                                                                            isSortable: false,
-                                                                                            width: 15
-                                                                                        },
-                                                                                        {
                                                                                             key: 'status',
                                                                                             content: 'Status',
                                                                                             isSortable: false,
@@ -26439,7 +26469,11 @@ const App = ()=>{
                                                                                         }
                                                                                     ]
                                                                                 },
-                                                                                rows: siteLists.map((site, index)=>({
+                                                                                rows: siteLists.map((site, index)=>{
+                                                                                    // Determine if siteUrls for this site matches defaultUrls
+                                                                                    const siteUrlsForIndex = siteUrls[index] || [];
+                                                                                    const isCustom = siteUrlsForIndex.length !== defaultUrls.length || siteUrlsForIndex.some((url, i)=>url !== defaultUrls[i]);
+                                                                                    return {
                                                                                         key: `site-${index}`,
                                                                                         cells: [
                                                                                             {
@@ -26454,7 +26488,7 @@ const App = ()=>{
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 585,
+                                                                                                            lineNumber: 640,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26467,20 +26501,20 @@ const App = ()=>{
                                                                                                                     children: site.name
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "src/App.tsx",
-                                                                                                                    lineNumber: 588,
-                                                                                                                    columnNumber: 37
+                                                                                                                    lineNumber: 643,
+                                                                                                                    columnNumber: 39
                                                                                                                 }, void 0)
                                                                                                             ]
                                                                                                         }, void 0, true, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 586,
+                                                                                                            lineNumber: 641,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 584,
-                                                                                                    columnNumber: 40
+                                                                                                    lineNumber: 639,
+                                                                                                    columnNumber: 42
                                                                                                 }, void 0)
                                                                                             },
                                                                                             {
@@ -26489,23 +26523,8 @@ const App = ()=>{
                                                                                                     children: site.url
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 593,
-                                                                                                    columnNumber: 40
-                                                                                                }, void 0)
-                                                                                            },
-                                                                                            {
-                                                                                                key: 'servers',
-                                                                                                content: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                                                    children: [
-                                                                                                        site.servers,
-                                                                                                        " server",
-                                                                                                        site.servers !== 1 ? 's' : '',
-                                                                                                        " configured"
-                                                                                                    ]
-                                                                                                }, void 0, true, {
-                                                                                                    fileName: "src/App.tsx",
-                                                                                                    lineNumber: 596,
-                                                                                                    columnNumber: 40
+                                                                                                    lineNumber: 648,
+                                                                                                    columnNumber: 42
                                                                                                 }, void 0)
                                                                                             },
                                                                                             {
@@ -26514,32 +26533,28 @@ const App = ()=>{
                                                                                                     children: [
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                                             children: [
-                                                                                                                _49,
                                                                                                                 _42
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 602,
+                                                                                                            lineNumber: 652,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                                                             className: (0, _runtime.ax)([
-                                                                                                                "_syaz3lo6 _k48pbfng"
+                                                                                                                "_k48pbfng"
                                                                                                             ]),
-                                                                                                            style: {
-                                                                                                                "--_hjmadm": (0, _runtime.ix)(site.status === 'Active' ? "var(--ds-text-success, #216E4E)" : "var(--ds-text-warning, #A54800)")
-                                                                                                            },
-                                                                                                            children: site.status
+                                                                                                            children: isCustom ? 'Custom' : 'Inherited from org'
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 603,
+                                                                                                            lineNumber: 653,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 601,
-                                                                                                    columnNumber: 40
+                                                                                                    lineNumber: 651,
+                                                                                                    columnNumber: 42
                                                                                                 }, void 0)
                                                                                             },
                                                                                             {
@@ -26556,7 +26571,7 @@ const App = ()=>{
                                                                                                             ]
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 612,
+                                                                                                            lineNumber: 660,
                                                                                                             columnNumber: 3
                                                                                                         }, void 0),
                                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -26570,73 +26585,74 @@ const App = ()=>{
                                                                                                             children: "\xa0"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "src/App.tsx",
-                                                                                                            lineNumber: 613,
+                                                                                                            lineNumber: 661,
                                                                                                             columnNumber: 4
                                                                                                         }, void 0)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "src/App.tsx",
-                                                                                                    lineNumber: 611,
-                                                                                                    columnNumber: 40
+                                                                                                    lineNumber: 659,
+                                                                                                    columnNumber: 42
                                                                                                 }, void 0)
                                                                                             }
                                                                                         ]
-                                                                                    })),
+                                                                                    };
+                                                                                }),
                                                                                 testId: "site-lists-table"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/App.tsx",
-                                                                                lineNumber: 553,
+                                                                                lineNumber: 609,
                                                                                 columnNumber: 35
                                                                             }, undefined)
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 547,
+                                                                            lineNumber: 603,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 545,
+                                                                    lineNumber: 601,
                                                                     columnNumber: 21
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 528,
+                                                            lineNumber: 587,
                                                             columnNumber: 4
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 526,
+                                                    lineNumber: 585,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 525,
+                                                lineNumber: 584,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 434,
+                                        lineNumber: 493,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 433,
+                                    lineNumber: 492,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 431,
+                            lineNumber: 490,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 428,
+                    lineNumber: 487,
                     columnNumber: 16
                 }, undefined);
             case 'site-edit':
@@ -26645,7 +26661,7 @@ const App = ()=>{
                     children: "Site not found"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 631,
+                    lineNumber: 680,
                     columnNumber: 18
                 }, undefined);
                 return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26654,11 +26670,11 @@ const App = ()=>{
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                     children: [
-                                        _50
+                                        _49
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 635,
+                                    lineNumber: 684,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26673,19 +26689,19 @@ const App = ()=>{
                                                     _12,
                                                     _13,
                                                     _14,
+                                                    _50,
                                                     _51,
                                                     _52,
-                                                    _53,
                                                     _26,
+                                                    _53,
                                                     _54,
                                                     _55,
                                                     _56,
-                                                    _57,
-                                                    _58
+                                                    _57
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 638,
+                                                lineNumber: 687,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -26697,38 +26713,38 @@ const App = ()=>{
                                                 children: "\u2190 Back to MCP Server Settings"
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 639,
+                                                lineNumber: 688,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 637,
+                                        lineNumber: 686,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 636,
+                                    lineNumber: 685,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 634,
+                            lineNumber: 683,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                     children: [
-                                        _59,
+                                        _58,
                                         _18,
                                         _19,
-                                        _60
+                                        _59
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 646,
+                                    lineNumber: 695,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26748,7 +26764,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 650,
+                                                    lineNumber: 699,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -26761,25 +26777,25 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 651,
+                                                    lineNumber: 700,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 649,
+                                            lineNumber: 698,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 647,
+                                    lineNumber: 696,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 645,
+                            lineNumber: 694,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -26790,7 +26806,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 656,
+                                    lineNumber: 705,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26809,7 +26825,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 659,
+                                                    lineNumber: 708,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26833,23 +26849,23 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 663,
+                                                                            lineNumber: 712,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                                             className: (0, _runtime.ax)([
                                                                                 "_19pkidpf _2hwxidpf _otyridpf _18u0idpf _1wybdlk8 _k48p8n31 _otyr1crf"
                                                                             ]),
-                                                                            children: "Site allow list"
+                                                                            children: "Site Overrides"
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 664,
+                                                                            lineNumber: 713,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 662,
+                                                                    lineNumber: 711,
                                                                     columnNumber: 19
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -26864,7 +26880,7 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 667,
+                                                                            lineNumber: 716,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -26878,31 +26894,31 @@ const App = ()=>{
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 668,
+                                                                            lineNumber: 717,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 666,
+                                                                    lineNumber: 715,
                                                                     columnNumber: 19
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 661,
+                                                            lineNumber: 710,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                     children: [
-                                                                        _59,
+                                                                        _58,
                                                                         _18
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 672,
+                                                                    lineNumber: 721,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26912,10 +26928,12 @@ const App = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
                                                                             appearance: "subtle",
+                                                                            type: "button",
+                                                                            onClick: ()=>handleRevertToOrgDefaults(selectedSiteForEdit),
                                                                             children: "Revert to org defaults"
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 674,
+                                                                            lineNumber: 723,
                                                                             columnNumber: 19
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -26924,31 +26942,31 @@ const App = ()=>{
                                                                             children: "Add URL"
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 675,
+                                                                            lineNumber: 726,
                                                                             columnNumber: 19
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 673,
+                                                                    lineNumber: 722,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 671,
+                                                            lineNumber: 720,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 660,
+                                                    lineNumber: 709,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 658,
+                                            lineNumber: 707,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -26961,7 +26979,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 681,
+                                                    lineNumber: 732,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26976,9 +26994,9 @@ const App = ()=>{
                                                                     _8,
                                                                     _7,
                                                                     _22,
-                                                                    _61,
+                                                                    _60,
                                                                     _24,
-                                                                    _62,
+                                                                    _61,
                                                                     _34,
                                                                     _35,
                                                                     _36,
@@ -26988,7 +27006,7 @@ const App = ()=>{
                                                                 ]
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 684,
+                                                                lineNumber: 735,
                                                                 columnNumber: 3
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26998,13 +27016,13 @@ const App = ()=>{
                                                                 children: "No URLs have been added"
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 685,
+                                                                lineNumber: 736,
                                                                 columnNumber: 4
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 683,
+                                                        lineNumber: 734,
                                                         columnNumber: 99
                                                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dynamicTableDefault.default), {
                                                         head: {
@@ -27048,7 +27066,7 @@ const App = ()=>{
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 715,
+                                                                                    lineNumber: 766,
                                                                                     columnNumber: 3
                                                                                 }, void 0),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textfieldDefault.default), {
@@ -27063,26 +27081,26 @@ const App = ()=>{
                                                                                     ])
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 716,
+                                                                                    lineNumber: 767,
                                                                                     columnNumber: 4
                                                                                 }, void 0)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 714,
+                                                                            lineNumber: 765,
                                                                             columnNumber: 91
                                                                         }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                     children: [
                                                                                         _39,
+                                                                                        _54,
                                                                                         _55,
-                                                                                        _56,
-                                                                                        _57
+                                                                                        _56
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 718,
+                                                                                    lineNumber: 769,
                                                                                     columnNumber: 3
                                                                                 }, void 0),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27093,13 +27111,13 @@ const App = ()=>{
                                                                                     children: url
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 719,
+                                                                                    lineNumber: 770,
                                                                                     columnNumber: 4
                                                                                 }, void 0)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 717,
+                                                                            lineNumber: 768,
                                                                             columnNumber: 31
                                                                         }, void 0)
                                                                     },
@@ -27114,7 +27132,7 @@ const App = ()=>{
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 726,
+                                                                                    lineNumber: 777,
                                                                                     columnNumber: 3
                                                                                 }, void 0),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27124,13 +27142,13 @@ const App = ()=>{
                                                                                     children: "Active"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 727,
+                                                                                    lineNumber: 778,
                                                                                     columnNumber: 4
                                                                                 }, void 0)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 725,
+                                                                            lineNumber: 776,
                                                                             columnNumber: 32
                                                                         }, void 0)
                                                                     },
@@ -27152,7 +27170,7 @@ const App = ()=>{
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 737,
+                                                                                    lineNumber: 788,
                                                                                     columnNumber: 3
                                                                                 }, void 0),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -27166,13 +27184,13 @@ const App = ()=>{
                                                                                     children: "\xa0"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 738,
+                                                                                    lineNumber: 789,
                                                                                     columnNumber: 4
                                                                                 }, void 0)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 736,
+                                                                            lineNumber: 787,
                                                                             columnNumber: 32
                                                                         }, void 0)
                                                                     }
@@ -27181,70 +27199,36 @@ const App = ()=>{
                                                         testId: "site-urls-table"
                                                     }, void 0, false, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 688,
+                                                        lineNumber: 739,
                                                         columnNumber: 27
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 682,
+                                                    lineNumber: 733,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 680,
+                                            lineNumber: 731,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 657,
+                                    lineNumber: 706,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 655,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
-                                    children: [
-                                        _5
-                                    ]
-                                }, void 0, false, {
-                                    fileName: "src/App.tsx",
-                                    lineNumber: 749,
-                                    columnNumber: 3
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _runtime.ax)([
-                                        "_19pkxy5q"
-                                    ]),
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
-                                        appearance: "subtle",
-                                        children: "Revert to org defaults"
-                                    }, void 0, false, {
-                                        fileName: "src/App.tsx",
-                                        lineNumber: 751,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/App.tsx",
-                                    lineNumber: 750,
-                                    columnNumber: 4
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/App.tsx",
-                            lineNumber: 748,
+                            lineNumber: 704,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 633,
+                    lineNumber: 682,
                     columnNumber: 16
                 }, undefined);
             case 'settings':
@@ -27254,14 +27238,14 @@ const App = ()=>{
                             children: "Settings"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 757,
+                            lineNumber: 802,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Configure application settings and preferences."
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 758,
+                            lineNumber: 803,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27272,7 +27256,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 760,
+                                    lineNumber: 805,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27284,7 +27268,7 @@ const App = ()=>{
                                             children: "Application Settings"
                                         }, void 0, false, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 762,
+                                            lineNumber: 807,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27298,7 +27282,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 764,
+                                                    lineNumber: 809,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27310,12 +27294,12 @@ const App = ()=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                     children: [
-                                                                        _63,
-                                                                        _64
+                                                                        _62,
+                                                                        _63
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 767,
+                                                                    lineNumber: 812,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27327,11 +27311,11 @@ const App = ()=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                     children: [
-                                                                                        _65
+                                                                                        _64
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 770,
+                                                                                    lineNumber: 815,
                                                                                     columnNumber: 3
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27341,38 +27325,38 @@ const App = ()=>{
                                                                                     ])
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 771,
+                                                                                    lineNumber: 816,
                                                                                     columnNumber: 4
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 769,
+                                                                            lineNumber: 814,
                                                                             columnNumber: 19
                                                                         }, undefined),
                                                                         "Enable notifications"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 768,
+                                                                    lineNumber: 813,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 766,
+                                                            lineNumber: 811,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                     children: [
-                                                                        _63,
-                                                                        _64
+                                                                        _62,
+                                                                        _63
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 777,
+                                                                    lineNumber: 822,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27384,11 +27368,11 @@ const App = ()=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                     children: [
-                                                                                        _65
+                                                                                        _64
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 780,
+                                                                                    lineNumber: 825,
                                                                                     columnNumber: 3
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27398,37 +27382,37 @@ const App = ()=>{
                                                                                     ])
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 781,
+                                                                                    lineNumber: 826,
                                                                                     columnNumber: 4
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 779,
+                                                                            lineNumber: 824,
                                                                             columnNumber: 19
                                                                         }, undefined),
                                                                         "Auto-save changes"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 778,
+                                                                    lineNumber: 823,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 776,
+                                                            lineNumber: 821,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                     children: [
-                                                                        _63
+                                                                        _62
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 787,
+                                                                    lineNumber: 832,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27440,11 +27424,11 @@ const App = ()=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                                     children: [
-                                                                                        _65
+                                                                                        _64
                                                                                     ]
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 790,
+                                                                                    lineNumber: 835,
                                                                                     columnNumber: 3
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27454,56 +27438,56 @@ const App = ()=>{
                                                                                     ])
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/App.tsx",
-                                                                                    lineNumber: 791,
+                                                                                    lineNumber: 836,
                                                                                     columnNumber: 4
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 789,
+                                                                            lineNumber: 834,
                                                                             columnNumber: 19
                                                                         }, undefined),
                                                                         "Dark mode"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 788,
+                                                                    lineNumber: 833,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 786,
+                                                            lineNumber: 831,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 765,
+                                                    lineNumber: 810,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 763,
+                                            lineNumber: 808,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 761,
+                                    lineNumber: 806,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 759,
+                            lineNumber: 804,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 756,
+                    lineNumber: 801,
                     columnNumber: 16
                 }, undefined);
             case 'reports':
@@ -27513,14 +27497,14 @@ const App = ()=>{
                             children: "Reports"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 803,
+                            lineNumber: 848,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "View analytics and generate reports."
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 804,
+                            lineNumber: 849,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27531,7 +27515,7 @@ const App = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 806,
+                                    lineNumber: 851,
                                     columnNumber: 3
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27543,7 +27527,7 @@ const App = ()=>{
                                             children: "Available Reports"
                                         }, void 0, false, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 808,
+                                            lineNumber: 853,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27558,7 +27542,7 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 810,
+                                                    lineNumber: 855,
                                                     columnNumber: 3
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27574,11 +27558,11 @@ const App = ()=>{
                                                                         _7,
                                                                         _8,
                                                                         _9,
-                                                                        _64
+                                                                        _63
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 813,
+                                                                    lineNumber: 858,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27588,13 +27572,13 @@ const App = ()=>{
                                                                     children: "\uD83D\uDCC8 User Activity Report"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 814,
+                                                                    lineNumber: 859,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 812,
+                                                            lineNumber: 857,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27605,11 +27589,11 @@ const App = ()=>{
                                                                         _7,
                                                                         _8,
                                                                         _9,
-                                                                        _64
+                                                                        _63
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 819,
+                                                                    lineNumber: 864,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27619,13 +27603,13 @@ const App = ()=>{
                                                                     children: "\uD83D\uDCB0 Revenue Report"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 820,
+                                                                    lineNumber: 865,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 818,
+                                                            lineNumber: 863,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
@@ -27639,7 +27623,7 @@ const App = ()=>{
                                                                     ]
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 825,
+                                                                    lineNumber: 870,
                                                                     columnNumber: 3
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27649,43 +27633,43 @@ const App = ()=>{
                                                                     children: "\uD83D\uDD0D System Performance Report"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 826,
+                                                                    lineNumber: 871,
                                                                     columnNumber: 4
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 824,
+                                                            lineNumber: 869,
                                                             columnNumber: 17
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 811,
+                                                    lineNumber: 856,
                                                     columnNumber: 4
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/App.tsx",
-                                            lineNumber: 809,
+                                            lineNumber: 854,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.tsx",
-                                    lineNumber: 807,
+                                    lineNumber: 852,
                                     columnNumber: 4
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.tsx",
-                            lineNumber: 805,
+                            lineNumber: 850,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.tsx",
-                    lineNumber: 802,
+                    lineNumber: 847,
                     columnNumber: 16
                 }, undefined);
             default:
@@ -27693,7 +27677,7 @@ const App = ()=>{
                     children: "Page not found"
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 836,
+                    lineNumber: 881,
                     columnNumber: 16
                 }, undefined);
         }
@@ -27703,13 +27687,13 @@ const App = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                 children: [
                     _18,
+                    _65,
                     _66,
-                    _67,
-                    _68
+                    _67
                 ]
             }, void 0, false, {
                 fileName: "src/App.tsx",
-                lineNumber: 840,
+                lineNumber: 885,
                 columnNumber: 3
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27721,18 +27705,18 @@ const App = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                 children: [
-                                    _69,
+                                    _68,
                                     _16,
+                                    _69,
                                     _70,
-                                    _71,
                                     _18,
                                     _19,
-                                    _72,
+                                    _71,
                                     _20
                                 ]
                             }, void 0, false, {
                                 fileName: "src/App.tsx",
-                                lineNumber: 844,
+                                lineNumber: 889,
                                 columnNumber: 3
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27744,19 +27728,19 @@ const App = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                 children: [
+                                                    _72,
                                                     _73,
                                                     _74,
                                                     _75,
                                                     _76,
-                                                    _77,
                                                     _1,
                                                     _18,
-                                                    _78,
-                                                    _79
+                                                    _77,
+                                                    _78
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 847,
+                                                lineNumber: 892,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27766,31 +27750,31 @@ const App = ()=>{
                                                 children: "Admin MCP"
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 848,
+                                                lineNumber: 893,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 846,
+                                        lineNumber: 891,
                                         columnNumber: 9
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                 children: [
-                                                    _59,
+                                                    _58,
+                                                    _79,
                                                     _80,
                                                     _81,
-                                                    _82,
                                                     _18,
-                                                    _83,
+                                                    _82,
                                                     _19,
-                                                    _84
+                                                    _83
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 855,
+                                                lineNumber: 900,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27802,16 +27786,16 @@ const App = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                 children: [
+                                                                    _84,
                                                                     _85,
                                                                     _86,
                                                                     _87,
                                                                     _88,
-                                                                    _89,
-                                                                    _90
+                                                                    _89
                                                                 ]
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 858,
+                                                                lineNumber: 903,
                                                                 columnNumber: 3
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27822,33 +27806,33 @@ const App = ()=>{
                                                                     label: "Search"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 860,
+                                                                    lineNumber: 905,
                                                                     columnNumber: 13
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 859,
+                                                                lineNumber: 904,
                                                                 columnNumber: 4
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 857,
+                                                        lineNumber: 902,
                                                         columnNumber: 11
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                 children: [
-                                                                    _81,
                                                                     _80,
+                                                                    _79,
+                                                                    _90,
                                                                     _91,
-                                                                    _92,
-                                                                    _93
+                                                                    _92
                                                                 ]
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 864,
+                                                                lineNumber: 909,
                                                                 columnNumber: 3
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27859,48 +27843,48 @@ const App = ()=>{
                                                                     children: "Create"
                                                                 }, void 0, false, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 866,
+                                                                    lineNumber: 911,
                                                                     columnNumber: 13
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 865,
+                                                                lineNumber: 910,
                                                                 columnNumber: 4
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 863,
+                                                        lineNumber: 908,
                                                         columnNumber: 11
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 856,
+                                                lineNumber: 901,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 854,
+                                        lineNumber: 899,
                                         columnNumber: 9
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                 children: [
+                                                    _72,
                                                     _73,
                                                     _74,
-                                                    _75,
-                                                    _59,
+                                                    _58,
                                                     _18,
                                                     _19,
-                                                    _94,
-                                                    _79
+                                                    _93,
+                                                    _78
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 873,
+                                                lineNumber: 918,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27915,7 +27899,7 @@ const App = ()=>{
                                                         children: "\xa0"
                                                     }, void 0, false, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 875,
+                                                        lineNumber: 920,
                                                         columnNumber: 11
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
@@ -27925,27 +27909,27 @@ const App = ()=>{
                                                         children: "\xa0"
                                                     }, void 0, false, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 878,
+                                                        lineNumber: 923,
                                                         columnNumber: 11
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                 children: [
+                                                                    _94,
                                                                     _95,
                                                                     _96,
                                                                     _97,
-                                                                    _98,
                                                                     _18,
                                                                     _19,
-                                                                    _83,
-                                                                    _76,
+                                                                    _82,
+                                                                    _75,
                                                                     _26,
                                                                     _1
                                                                 ]
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 882,
+                                                                lineNumber: 927,
                                                                 columnNumber: 3
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27955,52 +27939,52 @@ const App = ()=>{
                                                                 children: "AF"
                                                             }, void 0, false, {
                                                                 fileName: "src/App.tsx",
-                                                                lineNumber: 883,
+                                                                lineNumber: 928,
                                                                 columnNumber: 4
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/App.tsx",
-                                                        lineNumber: 881,
+                                                        lineNumber: 926,
                                                         columnNumber: 11
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 874,
+                                                lineNumber: 919,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 872,
+                                        lineNumber: 917,
                                         columnNumber: 9
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.tsx",
-                                lineNumber: 845,
+                                lineNumber: 890,
                                 columnNumber: 4
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.tsx",
-                        lineNumber: 843,
+                        lineNumber: 888,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                 children: [
+                                    _72,
                                     _73,
                                     _74,
-                                    _75,
                                     _18,
-                                    _99
+                                    _98
                                 ]
                             }, void 0, false, {
                                 fileName: "src/App.tsx",
-                                lineNumber: 894,
+                                lineNumber: 939,
                                 columnNumber: 3
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28012,17 +27996,17 @@ const App = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                 children: [
+                                                    _99,
                                                     _100,
                                                     _101,
                                                     _102,
-                                                    _103,
-                                                    _71,
+                                                    _70,
                                                     _18,
-                                                    _66
+                                                    _65
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 898,
+                                                lineNumber: 943,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28034,13 +28018,13 @@ const App = ()=>{
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                             children: [
                                                                 _15,
+                                                                _72,
                                                                 _73,
-                                                                _74,
-                                                                _75
+                                                                _74
                                                             ]
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 901,
+                                                            lineNumber: 946,
                                                             columnNumber: 3
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -28051,29 +28035,29 @@ const App = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                                             children: [
+                                                                                _103,
                                                                                 _104,
                                                                                 _105,
                                                                                 _106,
-                                                                                _107,
-                                                                                _63,
+                                                                                _62,
                                                                                 _30,
+                                                                                _107,
                                                                                 _108,
-                                                                                _109,
-                                                                                _76,
+                                                                                _75,
                                                                                 _26,
                                                                                 _42,
-                                                                                _110,
+                                                                                _109,
                                                                                 _39,
                                                                                 _40,
+                                                                                _110,
                                                                                 _111,
                                                                                 _112,
-                                                                                _113,
                                                                                 _1,
-                                                                                _114
+                                                                                _113
                                                                             ]
                                                                         }, void 0, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 904,
+                                                                            lineNumber: 949,
                                                                             columnNumber: 3
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28085,52 +28069,52 @@ const App = ()=>{
                                                                             children: item.label
                                                                         }, item.id, false, {
                                                                             fileName: "src/App.tsx",
-                                                                            lineNumber: 905,
+                                                                            lineNumber: 950,
                                                                             columnNumber: 4
                                                                         }, undefined)
                                                                     ]
                                                                 }, item.id, true, {
                                                                     fileName: "src/App.tsx",
-                                                                    lineNumber: 903,
+                                                                    lineNumber: 948,
                                                                     columnNumber: 35
                                                                 }, undefined))
                                                         }, void 0, false, {
                                                             fileName: "src/App.tsx",
-                                                            lineNumber: 902,
+                                                            lineNumber: 947,
                                                             columnNumber: 4
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/App.tsx",
-                                                    lineNumber: 900,
+                                                    lineNumber: 945,
                                                     columnNumber: 11
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 899,
+                                                lineNumber: 944,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 897,
+                                        lineNumber: 942,
                                         columnNumber: 9
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CC), {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _runtime.CS), {
                                                 children: [
+                                                    _72,
                                                     _73,
                                                     _74,
-                                                    _75,
                                                     _33,
+                                                    _99,
                                                     _100,
-                                                    _101,
-                                                    _71
+                                                    _70
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 916,
+                                                lineNumber: 961,
                                                 columnNumber: 3
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28140,41 +28124,119 @@ const App = ()=>{
                                                 children: renderContent()
                                             }, void 0, false, {
                                                 fileName: "src/App.tsx",
-                                                lineNumber: 917,
+                                                lineNumber: 962,
                                                 columnNumber: 4
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.tsx",
-                                        lineNumber: 915,
+                                        lineNumber: 960,
                                         columnNumber: 9
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.tsx",
-                                lineNumber: 895,
+                                lineNumber: 940,
                                 columnNumber: 4
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.tsx",
-                        lineNumber: 893,
+                        lineNumber: 938,
                         columnNumber: 7
+                    }, undefined),
+                    isRevertModalOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDialogDefault.default), {
+                        onClose: handleCancelRevert,
+                        width: "small",
+                        testId: "danger-modal",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDialog.ModalHeader), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDialog.ModalTitle), {
+                                    children: "Revert to organization defaults?"
+                                }, void 0, false, {
+                                    fileName: "src/App.tsx",
+                                    lineNumber: 972,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 971,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDialog.ModalBody), {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: "This will replace all site-specific URLs with your organization's default URL list. Any custom URLs configured for this site will be lost."
+                                    }, void 0, false, {
+                                        fileName: "src/App.tsx",
+                                        lineNumber: 975,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: "This action cannot be undone."
+                                        }, void 0, false, {
+                                            fileName: "src/App.tsx",
+                                            lineNumber: 980,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/App.tsx",
+                                        lineNumber: 979,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 974,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDialog.ModalFooter), {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
+                                        appearance: "subtle",
+                                        onClick: handleCancelRevert,
+                                        children: "Cancel"
+                                    }, void 0, false, {
+                                        fileName: "src/App.tsx",
+                                        lineNumber: 984,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newDefault.default), {
+                                        appearance: "danger",
+                                        onClick: handleConfirmRevert,
+                                        children: "Revert to defaults"
+                                    }, void 0, false, {
+                                        fileName: "src/App.tsx",
+                                        lineNumber: 987,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 983,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 970,
+                        columnNumber: 29
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 841,
+                lineNumber: 886,
                 columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.tsx",
-        lineNumber: 839,
+        lineNumber: 884,
         columnNumber: 10
     }, undefined);
 };
-_s(App, "qyPrhOCYN8hebIEkl0nCznH+iUE=");
+_s(App, "vl9UYy3MT6CUBI74j9pZXH3UwqQ=");
 _c = App;
 exports.default = App;
 var _c;
@@ -28185,7 +28247,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@compiled/react/runtime":"eGy18","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@atlaskit/icon/glyph/notification":"bi0Pb","@atlaskit/icon/glyph/question":"cVWXB","@atlaskit/navigation-system/top-nav-items":"hmaM5","@atlaskit/button/new":"jGwqc","@atlaskit/css-reset":"94cat","@atlaskit/tabs":"8E01h","@atlaskit/textfield":"iWm4W","@atlaskit/dynamic-table":"dbg8K","@atlaskit/icon/glyph/trash":"gfSKs","@atlaskit/logo":"4T6WN","@atlaskit/icon/glyph/edit":"kgNUm"}],"eGy18":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@compiled/react/runtime":"eGy18","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@atlaskit/icon/glyph/notification":"bi0Pb","@atlaskit/icon/glyph/question":"cVWXB","@atlaskit/navigation-system/top-nav-items":"hmaM5","@atlaskit/button/new":"jGwqc","@atlaskit/css-reset":"94cat","@atlaskit/tabs":"8E01h","@atlaskit/textfield":"iWm4W","@atlaskit/dynamic-table":"dbg8K","@atlaskit/modal-dialog":"1Upub","@atlaskit/icon/glyph/trash":"gfSKs","@atlaskit/icon/glyph/edit":"kgNUm","@atlaskit/logo":"4T6WN"}],"eGy18":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CC", ()=>(0, _index.CC));
@@ -28216,7 +28278,7 @@ var _acDefault = parcelHelpers.interopDefault(_ac);
 var _cssCustomProperty = require("./css-custom-property");
 var _cssCustomPropertyDefault = parcelHelpers.interopDefault(_cssCustomProperty);
 
-},{"./style":"fZO1T","./style-cache":"6YW1f","./ax":"3EkRO","./ac":false,"./css-custom-property":"5DvWD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fZO1T":[function(require,module,exports,__globalThis) {
+},{"./style":"fZO1T","./style-cache":"6YW1f","./ax":"3EkRO","./ac":false,"./css-custom-property":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fZO1T":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>Style);
@@ -28495,32 +28557,6 @@ function ax(classNames) {
         str += value + ' ';
     }
     return str.slice(0, -1);
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5DvWD":[function(require,module,exports,__globalThis) {
-/**
- * Returns a CSS custom property value with an optional suffix & prefix.
- * Prefix will only be added if there is a suffix.
- * If the value is undefined a fallback value will be returned to prevent children inheriting parent values.
- *
- * @param value
- * @param suffix
- * @param prefix
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>cssCustomPropertyValue);
-function cssCustomPropertyValue(value, suffix, prefix) {
-    if (value != undefined) {
-        if (suffix) {
-            if (prefix) return prefix + value + suffix;
-            return value + suffix;
-        }
-        return value;
-    }
-    // Currently React trims these values so we can't use a space " " to block the value.
-    // Instead we use a CSS variable that doesn't exist which falls back to " ".
-    // Bug raised here: https://github.com/facebook/react/issues/20497
-    return 'var(--c-, )';
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7h6Pi":[function(require,module,exports,__globalThis) {
@@ -47332,6 +47368,18 @@ var exitingDurations = {
     large: durations.large * EXITING_MOTION_MULTIPLIER
 };
 
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i4R7D":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "easeInOut", ()=>easeInOut);
+parcelHelpers.export(exports, "easeOut", ()=>easeOut);
+parcelHelpers.export(exports, "easeIn", ()=>easeIn);
+parcelHelpers.export(exports, "linear", ()=>linear);
+var easeInOut = 'cubic-bezier(0.15,1,0.3,1)';
+var easeOut = 'cubic-bezier(0.2,0,0,1)';
+var easeIn = 'cubic-bezier(0.8,0,0,0.8)';
+var linear = 'cubic-bezier(0,0,1,1)';
+
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8rpwc":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -58081,407 +58129,175 @@ exports.default = TableHeadCellOld;
 },{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/objectWithoutProperties":"j8lr0","react":"jMk1U","../styled/table-head":"2UImB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fTZq0":[function(require,module,exports,__globalThis) {
 module.exports = import("./body.151851e3.js").then(()=>module.bundle.root('9QcLa'));
 
-},{"9QcLa":"9QcLa"}],"gfSKs":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("dabfdf05ae562c31"));
-var _base = require("4abfa074cd4c3eea");
-var _delete = _interopRequireDefault(require("25d38fc24289b921"));
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-const TrashIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.UNSAFE_IconFacade, Object.assign({
-        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M5 5a1 1 0 0 0-1 1v1h16V6a1 1 0 0 0-1-1zm11.15 15h-8.3a1 1 0 0 1-.99-.83L5 8h14l-1.86 11.17a1 1 0 0 1-.99.83M9 4.5a.5.5 0 0 1 .49-.5h5.02a.5.5 0 0 1 .49.5V5H9z"/></svg>`
-    }, props, {
-        newIcon: _delete.default
-    }));
-TrashIcon.displayName = 'TrashIcon';
-var _default = exports.default = TrashIcon;
-
-},{"dabfdf05ae562c31":"jMk1U","4abfa074cd4c3eea":"iJoYh","25d38fc24289b921":"jovPt"}],"jovPt":[function(require,module,exports,__globalThis) {
-/**
- * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
- * @codegen <<SignedSource::a0de62c85427fa688b203192cfaed36b>>
- * @codegenCommand yarn build:icon-glyphs
- */ "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("bd776f65d72659c3"));
-var _UNSAFE_baseNew = _interopRequireDefault(require("9b0e628cd3576015"));
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-/**
- * ⚠️ EXPERIMENTAL ⚠️ - New icons are in alpha - and subject to change or removal in future minor or patch releases.
- * Please reach out in #icon-contributions before using these in production.
- *
- * Icon: "Delete".
- * Category: single-purpose
- * Location: @atlaskit/icon
- * Usage guidance: Single purpose - Reserved for removing or deleting an object.
- * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
- * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
- */ const DeleteIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_UNSAFE_baseNew.default, Object.assign({
-        dangerouslySetGlyph: `<path stroke="currentcolor" stroke-linejoin="round" stroke-width="1.5" d="M12.75 3.25V14c0 .69-.56 1.25-1.25 1.25h-7c-.69 0-1.25-.56-1.25-1.25V3.25m9.5 0h1.75m-1.75 0h-2.5m-7 0H1.5m1.75 0h2.5m0 0V.75h4.5v2.5m-4.5 0h4.5M6.5 5.5V13m3-7.5V13"/>`
-    }, props));
-DeleteIcon.displayName = 'DeleteIcon';
-var _default = exports.default = DeleteIcon;
-
-},{"bd776f65d72659c3":"jMk1U","9b0e628cd3576015":"4oZdW"}],"4T6WN":[function(require,module,exports,__globalThis) {
+},{"9QcLa":"9QcLa"}],"1Upub":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AtlasIcon", ()=>(0, _atlas.AtlasIcon));
-parcelHelpers.export(exports, "AtlasLogo", ()=>(0, _atlas.AtlasLogo));
-parcelHelpers.export(exports, "AtlassianMarketplaceIcon", ()=>(0, _atlassianMarketplace.AtlassianMarketplaceIcon));
-parcelHelpers.export(exports, "AtlassianMarketplaceLogo", ()=>(0, _atlassianMarketplace.AtlassianMarketplaceLogo));
-parcelHelpers.export(exports, "AtlassianAccessIcon", ()=>(0, _atlassianAccess.AtlassianAccessIcon));
-parcelHelpers.export(exports, "AtlassianAccessLogo", ()=>(0, _atlassianAccess.AtlassianAccessLogo));
-parcelHelpers.export(exports, "JiraWorkManagementLogo", ()=>(0, _jiraWorkManagement.JiraWorkManagementLogo));
-parcelHelpers.export(exports, "JiraWorkManagementIcon", ()=>(0, _jiraWorkManagement.JiraWorkManagementIcon));
-parcelHelpers.export(exports, "AtlassianIcon", ()=>(0, _atlassian.AtlassianIcon));
-parcelHelpers.export(exports, "AtlassianLogo", ()=>(0, _atlassian.AtlassianLogo));
-parcelHelpers.export(exports, "JiraSoftwareIcon", ()=>(0, _jiraSoftware.JiraSoftwareIcon));
-parcelHelpers.export(exports, "JiraSoftwareLogo", ()=>(0, _jiraSoftware.JiraSoftwareLogo));
-parcelHelpers.export(exports, "AdminIcon", ()=>AdminIcon);
-parcelHelpers.export(exports, "AdminLogo", ()=>AdminLogo);
-parcelHelpers.export(exports, "AnalyticsIcon", ()=>AnalyticsIcon);
-parcelHelpers.export(exports, "AnalyticsLogo", ()=>AnalyticsLogo);
-parcelHelpers.export(exports, "AssetsIcon", ()=>AssetsIcon);
-parcelHelpers.export(exports, "AssetsLogo", ()=>AssetsLogo);
-parcelHelpers.export(exports, "ChatIcon", ()=>ChatIcon);
-parcelHelpers.export(exports, "ChatLogo", ()=>ChatLogo);
-parcelHelpers.export(exports, "CustomerServiceManagementIcon", ()=>CustomerServiceManagementIcon);
-parcelHelpers.export(exports, "CustomerServiceManagementLogo", ()=>CustomerServiceManagementLogo);
-parcelHelpers.export(exports, "GoalsIcon", ()=>GoalsIcon);
-parcelHelpers.export(exports, "GoalsLogo", ()=>GoalsLogo);
-parcelHelpers.export(exports, "HomeIcon", ()=>HomeIcon);
-parcelHelpers.export(exports, "HomeLogo", ()=>HomeLogo);
-parcelHelpers.export(exports, "HubIcon", ()=>HubIcon);
-parcelHelpers.export(exports, "HubLogo", ()=>HubLogo);
-parcelHelpers.export(exports, "ProjectsIcon", ()=>ProjectsIcon);
-parcelHelpers.export(exports, "ProjectsLogo", ()=>ProjectsLogo);
-parcelHelpers.export(exports, "SearchIcon", ()=>SearchIcon);
-parcelHelpers.export(exports, "SearchLogo", ()=>SearchLogo);
-parcelHelpers.export(exports, "StudioIcon", ()=>StudioIcon);
-parcelHelpers.export(exports, "StudioLogo", ()=>StudioLogo);
-parcelHelpers.export(exports, "TalentIcon", ()=>TalentIcon);
-parcelHelpers.export(exports, "TalentLogo", ()=>TalentLogo);
-parcelHelpers.export(exports, "TeamsIcon", ()=>TeamsIcon);
-parcelHelpers.export(exports, "TeamsLogo", ()=>TeamsLogo);
-parcelHelpers.export(exports, "BambooIcon", ()=>BambooIcon);
-parcelHelpers.export(exports, "BambooLogo", ()=>BambooLogo);
-parcelHelpers.export(exports, "BitbucketDataCenterIcon", ()=>BitbucketDataCenterIcon);
-parcelHelpers.export(exports, "BitbucketDataCenterLogo", ()=>BitbucketDataCenterLogo);
-parcelHelpers.export(exports, "ConfluenceDataCenterIcon", ()=>ConfluenceDataCenterIcon);
-parcelHelpers.export(exports, "ConfluenceDataCenterLogo", ()=>ConfluenceDataCenterLogo);
-parcelHelpers.export(exports, "CrowdIcon", ()=>CrowdIcon);
-parcelHelpers.export(exports, "CrowdLogo", ()=>CrowdLogo);
-parcelHelpers.export(exports, "JiraDataCenterIcon", ()=>JiraDataCenterIcon);
-parcelHelpers.export(exports, "JiraDataCenterLogo", ()=>JiraDataCenterLogo);
-parcelHelpers.export(exports, "AtlassianAdministrationIcon", ()=>AtlassianAdministrationIcon);
-parcelHelpers.export(exports, "AtlassianAdministrationLogo", ()=>AtlassianAdministrationLogo);
-parcelHelpers.export(exports, "AtlassianAdminIcon", ()=>AtlassianAdminIcon);
-parcelHelpers.export(exports, "AtlassianAdminLogo", ()=>AtlassianAdminLogo);
-parcelHelpers.export(exports, "AtlassianAnalyticsIcon", ()=>AtlassianAnalyticsIcon);
-parcelHelpers.export(exports, "AtlassianAnalyticsLogo", ()=>AtlassianAnalyticsLogo);
-parcelHelpers.export(exports, "BitbucketIcon", ()=>BitbucketIcon);
-parcelHelpers.export(exports, "BitbucketLogo", ()=>BitbucketLogo);
-parcelHelpers.export(exports, "CompassIcon", ()=>CompassIcon);
-parcelHelpers.export(exports, "CompassLogo", ()=>CompassLogo);
-parcelHelpers.export(exports, "ConfluenceIcon", ()=>ConfluenceIcon);
-parcelHelpers.export(exports, "ConfluenceLogo", ()=>ConfluenceLogo);
-parcelHelpers.export(exports, "AlignIcon", ()=>AlignIcon);
-parcelHelpers.export(exports, "AlignLogo", ()=>AlignLogo);
-parcelHelpers.export(exports, "JiraAlignIcon", ()=>JiraAlignIcon);
-parcelHelpers.export(exports, "JiraAlignLogo", ()=>JiraAlignLogo);
-parcelHelpers.export(exports, "JiraIcon", ()=>JiraIcon);
-parcelHelpers.export(exports, "JiraLogo", ()=>JiraLogo);
-parcelHelpers.export(exports, "JiraProductDiscoveryIcon", ()=>JiraProductDiscoveryIcon);
-parcelHelpers.export(exports, "JiraProductDiscoveryLogo", ()=>JiraProductDiscoveryLogo);
-parcelHelpers.export(exports, "JiraServiceManagementIcon", ()=>JiraServiceManagementIcon);
-parcelHelpers.export(exports, "JiraServiceManagementLogo", ()=>JiraServiceManagementLogo);
-parcelHelpers.export(exports, "LoomIcon", ()=>LoomIcon);
-parcelHelpers.export(exports, "LoomLogo", ()=>LoomLogo);
-parcelHelpers.export(exports, "LoomAttributionIcon", ()=>LoomAttributionIcon);
-parcelHelpers.export(exports, "LoomAttributionLogo", ()=>LoomAttributionLogo);
-parcelHelpers.export(exports, "LoomBlurpleLogo", ()=>LoomBlurpleLogo);
-parcelHelpers.export(exports, "LoomBlurpleIcon", ()=>LoomBlurpleIcon);
-parcelHelpers.export(exports, "OpsgenieIcon", ()=>OpsgenieIcon);
-parcelHelpers.export(exports, "OpsgenieLogo", ()=>OpsgenieLogo);
-parcelHelpers.export(exports, "StatuspageIcon", ()=>StatuspageIcon);
-parcelHelpers.export(exports, "StatuspageLogo", ()=>StatuspageLogo);
-parcelHelpers.export(exports, "TrelloIcon", ()=>TrelloIcon);
-parcelHelpers.export(exports, "TrelloLogo", ()=>TrelloLogo);
-parcelHelpers.export(exports, "RovoIcon", ()=>RovoIcon);
-parcelHelpers.export(exports, "RovoLogo", ()=>RovoLogo);
-parcelHelpers.export(exports, "GuardIcon", ()=>GuardIcon);
-parcelHelpers.export(exports, "GuardLogo", ()=>GuardLogo);
-parcelHelpers.export(exports, "FocusIcon", ()=>FocusIcon);
-parcelHelpers.export(exports, "FocusLogo", ()=>FocusLogo);
-var _admin = require("@atlaskit/temp-nav-app-icons/admin");
-var _align = require("@atlaskit/temp-nav-app-icons/align");
-var _analytics = require("@atlaskit/temp-nav-app-icons/analytics");
-var _assets = require("@atlaskit/temp-nav-app-icons/assets");
-var _bamboo = require("@atlaskit/temp-nav-app-icons/bamboo");
-var _bitbucket = require("@atlaskit/temp-nav-app-icons/bitbucket");
-var _bitbucketDataCenter = require("@atlaskit/temp-nav-app-icons/bitbucket-data-center");
-var _chat = require("@atlaskit/temp-nav-app-icons/chat");
-var _compass = require("@atlaskit/temp-nav-app-icons/compass");
-var _confluence = require("@atlaskit/temp-nav-app-icons/confluence");
-var _confluenceDataCenter = require("@atlaskit/temp-nav-app-icons/confluence-data-center");
-var _crowd = require("@atlaskit/temp-nav-app-icons/crowd");
-var _customerServiceManagement = require("@atlaskit/temp-nav-app-icons/customer-service-management");
-var _focus = require("@atlaskit/temp-nav-app-icons/focus");
-var _goals = require("@atlaskit/temp-nav-app-icons/goals");
-var _guard = require("@atlaskit/temp-nav-app-icons/guard");
-var _home = require("@atlaskit/temp-nav-app-icons/home");
-var _hub = require("@atlaskit/temp-nav-app-icons/hub");
-var _jira = require("@atlaskit/temp-nav-app-icons/jira");
-var _jiraDataCenter = require("@atlaskit/temp-nav-app-icons/jira-data-center");
-var _jiraProductDiscovery = require("@atlaskit/temp-nav-app-icons/jira-product-discovery");
-var _jiraServiceManagement = require("@atlaskit/temp-nav-app-icons/jira-service-management");
-var _loom = require("@atlaskit/temp-nav-app-icons/loom");
-var _loomAttribution = require("@atlaskit/temp-nav-app-icons/loom-attribution");
-var _loomInternal = require("@atlaskit/temp-nav-app-icons/loom-internal");
-var _opsgenie = require("@atlaskit/temp-nav-app-icons/opsgenie");
-var _projects = require("@atlaskit/temp-nav-app-icons/projects");
-var _rovo = require("@atlaskit/temp-nav-app-icons/rovo");
-var _search = require("@atlaskit/temp-nav-app-icons/search");
-var _statuspage = require("@atlaskit/temp-nav-app-icons/statuspage");
-var _studio = require("@atlaskit/temp-nav-app-icons/studio");
-var _talent = require("@atlaskit/temp-nav-app-icons/talent");
-var _teams = require("@atlaskit/temp-nav-app-icons/teams");
-var _trello = require("@atlaskit/temp-nav-app-icons/trello");
-var _atlassianAdmin = require("./legacy-logos/atlassian-admin");
-var _atlassianAdministration = require("./legacy-logos/atlassian-administration");
-var _atlassianAnalytics = require("./legacy-logos/atlassian-analytics");
-var _bitbucket1 = require("./legacy-logos/bitbucket");
-var _compass1 = require("./legacy-logos/compass");
-var _confluence1 = require("./legacy-logos/confluence");
-var _focus1 = require("./legacy-logos/focus");
-var _guard1 = require("./legacy-logos/guard");
-var _jira1 = require("./legacy-logos/jira");
-var _jiraAlign = require("./legacy-logos/jira-align");
-var _jiraProductDiscovery1 = require("./legacy-logos/jira-product-discovery");
-var _jiraServiceManagement1 = require("./legacy-logos/jira-service-management");
-var _loom1 = require("./legacy-logos/loom");
-var _loomAttribution1 = require("./legacy-logos/loom-attribution");
-var _opsgenie1 = require("./legacy-logos/opsgenie");
-var _rovo1 = require("./legacy-logos/rovo");
-var _statuspage1 = require("./legacy-logos/statuspage");
-var _trello1 = require("./legacy-logos/trello");
-var _atlas = require("./legacy-logos/atlas");
-var _atlassianMarketplace = require("./legacy-logos/atlassian-marketplace");
-var _atlassianAccess = require("./legacy-logos/atlassian-access");
-var _jiraWorkManagement = require("./legacy-logos/jira-work-management");
-var _atlassian = require("./legacy-logos/atlassian");
-var _jiraSoftware = require("./legacy-logos/jira-software");
-var _logoConfig = require("./logo-config");
-var AdminIcon = (0, _logoConfig.tempSizeWrapper)((0, _admin.AdminIcon));
-var AdminLogo = (0, _logoConfig.tempSizeWrapper)((0, _admin.AdminLogoCS));
-var AnalyticsIcon = (0, _logoConfig.tempSizeWrapper)((0, _analytics.AnalyticsIcon));
-var AnalyticsLogo = (0, _logoConfig.tempSizeWrapper)((0, _analytics.AnalyticsLogoCS));
-var AssetsIcon = (0, _logoConfig.tempSizeWrapper)((0, _assets.AssetsIcon));
-var AssetsLogo = (0, _logoConfig.tempSizeWrapper)((0, _assets.AssetsLogoCS));
-var ChatIcon = (0, _logoConfig.tempSizeWrapper)((0, _chat.ChatIcon));
-var ChatLogo = (0, _logoConfig.tempSizeWrapper)((0, _chat.ChatLogoCS));
-var CustomerServiceManagementIcon = (0, _logoConfig.tempSizeWrapper)((0, _customerServiceManagement.CustomerServiceManagementIcon));
-var CustomerServiceManagementLogo = (0, _logoConfig.tempSizeWrapper)((0, _customerServiceManagement.CustomerServiceManagementLogoCS));
-var GoalsIcon = (0, _logoConfig.tempSizeWrapper)((0, _goals.GoalsIcon));
-var GoalsLogo = (0, _logoConfig.tempSizeWrapper)((0, _goals.GoalsLogoCS));
-var HomeIcon = (0, _logoConfig.tempSizeWrapper)((0, _home.HomeIcon));
-var HomeLogo = (0, _logoConfig.tempSizeWrapper)((0, _home.HomeLogoCS));
-var HubIcon = (0, _logoConfig.tempSizeWrapper)((0, _hub.HubIcon));
-var HubLogo = (0, _logoConfig.tempSizeWrapper)((0, _hub.HubLogoCS));
-var ProjectsIcon = (0, _logoConfig.tempSizeWrapper)((0, _projects.ProjectsIcon));
-var ProjectsLogo = (0, _logoConfig.tempSizeWrapper)((0, _projects.ProjectsLogoCS));
-var SearchIcon = (0, _logoConfig.tempSizeWrapper)((0, _search.SearchIcon));
-var SearchLogo = (0, _logoConfig.tempSizeWrapper)((0, _search.SearchLogoCS));
-var StudioIcon = (0, _logoConfig.tempSizeWrapper)((0, _studio.StudioIcon));
-var StudioLogo = (0, _logoConfig.tempSizeWrapper)((0, _studio.StudioLogoCS));
-var TalentIcon = (0, _logoConfig.tempSizeWrapper)((0, _talent.TalentIcon));
-var TalentLogo = (0, _logoConfig.tempSizeWrapper)((0, _talent.TalentLogoCS));
-var TeamsIcon = (0, _logoConfig.tempSizeWrapper)((0, _teams.TeamsIcon));
-var TeamsLogo = (0, _logoConfig.tempSizeWrapper)((0, _teams.TeamsLogoCS));
-var BambooIcon = (0, _logoConfig.tempSizeWrapper)((0, _bamboo.BambooIcon));
-var BambooLogo = (0, _logoConfig.tempSizeWrapper)((0, _bamboo.BambooLogoCS));
-var BitbucketDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _bitbucketDataCenter.BitbucketDataCenterIcon));
-var BitbucketDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _bitbucketDataCenter.BitbucketDataCenterLogoCS));
-var ConfluenceDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _confluenceDataCenter.ConfluenceDataCenterIcon));
-var ConfluenceDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _confluenceDataCenter.ConfluenceDataCenterLogoCS));
-var CrowdIcon = (0, _logoConfig.tempSizeWrapper)((0, _crowd.CrowdIcon));
-var CrowdLogo = (0, _logoConfig.tempSizeWrapper)((0, _crowd.CrowdLogoCS));
-var JiraDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _jiraDataCenter.JiraDataCenterIcon));
-var JiraDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _jiraDataCenter.JiraDataCenterLogoCS));
-var AtlassianAdministrationIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdministration.AtlassianAdministrationIcon), (0, _admin.AdminIcon));
-var AtlassianAdministrationLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdministration.AtlassianAdministrationLogo), (0, _admin.AdminLogoCS));
-var AtlassianAdminIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdmin.AtlassianAdminIcon), (0, _admin.AdminIcon));
-var AtlassianAdminLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdmin.AtlassianAdminLogo), (0, _admin.AdminLogoCS));
-var AtlassianAnalyticsIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAnalytics.AtlassianAnalyticsIcon), (0, _analytics.AnalyticsIcon));
-var AtlassianAnalyticsLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAnalytics.AtlassianAnalyticsLogo), (0, _analytics.AnalyticsLogoCS));
-var BitbucketIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _bitbucket1.BitbucketIcon), (0, _bitbucket.BitbucketIcon));
-var BitbucketLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _bitbucket1.BitbucketLogo), (0, _bitbucket.BitbucketLogoCS));
-var CompassIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _compass1.CompassIcon), (0, _compass.CompassIcon));
-var CompassLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _compass1.CompassLogo), (0, _compass.CompassLogoCS));
-var ConfluenceIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _confluence1.ConfluenceIcon), (0, _confluence.ConfluenceIcon));
-var ConfluenceLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _confluence1.ConfluenceLogo), (0, _confluence.ConfluenceLogoCS));
-var AlignIcon = (0, _logoConfig.tempSizeWrapper)((0, _align.AlignIcon));
-var AlignLogo = (0, _logoConfig.tempSizeWrapper)((0, _align.AlignLogoCS));
-var JiraAlignIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraAlign.JiraAlignIcon), (0, _align.AlignIcon));
-var JiraAlignLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraAlign.JiraAlignLogo), (0, _align.AlignLogoCS));
-var JiraIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jira1.JiraIcon), (0, _jira.JiraIcon));
-var JiraLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jira1.JiraLogo), (0, _jira.JiraLogoCS));
-var JiraProductDiscoveryIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraProductDiscovery1.JiraProductDiscoveryIcon), (0, _jiraProductDiscovery.JiraProductDiscoveryIcon));
-var JiraProductDiscoveryLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraProductDiscovery1.JiraProductDiscoveryLogo), (0, _jiraProductDiscovery.JiraProductDiscoveryLogoCS));
-var JiraServiceManagementIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraServiceManagement1.JiraServiceManagementIcon), (0, _jiraServiceManagement.JiraServiceManagementIcon));
-var JiraServiceManagementLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraServiceManagement1.JiraServiceManagementLogo), (0, _jiraServiceManagement.JiraServiceManagementLogoCS));
-var LoomIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loom1.LoomIcon), (0, _loom.LoomIcon));
-var LoomLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loom1.LoomLogo), (0, _loom.LoomLogoCS));
-var LoomAttributionIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loomAttribution1.LoomAttributionIcon), (0, _loom.LoomIcon));
-var LoomAttributionLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loomAttribution1.LoomAttributionLogo), (0, _loomAttribution.LoomAttributionLogoCS));
-var LoomBlurpleLogo = (0, _logoConfig.tempSizeWrapper)((0, _loomInternal.LoomInternalLogoCS));
-var LoomBlurpleIcon = (0, _logoConfig.tempSizeWrapper)((0, _loomInternal.LoomInternalIcon));
-var OpsgenieIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _opsgenie1.OpsgenieIcon), (0, _opsgenie.OpsgenieIcon));
-var OpsgenieLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _opsgenie1.OpsgenieLogo), (0, _opsgenie.OpsgenieLogoCS));
-var StatuspageIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _statuspage1.StatuspageIcon), (0, _statuspage.StatuspageIcon));
-var StatuspageLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _statuspage1.StatuspageLogo), (0, _statuspage.StatuspageLogoCS));
-var TrelloIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _trello1.TrelloIcon), (0, _trello.TrelloIcon));
-var TrelloLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _trello1.TrelloLogo), (0, _trello.TrelloLogoCS));
-var RovoIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _rovo1.RovoIcon), (0, _rovo.RovoIcon));
-var RovoLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _rovo1.RovoLogo), (0, _rovo.RovoLogoCS));
-var GuardIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _guard1.GuardIcon), (0, _guard.GuardIcon));
-var GuardLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _guard1.GuardLogo), (0, _guard.GuardLogoCS));
-var FocusIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _focus1.FocusIcon), (0, _focus.FocusIcon));
-var FocusLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _focus1.FocusLogo), (0, _focus.FocusLogoCS));
+parcelHelpers.export(exports, "default", ()=>(0, _modalDialogDefault.default));
+parcelHelpers.export(exports, "ModalTransition", ()=>(0, _modalTransitionDefault.default));
+parcelHelpers.export(exports, "ModalHeader", ()=>(0, _modalHeaderDefault.default));
+parcelHelpers.export(exports, "ModalTitle", ()=>(0, _modalTitleDefault.default));
+parcelHelpers.export(exports, "ModalBody", ()=>(0, _modalBodyDefault.default));
+parcelHelpers.export(exports, "ModalFooter", ()=>(0, _modalFooterDefault.default));
+parcelHelpers.export(exports, "CloseButton", ()=>(0, _closeButton.CloseButton));
+parcelHelpers.export(exports, "useModal", ()=>(0, _hooks.useModal));
+var _modalDialog = require("./modal-dialog");
+var _modalDialogDefault = parcelHelpers.interopDefault(_modalDialog);
+var _modalTransition = require("./modal-transition");
+var _modalTransitionDefault = parcelHelpers.interopDefault(_modalTransition);
+var _modalHeader = require("./modal-header");
+var _modalHeaderDefault = parcelHelpers.interopDefault(_modalHeader);
+var _modalTitle = require("./modal-title");
+var _modalTitleDefault = parcelHelpers.interopDefault(_modalTitle);
+var _modalBody = require("./modal-body");
+var _modalBodyDefault = parcelHelpers.interopDefault(_modalBody);
+var _modalFooter = require("./modal-footer");
+var _modalFooterDefault = parcelHelpers.interopDefault(_modalFooter);
+var _closeButton = require("./close-button");
+var _hooks = require("./hooks");
 
-},{"@atlaskit/temp-nav-app-icons/admin":"44skA","@atlaskit/temp-nav-app-icons/align":"aQReq","@atlaskit/temp-nav-app-icons/analytics":"jRJ9m","@atlaskit/temp-nav-app-icons/assets":"d8sSp","@atlaskit/temp-nav-app-icons/bamboo":"jpQ77","@atlaskit/temp-nav-app-icons/bitbucket":"k0e7I","@atlaskit/temp-nav-app-icons/bitbucket-data-center":"x9EvF","@atlaskit/temp-nav-app-icons/chat":"2r3Wa","@atlaskit/temp-nav-app-icons/compass":"h9jo8","@atlaskit/temp-nav-app-icons/confluence":"6vJRz","@atlaskit/temp-nav-app-icons/confluence-data-center":"gJqlT","@atlaskit/temp-nav-app-icons/crowd":"lS1aX","@atlaskit/temp-nav-app-icons/customer-service-management":"4lKd4","@atlaskit/temp-nav-app-icons/focus":"69sOI","@atlaskit/temp-nav-app-icons/goals":"d8GqK","@atlaskit/temp-nav-app-icons/guard":"9lHbq","@atlaskit/temp-nav-app-icons/home":"ia4MW","@atlaskit/temp-nav-app-icons/hub":"h2R4a","@atlaskit/temp-nav-app-icons/jira":"4SvKN","@atlaskit/temp-nav-app-icons/jira-data-center":"bRXCr","@atlaskit/temp-nav-app-icons/jira-product-discovery":"aCESF","@atlaskit/temp-nav-app-icons/jira-service-management":"lQrKh","@atlaskit/temp-nav-app-icons/loom":"bgxyf","@atlaskit/temp-nav-app-icons/loom-attribution":"dxLsB","@atlaskit/temp-nav-app-icons/loom-internal":"30R6Q","@atlaskit/temp-nav-app-icons/opsgenie":"6sWOw","@atlaskit/temp-nav-app-icons/projects":"hGf4e","@atlaskit/temp-nav-app-icons/rovo":"6susR","@atlaskit/temp-nav-app-icons/search":"5nrXh","@atlaskit/temp-nav-app-icons/statuspage":"1RUF7","@atlaskit/temp-nav-app-icons/studio":"ewOSd","@atlaskit/temp-nav-app-icons/talent":"j9RtV","@atlaskit/temp-nav-app-icons/teams":"02xTx","@atlaskit/temp-nav-app-icons/trello":"jHNqy","./legacy-logos/atlassian-admin":"cfB6H","./legacy-logos/atlassian-administration":"eOp9n","./legacy-logos/atlassian-analytics":"kMc8s","./legacy-logos/bitbucket":"40fXz","./legacy-logos/compass":"ieC6Y","./legacy-logos/confluence":"bAjHy","./legacy-logos/focus":"rQCUQ","./legacy-logos/guard":"bVBvF","./legacy-logos/jira":"aKV0g","./legacy-logos/jira-align":"hYE78","./legacy-logos/jira-product-discovery":"47Ksv","./legacy-logos/jira-service-management":"bzHbR","./legacy-logos/loom":"5l6mv","./legacy-logos/loom-attribution":"0Qp4W","./legacy-logos/opsgenie":"hjIrq","./legacy-logos/rovo":"54y5j","./legacy-logos/statuspage":"1a7OU","./legacy-logos/trello":"59Cnq","./legacy-logos/atlas":false,"./legacy-logos/atlassian-marketplace":false,"./legacy-logos/atlassian-access":false,"./legacy-logos/jira-work-management":false,"./legacy-logos/atlassian":false,"./legacy-logos/jira-software":false,"./logo-config":"2QhWk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"44skA":[function(require,module,exports,__globalThis) {
-/**
- * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
- * @codegen <<SignedSource::c3e1d5a18c215f1b61c36e90f2bb1ec4>>
- * @codegenCommand yarn workspace @atlaskit/temp-nav-app-icons build-temp-logos
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+},{"./modal-dialog":"cQrTb","./modal-transition":false,"./modal-header":"bUJ3a","./modal-title":"ewqbJ","./modal-body":"kOlnr","./modal-footer":"fW5Bk","./close-button":false,"./hooks":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cQrTb":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AdminIcon", ()=>(0, _icon.AdminIcon));
-parcelHelpers.export(exports, "AdminLogo", ()=>(0, _logo.AdminLogo));
-parcelHelpers.export(exports, "AdminLogoCS", ()=>(0, _logoCs.AdminLogoCS));
-var _icon = require("../ui/admin/icon");
-var _logo = require("../ui/admin/logo");
-var _logoCs = require("../ui/admin/logo-cs");
-
-},{"../ui/admin/icon":"i8nGK","../ui/admin/logo":false,"../ui/admin/logo-cs":"iGGg9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i8nGK":[function(require,module,exports,__globalThis) {
-/**
- * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
- * @codegen <<SignedSource::1b4c2b482d26b1be8309fdd18226deba>>
- * @codegenCommand yarn workspace @atlaskit/temp-nav-app-icons build-temp-logos
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-/**
- * __AdminIcon__
- *
- * A temporary component to represent the icon for Admin.
- * @deprecated This component has been replaced by the component `AdminIcon` in `@atlaskit/logo`.
- * Please migrate any usages of this temporary component, using the prop `shouldUseNewLogoDesign` where necessary
- * to enable the new design by default.
- *
- */ parcelHelpers.export(exports, "AdminIcon", ()=>AdminIcon);
+parcelHelpers.export(exports, "default", ()=>ModalWrapper);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _iconWrapper = require("../../utils/icon-wrapper");
-// `height` is set to 100% to allow the SVG to scale with the parent element
-var svg = "<svg height=\"100%\" viewBox=\"0 0 24 24\">\n    <path fill=\"var(--tile-color,#dddee1)\" d=\"M0 6a6 6 0 0 1 6-6h12a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6z\"/>\n    <path fill=\"var(--icon-color, #101214)\" fill-rule=\"evenodd\" d=\"M10.444 5h3.111l.98 2.61 2.75-.457 1.555 2.694L17.07 12l1.77 2.153-1.555 2.694-2.75-.457-.979 2.61h-3.11l-.98-2.61-2.75.457-1.555-2.694L6.931 12 5.16 9.847l1.555-2.694 2.75.457zM12 14.625a2.625 2.625 0 1 0 0-5.25 2.625 2.625 0 0 0 0 5.25\" clip-rule=\"evenodd\"/>\n</svg>\n";
-function AdminIcon(_ref) {
-    var size = _ref.size, _ref$appearance = _ref.appearance, appearance = _ref$appearance === void 0 ? 'brand' : _ref$appearance, _ref$label = _ref.label, label = _ref$label === void 0 ? 'Admin' : _ref$label, testId = _ref.testId;
-    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _iconWrapper.IconWrapper), {
-        svg: svg,
-        label: label,
-        appearance: appearance,
-        size: size,
-        testId: testId
-    });
+var _modalWrapper = require("./internal/components/modal-wrapper");
+var _modalWrapperDefault = parcelHelpers.interopDefault(_modalWrapper);
+function ModalWrapper(props) {
+    // eslint-disable-next-line @repo/internal/react/no-unsafe-spread-props
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _modalWrapperDefault.default), (0, _extendsDefault.default)({}, props, {
+        isFullScreen: false
+    }));
 }
 
-},{"react":"jMk1U","../../utils/icon-wrapper":"j6gnN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j6gnN":[function(require,module,exports,__globalThis) {
-/* icon-wrapper.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+},{"@babel/runtime/helpers/extends":"lKa0J","react":"jMk1U","./internal/components/modal-wrapper":"8m4vO","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8m4vO":[function(require,module,exports,__globalThis) {
+/* modal-wrapper.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "IconWrapper", ()=>IconWrapper);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
 var _react = require("react");
 var _runtime = require("@compiled/react/runtime");
-var _tokens = require("@atlaskit/tokens");
-var styles = {
-    root: "_1e0c1o8l"
+var _reactFocusLock = require("react-focus-lock");
+var _reactFocusLockDefault = parcelHelpers.interopDefault(_reactFocusLock);
+var _reactScrolllock = require("react-scrolllock");
+var _reactScrolllockDefault = parcelHelpers.interopDefault(_reactScrolllock);
+var _analyticsNext = require("@atlaskit/analytics-next");
+var _blanket = require("@atlaskit/blanket");
+var _blanketDefault = parcelHelpers.interopDefault(_blanket);
+var _noop = require("@atlaskit/ds-lib/noop");
+var _noopDefault = parcelHelpers.interopDefault(_noop);
+var _layering = require("@atlaskit/layering");
+var _fadeIn = require("@atlaskit/motion/fade-in");
+var _fadeInDefault = parcelHelpers.interopDefault(_fadeIn);
+var _portal = require("@atlaskit/portal");
+var _portalDefault = parcelHelpers.interopDefault(_portal);
+var _constants = require("@atlaskit/theme/constants");
+var _useModalStack = require("../hooks/use-modal-stack");
+var _useModalStackDefault = parcelHelpers.interopDefault(_useModalStack);
+var _usePreventProgrammaticScroll = require("../hooks/use-prevent-programmatic-scroll");
+var _usePreventProgrammaticScrollDefault = parcelHelpers.interopDefault(_usePreventProgrammaticScroll);
+var _modalDialog = require("./modal-dialog");
+var _modalDialogDefault = parcelHelpers.interopDefault(_modalDialog);
+var fillScreenStyles = null;
+var allowlistElements = function allowlistElements(element, callback) {
+    // Allow focus to reach elements outside the modal:
+    // if AUI dialog is allowListed and visible
+    if (!!document.querySelector('.aui-blanket:not([hidden])')) return false;
+    // allows to pass a callback function to allow elements be ignored by focus lock
+    if (typeof callback === 'function') return callback(element);
+    return true;
 };
-/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var cloudLightAppearanceMap = {
-    brand: "_1b3i18uv _9aea18uv",
-    neutral: "_1b3i1e01 _9aea1fkg",
-    inverse: "_1b3i5a6q _9aeau67f",
-    legacy: "_1b3iu67f _9aeadoyu"
-};
-/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var cloudDarkAppearanceMap = {
-    brand: "_1b3i18uv _9aea18uv",
-    neutral: "_1b3i1gvk _9aea8hz0",
-    inverse: "_1b3iu67f _9aea5a6q",
-    legacy: "_1b3iu67f _9aeadoyu"
-};
-/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var dataCenterLightAppearanceMap = {
-    brand: "_1b3idoyu _9aeau67f _3wu01fkg",
-    neutral: "_1b3i1e01 _9aea1fkg _3wu01e01",
-    inverse: "_1b3iu67f _9aeaqlpt _3wu0u67f",
-    legacy: "_1b3idoyu _9aeau67f _3wu01fkg"
-};
-/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var dataCenterDarkAppearanceMap = {
-    brand: "_1b3idoyu _9aeaqlpt _3wu08hz0",
-    neutral: "_1b3i1gvk _9aea8hz0 _3wu01gvk",
-    inverse: "_1b3i1501 _9aeau67f _3wu01501",
-    legacy: "_1b3idoyu _9aeaqlpt _3wu08hz0"
-};
-/* eslint-enable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-enable @atlaskit/ui-styling-standard/no-unsafe-values */ var sizeMap = {
-    xxsmall: "_4t3i7vkz",
-    xsmall: "_4t3igktf",
-    small: "_4t3i1tcg",
-    medium: "_4t3izwfg",
-    large: "_4t3i1ylp",
-    xlarge: "_4t3ickbl",
-    '12': "_4t3i1crf",
-    '16': "_4t3i7vkz",
-    '20': "_4t3igktf",
-    '24': "_4t3i1tcg",
-    '32': "_4t3izwfg"
-};
-function IconWrapper(_ref) {
-    var _ref$size = _ref.size, size = _ref$size === void 0 ? '20' : _ref$size, label = _ref.label, svg = _ref.svg, customThemeSvg = _ref.customThemeSvg, userDefinedTestId = _ref.testId, _ref$appearance = _ref.appearance, appearance = _ref$appearance === void 0 ? 'brand' : _ref$appearance, customIconColor = _ref.iconColor, _ref$isDataCenter = _ref.isDataCenter, isDataCenter = _ref$isDataCenter === void 0 ? false : _ref$isDataCenter;
-    var testId = userDefinedTestId && "".concat(userDefinedTestId, "--wrapper");
-    var isCustomThemed = customThemeSvg && customIconColor;
-    var _useThemeObserver = (0, _tokens.useThemeObserver)(), colorMode = _useThemeObserver.colorMode;
-    return /*#__PURE__*/ _react.createElement("span", {
-        "data-testid": testId,
-        style: {
-            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values
-            '--themed-icon-color': customIconColor || 'initial'
-        },
-        "aria-label": label ? label : undefined,
-        role: label ? 'img' : undefined,
-        "aria-hidden": label === '' ? true : undefined,
-        dangerouslySetInnerHTML: {
-            __html: isCustomThemed ? customThemeSvg : svg
-        },
-        className: (0, _runtime.ax)([
-            styles.root,
-            sizeMap[size],
-            isDataCenter ? colorMode === 'dark' ? dataCenterDarkAppearanceMap[appearance] : dataCenterLightAppearanceMap[appearance] : colorMode === 'dark' ? cloudDarkAppearanceMap[appearance] : cloudLightAppearanceMap[appearance]
-        ])
+/**
+ * __Modal wrapper__
+ *
+ * A modal wrapper displays content that requires user interaction, in a layer above the page.
+ * This component is primary container for other modal components.
+ *
+ * - [Examples](https://atlassian.design/components/modal-dialog/examples)
+ * - [Code](https://atlassian.design/components/modal-dialog/code)
+ * - [Usage](https://atlassian.design/components/modal-dialog/usage)
+ */ var InternalModalWrapper = function InternalModalWrapper(props) {
+    var _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus, focusLockAllowlist = props.focusLockAllowlist, _props$shouldCloseOnE = props.shouldCloseOnEscapePress, shouldCloseOnEscapePress = _props$shouldCloseOnE === void 0 ? true : _props$shouldCloseOnE, _props$shouldCloseOnO = props.shouldCloseOnOverlayClick, shouldCloseOnOverlayClick = _props$shouldCloseOnO === void 0 ? true : _props$shouldCloseOnO, _props$shouldScrollIn = props.shouldScrollInViewport, shouldScrollInViewport = _props$shouldScrollIn === void 0 ? false : _props$shouldScrollIn, _props$shouldReturnFo = props.shouldReturnFocus, shouldReturnFocus = _props$shouldReturnFo === void 0 ? true : _props$shouldReturnFo, stackIndexOverride = props.stackIndex, providedOnClose = props.onClose, _props$onStackChange = props.onStackChange, onStackChange = _props$onStackChange === void 0 ? (0, _noopDefault.default) : _props$onStackChange, isBlanketHidden = props.isBlanketHidden, children = props.children, height = props.height, width = props.width, onCloseComplete = props.onCloseComplete, onOpenComplete = props.onOpenComplete, label = props.label, testId = props.testId, isFullScreen = props.isFullScreen;
+    var calculatedStackIndex = (0, _useModalStackDefault.default)({
+        onStackChange: onStackChange
     });
-}
+    var stackIndex = stackIndexOverride || calculatedStackIndex;
+    var isForeground = stackIndex === 0;
+    // When a user supplies a ref to focus we skip auto focus via react-focus-lock
+    var autoFocusLock = typeof autoFocus === 'boolean' ? autoFocus : false;
+    var onCloseHandler = (0, _analyticsNext.usePlatformLeafEventHandler)({
+        fn: providedOnClose || (0, _noopDefault.default),
+        action: 'closed',
+        componentName: 'modalDialog',
+        packageName: "@atlaskit/modal-dialog",
+        packageVersion: "14.2.12"
+    });
+    var onBlanketClicked = (0, _react.useCallback)(function(e) {
+        if (shouldCloseOnOverlayClick) onCloseHandler(e);
+    }, [
+        shouldCloseOnOverlayClick,
+        onCloseHandler
+    ]);
+    // This ensures to prevent additional re-renders while nothing is passed to focusLockAllowlist explicitly.
+    var allowListCallback = (0, _react.useCallback)(function(element) {
+        return allowlistElements(element, focusLockAllowlist);
+    }, [
+        focusLockAllowlist
+    ]);
+    (0, _usePreventProgrammaticScrollDefault.default)();
+    var modalDialogWithBlanket = /*#__PURE__*/ _react.createElement((0, _blanketDefault.default), {
+        isTinted: !isBlanketHidden,
+        onBlanketClicked: onBlanketClicked,
+        testId: testId && "".concat(testId, "--blanket")
+    }, /*#__PURE__*/ _react.createElement((0, _modalDialogDefault.default), {
+        testId: testId,
+        label: label,
+        autoFocus: autoFocus,
+        stackIndex: stackIndex,
+        onClose: onCloseHandler,
+        shouldCloseOnEscapePress: shouldCloseOnEscapePress && isForeground,
+        shouldScrollInViewport: shouldScrollInViewport,
+        height: height,
+        width: width,
+        onCloseComplete: onCloseComplete,
+        onOpenComplete: onOpenComplete,
+        hasProvidedOnClose: Boolean(providedOnClose),
+        isFullScreen: isFullScreen
+    }, children));
+    var returnFocus = true;
+    var onDeactivation;
+    if ('boolean' === typeof shouldReturnFocus) returnFocus = shouldReturnFocus;
+    else onDeactivation = function onDeactivation() {
+        window.setTimeout(function() {
+            var _shouldReturnFocus$cu;
+            (_shouldReturnFocus$cu = shouldReturnFocus.current) === null || _shouldReturnFocus$cu === void 0 || _shouldReturnFocus$cu.focus();
+        }, 0);
+    };
+    return /*#__PURE__*/ _react.createElement((0, _layering.Layering), {
+        isDisabled: false
+    }, /*#__PURE__*/ _react.createElement((0, _portalDefault.default), {
+        zIndex: (0, _constants.layers).modal()
+    }, /*#__PURE__*/ _react.createElement((0, _fadeInDefault.default), null, function(fadeInProps) {
+        return /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({}, fadeInProps, {
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-classname-prop
+            className: (0, _runtime.ax)([
+                "_1bsbauwl _4t3i1kxc _kqsw1n9t _152tze3t _1e02ze3t _18m91wug _8am5i4x0",
+                fadeInProps.className
+            ]),
+            "aria-hidden": !isForeground
+        }), /*#__PURE__*/ _react.createElement((0, _reactFocusLockDefault.default), {
+            autoFocus: autoFocusLock,
+            returnFocus: returnFocus,
+            onDeactivation: onDeactivation,
+            whiteList: allowListCallback
+        }, /*#__PURE__*/ _react.createElement((0, _reactScrolllockDefault.default), null), shouldScrollInViewport ? /*#__PURE__*/ _react.createElement((0, _reactScrolllock.TouchScrollable), null, modalDialogWithBlanket) : modalDialogWithBlanket));
+    })));
+};
+exports.default = InternalModalWrapper;
 
-},{"react":"jMk1U","@compiled/react/runtime":"j44i3","@atlaskit/tokens":"cmVFI","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j44i3":[function(require,module,exports,__globalThis) {
+},{"@babel/runtime/helpers/extends":"lKa0J","react":"jMk1U","@compiled/react/runtime":"8r5np","react-focus-lock":"drrfQ","react-scrolllock":"4lcpi","@atlaskit/analytics-next":"3iJRH","@atlaskit/blanket":"fkTHQ","@atlaskit/ds-lib/noop":"gcHCG","@atlaskit/layering":"hp6qP","@atlaskit/motion/fade-in":"eb1Ct","@atlaskit/portal":"8ME4i","@atlaskit/theme/constants":"6kRPo","../hooks/use-modal-stack":"cVqiF","../hooks/use-prevent-programmatic-scroll":"bVvvt","./modal-dialog":"bR0IL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8r5np":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CC", ()=>(0, _index.CC));
@@ -58492,7 +58308,7 @@ parcelHelpers.export(exports, "clearAcCache", ()=>(0, _index.clearAcCache));
 parcelHelpers.export(exports, "ix", ()=>(0, _index.ix));
 var _index = require("./runtime/index");
 
-},{"./runtime/index":"1U7lK","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1U7lK":[function(require,module,exports,__globalThis) {
+},{"./runtime/index":"1fdBi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1fdBi":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CS", ()=>(0, _styleDefault.default));
@@ -58512,7 +58328,327 @@ var _acDefault = parcelHelpers.interopDefault(_ac);
 var _cssCustomProperty = require("./css-custom-property");
 var _cssCustomPropertyDefault = parcelHelpers.interopDefault(_cssCustomProperty);
 
-},{"./style":false,"./style-cache":false,"./ax":"5Gqnq","./ac":false,"./css-custom-property":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5Gqnq":[function(require,module,exports,__globalThis) {
+},{"./style":"daaHp","./style-cache":"1No70","./ax":"24wWe","./ac":"87gec","./css-custom-property":"jQQHH","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"daaHp":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Style);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _devWarnings = require("./dev-warnings");
+var _isServerEnvironment = require("./is-server-environment");
+var _sheet = require("./sheet");
+var _sheetDefault = parcelHelpers.interopDefault(_sheet);
+var _styleCache = require("./style-cache");
+function Style(props) {
+    const inserted = (0, _styleCache.useCache)();
+    props.children.forEach((0, _devWarnings.analyzeCssInDev));
+    if (props.children.length) {
+        var bucket;
+        for(let i = 0; i < props.children.length; i++){
+            const sheet = props.children[i];
+            if (inserted[sheet]) continue;
+            inserted[sheet] = true;
+            (0, _sheetDefault.default)(sheet, props);
+        }
+    }
+    return null;
+}
+
+},{"react":"jMk1U","./dev-warnings":"ejaXr","./is-server-environment":"hkBQ7","./sheet":"9nbh9","./style-cache":"1No70","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ejaXr":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "analyzeCssInDev", ()=>analyzeCssInDev);
+const selectorsToWarn = [
+    ':first-child',
+    ':nth-child'
+];
+const hasWarned = {};
+const warn = (str, ...args)=>console.error(`
+ \u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557} \u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557} \u{2588}\u{2588}\u{2588}\u{2557}   \u{2588}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557} \u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2557}     \u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}
+\u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D}\u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2550}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557} \u{2588}\u{2588}\u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D}\u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2588}\u{2588}\u{2557}
+\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2551}   \u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2554}\u{2588}\u{2588}\u{2588}\u{2588}\u{2554}\u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2554}\u{255D}\u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}  \u{2588}\u{2588}\u{2551}  \u{2588}\u{2588}\u{2551}
+\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2551}   \u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2551}\u{255A}\u{2588}\u{2588}\u{2554}\u{255D}\u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{2550}\u{255D} \u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2554}\u{2550}\u{2550}\u{255D}  \u{2588}\u{2588}\u{2551}  \u{2588}\u{2588}\u{2551}
+\u{255A}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}\u{255A}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2554}\u{255D}\u{2588}\u{2588}\u{2551} \u{255A}\u{2550}\u{255D} \u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2551}     \u{2588}\u{2588}\u{2551}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2557}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2588}\u{2554}\u{255D}
+ \u{255A}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D} \u{255A}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D} \u{255A}\u{2550}\u{255D}     \u{255A}\u{2550}\u{255D}\u{255A}\u{2550}\u{255D}     \u{255A}\u{2550}\u{255D}\u{255A}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D}\u{255A}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D}\u{255A}\u{2550}\u{2550}\u{2550}\u{2550}\u{2550}\u{255D}
+
+  @compiled/react/runtime - DEV WARNING
+
+  ${str}
+`, ...args);
+const analyzeCssInDev = (sheet)=>{
+    if (hasWarned[sheet]) return;
+    const shouldWarnAboutSelectors = selectorsToWarn.map((selector)=>sheet.includes(selector)).filter(Boolean).length > 0;
+    if (shouldWarnAboutSelectors) warn(`Selectors "${selectorsToWarn.join(', ')}" are dangerous to use when server side rendering.
+  Alternatively try and use ":nth-of-type", or placing data attributes and targetting those instead.
+  Read https://compiledcssinjs.com/docs/server-side-rendering for more advice.`);
+    hasWarned[sheet] = true;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hkBQ7":[function(require,module,exports,__globalThis) {
+/**
+ * @see https://github.com/jsdom/jsdom/releases/tag/12.0.0
+ * @see https://github.com/jsdom/jsdom/issues/1537
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isServerEnvironment", ()=>isServerEnvironment);
+const isJsDomEnvironment = ()=>window.name === 'nodejs' || (navigator === null || navigator === void 0 ? void 0 : navigator.userAgent.includes('Node.js')) || (navigator === null || navigator === void 0 ? void 0 : navigator.userAgent.includes('jsdom'));
+const isServerEnvironment = ()=>{
+    if (typeof window === 'undefined' || false) return true;
+    if (isJsDomEnvironment()) return true;
+    return false;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9nbh9":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styleBucketOrdering", ()=>styleBucketOrdering);
+parcelHelpers.export(exports, "getStyleBucketName", ()=>getStyleBucketName);
+parcelHelpers.export(exports, "default", ()=>insertRule);
+var _cache = require("./cache");
+var _shorthand = require("./shorthand");
+const styleBucketOrdering = [
+    // shorthand properties
+    's-0',
+    's-1',
+    's-2',
+    's-3',
+    's-4',
+    's-5',
+    // catch-all
+    '',
+    // link
+    'l',
+    // visited
+    'v',
+    // focus-within
+    'w',
+    // focus
+    'f',
+    // focus-visible
+    'i',
+    // hover
+    'h',
+    // active
+    'a',
+    // at-rules
+    'm'
+];
+/**
+ * Holds all style buckets in memory that have been added to the head.
+ */ const styleBucketsInHead = {};
+/**
+ * Maps the long pseudo name to the short pseudo name.
+ * Pseudos that match here will be ordered,
+ * everything else will make their way to the catch all style bucket.
+ * We reduce the pseudo name to save bundlesize.
+ * Thankfully there aren't any overlaps, see: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes.
+ */ const pseudosMap = {
+    // link
+    k: 'l',
+    // visited
+    ited: 'v',
+    // focus-within
+    'us-within': 'w',
+    // focus
+    us: 'f',
+    // focus-visible
+    'us-visible': 'i',
+    // hover
+    er: 'h',
+    // active
+    ive: 'a'
+};
+/**
+ * Lazily adds a `<style>` bucket to the `<head>`.
+ * This will ensure that the style buckets are ordered.
+ *
+ * @param bucket Bucket to insert in the head.
+ */ function lazyAddStyleBucketToHead(bucketName, opts) {
+    if (!styleBucketsInHead[bucketName]) {
+        let currentBucketIndex = styleBucketOrdering.indexOf(bucketName) + 1;
+        let nextBucketFromCache = null;
+        // Find the next bucket which we will add our new style bucket before.
+        for(; currentBucketIndex < styleBucketOrdering.length; currentBucketIndex++){
+            const nextBucket = styleBucketsInHead[styleBucketOrdering[currentBucketIndex]];
+            if (nextBucket) {
+                nextBucketFromCache = nextBucket;
+                break;
+            }
+        }
+        const tag = document.createElement('style');
+        opts.nonce && tag.setAttribute('nonce', opts.nonce);
+        tag.appendChild(document.createTextNode(''));
+        document.head.insertBefore(tag, nextBucketFromCache);
+        if ((0, _cache.isCacheDisabled)()) return tag;
+        styleBucketsInHead[bucketName] = tag;
+    }
+    return styleBucketsInHead[bucketName];
+}
+const getStyleBucketName = (sheet)=>{
+    // We are grouping all the at-rules like @media, @supports etc under `m` bucket.
+    if (sheet.charCodeAt(0) === 64 /* "@" */ ) return 'm';
+    const firstBracket = sheet.indexOf('{');
+    /**
+     * We assume that classname will always be 9 character long,
+     * using this the 10th characters could be a pseudo declaration.
+     */ if (sheet.charCodeAt(10) === 58 /* ":" */ ) {
+        // We send through a subset of the string instead of the full pseudo name.
+        // For example `"focus-visible"` name would instead of `"us-visible"`.
+        // Return a mapped pseudo else the default catch all bucket.
+        const mapped = pseudosMap[sheet.slice(14, firstBracket)];
+        if (mapped) return mapped;
+    }
+    const property = sheet.slice(firstBracket + 1, sheet.indexOf(':', firstBracket)).trim();
+    const shorthandDepth = (0, _shorthand.getShorthandDepth)(property);
+    if (typeof shorthandDepth === 'number') return `s-${shorthandDepth}`;
+    // Return default catch all bucket
+    return '';
+};
+function insertRule(css, opts) {
+    const bucketName = getStyleBucketName(css);
+    const style = lazyAddStyleBucketToHead(bucketName, opts);
+    var _a;
+    style.appendChild(document.createTextNode(css));
+}
+
+},{"./cache":"kzd7G","./shorthand":"d6xSP","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kzd7G":[function(require,module,exports,__globalThis) {
+/**
+ * Returns `true` when caching should be disabled, else `false`.
+ *
+ * Any code within this check will be removed in the output bundles:
+ *
+ * ```js
+ * if (isCacheDisabled()) {
+ *   // This code will be removed from the output bundles
+ * }
+ * ```
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isCacheDisabled", ()=>isCacheDisabled);
+const isCacheDisabled = ()=>{
+    return false;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d6xSP":[function(require,module,exports,__globalThis) {
+// Copied from packages/utils/src/shorthand.ts so that we avoid
+// inflating the bundle size of @compiled/react/runtime with the contents
+// of @compiled/utils
+//
+// Keep this `shorthandBuckets` in sync with the `shorthandBuckets` defined in
+// packages/utils/src/shorthand.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getShorthandDepth", ()=>getShorthandDepth);
+const shorthandBuckets = {
+    all: 0,
+    animation: 1,
+    'animation-range': 1,
+    background: 1,
+    border: 1,
+    'border-color': 2,
+    'border-style': 2,
+    'border-width': 2,
+    'border-block': 3,
+    'border-inline': 3,
+    'border-top': 4,
+    'border-right': 4,
+    'border-bottom': 4,
+    'border-left': 4,
+    'border-block-start': 5,
+    'border-block-end': 5,
+    'border-inline-start': 5,
+    'border-inline-end': 5,
+    'border-image': 1,
+    'border-radius': 1,
+    'column-rule': 1,
+    columns: 1,
+    'contain-intrinsic-size': 1,
+    container: 1,
+    flex: 1,
+    'flex-flow': 1,
+    font: 1,
+    'font-synthesis': 1,
+    'font-variant': 2,
+    gap: 1,
+    grid: 1,
+    'grid-area': 1,
+    'grid-column': 2,
+    'grid-row': 2,
+    'grid-template': 2,
+    inset: 1,
+    'inset-block': 2,
+    'inset-inline': 2,
+    'list-style': 1,
+    margin: 1,
+    'margin-block': 2,
+    'margin-inline': 2,
+    mask: 1,
+    'mask-border': 1,
+    offset: 1,
+    outline: 1,
+    overflow: 1,
+    'overscroll-behavior': 1,
+    padding: 1,
+    'padding-block': 2,
+    'padding-inline': 2,
+    'place-content': 1,
+    'place-items': 1,
+    'place-self': 1,
+    'position-try': 1,
+    'scroll-margin': 1,
+    'scroll-margin-block': 2,
+    'scroll-margin-inline': 2,
+    'scroll-padding': 1,
+    'scroll-padding-block': 2,
+    'scroll-padding-inline': 2,
+    'scroll-timeline': 1,
+    'text-decoration': 1,
+    'text-emphasis': 1,
+    'text-wrap': 1,
+    transition: 1,
+    'view-timeline': 1
+};
+const getShorthandDepth = (shorthand)=>{
+    var _a;
+    return (_a = shorthandBuckets[shorthand]) !== null && _a !== void 0 ? _a : null;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1No70":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useCache", ()=>useCache);
+var _react = require("react");
+var _cache = require("./cache");
+var _isServerEnvironment = require("./is-server-environment");
+/**
+ * Cache to hold already used styles.
+ * React Context on the server - singleton object on the client.
+ */ const Cache = {};
+if (typeof document !== 'undefined') {
+    /**
+     * Iterates through all found style elements generated when server side rendering.
+     *
+     * @param cb
+     */ const ssrStyles = document.querySelectorAll('style[data-cmpld]');
+    for(let i = 0; i < ssrStyles.length; i++)// Move all found server-side rendered style elements to the head before React hydration happens.
+    document.head.appendChild(ssrStyles[i]);
+}
+const useCache = ()=>{
+    if ((0, _cache.isCacheDisabled)()) return {};
+    // On the client we use the object singleton.
+    return Cache;
+};
+/**
+ * On the server this ensures the minimal amount of styles will be rendered
+ * safely using React Context.
+ *
+ * On the browser this turns into a fragment with no React Context.
+ */ const StyleCacheProvider = (props)=>{
+    return props.children;
+};
+exports.default = StyleCacheProvider;
+
+},{"react":"jMk1U","./cache":"kzd7G","./is-server-environment":"hkBQ7","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"24wWe":[function(require,module,exports,__globalThis) {
 /**
  * This length includes the underscore,
  * e.g. `"_1s4A"` would be a valid atomic group hash.
@@ -58567,7 +58703,8363 @@ function ax(classNames) {
     return result.trimEnd();
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cmVFI":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"87gec":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Joins classes together and ensures atomic declarations of a single group exist.
+ * Atomic declarations take the form of `_{group}{value}` (always prefixed with an underscore),
+ * where both `group` and `value` are hashes **four characters long**.
+ * Class names can be of any length,
+ * this function can take both atomic declarations and class names.
+ *
+ * Input:
+ *
+ * ```
+ * ax(['_aaaabbbb', '_aaaacccc'])
+ * ```
+ *
+ * Output:
+ *
+ * ```
+ * '_aaaacccc'
+ * ```
+ *
+ * @param classes
+ */ parcelHelpers.export(exports, "ac", ()=>ac);
+parcelHelpers.export(exports, "memoizedAc", ()=>memoizedAc);
+/**
+ * Provide an opportunity to clear the cache to prevent memory leak.
+ */ parcelHelpers.export(exports, "clearCache", ()=>clearCache);
+/**
+ * Expose cache
+ */ parcelHelpers.export(exports, "getCache", ()=>getCache);
+var _isServerEnvironment = require("./is-server-environment");
+const UNDERSCORE_UNICODE = 95;
+/**
+ * This length includes the underscore,
+ * e.g. `"_1s4A"` would be a valid atomic group hash.
+ */ const ATOMIC_GROUP_LENGTH = 5;
+/**
+ * Memoize the result of ac so if it is called with the same args, it returns immediately.
+ * Also, to prevent useless React rerenders
+ */ const cache = new Map();
+/**
+ * `ac` returns an instance of AtomicGroups. The instance holds the knowledge of Atomic Group so we can chain `ac`.
+ * e.g. <div className={ax([ax(['_aaaa_b']), '_aaaa_c'])} />
+ */ class AtomicGroups {
+    constructor(values){
+        // An object stores the relation between Atomic group and actual class name
+        // e.g. { "aaaa": "a" } `aaaa` is the Atomic group and `a` is the actual class name
+        this.values = values;
+    }
+    toString() {
+        let str = '';
+        for (const [, value] of this.values)str += value + ' ';
+        return str.slice(0, -1);
+    }
+}
+function ac(classNames) {
+    // short circuit if there's no class names.
+    if (classNames.length <= 1 && !classNames[0]) return undefined;
+    const atomicGroups = new Map();
+    for(let i = 0; i < classNames.length; i++){
+        const cls = classNames[i];
+        if (!cls) continue;
+        if (typeof cls === 'string') {
+            const groups = cls.split(' ');
+            for(let x = 0; x < groups.length; x++){
+                const atomic = groups[x];
+                const isAtomic = atomic.charCodeAt(0) === UNDERSCORE_UNICODE;
+                const isCompressed = isAtomic && atomic.charCodeAt(5) === UNDERSCORE_UNICODE;
+                const atomicGroupName = isAtomic ? atomic.slice(0, ATOMIC_GROUP_LENGTH) : atomic;
+                atomicGroups.set(atomicGroupName, isCompressed ? atomic.slice(ATOMIC_GROUP_LENGTH + 1) : atomic);
+            }
+        } else // if cls is an instance of AtomicGroups, transfer its values to `atomicGroups`
+        for (const [key, value] of cls.values)atomicGroups.set(key, value);
+    }
+    return new AtomicGroups(atomicGroups);
+}
+function memoizedAc(classNames) {
+    // short circuit if there's no class names.
+    if (classNames.length <= 1 && !classNames[0]) return undefined;
+    // build the cacheKey based on the function argument
+    // e.g. if the argument is ["_aaaabbbb", "_aaaa_a", "some-class-name"],
+    // then the cacheKey is "_aaaabbbb _aaaa_a some-class-name"
+    let cacheKey = '';
+    for(let i = 0; i < classNames.length; i += 1){
+        const current = classNames[i];
+        // continue if current is undefined, false, or ""
+        if (!current) continue;
+        cacheKey += current + ' ';
+    }
+    cacheKey = cacheKey.slice(0, -1);
+    if (cache.has(cacheKey)) return cache.get(cacheKey);
+    const result = ac(classNames);
+    cache.set(cacheKey, result);
+    return result;
+}
+// Memoization is primarily used to prevent React from unncessary re-rendering.
+// Use unmemoizedAc on server-side because We don't need to worry about re-rendering on server-side.
+exports.default = memoizedAc;
+function clearCache() {
+    cache.clear();
+}
+function getCache() {
+    return cache;
+}
+
+},{"./is-server-environment":"hkBQ7","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jQQHH":[function(require,module,exports,__globalThis) {
+/**
+ * Returns a CSS custom property value with an optional suffix & prefix.
+ * Prefix will only be added if there is a suffix.
+ * If the value is undefined a fallback value will be returned to prevent children inheriting parent values.
+ *
+ * @param value
+ * @param suffix
+ * @param prefix
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>cssCustomPropertyValue);
+function cssCustomPropertyValue(value, suffix, prefix) {
+    if (value != undefined) {
+        if (suffix) {
+            if (prefix) return prefix + value + suffix;
+            return value + suffix;
+        }
+        return value;
+    }
+    // Currently React trims these values so we can't use a space " " to block the value.
+    // Instead we use a CSS variable that doesn't exist which falls back to " ".
+    // Bug raised here: https://github.com/facebook/react/issues/20497
+    return 'var(--c-, )';
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"drrfQ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _combination = require("./Combination");
+var _combinationDefault = parcelHelpers.interopDefault(_combination);
+var _ui = require("./UI");
+parcelHelpers.exportAll(_ui, exports);
+exports.default = (0, _combinationDefault.default);
+
+},{"./Combination":"ltOCW","./UI":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ltOCW":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectWithoutPropertiesLoose = require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoose");
+var _objectWithoutPropertiesLooseDefault = parcelHelpers.interopDefault(_objectWithoutPropertiesLoose);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _lock = require("./Lock");
+var _lockDefault = parcelHelpers.interopDefault(_lock);
+var _trap = require("./Trap");
+var _trapDefault = parcelHelpers.interopDefault(_trap);
+var FocusLockCombination = /*#__PURE__*/ (0, _react.forwardRef)(function FocusLockUICombination(props, ref) {
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _lockDefault.default), (0, _extendsDefault.default)({
+        sideCar: (0, _trapDefault.default),
+        ref: ref
+    }, props));
+});
+var _ref = (0, _lockDefault.default).propTypes || {}, sideCar = _ref.sideCar, propTypes = (0, _objectWithoutPropertiesLooseDefault.default)(_ref, [
+    "sideCar"
+]);
+FocusLockCombination.propTypes = propTypes;
+exports.default = FocusLockCombination;
+
+},{"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"fls88","@babel/runtime/helpers/esm/extends":"20my9","react":"jMk1U","./Lock":"58foA","./Trap":"cKTY4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fls88":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_objectWithoutPropertiesLoose);
+function _objectWithoutPropertiesLoose(r, e) {
+    if (null == r) return {};
+    var t = {};
+    for(var n in r)if (({}).hasOwnProperty.call(r, n)) {
+        if (-1 !== e.indexOf(n)) continue;
+        t[n] = r[n];
+    }
+    return t;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"58foA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _constants = require("focus-lock/constants");
+var _useCallbackRef = require("use-callback-ref");
+var _focusGuard = require("./FocusGuard");
+var _medium = require("./medium");
+var _scope = require("./scope");
+var emptyArray = [];
+var FocusLock = /*#__PURE__*/ (0, _react.forwardRef)(function FocusLockUI(props, parentRef) {
+    var _extends2;
+    var _useState = (0, _react.useState)(), realObserved = _useState[0], setObserved = _useState[1];
+    var observed = (0, _react.useRef)();
+    var isActive = (0, _react.useRef)(false);
+    var originalFocusedElement = (0, _react.useRef)(null);
+    var _useState2 = (0, _react.useState)({}), update = _useState2[1];
+    var children = props.children, _props$disabled = props.disabled, disabled = _props$disabled === void 0 ? false : _props$disabled, _props$noFocusGuards = props.noFocusGuards, noFocusGuards = _props$noFocusGuards === void 0 ? false : _props$noFocusGuards, _props$persistentFocu = props.persistentFocus, persistentFocus = _props$persistentFocu === void 0 ? false : _props$persistentFocu, _props$crossFrame = props.crossFrame, crossFrame = _props$crossFrame === void 0 ? true : _props$crossFrame, _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus, allowTextSelection = props.allowTextSelection, group = props.group, className = props.className, whiteList = props.whiteList, hasPositiveIndices = props.hasPositiveIndices, _props$shards = props.shards, shards = _props$shards === void 0 ? emptyArray : _props$shards, _props$as = props.as, Container = _props$as === void 0 ? 'div' : _props$as, _props$lockProps = props.lockProps, containerProps = _props$lockProps === void 0 ? {} : _props$lockProps, SideCar = props.sideCar, _props$returnFocus = props.returnFocus, shouldReturnFocus = _props$returnFocus === void 0 ? false : _props$returnFocus, focusOptions = props.focusOptions, onActivationCallback = props.onActivation, onDeactivationCallback = props.onDeactivation;
+    var _useState3 = (0, _react.useState)({}), id = _useState3[0];
+    var onActivation = (0, _react.useCallback)(function(_ref) {
+        var captureFocusRestore = _ref.captureFocusRestore;
+        if (!originalFocusedElement.current) {
+            var _document;
+            var activeElement = (_document = document) == null ? void 0 : _document.activeElement;
+            originalFocusedElement.current = activeElement;
+            if (activeElement !== document.body) originalFocusedElement.current = captureFocusRestore(activeElement);
+        }
+        if (observed.current && onActivationCallback) onActivationCallback(observed.current);
+        isActive.current = true;
+        update();
+    }, [
+        onActivationCallback
+    ]);
+    var onDeactivation = (0, _react.useCallback)(function() {
+        isActive.current = false;
+        if (onDeactivationCallback) onDeactivationCallback(observed.current);
+        update();
+    }, [
+        onDeactivationCallback
+    ]);
+    var returnFocus = (0, _react.useCallback)(function(allowDefer) {
+        var focusRestore = originalFocusedElement.current;
+        if (focusRestore) {
+            var returnFocusTo = (typeof focusRestore === 'function' ? focusRestore() : focusRestore) || document.body;
+            var howToReturnFocus = typeof shouldReturnFocus === 'function' ? shouldReturnFocus(returnFocusTo) : shouldReturnFocus;
+            if (howToReturnFocus) {
+                var returnFocusOptions = typeof howToReturnFocus === 'object' ? howToReturnFocus : undefined;
+                originalFocusedElement.current = null;
+                if (allowDefer) Promise.resolve().then(function() {
+                    return returnFocusTo.focus(returnFocusOptions);
+                });
+                else returnFocusTo.focus(returnFocusOptions);
+            }
+        }
+    }, [
+        shouldReturnFocus
+    ]);
+    var onFocus = (0, _react.useCallback)(function(event) {
+        if (isActive.current) (0, _medium.mediumFocus).useMedium(event);
+    }, []);
+    var onBlur = (0, _medium.mediumBlur).useMedium;
+    var setObserveNode = (0, _react.useCallback)(function(newObserved) {
+        if (observed.current !== newObserved) {
+            observed.current = newObserved;
+            setObserved(newObserved);
+        }
+    }, []);
+    if (typeof allowTextSelection !== 'undefined') console.warn('React-Focus-Lock: allowTextSelection is deprecated and enabled by default');
+    (0, _react.useEffect)(function() {
+        if (!observed.current && typeof Container !== 'string') console.error('FocusLock: could not obtain ref to internal node');
+    }, []);
+    var lockProps = (0, _extendsDefault.default)((_extends2 = {}, _extends2[0, _constants.FOCUS_DISABLED] = disabled && 'disabled', _extends2[0, _constants.FOCUS_GROUP] = group, _extends2), containerProps);
+    var hasLeadingGuards = noFocusGuards !== true;
+    var hasTailingGuards = hasLeadingGuards && noFocusGuards !== 'tail';
+    var mergedRef = (0, _useCallbackRef.useMergeRefs)([
+        parentRef,
+        setObserveNode
+    ]);
+    var focusScopeValue = (0, _react.useMemo)(function() {
+        return {
+            observed: observed,
+            shards: shards,
+            enabled: !disabled,
+            active: isActive.current
+        };
+    }, [
+        disabled,
+        isActive.current,
+        shards,
+        realObserved
+    ]);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _react.Fragment), null, hasLeadingGuards && [
+        /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+            key: "guard-first",
+            "data-focus-guard": true,
+            tabIndex: disabled ? -1 : 0,
+            style: (0, _focusGuard.hiddenGuard)
+        }),
+        hasPositiveIndices ? /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+            key: "guard-nearest",
+            "data-focus-guard": true,
+            tabIndex: disabled ? -1 : 1,
+            style: (0, _focusGuard.hiddenGuard)
+        }) : null
+    ], !disabled && /*#__PURE__*/ (0, _reactDefault.default).createElement(SideCar, {
+        id: id,
+        sideCar: (0, _medium.mediumSidecar),
+        observed: realObserved,
+        disabled: disabled,
+        persistentFocus: persistentFocus,
+        crossFrame: crossFrame,
+        autoFocus: autoFocus,
+        whiteList: whiteList,
+        shards: shards,
+        onActivation: onActivation,
+        onDeactivation: onDeactivation,
+        returnFocus: returnFocus,
+        focusOptions: focusOptions,
+        noFocusGuards: noFocusGuards
+    }), /*#__PURE__*/ (0, _reactDefault.default).createElement(Container, (0, _extendsDefault.default)({
+        ref: mergedRef
+    }, lockProps, {
+        className: className,
+        onBlur: onBlur,
+        onFocus: onFocus
+    }), /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _scope.focusScope).Provider, {
+        value: focusScopeValue
+    }, children)), hasTailingGuards && /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        "data-focus-guard": true,
+        tabIndex: disabled ? -1 : 0,
+        style: (0, _focusGuard.hiddenGuard)
+    }));
+});
+FocusLock.propTypes = {
+    children: (0, _propTypes.node),
+    disabled: (0, _propTypes.bool),
+    returnFocus: (0, _propTypes.oneOfType)([
+        (0, _propTypes.bool),
+        (0, _propTypes.object),
+        (0, _propTypes.func)
+    ]),
+    focusOptions: (0, _propTypes.object),
+    noFocusGuards: (0, _propTypes.bool),
+    hasPositiveIndices: (0, _propTypes.bool),
+    allowTextSelection: (0, _propTypes.bool),
+    autoFocus: (0, _propTypes.bool),
+    persistentFocus: (0, _propTypes.bool),
+    crossFrame: (0, _propTypes.bool),
+    group: (0, _propTypes.string),
+    className: (0, _propTypes.string),
+    whiteList: (0, _propTypes.func),
+    shards: (0, _propTypes.arrayOf)((0, _propTypes.any)),
+    as: (0, _propTypes.oneOfType)([
+        (0, _propTypes.string),
+        (0, _propTypes.func),
+        (0, _propTypes.object)
+    ]),
+    lockProps: (0, _propTypes.object),
+    onActivation: (0, _propTypes.func),
+    onDeactivation: (0, _propTypes.func),
+    sideCar: (0, _propTypes.any).isRequired
+};
+exports.default = FocusLock;
+
+},{"@babel/runtime/helpers/esm/extends":"20my9","react":"jMk1U","prop-types":"GNqOQ","focus-lock/constants":"frnmY","use-callback-ref":"aWIcL","./FocusGuard":"2bUZ5","./medium":"PUfQ7","./scope":"3Inge","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"GNqOQ":[function(require,module,exports,__globalThis) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactIs = require("96e34ae03f5a2631");
+// By explicitly using `prop-types` you are opting into new development behavior.
+// http://fb.me/prop-types-in-prod
+var throwOnDirectAccess = true;
+module.exports = require("cb216452e2171041")(ReactIs.isElement, throwOnDirectAccess);
+
+},{"96e34ae03f5a2631":"59S9B","cb216452e2171041":"32b0h"}],"32b0h":[function(require,module,exports,__globalThis) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 'use strict';
+var ReactIs = require("c437388b089702c3");
+var assign = require("c067a60101d8520c");
+var ReactPropTypesSecret = require("74a0f89a70b9f3c2");
+var has = require("18441b11647bc78");
+var checkPropTypes = require("bec3f6ff89f0b072");
+var printWarning = function() {};
+printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === 'function') return iteratorFn;
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = '<<anonymous>>';
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker('array'),
+        bigint: createPrimitiveTypeChecker('bigint'),
+        bool: createPrimitiveTypeChecker('boolean'),
+        func: createPrimitiveTypeChecker('function'),
+        number: createPrimitiveTypeChecker('number'),
+        object: createPrimitiveTypeChecker('object'),
+        string: createPrimitiveTypeChecker('string'),
+        symbol: createPrimitiveTypeChecker('symbol'),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) // Steps 1-5, 7-10
+        // Steps 6.b-6.e: +0 != -0
+        return x !== 0 || 1 / x === 1 / y;
+        else // Step 6.a: NaN == NaN
+        return x !== x && y !== y;
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === 'object' ? data : {};
+        this.stack = '';
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        var manualPropTypeCallCache = {};
+        var manualPropTypeWarningCount = 0;
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
+                    err.name = 'Invariant Violation';
+                    throw err;
+                } else if (typeof console !== 'undefined') {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ':' + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+                    return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+                }
+                return null;
+            } else return validate(props, propName, componentName, location, propFullName);
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== 'function') return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            {
+                if (arguments.length > 1) printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+                else printWarning('Invalid argument supplied to oneOf, expected an array.');
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) return null;
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === 'symbol') return String(value);
+                return value;
+            });
+            return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== 'function') return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+            for(var key in propValue)if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            printWarning('Invalid argument supplied to oneOfType, expected an instance of array.');
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== 'function') {
+                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) return null;
+                if (checkerResult.data && has(checkerResult.data, 'expectedType')) expectedTypes.push(checkerResult.data.expectedType);
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ', expected one of type [' + expectedTypes.join(', ') + ']' : '';
+            return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`' + expectedTypesMessage + '.'));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || 'React class') + ': ' + location + ' type `' + propFullName + '.' + key + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + type + '`.');
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== 'function') return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== 'function') return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                if (!checker) return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+                var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case 'number':
+            case 'string':
+            case 'undefined':
+                return true;
+            case 'boolean':
+                return !propValue;
+            case 'object':
+                if (Array.isArray(propValue)) return propValue.every(isNode);
+                if (propValue === null || isValidElement(propValue)) return true;
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
+                        if (!isNode(step.value)) return false;
+                    }
+                    else // Iterator will provide entry [k,v] tuples rather than values.
+                    while(!(step = iterator.next()).done){
+                        var entry = step.value;
+                        if (entry) {
+                            if (!isNode(entry[1])) return false;
+                        }
+                    }
+                } else return false;
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === 'symbol') return true;
+        // falsy value can't be a Symbol
+        if (!propValue) return false;
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue['@@toStringTag'] === 'Symbol') return true;
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === 'function' && propValue instanceof Symbol) return true;
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) return 'array';
+        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
+        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+        // passes PropTypes.object.
+        return 'object';
+        if (isSymbol(propType, propValue)) return 'symbol';
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === 'undefined' || propValue === null) return '' + propValue;
+        var propType = getPropType(propValue);
+        if (propType === 'object') {
+            if (propValue instanceof Date) return 'date';
+            else if (propValue instanceof RegExp) return 'regexp';
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case 'array':
+            case 'object':
+                return 'an ' + type;
+            case 'boolean':
+            case 'date':
+            case 'regexp':
+                return 'a ' + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+
+},{"c437388b089702c3":"59S9B","c067a60101d8520c":"grVLZ","74a0f89a70b9f3c2":"ggXkd","18441b11647bc78":"cnEYJ","bec3f6ff89f0b072":"gaN1l"}],"grVLZ":[function(require,module,exports,__globalThis) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ 'use strict';
+/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) throw new TypeError('Object.assign cannot be called with null or undefined');
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if (!Object.assign) return false;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
+        test1[5] = 'de';
+        if (Object.getOwnPropertyNames(test1)[0] === '5') return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++)test2['_' + String.fromCharCode(i)] = i;
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join('') !== '0123456789') return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        'abcdefghijklmnopqrst'.split('').forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') return false;
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
+        }
+    }
+    return to;
+};
+
+},{}],"ggXkd":[function(require,module,exports,__globalThis) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 'use strict';
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+module.exports = ReactPropTypesSecret;
+
+},{}],"cnEYJ":[function(require,module,exports,__globalThis) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"gaN1l":[function(require,module,exports,__globalThis) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 'use strict';
+var printWarning = function() {};
+var ReactPropTypesSecret = require("24ba1e58d167a82c");
+var loggedTypeFailures = {};
+var has = require("898bc82f39d83f7c");
+printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+            // This is intentionally an invariant that gets caught. It's the same
+            // behavior as without this statement except with a better message.
+            if (typeof typeSpecs[typeSpecName] !== 'function') {
+                var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
+                err.name = 'Invariant Violation';
+                throw err;
+            }
+            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+            error = ex;
+        }
+        if (error && !(error instanceof Error)) printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + typeof error + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+            // Only monitor this failure once because there tends to be a lot of the
+            // same error.
+            loggedTypeFailures[error.message] = true;
+            var stack = getStack ? getStack() : '';
+            printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    loggedTypeFailures = {};
+};
+module.exports = checkPropTypes;
+
+},{"24ba1e58d167a82c":"ggXkd","898bc82f39d83f7c":"cnEYJ"}],"frnmY":[function(require,module,exports,__globalThis) {
+/**
+ * defines a focus group
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FOCUS_GROUP", ()=>FOCUS_GROUP);
+parcelHelpers.export(exports, "FOCUS_DISABLED", ()=>FOCUS_DISABLED);
+parcelHelpers.export(exports, "FOCUS_ALLOW", ()=>FOCUS_ALLOW);
+parcelHelpers.export(exports, "FOCUS_AUTO", ()=>FOCUS_AUTO);
+parcelHelpers.export(exports, "FOCUS_NO_AUTOFOCUS", ()=>FOCUS_NO_AUTOFOCUS);
+var FOCUS_GROUP = 'data-focus-lock';
+var FOCUS_DISABLED = 'data-focus-lock-disabled';
+var FOCUS_ALLOW = 'data-no-focus-lock';
+var FOCUS_AUTO = 'data-autofocus-inside';
+var FOCUS_NO_AUTOFOCUS = 'data-no-autofocus';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aWIcL":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "assignRef", ()=>(0, _assignRef.assignRef));
+// callback ref
+parcelHelpers.export(exports, "useCallbackRef", ()=>(0, _useRef.useCallbackRef));
+parcelHelpers.export(exports, "createCallbackRef", ()=>(0, _createRef.createCallbackRef));
+// merge ref
+parcelHelpers.export(exports, "mergeRefs", ()=>(0, _mergeRef.mergeRefs));
+parcelHelpers.export(exports, "useMergeRefs", ()=>(0, _useMergeRef.useMergeRefs));
+// transform ref
+parcelHelpers.export(exports, "useTransformRef", ()=>(0, _useTransformRef.useTransformRef));
+parcelHelpers.export(exports, "transformRef", ()=>(0, _transformRef.transformRef));
+// refToCallback
+parcelHelpers.export(exports, "refToCallback", ()=>(0, _refToCallback.refToCallback));
+parcelHelpers.export(exports, "useRefToCallback", ()=>(0, _refToCallback.useRefToCallback));
+var _assignRef = require("./assignRef");
+var _useRef = require("./useRef");
+var _createRef = require("./createRef");
+var _mergeRef = require("./mergeRef");
+var _useMergeRef = require("./useMergeRef");
+var _useTransformRef = require("./useTransformRef");
+var _transformRef = require("./transformRef");
+var _refToCallback = require("./refToCallback");
+
+},{"./assignRef":false,"./useRef":false,"./createRef":false,"./mergeRef":false,"./useMergeRef":"asiBb","./useTransformRef":false,"./transformRef":false,"./refToCallback":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8SxUu":[function(require,module,exports,__globalThis) {
+/**
+ * Assigns a value for a given ref, no matter of the ref format
+ * @param {RefObject} ref - a callback function or ref object
+ * @param value - a new value
+ *
+ * @see https://github.com/theKashey/use-callback-ref#assignref
+ * @example
+ * const refObject = useRef();
+ * const refFn = (ref) => {....}
+ *
+ * assignRef(refObject, "refValue");
+ * assignRef(refFn, "refValue");
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "assignRef", ()=>assignRef);
+function assignRef(ref, value) {
+    if (typeof ref === 'function') ref(value);
+    else if (ref) ref.current = value;
+    return ref;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i7LVT":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * creates a MutableRef with ref change callback
+ * @param initialValue - initial ref value
+ * @param {Function} callback - a callback to run when value changes
+ *
+ * @example
+ * const ref = useCallbackRef(0, (newValue, oldValue) => console.log(oldValue, '->', newValue);
+ * ref.current = 1;
+ * // prints 0 -> 1
+ *
+ * @see https://reactjs.org/docs/hooks-reference.html#useref
+ * @see https://github.com/theKashey/use-callback-ref#usecallbackref---to-replace-reactuseref
+ * @returns {MutableRefObject}
+ */ parcelHelpers.export(exports, "useCallbackRef", ()=>useCallbackRef);
+var _react = require("react");
+function useCallbackRef(initialValue, callback) {
+    var ref = (0, _react.useState)(function() {
+        return {
+            // value
+            value: initialValue,
+            // last callback
+            callback: callback,
+            // "memoized" public interface
+            facade: {
+                get current () {
+                    return ref.value;
+                },
+                set current (value){
+                    var last = ref.value;
+                    if (last !== value) {
+                        ref.value = value;
+                        ref.callback(value, last);
+                    }
+                }
+            }
+        };
+    })[0];
+    // update callback
+    ref.callback = callback;
+    return ref.facade;
+}
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"asiBb":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Merges two or more refs together providing a single interface to set their value
+ * @param {RefObject|Ref} refs
+ * @returns {MutableRefObject} - a new ref, which translates all changes to {refs}
+ *
+ * @see {@link mergeRefs} a version without buit-in memoization
+ * @see https://github.com/theKashey/use-callback-ref#usemergerefs
+ * @example
+ * const Component = React.forwardRef((props, ref) => {
+ *   const ownRef = useRef();
+ *   const domRef = useMergeRefs([ref, ownRef]); // 👈 merge together
+ *   return <div ref={domRef}>...</div>
+ * }
+ */ parcelHelpers.export(exports, "useMergeRefs", ()=>useMergeRefs);
+var _react = require("react");
+var _assignRef = require("./assignRef");
+var _useRef = require("./useRef");
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? _react.useLayoutEffect : _react.useEffect;
+var currentValues = new WeakMap();
+function useMergeRefs(refs, defaultValue) {
+    var callbackRef = (0, _useRef.useCallbackRef)(defaultValue || null, function(newValue) {
+        return refs.forEach(function(ref) {
+            return (0, _assignRef.assignRef)(ref, newValue);
+        });
+    });
+    // handle refs changes - added or removed
+    useIsomorphicLayoutEffect(function() {
+        var oldValue = currentValues.get(callbackRef);
+        if (oldValue) {
+            var prevRefs_1 = new Set(oldValue);
+            var nextRefs_1 = new Set(refs);
+            var current_1 = callbackRef.current;
+            prevRefs_1.forEach(function(ref) {
+                if (!nextRefs_1.has(ref)) (0, _assignRef.assignRef)(ref, null);
+            });
+            nextRefs_1.forEach(function(ref) {
+                if (!prevRefs_1.has(ref)) (0, _assignRef.assignRef)(ref, current_1);
+            });
+        }
+        currentValues.set(callbackRef, refs);
+    }, [
+        refs
+    ]);
+    return callbackRef;
+}
+
+},{"react":"jMk1U","./assignRef":"8SxUu","./useRef":"i7LVT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2bUZ5":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "hiddenGuard", ()=>hiddenGuard);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var hiddenGuard = {
+    width: '1px',
+    height: '0px',
+    padding: 0,
+    overflow: 'hidden',
+    position: 'fixed',
+    top: '1px',
+    left: '1px'
+};
+var InFocusGuard = function InFocusGuard(_ref) {
+    var _ref$children = _ref.children, children = _ref$children === void 0 ? null : _ref$children;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _react.Fragment), null, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        key: "guard-first",
+        "data-focus-guard": true,
+        "data-focus-auto-guard": true,
+        style: hiddenGuard
+    }), children, children && /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        key: "guard-last",
+        "data-focus-guard": true,
+        "data-focus-auto-guard": true,
+        style: hiddenGuard
+    }));
+};
+InFocusGuard.propTypes = {
+    children: (0, _propTypesDefault.default).node
+};
+exports.default = InFocusGuard;
+
+},{"react":"jMk1U","prop-types":"GNqOQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"PUfQ7":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mediumFocus", ()=>mediumFocus);
+parcelHelpers.export(exports, "mediumBlur", ()=>mediumBlur);
+parcelHelpers.export(exports, "mediumEffect", ()=>mediumEffect);
+parcelHelpers.export(exports, "mediumSidecar", ()=>mediumSidecar);
+var _useSidecar = require("use-sidecar");
+var mediumFocus = (0, _useSidecar.createMedium)({}, function(_ref) {
+    var target = _ref.target, currentTarget = _ref.currentTarget;
+    return {
+        target: target,
+        currentTarget: currentTarget
+    };
+});
+var mediumBlur = (0, _useSidecar.createMedium)();
+var mediumEffect = (0, _useSidecar.createMedium)();
+var mediumSidecar = (0, _useSidecar.createSidecarMedium)({
+    async: true,
+    ssr: typeof document !== 'undefined'
+});
+
+},{"use-sidecar":"9DKys","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9DKys":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sidecar", ()=>(0, _hoc.sidecar));
+parcelHelpers.export(exports, "useSidecar", ()=>(0, _hook.useSidecar));
+parcelHelpers.export(exports, "setConfig", ()=>(0, _config.setConfig));
+parcelHelpers.export(exports, "createMedium", ()=>(0, _medium.createMedium));
+parcelHelpers.export(exports, "createSidecarMedium", ()=>(0, _medium.createSidecarMedium));
+parcelHelpers.export(exports, "renderCar", ()=>(0, _renderProp.renderCar));
+parcelHelpers.export(exports, "exportSidecar", ()=>(0, _exports.exportSidecar));
+var _hoc = require("./hoc");
+var _hook = require("./hook");
+var _config = require("./config");
+var _medium = require("./medium");
+var _renderProp = require("./renderProp");
+var _exports = require("./exports");
+
+},{"./hoc":false,"./hook":false,"./config":false,"./medium":"fJZJz","./renderProp":false,"./exports":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fJZJz":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createMedium", ()=>createMedium);
+// eslint-disable-next-line @typescript-eslint/ban-types
+parcelHelpers.export(exports, "createSidecarMedium", ()=>createSidecarMedium);
+var _tslib = require("tslib");
+function ItoI(a) {
+    return a;
+}
+function innerCreateMedium(defaults, middleware) {
+    if (middleware === void 0) middleware = ItoI;
+    var buffer = [];
+    var assigned = false;
+    var medium = {
+        read: function() {
+            if (assigned) throw new Error('Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.');
+            if (buffer.length) return buffer[buffer.length - 1];
+            return defaults;
+        },
+        useMedium: function(data) {
+            var item = middleware(data, assigned);
+            buffer.push(item);
+            return function() {
+                buffer = buffer.filter(function(x) {
+                    return x !== item;
+                });
+            };
+        },
+        assignSyncMedium: function(cb) {
+            assigned = true;
+            while(buffer.length){
+                var cbs = buffer;
+                buffer = [];
+                cbs.forEach(cb);
+            }
+            buffer = {
+                push: function(x) {
+                    return cb(x);
+                },
+                filter: function() {
+                    return buffer;
+                }
+            };
+        },
+        assignMedium: function(cb) {
+            assigned = true;
+            var pendingQueue = [];
+            if (buffer.length) {
+                var cbs = buffer;
+                buffer = [];
+                cbs.forEach(cb);
+                pendingQueue = buffer;
+            }
+            var executeQueue = function() {
+                var cbs = pendingQueue;
+                pendingQueue = [];
+                cbs.forEach(cb);
+            };
+            var cycle = function() {
+                return Promise.resolve().then(executeQueue);
+            };
+            cycle();
+            buffer = {
+                push: function(x) {
+                    pendingQueue.push(x);
+                    cycle();
+                },
+                filter: function(filter) {
+                    pendingQueue = pendingQueue.filter(filter);
+                    return buffer;
+                }
+            };
+        }
+    };
+    return medium;
+}
+function createMedium(defaults, middleware) {
+    if (middleware === void 0) middleware = ItoI;
+    return innerCreateMedium(defaults, middleware);
+}
+function createSidecarMedium(options) {
+    if (options === void 0) options = {};
+    var medium = innerCreateMedium(null);
+    medium.options = (0, _tslib.__assign)({
+        async: true,
+        ssr: false
+    }, options);
+    return medium;
+}
+
+},{"tslib":"iC1Dx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iC1Dx":[function(require,module,exports,__globalThis) {
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__extends", ()=>__extends);
+parcelHelpers.export(exports, "__assign", ()=>__assign);
+parcelHelpers.export(exports, "__rest", ()=>__rest);
+parcelHelpers.export(exports, "__decorate", ()=>__decorate);
+parcelHelpers.export(exports, "__param", ()=>__param);
+parcelHelpers.export(exports, "__esDecorate", ()=>__esDecorate);
+parcelHelpers.export(exports, "__runInitializers", ()=>__runInitializers);
+parcelHelpers.export(exports, "__propKey", ()=>__propKey);
+parcelHelpers.export(exports, "__setFunctionName", ()=>__setFunctionName);
+parcelHelpers.export(exports, "__metadata", ()=>__metadata);
+parcelHelpers.export(exports, "__awaiter", ()=>__awaiter);
+parcelHelpers.export(exports, "__generator", ()=>__generator);
+parcelHelpers.export(exports, "__createBinding", ()=>__createBinding);
+parcelHelpers.export(exports, "__exportStar", ()=>__exportStar);
+parcelHelpers.export(exports, "__values", ()=>__values);
+parcelHelpers.export(exports, "__read", ()=>__read);
+/** @deprecated */ parcelHelpers.export(exports, "__spread", ()=>__spread);
+/** @deprecated */ parcelHelpers.export(exports, "__spreadArrays", ()=>__spreadArrays);
+parcelHelpers.export(exports, "__spreadArray", ()=>__spreadArray);
+parcelHelpers.export(exports, "__await", ()=>__await);
+parcelHelpers.export(exports, "__asyncGenerator", ()=>__asyncGenerator);
+parcelHelpers.export(exports, "__asyncDelegator", ()=>__asyncDelegator);
+parcelHelpers.export(exports, "__asyncValues", ()=>__asyncValues);
+parcelHelpers.export(exports, "__makeTemplateObject", ()=>__makeTemplateObject);
+parcelHelpers.export(exports, "__importStar", ()=>__importStar);
+parcelHelpers.export(exports, "__importDefault", ()=>__importDefault);
+parcelHelpers.export(exports, "__classPrivateFieldGet", ()=>__classPrivateFieldGet);
+parcelHelpers.export(exports, "__classPrivateFieldSet", ()=>__classPrivateFieldSet);
+parcelHelpers.export(exports, "__classPrivateFieldIn", ()=>__classPrivateFieldIn);
+parcelHelpers.export(exports, "__addDisposableResource", ()=>__addDisposableResource);
+parcelHelpers.export(exports, "__disposeResources", ()=>__disposeResources);
+parcelHelpers.export(exports, "__rewriteRelativeImportExtension", ()=>__rewriteRelativeImportExtension);
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+}
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+    function accept(f) {
+        if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
+        return f;
+    }
+    var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
+    var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
+    var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
+    var _, done = false;
+    for(var i = decorators.length - 1; i >= 0; i--){
+        var context = {};
+        for(var p in contextIn)context[p] = p === "access" ? {} : contextIn[p];
+        for(var p in contextIn.access)context.access[p] = contextIn.access[p];
+        context.addInitializer = function(f) {
+            if (done) throw new TypeError("Cannot add initializers after decoration has completed");
+            extraInitializers.push(accept(f || null));
+        };
+        var result = (0, decorators[i])(kind === "accessor" ? {
+            get: descriptor.get,
+            set: descriptor.set
+        } : descriptor[key], context);
+        if (kind === "accessor") {
+            if (result === void 0) continue;
+            if (result === null || typeof result !== "object") throw new TypeError("Object expected");
+            if (_ = accept(result.get)) descriptor.get = _;
+            if (_ = accept(result.set)) descriptor.set = _;
+            if (_ = accept(result.init)) initializers.unshift(_);
+        } else if (_ = accept(result)) {
+            if (kind === "field") initializers.unshift(_);
+            else descriptor[key] = _;
+        }
+    }
+    if (target) Object.defineProperty(target, contextIn.name, descriptor);
+    done = true;
+}
+function __runInitializers(thisArg, initializers, value) {
+    var useValue = arguments.length > 2;
+    for(var i = 0; i < initializers.length; i++)value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
+    return useValue ? value : void 0;
+}
+function __propKey(x) {
+    return typeof x === "symbol" ? x : "".concat(x);
+}
+function __setFunctionName(f, name, prefix) {
+    if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
+    return Object.defineProperty(f, "name", {
+        configurable: true,
+        value: prefix ? "".concat(prefix, " ", name) : name
+    });
+}
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(g && (g = 0, op[0] && (_ = 0)), _)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var __createBinding = Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+        enumerable: true,
+        get: function() {
+            return m[k];
+        }
+    };
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+};
+function __exportStar(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) {
+        for(var i = 0, l = from.length, ar; i < l; i++)if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    function awaitReturn(f) {
+        return function(v) {
+            return Promise.resolve(v).then(f, reject);
+        };
+    }
+    function verb(n, f) {
+        if (g[n]) {
+            i[n] = function(v) {
+                return new Promise(function(a, b) {
+                    q.push([
+                        n,
+                        v,
+                        a,
+                        b
+                    ]) > 1 || resume(n, v);
+                });
+            };
+            if (f) i[n] = f(i[n]);
+        }
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: false
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) Object.defineProperty(cooked, "raw", {
+        value: raw
+    });
+    else cooked.raw = raw;
+    return cooked;
+}
+var __setModuleDefault = Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+};
+var ownKeys = function(o) {
+    ownKeys = Object.getOwnPropertyNames || function(o) {
+        var ar = [];
+        for(var k in o)if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+        return ar;
+    };
+    return ownKeys(o);
+};
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k = ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") __createBinding(result, mod, k[i]);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+function __addDisposableResource(env, value, async) {
+    if (value !== null && value !== void 0) {
+        if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
+        var dispose, inner;
+        if (async) {
+            if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
+            dispose = value[Symbol.asyncDispose];
+        }
+        if (dispose === void 0) {
+            if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
+            dispose = value[Symbol.dispose];
+            if (async) inner = dispose;
+        }
+        if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
+        if (inner) dispose = function() {
+            try {
+                inner.call(this);
+            } catch (e) {
+                return Promise.reject(e);
+            }
+        };
+        env.stack.push({
+            value: value,
+            dispose: dispose,
+            async: async
+        });
+    } else if (async) env.stack.push({
+        async: true
+    });
+    return value;
+}
+var _SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
+function __disposeResources(env) {
+    function fail(e) {
+        env.error = env.hasError ? new _SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
+        env.hasError = true;
+    }
+    var r, s = 0;
+    function next() {
+        while(r = env.stack.pop())try {
+            if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
+            if (r.dispose) {
+                var result = r.dispose.call(r.value);
+                if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) {
+                    fail(e);
+                    return next();
+                });
+            } else s |= 1;
+        } catch (e) {
+            fail(e);
+        }
+        if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
+        if (env.hasError) throw env.error;
+    }
+    return next();
+}
+function __rewriteRelativeImportExtension(path, preserveJsx) {
+    if (typeof path === "string" && /^\.\.?\//.test(path)) return path.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(m, tsx, d, ext, cm) {
+        return tsx ? preserveJsx ? ".jsx" : ".js" : d && (!ext || !cm) ? m : d + ext + "." + cm.toLowerCase() + "js";
+    });
+    return path;
+}
+exports.default = {
+    __extends: __extends,
+    __assign: __assign,
+    __rest: __rest,
+    __decorate: __decorate,
+    __param: __param,
+    __esDecorate: __esDecorate,
+    __runInitializers: __runInitializers,
+    __propKey: __propKey,
+    __setFunctionName: __setFunctionName,
+    __metadata: __metadata,
+    __awaiter: __awaiter,
+    __generator: __generator,
+    __createBinding: __createBinding,
+    __exportStar: __exportStar,
+    __values: __values,
+    __read: __read,
+    __spread: __spread,
+    __spreadArrays: __spreadArrays,
+    __spreadArray: __spreadArray,
+    __await: __await,
+    __asyncGenerator: __asyncGenerator,
+    __asyncDelegator: __asyncDelegator,
+    __asyncValues: __asyncValues,
+    __makeTemplateObject: __makeTemplateObject,
+    __importStar: __importStar,
+    __importDefault: __importDefault,
+    __classPrivateFieldGet: __classPrivateFieldGet,
+    __classPrivateFieldSet: __classPrivateFieldSet,
+    __classPrivateFieldIn: __classPrivateFieldIn,
+    __addDisposableResource: __addDisposableResource,
+    __disposeResources: __disposeResources,
+    __rewriteRelativeImportExtension: __rewriteRelativeImportExtension
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3Inge":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "focusScope", ()=>focusScope);
+var _react = require("react");
+var focusScope = /*#__PURE__*/ (0, _react.createContext)(undefined);
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cKTY4":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _reactClientsideEffect = require("react-clientside-effect");
+var _reactClientsideEffectDefault = parcelHelpers.interopDefault(_reactClientsideEffect);
+var _focusLock = require("focus-lock");
+var _util = require("./util");
+var _medium = require("./medium");
+var focusOnBody = function focusOnBody() {
+    return document && document.activeElement === document.body;
+};
+var isFreeFocus = function isFreeFocus() {
+    return focusOnBody() || (0, _focusLock.focusIsHidden)();
+};
+var lastActiveTrap = null;
+var lastActiveFocus = null;
+var tryRestoreFocus = function tryRestoreFocus() {
+    return null;
+};
+var lastPortaledElement = null;
+var focusWasOutsideWindow = false;
+var windowFocused = false;
+var defaultWhitelist = function defaultWhitelist() {
+    return true;
+};
+var focusWhitelisted = function focusWhitelisted(activeElement) {
+    return (lastActiveTrap.whiteList || defaultWhitelist)(activeElement);
+};
+var recordPortal = function recordPortal(observerNode, portaledElement) {
+    lastPortaledElement = {
+        observerNode: observerNode,
+        portaledElement: portaledElement
+    };
+};
+var focusIsPortaledPair = function focusIsPortaledPair(element) {
+    return lastPortaledElement && lastPortaledElement.portaledElement === element;
+};
+function autoGuard(startIndex, end, step, allNodes) {
+    var lastGuard = null;
+    var i = startIndex;
+    do {
+        var item = allNodes[i];
+        if (item.guard) {
+            if (item.node.dataset.focusAutoGuard) lastGuard = item;
+        } else if (item.lockItem) {
+            if (i !== startIndex) return;
+            lastGuard = null;
+        } else break;
+    }while ((i += step) !== end);
+    if (lastGuard) lastGuard.node.tabIndex = 0;
+}
+var focusWasOutside = function focusWasOutside(crossFrameOption) {
+    if (crossFrameOption) return Boolean(focusWasOutsideWindow);
+    return focusWasOutsideWindow === 'meanwhile';
+};
+var checkInHost = function checkInHost(check, el, boundary) {
+    return el && (el.host === check && (!el.activeElement || boundary.contains(el.activeElement)) || el.parentNode && checkInHost(check, el.parentNode, boundary));
+};
+var withinHost = function withinHost(activeElement, workingArea) {
+    return workingArea.some(function(area) {
+        return checkInHost(activeElement, area, area);
+    });
+};
+var getNodeFocusables = function getNodeFocusables(nodes) {
+    return (0, _focusLock.getFocusableNodes)(nodes, new Map());
+};
+var isNotFocusable = function isNotFocusable(node) {
+    return !getNodeFocusables([
+        node.parentNode
+    ]).some(function(el) {
+        return el.node === node;
+    });
+};
+var activateTrap = function activateTrap() {
+    var result = false;
+    if (lastActiveTrap) {
+        var _lastActiveTrap = lastActiveTrap, observed = _lastActiveTrap.observed, persistentFocus = _lastActiveTrap.persistentFocus, autoFocus = _lastActiveTrap.autoFocus, shards = _lastActiveTrap.shards, crossFrame = _lastActiveTrap.crossFrame, focusOptions = _lastActiveTrap.focusOptions, noFocusGuards = _lastActiveTrap.noFocusGuards;
+        var workingNode = observed || lastPortaledElement && lastPortaledElement.portaledElement;
+        if (focusOnBody() && lastActiveFocus && lastActiveFocus !== document.body) {
+            if (!document.body.contains(lastActiveFocus) || isNotFocusable(lastActiveFocus)) {
+                var newTarget = tryRestoreFocus();
+                if (newTarget) newTarget.focus();
+            }
+        }
+        var activeElement = document && document.activeElement;
+        if (workingNode) {
+            var workingArea = [
+                workingNode
+            ].concat(shards.map((0, _util.extractRef)).filter(Boolean));
+            var shouldForceRestoreFocus = function shouldForceRestoreFocus() {
+                if (!focusWasOutside(crossFrame) || !noFocusGuards || !lastActiveFocus || windowFocused) return false;
+                var nodes = getNodeFocusables(workingArea);
+                var lastIndex = nodes.findIndex(function(_ref) {
+                    var node = _ref.node;
+                    return node === lastActiveFocus;
+                });
+                return lastIndex === 0 || lastIndex === nodes.length - 1;
+            };
+            if (!activeElement || focusWhitelisted(activeElement)) {
+                if (persistentFocus || shouldForceRestoreFocus() || !isFreeFocus() || !lastActiveFocus && autoFocus) {
+                    if (workingNode && !((0, _focusLock.focusInside)(workingArea) || activeElement && withinHost(activeElement, workingArea) || focusIsPortaledPair(activeElement, workingNode))) {
+                        if (document && !lastActiveFocus && activeElement && !autoFocus) {
+                            if (activeElement.blur) activeElement.blur();
+                            document.body.focus();
+                        } else {
+                            result = (0, _focusLock.moveFocusInside)(workingArea, lastActiveFocus, {
+                                focusOptions: focusOptions
+                            });
+                            lastPortaledElement = {};
+                        }
+                    }
+                    lastActiveFocus = document && document.activeElement;
+                    if (lastActiveFocus !== document.body) tryRestoreFocus = (0, _focusLock.captureFocusRestore)(lastActiveFocus);
+                    focusWasOutsideWindow = false;
+                }
+            }
+            if (document && activeElement !== document.activeElement && document.querySelector('[data-focus-auto-guard]')) {
+                var newActiveElement = document && document.activeElement;
+                var allNodes = (0, _focusLock.expandFocusableNodes)(workingArea);
+                var focusedIndex = allNodes.map(function(_ref2) {
+                    var node = _ref2.node;
+                    return node;
+                }).indexOf(newActiveElement);
+                if (focusedIndex > -1) {
+                    allNodes.filter(function(_ref3) {
+                        var guard = _ref3.guard, node = _ref3.node;
+                        return guard && node.dataset.focusAutoGuard;
+                    }).forEach(function(_ref4) {
+                        var node = _ref4.node;
+                        return node.removeAttribute('tabIndex');
+                    });
+                    autoGuard(focusedIndex, allNodes.length, 1, allNodes);
+                    autoGuard(focusedIndex, -1, -1, allNodes);
+                }
+            }
+        }
+    }
+    return result;
+};
+var onTrap = function onTrap(event) {
+    if (activateTrap() && event) {
+        event.stopPropagation();
+        event.preventDefault();
+    }
+};
+var onBlur = function onBlur() {
+    return (0, _util.deferAction)(activateTrap);
+};
+var onFocus = function onFocus(event) {
+    var source = event.target;
+    var currentNode = event.currentTarget;
+    if (!currentNode.contains(source)) recordPortal(currentNode, source);
+};
+var FocusWatcher = function FocusWatcher() {
+    return null;
+};
+var FocusTrap = function FocusTrap(_ref5) {
+    var children = _ref5.children;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        onBlur: onBlur,
+        onFocus: onFocus
+    }, children);
+};
+FocusTrap.propTypes = {
+    children: (0, _propTypesDefault.default).node.isRequired
+};
+var onWindowFocus = function onWindowFocus() {
+    windowFocused = true;
+};
+var onWindowBlur = function onWindowBlur() {
+    windowFocused = false;
+    focusWasOutsideWindow = 'just';
+    (0, _util.deferAction)(function() {
+        focusWasOutsideWindow = 'meanwhile';
+    });
+};
+var attachHandler = function attachHandler() {
+    document.addEventListener('focusin', onTrap);
+    document.addEventListener('focusout', onBlur);
+    window.addEventListener('focus', onWindowFocus);
+    window.addEventListener('blur', onWindowBlur);
+};
+var detachHandler = function detachHandler() {
+    document.removeEventListener('focusin', onTrap);
+    document.removeEventListener('focusout', onBlur);
+    window.removeEventListener('focus', onWindowFocus);
+    window.removeEventListener('blur', onWindowBlur);
+};
+function reducePropsToState(propsList) {
+    return propsList.filter(function(_ref6) {
+        var disabled = _ref6.disabled;
+        return !disabled;
+    });
+}
+var focusLockAPI = {
+    moveFocusInside: (0, _focusLock.moveFocusInside),
+    focusInside: (0, _focusLock.focusInside),
+    focusNextElement: (0, _focusLock.focusNextElement),
+    focusPrevElement: (0, _focusLock.focusPrevElement),
+    focusFirstElement: (0, _focusLock.focusFirstElement),
+    focusLastElement: (0, _focusLock.focusLastElement),
+    captureFocusRestore: (0, _focusLock.captureFocusRestore)
+};
+function handleStateChangeOnClient(traps) {
+    var trap = traps.slice(-1)[0];
+    if (trap && !lastActiveTrap) attachHandler();
+    var lastTrap = lastActiveTrap;
+    var sameTrap = lastTrap && trap && trap.id === lastTrap.id;
+    lastActiveTrap = trap;
+    if (lastTrap && !sameTrap) {
+        lastTrap.onDeactivation();
+        if (!traps.filter(function(_ref7) {
+            var id = _ref7.id;
+            return id === lastTrap.id;
+        }).length) lastTrap.returnFocus(!trap);
+    }
+    if (trap) {
+        lastActiveFocus = null;
+        if (!sameTrap || lastTrap.observed !== trap.observed) trap.onActivation(focusLockAPI);
+        activateTrap(true);
+        (0, _util.deferAction)(activateTrap);
+    } else {
+        detachHandler();
+        lastActiveFocus = null;
+    }
+}
+(0, _medium.mediumFocus).assignSyncMedium(onFocus);
+(0, _medium.mediumBlur).assignMedium(onBlur);
+(0, _medium.mediumEffect).assignMedium(function(cb) {
+    return cb(focusLockAPI);
+});
+exports.default = (0, _reactClientsideEffectDefault.default)(reducePropsToState, handleStateChangeOnClient)(FocusWatcher);
+
+},{"react":"jMk1U","prop-types":"GNqOQ","react-clientside-effect":"f3zbB","focus-lock":"fZr8o","./util":"9df2e","./medium":"PUfQ7","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"f3zbB":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _inheritsLoose = require("@babel/runtime/helpers/esm/inheritsLoose");
+var _inheritsLooseDefault = parcelHelpers.interopDefault(_inheritsLoose);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function withSideEffect(reducePropsToState, handleStateChangeOnClient) {
+    if (typeof reducePropsToState !== 'function') throw new Error('Expected reducePropsToState to be a function.');
+    if (typeof handleStateChangeOnClient !== 'function') throw new Error('Expected handleStateChangeOnClient to be a function.');
+    function getDisplayName(WrappedComponent) {
+        return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+    }
+    return function wrap(WrappedComponent) {
+        if (typeof WrappedComponent !== 'function') throw new Error('Expected WrappedComponent to be a React component.');
+        var mountedInstances = [];
+        var state;
+        function emitChange() {
+            state = reducePropsToState(mountedInstances.map(function(instance) {
+                return instance.props;
+            }));
+            handleStateChangeOnClient(state);
+        }
+        var SideEffect = /*#__PURE__*/ function(_PureComponent) {
+            (0, _inheritsLooseDefault.default)(SideEffect, _PureComponent);
+            function SideEffect() {
+                return _PureComponent.apply(this, arguments) || this;
+            }
+            // Try to use displayName of wrapped component
+            SideEffect.peek = function peek() {
+                return state;
+            };
+            var _proto = SideEffect.prototype;
+            _proto.componentDidMount = function componentDidMount() {
+                mountedInstances.push(this);
+                emitChange();
+            };
+            _proto.componentDidUpdate = function componentDidUpdate() {
+                emitChange();
+            };
+            _proto.componentWillUnmount = function componentWillUnmount() {
+                var index = mountedInstances.indexOf(this);
+                mountedInstances.splice(index, 1);
+                emitChange();
+            };
+            _proto.render = function render() {
+                return /*#__PURE__*/ (0, _reactDefault.default).createElement(WrappedComponent, this.props);
+            };
+            return SideEffect;
+        }((0, _react.PureComponent));
+        (0, _definePropertyDefault.default)(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
+        return SideEffect;
+    };
+}
+exports.default = withSideEffect;
+
+},{"@babel/runtime/helpers/esm/inheritsLoose":"jDIko","@babel/runtime/helpers/esm/defineProperty":"9ZxLF","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jDIko":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_inheritsLoose);
+var _setPrototypeOfJs = require("./setPrototypeOf.js");
+var _setPrototypeOfJsDefault = parcelHelpers.interopDefault(_setPrototypeOfJs);
+function _inheritsLoose(t, o) {
+    t.prototype = Object.create(o.prototype), t.prototype.constructor = t, (0, _setPrototypeOfJsDefault.default)(t, o);
+}
+
+},{"./setPrototypeOf.js":"5Brd2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5Brd2":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_setPrototypeOf);
+function _setPrototypeOf(t, e) {
+    return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        return t.__proto__ = e, t;
+    }, _setPrototypeOf(t, e);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9ZxLF":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_defineProperty);
+var _toPropertyKeyJs = require("./toPropertyKey.js");
+var _toPropertyKeyJsDefault = parcelHelpers.interopDefault(_toPropertyKeyJs);
+function _defineProperty(e, r, t) {
+    return (r = (0, _toPropertyKeyJsDefault.default)(r)) in e ? Object.defineProperty(e, r, {
+        value: t,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[r] = t, e;
+}
+
+},{"./toPropertyKey.js":"j5oMs","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j5oMs":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toPropertyKey);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+var _toPrimitiveJs = require("./toPrimitive.js");
+var _toPrimitiveJsDefault = parcelHelpers.interopDefault(_toPrimitiveJs);
+function toPropertyKey(t) {
+    var i = (0, _toPrimitiveJsDefault.default)(t, "string");
+    return "symbol" == (0, _typeofJsDefault.default)(i) ? i : i + "";
+}
+
+},{"./typeof.js":"8tKcH","./toPrimitive.js":"12HW2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8tKcH":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_typeof);
+function _typeof(o) {
+    "@babel/helpers - typeof";
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+        return typeof o;
+    } : function(o) {
+        return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+    }, _typeof(o);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"12HW2":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toPrimitive);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+function toPrimitive(t, r) {
+    if ("object" != (0, _typeofJsDefault.default)(t) || !t) return t;
+    var e = t[Symbol.toPrimitive];
+    if (void 0 !== e) {
+        var i = e.call(t, r || "default");
+        if ("object" != (0, _typeofJsDefault.default)(i)) return i;
+        throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return ("string" === r ? String : Number)(t);
+}
+
+},{"./typeof.js":"8tKcH","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fZr8o":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "constants", ()=>constants);
+parcelHelpers.export(exports, "focusInside", ()=>//
+    (0, _focusInside.focusInside));
+parcelHelpers.export(exports, "focusIsHidden", ()=>(0, _focusIsHidden.focusIsHidden));
+parcelHelpers.export(exports, "moveFocusInside", ()=>//
+    (0, _moveFocusInside.moveFocusInside));
+parcelHelpers.export(exports, "focusSolver", ()=>(0, _focusSolver.focusSolver));
+parcelHelpers.export(exports, "expandFocusableNodes", ()=>//
+    (0, _focusables.expandFocusableNodes));
+parcelHelpers.export(exports, "getFocusableNodes", ()=>(0, _domutils.getFocusableNodes));
+parcelHelpers.export(exports, "getTabbableNodes", ()=>(0, _domutils.getTabbableNodes));
+parcelHelpers.export(exports, "focusNextElement", ()=>//
+    (0, _sibling.focusNextElement));
+parcelHelpers.export(exports, "focusPrevElement", ()=>(0, _sibling.focusPrevElement));
+parcelHelpers.export(exports, "focusFirstElement", ()=>(0, _sibling.focusFirstElement));
+parcelHelpers.export(exports, "focusLastElement", ()=>(0, _sibling.focusLastElement));
+parcelHelpers.export(exports, "getRelativeFocusable", ()=>(0, _sibling.getRelativeFocusable));
+parcelHelpers.export(exports, "captureFocusRestore", ()=>//
+    (0, _returnFocus.captureFocusRestore));
+var _constants = require("./constants");
+var _focusInside = require("./focusInside");
+var _focusIsHidden = require("./focusIsHidden");
+var _focusSolver = require("./focusSolver");
+var _focusables = require("./focusables");
+var _moveFocusInside = require("./moveFocusInside");
+var _returnFocus = require("./return-focus");
+var _sibling = require("./sibling");
+var _domutils = require("./utils/DOMutils");
+/**
+ * magic symbols to control focus behavior from DOM
+ * see description of every particular one
+ */ var constants = _constants;
+/**
+ * @deprecated - please use {@link moveFocusInside} named export
+ */ var deprecated_default_moveFocusInside = (0, _moveFocusInside.moveFocusInside);
+exports.default = deprecated_default_moveFocusInside; //
+
+},{"./constants":"frnmY","./focusInside":"hwMfS","./focusIsHidden":"i1wf4","./focusSolver":false,"./focusables":"em8CO","./moveFocusInside":"jjKXx","./return-focus":"6hw1A","./sibling":"cucvA","./utils/DOMutils":"bjsGC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hwMfS":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "focusInside", ()=>focusInside);
+var _domutils = require("./utils/DOMutils");
+var _allAffected = require("./utils/all-affected");
+var _array = require("./utils/array");
+var _getActiveElement = require("./utils/getActiveElement");
+var focusInFrame = function(frame, activeElement) {
+    return frame === activeElement;
+};
+var focusInsideIframe = function(topNode, activeElement) {
+    return Boolean((0, _array.toArray)(topNode.querySelectorAll('iframe')).some(function(node) {
+        return focusInFrame(node, activeElement);
+    }));
+};
+var focusInside = function(topNode, activeElement) {
+    // const activeElement = document && getActiveElement();
+    if (activeElement === void 0) activeElement = (0, _getActiveElement.getActiveElement)((0, _array.getFirst)(topNode).ownerDocument);
+    if (!activeElement || activeElement.dataset && activeElement.dataset.focusGuard) return false;
+    return (0, _allAffected.getAllAffectedNodes)(topNode).some(function(node) {
+        return (0, _domutils.contains)(node, activeElement) || focusInsideIframe(node, activeElement);
+    });
+};
+
+},{"./utils/DOMutils":"bjsGC","./utils/all-affected":"aMNVU","./utils/array":"e55F4","./utils/getActiveElement":"bS8nm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bjsGC":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filterFocusable", ()=>filterFocusable);
+parcelHelpers.export(exports, "filterAutoFocusable", ()=>filterAutoFocusable);
+parcelHelpers.export(exports, "getTabbableNodes", ()=>getTabbableNodes);
+parcelHelpers.export(exports, "getFocusableNodes", ()=>getFocusableNodes);
+parcelHelpers.export(exports, "parentAutofocusables", ()=>parentAutofocusables);
+parcelHelpers.export(exports, "contains", ()=>contains);
+var _array = require("./array");
+var _is = require("./is");
+var _tabOrder = require("./tabOrder");
+var _tabUtils = require("./tabUtils");
+var filterFocusable = function(nodes, visibilityCache) {
+    return (0, _array.toArray)(nodes).filter(function(node) {
+        return (0, _is.isVisibleCached)(visibilityCache, node);
+    }).filter(function(node) {
+        return (0, _is.notHiddenInput)(node);
+    });
+};
+var filterAutoFocusable = function(nodes, cache) {
+    if (cache === void 0) cache = new Map();
+    return (0, _array.toArray)(nodes).filter(function(node) {
+        return (0, _is.isAutoFocusAllowedCached)(cache, node);
+    });
+};
+var getTabbableNodes = function(topNodes, visibilityCache, withGuards) {
+    return (0, _tabOrder.orderByTabIndex)(filterFocusable((0, _tabUtils.getFocusables)(topNodes, withGuards), visibilityCache), true, withGuards);
+};
+var getFocusableNodes = function(topNodes, visibilityCache) {
+    return (0, _tabOrder.orderByTabIndex)(filterFocusable((0, _tabUtils.getFocusables)(topNodes), visibilityCache), false);
+};
+var parentAutofocusables = function(topNode, visibilityCache) {
+    return filterFocusable((0, _tabUtils.getParentAutofocusables)(topNode), visibilityCache);
+};
+var contains = function(scope, element) {
+    if (scope.shadowRoot) return contains(scope.shadowRoot, element);
+    else {
+        if (Object.getPrototypeOf(scope).contains !== undefined && Object.getPrototypeOf(scope).contains.call(scope, element)) return true;
+        return (0, _array.toArray)(scope.children).some(function(child) {
+            var _a;
+            if (child instanceof HTMLIFrameElement) {
+                var iframeBody = (_a = child.contentDocument) === null || _a === void 0 ? void 0 : _a.body;
+                if (iframeBody) return contains(iframeBody, element);
+                return false;
+            }
+            return contains(child, element);
+        });
+    }
+};
+
+},{"./array":"e55F4","./is":"pjvel","./tabOrder":"fuX8Z","./tabUtils":"7pxgV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"e55F4":[function(require,module,exports,__globalThis) {
+/*
+IE11 support
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "toArray", ()=>toArray);
+parcelHelpers.export(exports, "asArray", ()=>asArray);
+parcelHelpers.export(exports, "getFirst", ()=>getFirst);
+var toArray = function(a) {
+    var ret = Array(a.length);
+    for(var i = 0; i < a.length; ++i)ret[i] = a[i];
+    return ret;
+};
+var asArray = function(a) {
+    return Array.isArray(a) ? a : [
+        a
+    ];
+};
+var getFirst = function(a) {
+    return Array.isArray(a) ? a[0] : a;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"pjvel":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isVisibleCached", ()=>isVisibleCached);
+parcelHelpers.export(exports, "isAutoFocusAllowedCached", ()=>isAutoFocusAllowedCached);
+parcelHelpers.export(exports, "getDataset", ()=>getDataset);
+parcelHelpers.export(exports, "isHTMLButtonElement", ()=>isHTMLButtonElement);
+parcelHelpers.export(exports, "isHTMLInputElement", ()=>isHTMLInputElement);
+parcelHelpers.export(exports, "isRadioElement", ()=>isRadioElement);
+parcelHelpers.export(exports, "notHiddenInput", ()=>notHiddenInput);
+parcelHelpers.export(exports, "isAutoFocusAllowed", ()=>isAutoFocusAllowed);
+parcelHelpers.export(exports, "isGuard", ()=>isGuard);
+parcelHelpers.export(exports, "isNotAGuard", ()=>isNotAGuard);
+parcelHelpers.export(exports, "isDefined", ()=>isDefined);
+var _constants = require("../constants");
+var isElementHidden = function(node) {
+    // we can measure only "elements"
+    // consider others as "visible"
+    if (node.nodeType !== Node.ELEMENT_NODE) return false;
+    var computedStyle = window.getComputedStyle(node, null);
+    if (!computedStyle || !computedStyle.getPropertyValue) return false;
+    return computedStyle.getPropertyValue('display') === 'none' || computedStyle.getPropertyValue('visibility') === 'hidden';
+};
+var getParentNode = function(node) {
+    // DOCUMENT_FRAGMENT_NODE can also point on ShadowRoot. In this case .host will point on the next node
+    return node.parentNode && node.parentNode.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? node.parentNode.host : node.parentNode;
+};
+var isTopNode = function(node) {
+    // @ts-ignore
+    return node === document || node && node.nodeType === Node.DOCUMENT_NODE;
+};
+var isInert = function(node) {
+    return node.hasAttribute('inert');
+};
+/**
+ * @see https://github.com/testing-library/jest-dom/blob/main/src/to-be-visible.js
+ */ var isVisibleUncached = function(node, checkParent) {
+    return !node || isTopNode(node) || !isElementHidden(node) && !isInert(node) && checkParent(getParentNode(node));
+};
+var isVisibleCached = function(visibilityCache, node) {
+    var cached = visibilityCache.get(node);
+    if (cached !== undefined) return cached;
+    var result = isVisibleUncached(node, isVisibleCached.bind(undefined, visibilityCache));
+    visibilityCache.set(node, result);
+    return result;
+};
+var isAutoFocusAllowedUncached = function(node, checkParent) {
+    return node && !isTopNode(node) ? isAutoFocusAllowed(node) ? checkParent(getParentNode(node)) : false : true;
+};
+var isAutoFocusAllowedCached = function(cache, node) {
+    var cached = cache.get(node);
+    if (cached !== undefined) return cached;
+    var result = isAutoFocusAllowedUncached(node, isAutoFocusAllowedCached.bind(undefined, cache));
+    cache.set(node, result);
+    return result;
+};
+var getDataset = function(node) {
+    // @ts-ignore
+    return node.dataset;
+};
+var isHTMLButtonElement = function(node) {
+    return node.tagName === 'BUTTON';
+};
+var isHTMLInputElement = function(node) {
+    return node.tagName === 'INPUT';
+};
+var isRadioElement = function(node) {
+    return isHTMLInputElement(node) && node.type === 'radio';
+};
+var notHiddenInput = function(node) {
+    return !((isHTMLInputElement(node) || isHTMLButtonElement(node)) && (node.type === 'hidden' || node.disabled));
+};
+var isAutoFocusAllowed = function(node) {
+    var attribute = node.getAttribute((0, _constants.FOCUS_NO_AUTOFOCUS));
+    return ![
+        true,
+        'true',
+        ''
+    ].includes(attribute);
+};
+var isGuard = function(node) {
+    var _a;
+    return Boolean(node && ((_a = getDataset(node)) === null || _a === void 0 ? void 0 : _a.focusGuard));
+};
+var isNotAGuard = function(node) {
+    return !isGuard(node);
+};
+var isDefined = function(x) {
+    return Boolean(x);
+};
+
+},{"../constants":"frnmY","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fuX8Z":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "tabSort", ()=>tabSort);
+parcelHelpers.export(exports, "orderByTabIndex", ()=>orderByTabIndex);
+var _array = require("./array");
+var tabSort = function(a, b) {
+    var aTab = Math.max(0, a.tabIndex);
+    var bTab = Math.max(0, b.tabIndex);
+    var tabDiff = aTab - bTab;
+    var indexDiff = a.index - b.index;
+    if (tabDiff) {
+        if (!aTab) return 1;
+        if (!bTab) return -1;
+    }
+    return tabDiff || indexDiff;
+};
+var getTabIndex = function(node) {
+    if (node.tabIndex < 0) {
+        // all "focusable" elements are already preselected
+        // but some might have implicit negative tabIndex
+        // return 0 for <audio without tabIndex attribute - it is "tabbable"
+        if (!node.hasAttribute('tabindex')) return 0;
+    }
+    return node.tabIndex;
+};
+var orderByTabIndex = function(nodes, filterNegative, keepGuards) {
+    return (0, _array.toArray)(nodes).map(function(node, index) {
+        var tabIndex = getTabIndex(node);
+        return {
+            node: node,
+            index: index,
+            tabIndex: keepGuards && tabIndex === -1 ? (node.dataset || {}).focusGuard ? 0 : -1 : tabIndex
+        };
+    }).filter(function(data) {
+        return !filterNegative || data.tabIndex >= 0;
+    }).sort(tabSort);
+};
+
+},{"./array":"e55F4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7pxgV":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getFocusables", ()=>getFocusables);
+parcelHelpers.export(exports, "getParentAutofocusables", ()=>getParentAutofocusables);
+var _constants = require("../constants");
+var _array = require("./array");
+var _tabbables = require("./tabbables");
+var queryTabbables = (0, _tabbables.tabbables).join(',');
+var queryGuardTabbables = "".concat(queryTabbables, ", [data-focus-guard]");
+var getFocusablesWithShadowDom = function(parent, withGuards) {
+    return (0, _array.toArray)((parent.shadowRoot || parent).children).reduce(function(acc, child) {
+        return acc.concat(child.matches(withGuards ? queryGuardTabbables : queryTabbables) ? [
+            child
+        ] : [], getFocusablesWithShadowDom(child));
+    }, []);
+};
+var getFocusablesWithIFrame = function(parent, withGuards) {
+    var _a;
+    // contentDocument of iframe will be null if current origin cannot access it
+    if (parent instanceof HTMLIFrameElement && ((_a = parent.contentDocument) === null || _a === void 0 ? void 0 : _a.body)) return getFocusables([
+        parent.contentDocument.body
+    ], withGuards);
+    return [
+        parent
+    ];
+};
+var getFocusables = function(parents, withGuards) {
+    return parents.reduce(function(acc, parent) {
+        var _a;
+        var focusableWithShadowDom = getFocusablesWithShadowDom(parent, withGuards);
+        var focusableWithIframes = (_a = []).concat.apply(_a, focusableWithShadowDom.map(function(node) {
+            return getFocusablesWithIFrame(node, withGuards);
+        }));
+        return acc.concat(// add all tabbables inside and within shadow DOMs in DOM order
+        focusableWithIframes, // add if node is tabbable itself
+        parent.parentNode ? (0, _array.toArray)(parent.parentNode.querySelectorAll(queryTabbables)).filter(function(node) {
+            return node === parent;
+        }) : []);
+    }, []);
+};
+var getParentAutofocusables = function(parent) {
+    var parentFocus = parent.querySelectorAll("[".concat((0, _constants.FOCUS_AUTO), "]"));
+    return (0, _array.toArray)(parentFocus).map(function(node) {
+        return getFocusables([
+            node
+        ]);
+    }).reduce(function(acc, nodes) {
+        return acc.concat(nodes);
+    }, []);
+};
+
+},{"../constants":"frnmY","./array":"e55F4","./tabbables":"d64Uv","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d64Uv":[function(require,module,exports,__globalThis) {
+/**
+ * list of the object to be considered as focusable
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "tabbables", ()=>tabbables);
+var tabbables = [
+    'button:enabled',
+    'select:enabled',
+    'textarea:enabled',
+    'input:enabled',
+    // elements with explicit roles will also use explicit tabindex
+    // '[role="button"]',
+    'a[href]',
+    'area[href]',
+    'summary',
+    'iframe',
+    'object',
+    'embed',
+    'audio[controls]',
+    'video[controls]',
+    '[tabindex]',
+    '[contenteditable]',
+    '[autofocus]'
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aMNVU":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAllAffectedNodes", ()=>getAllAffectedNodes);
+var _constants = require("../constants");
+var _array = require("./array");
+/**
+ * in case of multiple nodes nested inside each other
+ * keeps only top ones
+ * this is O(nlogn)
+ * @param nodes
+ * @returns {*}
+ */ var filterNested = function(nodes) {
+    var contained = new Set();
+    var l = nodes.length;
+    for(var i = 0; i < l; i += 1)for(var j = i + 1; j < l; j += 1){
+        var position = nodes[i].compareDocumentPosition(nodes[j]);
+        /* eslint-disable no-bitwise */ if ((position & Node.DOCUMENT_POSITION_CONTAINED_BY) > 0) contained.add(j);
+        if ((position & Node.DOCUMENT_POSITION_CONTAINS) > 0) contained.add(i);
+    /* eslint-enable */ }
+    return nodes.filter(function(_, index) {
+        return !contained.has(index);
+    });
+};
+/**
+ * finds top most parent for a node
+ * @param node
+ * @returns {*}
+ */ var getTopParent = function(node) {
+    return node.parentNode ? getTopParent(node.parentNode) : node;
+};
+var getAllAffectedNodes = function(node) {
+    var nodes = (0, _array.asArray)(node);
+    return nodes.filter(Boolean).reduce(function(acc, currentNode) {
+        var group = currentNode.getAttribute((0, _constants.FOCUS_GROUP));
+        acc.push.apply(acc, group ? filterNested((0, _array.toArray)(getTopParent(currentNode).querySelectorAll("[".concat((0, _constants.FOCUS_GROUP), "=\"").concat(group, "\"]:not([").concat((0, _constants.FOCUS_DISABLED), "=\"disabled\"])")))) : [
+            currentNode
+        ]);
+        return acc;
+    }, []);
+};
+
+},{"../constants":"frnmY","./array":"e55F4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bS8nm":[function(require,module,exports,__globalThis) {
+/**
+ * returns active element from document or from nested shadowdoms
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getActiveElement", ()=>getActiveElement);
+var _safe = require("./safe");
+var getActiveElement = function(inDocument) {
+    if (inDocument === void 0) inDocument = document;
+    if (!inDocument || !inDocument.activeElement) return undefined;
+    var activeElement = inDocument.activeElement;
+    return activeElement.shadowRoot ? getActiveElement(activeElement.shadowRoot) : activeElement instanceof HTMLIFrameElement && (0, _safe.safeProbe)(function() {
+        return activeElement.contentWindow.document;
+    }) ? getActiveElement(activeElement.contentWindow.document) : activeElement;
+};
+
+},{"./safe":"4Ayh6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4Ayh6":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "safeProbe", ()=>safeProbe);
+var safeProbe = function(cb) {
+    try {
+        return cb();
+    } catch (e) {
+        return undefined;
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i1wf4":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "focusIsHidden", ()=>focusIsHidden);
+var _constants = require("./constants");
+var _domutils = require("./utils/DOMutils");
+var _array = require("./utils/array");
+var _getActiveElement = require("./utils/getActiveElement");
+var focusIsHidden = function(inDocument) {
+    if (inDocument === void 0) inDocument = document;
+    var activeElement = (0, _getActiveElement.getActiveElement)(inDocument);
+    if (!activeElement) return false;
+    // this does not support setting FOCUS_ALLOW within shadow dom
+    return (0, _array.toArray)(inDocument.querySelectorAll("[".concat((0, _constants.FOCUS_ALLOW), "]"))).some(function(node) {
+        return (0, _domutils.contains)(node, activeElement);
+    });
+};
+
+},{"./constants":"frnmY","./utils/DOMutils":"bjsGC","./utils/array":"e55F4","./utils/getActiveElement":"bS8nm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bK42V":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "focusSolver", ()=>focusSolver);
+var _solver = require("./solver");
+var _domutils = require("./utils/DOMutils");
+var _allAffected = require("./utils/all-affected");
+var _array = require("./utils/array");
+var _autoFocus = require("./utils/auto-focus");
+var _getActiveElement = require("./utils/getActiveElement");
+var _is = require("./utils/is");
+var _parenting = require("./utils/parenting");
+var reorderNodes = function(srcNodes, dstNodes) {
+    var remap = new Map();
+    // no Set(dstNodes) for IE11 :(
+    dstNodes.forEach(function(entity) {
+        return remap.set(entity.node, entity);
+    });
+    // remap to dstNodes
+    return srcNodes.map(function(node) {
+        return remap.get(node);
+    }).filter((0, _is.isDefined));
+};
+var focusSolver = function(topNode, lastNode) {
+    var activeElement = (0, _getActiveElement.getActiveElement)((0, _array.asArray)(topNode).length > 0 ? document : (0, _array.getFirst)(topNode).ownerDocument);
+    var entries = (0, _allAffected.getAllAffectedNodes)(topNode).filter((0, _is.isNotAGuard));
+    var commonParent = (0, _parenting.getTopCommonParent)(activeElement || topNode, topNode, entries);
+    var visibilityCache = new Map();
+    var anyFocusable = (0, _domutils.getFocusableNodes)(entries, visibilityCache);
+    var innerElements = anyFocusable.filter(function(_a) {
+        var node = _a.node;
+        return (0, _is.isNotAGuard)(node);
+    });
+    if (!innerElements[0]) return undefined;
+    var outerNodes = (0, _domutils.getFocusableNodes)([
+        commonParent
+    ], visibilityCache).map(function(_a) {
+        var node = _a.node;
+        return node;
+    });
+    var orderedInnerElements = reorderNodes(outerNodes, innerElements);
+    // collect inner focusable and separately tabbables
+    var innerFocusables = orderedInnerElements.map(function(_a) {
+        var node = _a.node;
+        return node;
+    });
+    var innerTabbable = orderedInnerElements.filter(function(_a) {
+        var tabIndex = _a.tabIndex;
+        return tabIndex >= 0;
+    }).map(function(_a) {
+        var node = _a.node;
+        return node;
+    });
+    var newId = (0, _solver.newFocus)(innerFocusables, innerTabbable, outerNodes, activeElement, lastNode);
+    if (newId === (0, _solver.NEW_FOCUS)) {
+        var focusNode = // first try only tabbable, and the fallback to all focusable, as long as at least one element should be picked for focus
+        (0, _autoFocus.pickAutofocus)(anyFocusable, innerTabbable, (0, _parenting.allParentAutofocusables)(entries, visibilityCache)) || (0, _autoFocus.pickAutofocus)(anyFocusable, innerFocusables, (0, _parenting.allParentAutofocusables)(entries, visibilityCache));
+        if (focusNode) return {
+            node: focusNode
+        };
+        else {
+            console.warn('focus-lock: cannot find any node to move focus into');
+            return undefined;
+        }
+    }
+    if (newId === undefined) return newId;
+    return orderedInnerElements[newId];
+};
+
+},{"./solver":"3te9N","./utils/DOMutils":"bjsGC","./utils/all-affected":"aMNVU","./utils/array":"e55F4","./utils/auto-focus":"C7zCK","./utils/getActiveElement":"bS8nm","./utils/is":"pjvel","./utils/parenting":"3zW7D","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3te9N":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NEW_FOCUS", ()=>NEW_FOCUS);
+parcelHelpers.export(exports, "newFocus", ()=>newFocus);
+var _correctFocus = require("./utils/correctFocus");
+var _firstFocus = require("./utils/firstFocus");
+var _is = require("./utils/is");
+var NEW_FOCUS = 'NEW_FOCUS';
+var newFocus = function(innerNodes, innerTabbables, outerNodes, activeElement, lastNode) {
+    var cnt = innerNodes.length;
+    var firstFocus = innerNodes[0];
+    var lastFocus = innerNodes[cnt - 1];
+    var isOnGuard = (0, _is.isGuard)(activeElement);
+    // focus is inside
+    if (activeElement && innerNodes.indexOf(activeElement) >= 0) return undefined;
+    var activeIndex = activeElement !== undefined ? outerNodes.indexOf(activeElement) : -1;
+    var lastIndex = lastNode ? outerNodes.indexOf(lastNode) : activeIndex;
+    var lastNodeInside = lastNode ? innerNodes.indexOf(lastNode) : -1;
+    // no active focus (or focus is on the body)
+    if (activeIndex === -1) {
+        // known fallback
+        if (lastNodeInside !== -1) return lastNodeInside;
+        return NEW_FOCUS;
+    }
+    // new focus, nothing to calculate
+    if (lastNodeInside === -1) return NEW_FOCUS;
+    var indexDiff = activeIndex - lastIndex;
+    var firstNodeIndex = outerNodes.indexOf(firstFocus);
+    var lastNodeIndex = outerNodes.indexOf(lastFocus);
+    var correctedNodes = (0, _correctFocus.correctNodes)(outerNodes);
+    var currentFocusableIndex = activeElement !== undefined ? correctedNodes.indexOf(activeElement) : -1;
+    var previousFocusableIndex = lastNode ? correctedNodes.indexOf(lastNode) : currentFocusableIndex;
+    var tabbableNodes = correctedNodes.filter(function(node) {
+        return node.tabIndex >= 0;
+    });
+    var currentTabbableIndex = activeElement !== undefined ? tabbableNodes.indexOf(activeElement) : -1;
+    var previousTabbableIndex = lastNode ? tabbableNodes.indexOf(lastNode) : currentTabbableIndex;
+    var focusIndexDiff = currentTabbableIndex >= 0 && previousTabbableIndex >= 0 ? previousTabbableIndex - currentTabbableIndex : previousFocusableIndex - currentFocusableIndex;
+    // old focus
+    if (!indexDiff && lastNodeInside >= 0) return lastNodeInside;
+    // no tabbable elements, autofocus is not possible
+    if (innerTabbables.length === 0) // an edge case with no tabbable elements
+    // return the last focusable one
+    // with some probability this will prevent focus from cycling across the lock, but there is no tabbale elements to cycle to
+    return lastNodeInside;
+    var returnFirstNode = (0, _firstFocus.pickFocusable)(innerNodes, innerTabbables[0]);
+    var returnLastNode = (0, _firstFocus.pickFocusable)(innerNodes, innerTabbables[innerTabbables.length - 1]);
+    // first element
+    if (activeIndex <= firstNodeIndex && isOnGuard && Math.abs(indexDiff) > 1) return returnLastNode;
+    // last element
+    if (activeIndex >= lastNodeIndex && isOnGuard && Math.abs(indexDiff) > 1) return returnFirstNode;
+    // jump out, but not on the guard
+    if (indexDiff && Math.abs(focusIndexDiff) > 1) return lastNodeInside;
+    // focus above lock
+    if (activeIndex <= firstNodeIndex) return returnLastNode;
+    // focus below lock
+    if (activeIndex > lastNodeIndex) return returnFirstNode;
+    // index is inside tab order, but outside Lock
+    if (indexDiff) {
+        if (Math.abs(indexDiff) > 1) return lastNodeInside;
+        return (cnt + lastNodeInside + indexDiff) % cnt;
+    }
+    // do nothing
+    return undefined;
+};
+
+},{"./utils/correctFocus":"2O6Nf","./utils/firstFocus":"bK38G","./utils/is":"pjvel","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2O6Nf":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "correctNode", ()=>correctNode);
+parcelHelpers.export(exports, "correctNodes", ()=>correctNodes);
+var _is = require("./is");
+var findSelectedRadio = function(node, nodes) {
+    return nodes.filter((0, _is.isRadioElement)).filter(function(el) {
+        return el.name === node.name;
+    }).filter(function(el) {
+        return el.checked;
+    })[0] || node;
+};
+var correctNode = function(node, nodes) {
+    if ((0, _is.isRadioElement)(node) && node.name) return findSelectedRadio(node, nodes);
+    return node;
+};
+var correctNodes = function(nodes) {
+    // IE11 has no Set(array) constructor
+    var resultSet = new Set();
+    nodes.forEach(function(node) {
+        return resultSet.add(correctNode(node, nodes));
+    });
+    // using filter to support IE11
+    return nodes.filter(function(node) {
+        return resultSet.has(node);
+    });
+};
+
+},{"./is":"pjvel","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bK38G":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "pickFirstFocus", ()=>pickFirstFocus);
+parcelHelpers.export(exports, "pickFocusable", ()=>pickFocusable);
+var _correctFocus = require("./correctFocus");
+var pickFirstFocus = function(nodes) {
+    if (nodes[0] && nodes.length > 1) return (0, _correctFocus.correctNode)(nodes[0], nodes);
+    return nodes[0];
+};
+var pickFocusable = function(nodes, node) {
+    return nodes.indexOf((0, _correctFocus.correctNode)(node, nodes));
+};
+
+},{"./correctFocus":"2O6Nf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"C7zCK":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "pickAutofocus", ()=>pickAutofocus);
+var _domutils = require("./DOMutils");
+var _firstFocus = require("./firstFocus");
+var _is = require("./is");
+var findAutoFocused = function(autoFocusables) {
+    return function(node) {
+        var _a;
+        var autofocus = (_a = (0, _is.getDataset)(node)) === null || _a === void 0 ? void 0 : _a.autofocus;
+        return(// @ts-expect-error
+        node.autofocus || //
+        autofocus !== undefined && autofocus !== 'false' || //
+        autoFocusables.indexOf(node) >= 0);
+    };
+};
+var pickAutofocus = function(nodesIndexes, orderedNodes, groups) {
+    var nodes = nodesIndexes.map(function(_a) {
+        var node = _a.node;
+        return node;
+    });
+    var autoFocusable = (0, _domutils.filterAutoFocusable)(nodes.filter(findAutoFocused(groups)));
+    if (autoFocusable && autoFocusable.length) return (0, _firstFocus.pickFirstFocus)(autoFocusable);
+    return (0, _firstFocus.pickFirstFocus)((0, _domutils.filterAutoFocusable)(orderedNodes));
+};
+
+},{"./DOMutils":"bjsGC","./firstFocus":"bK38G","./is":"pjvel","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3zW7D":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getCommonParent", ()=>getCommonParent);
+parcelHelpers.export(exports, "getTopCommonParent", ()=>getTopCommonParent);
+parcelHelpers.export(exports, "allParentAutofocusables", ()=>allParentAutofocusables);
+var _domutils = require("./DOMutils");
+var _array = require("./array");
+var getParents = function(node, parents) {
+    if (parents === void 0) parents = [];
+    parents.push(node);
+    if (node.parentNode) getParents(node.parentNode.host || node.parentNode, parents);
+    return parents;
+};
+var getCommonParent = function(nodeA, nodeB) {
+    var parentsA = getParents(nodeA);
+    var parentsB = getParents(nodeB);
+    // tslint:disable-next-line:prefer-for-of
+    for(var i = 0; i < parentsA.length; i += 1){
+        var currentParent = parentsA[i];
+        if (parentsB.indexOf(currentParent) >= 0) return currentParent;
+    }
+    return false;
+};
+var getTopCommonParent = function(baseActiveElement, leftEntry, rightEntries) {
+    var activeElements = (0, _array.asArray)(baseActiveElement);
+    var leftEntries = (0, _array.asArray)(leftEntry);
+    var activeElement = activeElements[0];
+    var topCommon = false;
+    leftEntries.filter(Boolean).forEach(function(entry) {
+        topCommon = getCommonParent(topCommon || entry, entry) || topCommon;
+        rightEntries.filter(Boolean).forEach(function(subEntry) {
+            var common = getCommonParent(activeElement, subEntry);
+            if (common) {
+                if (!topCommon || (0, _domutils.contains)(common, topCommon)) topCommon = common;
+                else topCommon = getCommonParent(common, topCommon);
+            }
+        });
+    });
+    // TODO: add assert here?
+    return topCommon;
+};
+var allParentAutofocusables = function(entries, visibilityCache) {
+    return entries.reduce(function(acc, node) {
+        return acc.concat((0, _domutils.parentAutofocusables)(node, visibilityCache));
+    }, []);
+};
+
+},{"./DOMutils":"bjsGC","./array":"e55F4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"em8CO":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "expandFocusableNodes", ()=>expandFocusableNodes);
+var _allAffected = require("./utils/all-affected");
+var _is = require("./utils/is");
+var _parenting = require("./utils/parenting");
+var _tabOrder = require("./utils/tabOrder");
+var _tabUtils = require("./utils/tabUtils");
+var expandFocusableNodes = function(topNode) {
+    var entries = (0, _allAffected.getAllAffectedNodes)(topNode).filter((0, _is.isNotAGuard));
+    var commonParent = (0, _parenting.getTopCommonParent)(topNode, topNode, entries);
+    var outerNodes = (0, _tabOrder.orderByTabIndex)((0, _tabUtils.getFocusables)([
+        commonParent
+    ], true), true, true);
+    var innerElements = (0, _tabUtils.getFocusables)(entries, false);
+    return outerNodes.map(function(_a) {
+        var node = _a.node, index = _a.index;
+        return {
+            node: node,
+            index: index,
+            lockItem: innerElements.indexOf(node) >= 0,
+            guard: (0, _is.isGuard)(node)
+        };
+    });
+};
+
+},{"./utils/all-affected":"aMNVU","./utils/is":"pjvel","./utils/parenting":"3zW7D","./utils/tabOrder":"fuX8Z","./utils/tabUtils":"7pxgV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jjKXx":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "moveFocusInside", ()=>moveFocusInside);
+var _commands = require("./commands");
+var _focusSolver = require("./focusSolver");
+var guardCount = 0;
+var lockDisabled = false;
+var moveFocusInside = function(topNode, lastNode, options) {
+    if (options === void 0) options = {};
+    var focusable = (0, _focusSolver.focusSolver)(topNode, lastNode);
+    // global local side effect to countain recursive lock activation and resolve focus-fighting
+    if (lockDisabled) return;
+    if (focusable) {
+        /** +FOCUS-FIGHTING prevention **/ if (guardCount > 2) {
+            // we have recursive entered back the lock activation
+            console.error("FocusLock: focus-fighting detected. Only one focus management system could be active. See https://github.com/theKashey/focus-lock/#focus-fighting");
+            lockDisabled = true;
+            setTimeout(function() {
+                lockDisabled = false;
+            }, 1);
+            return;
+        }
+        guardCount++;
+        (0, _commands.focusOn)(focusable.node, options.focusOptions);
+        guardCount--;
+    }
+};
+
+},{"./commands":"1kVfq","./focusSolver":"bK42V","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1kVfq":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "focusOn", ()=>focusOn);
+var focusOn = function(target, focusOptions) {
+    if (!target) // not clear how, but is possible https://github.com/theKashey/focus-lock/issues/53
+    return;
+    if ('focus' in target) target.focus(focusOptions);
+    if ('contentWindow' in target && target.contentWindow) target.contentWindow.focus();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6hw1A":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "recordElementLocation", ()=>recordElementLocation);
+parcelHelpers.export(exports, "captureFocusRestore", ()=>captureFocusRestore);
+var _domutils = require("./utils/DOMutils");
+function weakRef(value) {
+    if (!value) return null;
+    // #68 Safari 14.1 dont have it yet
+    // FIXME: remove in 2025
+    if (typeof WeakRef === 'undefined') return function() {
+        return value || null;
+    };
+    var w = value ? new WeakRef(value) : null;
+    return function() {
+        return (w === null || w === void 0 ? void 0 : w.deref()) || null;
+    };
+}
+var recordElementLocation = function(element) {
+    if (!element) return null;
+    var stack = [];
+    var currentElement = element;
+    while(currentElement && currentElement !== document.body){
+        stack.push({
+            current: weakRef(currentElement),
+            parent: weakRef(currentElement.parentElement),
+            left: weakRef(currentElement.previousElementSibling),
+            right: weakRef(currentElement.nextElementSibling)
+        });
+        currentElement = currentElement.parentElement;
+    }
+    return {
+        element: weakRef(element),
+        stack: stack,
+        ownerDocument: element.ownerDocument
+    };
+};
+var restoreFocusTo = function(location) {
+    var _a, _b, _c, _d, _e;
+    if (!location) return undefined;
+    var stack = location.stack, ownerDocument = location.ownerDocument;
+    var visibilityCache = new Map();
+    for(var _i = 0, stack_1 = stack; _i < stack_1.length; _i++){
+        var line = stack_1[_i];
+        var parent_1 = (_a = line.parent) === null || _a === void 0 ? void 0 : _a.call(line);
+        // is it still here?
+        if (parent_1 && ownerDocument.contains(parent_1)) {
+            var left = (_b = line.left) === null || _b === void 0 ? void 0 : _b.call(line);
+            var savedCurrent = line.current();
+            var current = parent_1.contains(savedCurrent) ? savedCurrent : undefined;
+            var right = (_c = line.right) === null || _c === void 0 ? void 0 : _c.call(line);
+            var focusables = (0, _domutils.getTabbableNodes)([
+                parent_1
+            ], visibilityCache);
+            var aim = // that is element itself
+            (_e = (_d = current !== null && current !== void 0 ? current : // or something in it's place
+            left === null || left === void 0 ? void 0 : left.nextElementSibling) !== null && _d !== void 0 ? _d : // or somebody to the right, still close enough
+            right) !== null && _e !== void 0 ? _e : // or somebody to the left, something?
+            left;
+            while(aim){
+                for(var _f = 0, focusables_1 = focusables; _f < focusables_1.length; _f++){
+                    var focusable = focusables_1[_f];
+                    if (aim === null || aim === void 0 ? void 0 : aim.contains(focusable.node)) return focusable.node;
+                }
+                aim = aim.nextElementSibling;
+            }
+            if (focusables.length) // if parent contains a focusable - move there
+            return focusables[0].node;
+        }
+    }
+    // nothing matched
+    return undefined;
+};
+var captureFocusRestore = function(targetElement) {
+    var location = recordElementLocation(targetElement);
+    return function() {
+        return restoreFocusTo(location);
+    };
+};
+
+},{"./utils/DOMutils":"bjsGC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cucvA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getRelativeFocusable", ()=>getRelativeFocusable);
+parcelHelpers.export(exports, "focusNextElement", ()=>focusNextElement);
+parcelHelpers.export(exports, "focusPrevElement", ()=>focusPrevElement);
+parcelHelpers.export(exports, "focusFirstElement", ()=>focusFirstElement);
+parcelHelpers.export(exports, "focusLastElement", ()=>focusLastElement);
+var _commands = require("./commands");
+var _domutils = require("./utils/DOMutils");
+var _array = require("./utils/array");
+var getRelativeFocusable = function(element, scope, useTabbables) {
+    if (!element || !scope) {
+        console.error('no element or scope given');
+        return {};
+    }
+    var shards = (0, _array.asArray)(scope);
+    if (shards.every(function(shard) {
+        return !(0, _domutils.contains)(shard, element);
+    })) {
+        console.error('Active element is not contained in the scope');
+        return {};
+    }
+    var focusables = useTabbables ? (0, _domutils.getTabbableNodes)(shards, new Map()) : (0, _domutils.getFocusableNodes)(shards, new Map());
+    var current = focusables.findIndex(function(_a) {
+        var node = _a.node;
+        return node === element;
+    });
+    if (current === -1) // an edge case, when anchor element is not found
+    return undefined;
+    return {
+        prev: focusables[current - 1],
+        next: focusables[current + 1],
+        first: focusables[0],
+        last: focusables[focusables.length - 1]
+    };
+};
+var getBoundary = function(shards, useTabbables) {
+    var set = useTabbables ? (0, _domutils.getTabbableNodes)((0, _array.asArray)(shards), new Map()) : (0, _domutils.getFocusableNodes)((0, _array.asArray)(shards), new Map());
+    return {
+        first: set[0],
+        last: set[set.length - 1]
+    };
+};
+var defaultOptions = function(options) {
+    return Object.assign({
+        scope: document.body,
+        cycle: true,
+        onlyTabbable: true
+    }, options);
+};
+var moveFocus = function(fromElement, options, cb) {
+    if (options === void 0) options = {};
+    var newOptions = defaultOptions(options);
+    var solution = getRelativeFocusable(fromElement, newOptions.scope, newOptions.onlyTabbable);
+    if (!solution) return;
+    var target = cb(solution, newOptions.cycle);
+    if (target) (0, _commands.focusOn)(target.node, newOptions.focusOptions);
+};
+var focusNextElement = function(fromElement, options) {
+    if (options === void 0) options = {};
+    moveFocus(fromElement, options, function(_a, cycle) {
+        var next = _a.next, first = _a.first;
+        return next || cycle && first;
+    });
+};
+var focusPrevElement = function(fromElement, options) {
+    if (options === void 0) options = {};
+    moveFocus(fromElement, options, function(_a, cycle) {
+        var prev = _a.prev, last = _a.last;
+        return prev || cycle && last;
+    });
+};
+var pickBoundary = function(scope, options, what) {
+    var _a;
+    var boundary = getBoundary(scope, (_a = options.onlyTabbable) !== null && _a !== void 0 ? _a : true);
+    var node = boundary[what];
+    if (node) (0, _commands.focusOn)(node.node, options.focusOptions);
+};
+var focusFirstElement = function(scope, options) {
+    if (options === void 0) options = {};
+    pickBoundary(scope, options, 'first');
+};
+var focusLastElement = function(scope, options) {
+    if (options === void 0) options = {};
+    pickBoundary(scope, options, 'last');
+};
+
+},{"./commands":"1kVfq","./utils/DOMutils":"bjsGC","./utils/array":"e55F4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9df2e":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "deferAction", ()=>deferAction);
+parcelHelpers.export(exports, "inlineProp", ()=>inlineProp);
+parcelHelpers.export(exports, "extractRef", ()=>extractRef);
+function deferAction(action) {
+    setTimeout(action, 1);
+}
+var inlineProp = function inlineProp(name, value) {
+    var obj = {};
+    obj[name] = value;
+    return obj;
+};
+var extractRef = function extractRef(ref) {
+    return ref && 'current' in ref ? ref.current : ref;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4lcpi":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _ScrollLock = require("367a17e955276875");
+Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_ScrollLock).default;
+    }
+});
+var _TouchScrollable = require("fc2ea16117a702ef");
+Object.defineProperty(exports, 'TouchScrollable', {
+    enumerable: true,
+    get: function get() {
+        return _TouchScrollable.TouchScrollable;
+    }
+});
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+
+},{"367a17e955276875":"3jVN1","fc2ea16117a702ef":"7O2B4"}],"3jVN1":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+var _react = require("bca8ecec4b0b5cf4");
+var _react2 = _interopRequireDefault(_react);
+var _exenv = require("f972a4f544f4df1f");
+var _TouchScrollable = require("fbba393efe4044d9");
+var _withLockSheet = require("85f2a7633e387db4");
+var _withLockSheet2 = _interopRequireDefault(_withLockSheet);
+var _withTouchListeners = require("db28488def91a3");
+var _withTouchListeners2 = _interopRequireDefault(_withTouchListeners);
+var _utils = require("b820b132e9205b47");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+var ScrollLock = function(_PureComponent) {
+    _inherits(ScrollLock, _PureComponent);
+    function ScrollLock() {
+        _classCallCheck(this, ScrollLock);
+        return _possibleConstructorReturn(this, (ScrollLock.__proto__ || Object.getPrototypeOf(ScrollLock)).apply(this, arguments));
+    }
+    _createClass(ScrollLock, [
+        {
+            key: 'componentDidMount',
+            value: function componentDidMount() {
+                if (!_exenv.canUseDOM) return;
+                this.initialHeight = window.innerHeight;
+            }
+        },
+        {
+            key: 'componentWillUnmount',
+            value: function componentWillUnmount() {
+                var offset = window.innerHeight - this.initialHeight;
+                // adjust scroll if the window has been resized since the lock was engaged
+                // e.g. mobile safari dynamic chrome heights
+                if (offset) window.scrollTo(0, window.pageYOffset + offset);
+                // reset the initial height in case this scroll lock is used again
+                this.initialHeight = window.innerHeight;
+            }
+        },
+        {
+            key: 'render',
+            value: function render() {
+                var children = this.props.children;
+                return children ? _react2.default.createElement(_TouchScrollable.TouchScrollable, null, children) : null;
+            }
+        }
+    ]);
+    return ScrollLock;
+}(_react.PureComponent);
+// attach the stylesheet and inject styles on [un]mount
+var compose = (0, _utils.pipe)(_withTouchListeners2.default, _withLockSheet2.default);
+var SheetLock = compose(ScrollLock);
+// toggle the lock based on `isActive` prop
+var LockToggle = function LockToggle(props) {
+    return props.isActive ? _react2.default.createElement(SheetLock, props) : props.children;
+};
+LockToggle.defaultProps = {
+    accountForScrollbars: true,
+    children: null,
+    isActive: true
+};
+exports.default = LockToggle;
+
+},{"bca8ecec4b0b5cf4":"jMk1U","f972a4f544f4df1f":"l6xDx","fbba393efe4044d9":"7O2B4","85f2a7633e387db4":"2S0Mn","db28488def91a3":"8Q52U","b820b132e9205b47":"a7zgZ"}],"l6xDx":[function(require,module,exports,__globalThis) {
+/*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/ /* global define */ (function() {
+    'use strict';
+    var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+    var ExecutionEnvironment = {
+        canUseDOM: canUseDOM,
+        canUseWorkers: typeof Worker !== 'undefined',
+        canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
+        canUseViewport: canUseDOM && !!window.screen
+    };
+    if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) define(function() {
+        return ExecutionEnvironment;
+    });
+    else if (module.exports) module.exports = ExecutionEnvironment;
+    else window.ExecutionEnvironment = ExecutionEnvironment;
+})();
+
+},{}],"7O2B4":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.TouchScrollable = undefined;
+var _extends = Object.assign || function(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i];
+        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+    }
+    return target;
+};
+var _createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+var _react = require("db5fbecae6bd1e33");
+var _exenv = require("2f856cd580d636c6");
+var _utils = require("67dbd90ce2e66b6c");
+function _objectWithoutProperties(obj, keys) {
+    var target = {};
+    for(var i in obj){
+        if (keys.indexOf(i) >= 0) continue;
+        if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+        target[i] = obj[i];
+    }
+    return target;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+var TouchScrollable = exports.TouchScrollable = function(_PureComponent) {
+    _inherits(TouchScrollable, _PureComponent);
+    function TouchScrollable() {
+        var _ref;
+        var _temp, _this, _ret;
+        _classCallCheck(this, TouchScrollable);
+        for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TouchScrollable.__proto__ || Object.getPrototypeOf(TouchScrollable)).call.apply(_ref, [
+            this
+        ].concat(args))), _this), _this.getScrollableArea = function(ref) {
+            _this.scrollableArea = ref;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+    _createClass(TouchScrollable, [
+        {
+            key: 'componentDidMount',
+            value: function componentDidMount() {
+                if (!_exenv.canUseEventListeners) return;
+                this.scrollableArea.addEventListener('touchstart', _utils.preventInertiaScroll, _utils.listenerOptions);
+                this.scrollableArea.addEventListener('touchmove', _utils.allowTouchMove, _utils.listenerOptions);
+            }
+        },
+        {
+            key: 'componentWillUnmount',
+            value: function componentWillUnmount() {
+                if (!_exenv.canUseEventListeners) return;
+                this.scrollableArea.removeEventListener('touchstart', _utils.preventInertiaScroll, _utils.listenerOptions);
+                this.scrollableArea.removeEventListener('touchmove', _utils.allowTouchMove, _utils.listenerOptions);
+            }
+        },
+        {
+            key: 'render',
+            value: function render() {
+                var _props = this.props, children = _props.children, rest = _objectWithoutProperties(_props, [
+                    'children'
+                ]);
+                return typeof children === 'function' ? children(this.getScrollableArea) : (0, _react.cloneElement)(children, _extends({
+                    ref: this.getScrollableArea
+                }, rest));
+            }
+        }
+    ]);
+    return TouchScrollable;
+}(_react.PureComponent);
+
+},{"db5fbecae6bd1e33":"jMk1U","2f856cd580d636c6":"l6xDx","67dbd90ce2e66b6c":"a7zgZ"}],"a7zgZ":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.pipe = exports.listenerOptions = undefined;
+exports.preventTouchMove = preventTouchMove;
+exports.allowTouchMove = allowTouchMove;
+exports.preventInertiaScroll = preventInertiaScroll;
+exports.isTouchDevice = isTouchDevice;
+exports.camelToKebab = camelToKebab;
+exports.parse = parse;
+exports.getPadding = getPadding;
+exports.getWindowHeight = getWindowHeight;
+exports.getDocumentHeight = getDocumentHeight;
+exports.makeStyleTag = makeStyleTag;
+exports.injectStyles = injectStyles;
+exports.insertStyleTag = insertStyleTag;
+var _exenv = require("4ff27da1b73447f1");
+var listenerOptions = exports.listenerOptions = {
+    capture: false,
+    passive: false
+};
+// ==============================
+// Touch Helpers
+// ==============================
+function preventTouchMove(e) {
+    e.preventDefault();
+    return false;
+}
+function allowTouchMove(e) {
+    var target = e.currentTarget;
+    if (target.scrollHeight > target.clientHeight) {
+        e.stopPropagation();
+        return true;
+    }
+    e.preventDefault();
+    return false;
+}
+function preventInertiaScroll() {
+    var top = this.scrollTop;
+    var totalScroll = this.scrollHeight;
+    var currentScroll = top + this.offsetHeight;
+    if (top === 0) this.scrollTop = 1;
+    else if (currentScroll === totalScroll) this.scrollTop = top - 1;
+}
+// `ontouchstart` check works on most browsers
+// `maxTouchPoints` works on IE10/11 and Surface
+function isTouchDevice() {
+    if (!_exenv.canUseDOM) return false;
+    return 'ontouchstart' in window || navigator.maxTouchPoints;
+}
+// ==============================
+// Misc.
+// ==============================
+function camelToKebab(str) {
+    return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+function parse(val) {
+    return isNaN(val) ? val : val + 'px';
+}
+// Take a list of functions and return a function that applies the list of
+// functions from left to right
+var pipeFns = function pipeFns(a, b) {
+    return function() {
+        return b(a.apply(undefined, arguments));
+    };
+};
+var pipe = exports.pipe = function pipe() {
+    for(var _len = arguments.length, fns = Array(_len), _key = 0; _key < _len; _key++)fns[_key] = arguments[_key];
+    return fns.reduce(pipeFns);
+};
+// ==============================
+// Document Helpers
+// ==============================
+function getPadding() {
+    if (!_exenv.canUseDOM) return 0;
+    var paddingRight = parseInt(window.getComputedStyle(document.body).paddingRight, 10);
+    var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    return paddingRight + scrollbarWidth;
+}
+function getWindowHeight() {
+    var multiplier = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    if (_exenv.canUseDOM) return window.innerHeight * multiplier;
+}
+function getDocumentHeight() {
+    if (_exenv.canUseDOM) return document.body.clientHeight;
+}
+// ==============================
+// Style Sheets
+// ==============================
+function makeStyleTag() {
+    if (!_exenv.canUseDOM) return;
+    var tag = document.createElement('style');
+    tag.type = 'text/css';
+    tag.setAttribute('data-react-scrolllock', '');
+    return tag;
+}
+function injectStyles(tag, css) {
+    if (!_exenv.canUseDOM) return;
+    if (tag.styleSheet) tag.styleSheet.cssText = css;
+    else tag.appendChild(document.createTextNode(css));
+}
+function insertStyleTag(tag) {
+    if (!_exenv.canUseDOM) return;
+    var head = document.head || document.getElementsByTagName('head')[0];
+    head.appendChild(tag);
+}
+
+},{"4ff27da1b73447f1":"l6xDx"}],"2S0Mn":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+exports.default = withLockSheet;
+var _react = require("4f3d422a7bc472a6");
+var _react2 = _interopRequireDefault(_react);
+var _utils = require("d87f766bad1c2dc9");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+function withLockSheet(WrappedComponent) {
+    return function(_PureComponent) {
+        _inherits(SheetProvider, _PureComponent);
+        function SheetProvider() {
+            var _ref;
+            var _temp, _this, _ret;
+            _classCallCheck(this, SheetProvider);
+            for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SheetProvider.__proto__ || Object.getPrototypeOf(SheetProvider)).call.apply(_ref, [
+                this
+            ].concat(args))), _this), _this.addSheet = function() {
+                var styles = _this.getStyles();
+                var sheet = (0, _utils.makeStyleTag)();
+                if (!sheet) return;
+                (0, _utils.injectStyles)(sheet, styles);
+                (0, _utils.insertStyleTag)(sheet);
+                _this.sheet = sheet;
+            }, _this.getStyles = function() {
+                var accountForScrollbars = _this.props.accountForScrollbars;
+                var height = (0, _utils.getDocumentHeight)();
+                var paddingRight = accountForScrollbars ? (0, _utils.getPadding)() : null;
+                var styles = 'body {\n        box-sizing: border-box !important;\n        overflow: hidden !important;\n        position: relative !important;\n        ' + (height ? 'height: ' + height + 'px !important;' : '') + '\n        ' + (paddingRight ? 'padding-right: ' + paddingRight + 'px !important;' : '') + '\n      }';
+                return styles;
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+        }
+        _createClass(SheetProvider, [
+            {
+                key: 'componentDidMount',
+                value: function componentDidMount() {
+                    this.addSheet();
+                }
+            },
+            {
+                key: 'removeSheet',
+                value: function removeSheet() {
+                    if (!this.sheet) return;
+                    // $FlowFixMe
+                    this.sheet.parentNode.removeChild(this.sheet);
+                    this.sheet = null;
+                }
+            },
+            {
+                key: 'componentWillUnmount',
+                value: function componentWillUnmount() {
+                    this.removeSheet();
+                }
+            },
+            {
+                key: 'render',
+                value: function render() {
+                    return _react2.default.createElement(WrappedComponent, this.props);
+                }
+            }
+        ]);
+        return SheetProvider;
+    }(_react.PureComponent);
+}
+
+},{"4f3d422a7bc472a6":"jMk1U","d87f766bad1c2dc9":"a7zgZ"}],"8Q52U":[function(require,module,exports,__globalThis) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+exports.default = withTouchListeners;
+var _react = require("ab04148da713889f");
+var _react2 = _interopRequireDefault(_react);
+var _exenv = require("c830a61c36db71a6");
+var _utils = require("708e33eaaf1ba2a2");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+// Mobile Safari ignores { overflow: hidden } declaration on the body,
+// so we have to prevent touchmove events via JS
+function withTouchListeners(WrappedComponent) {
+    return function(_PureComponent) {
+        _inherits(TouchProvider, _PureComponent);
+        function TouchProvider() {
+            _classCallCheck(this, TouchProvider);
+            return _possibleConstructorReturn(this, (TouchProvider.__proto__ || Object.getPrototypeOf(TouchProvider)).apply(this, arguments));
+        }
+        _createClass(TouchProvider, [
+            {
+                key: 'componentDidMount',
+                value: function componentDidMount() {
+                    if (!_exenv.canUseDOM || !(0, _utils.isTouchDevice)()) return;
+                    document.addEventListener('touchmove', _utils.preventTouchMove, _utils.listenerOptions);
+                }
+            },
+            {
+                key: 'componentWillUnmount',
+                value: function componentWillUnmount() {
+                    if (!_exenv.canUseDOM || !(0, _utils.isTouchDevice)()) return;
+                    document.removeEventListener('touchmove', _utils.preventTouchMove, _utils.listenerOptions);
+                }
+            },
+            {
+                key: 'render',
+                value: function render() {
+                    return _react2.default.createElement(WrappedComponent, this.props);
+                }
+            }
+        ]);
+        return TouchProvider;
+    }(_react.PureComponent);
+}
+
+},{"ab04148da713889f":"jMk1U","c830a61c36db71a6":"l6xDx","708e33eaaf1ba2a2":"a7zgZ"}],"fkTHQ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _blanketDefault.default));
+var _blanket = require("./blanket");
+var _blanketDefault = parcelHelpers.interopDefault(_blanket);
+
+},{"./blanket":"3lVGj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3lVGj":[function(require,module,exports,__globalThis) {
+/* blanket.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _usePlatformLeafEventHandler = require("@atlaskit/analytics-next/usePlatformLeafEventHandler");
+var _noop = require("@atlaskit/ds-lib/noop");
+var _noopDefault = parcelHelpers.interopDefault(_noop);
+var _colors = require("@atlaskit/theme/colors");
+var _constants = require("@atlaskit/theme/constants");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+var packageName = "@atlaskit/blanket";
+var packageVersion = "15.0.6";
+var analyticsAttributes = {
+    componentName: 'blanket',
+    packageName: packageName,
+    packageVersion: packageVersion
+};
+var baseStyles = null;
+var shouldAllowClickThroughStyles = null;
+var invisibleStyles = null;
+/**
+ * __Blanket__
+ *
+ * A Blanket provides the overlay layer for components such as a modal dialog or a tooltip
+ *
+ * - [Examples](https://atlaskit.atlassian.com/examples/design-system/blanket/basic-usage)
+ */ var Blanket = /*#__PURE__*/ (0, _react.memo)(/*#__PURE__*/ (0, _react.forwardRef)(function Blanket(_ref, ref) {
+    var _ref$shouldAllowClick = _ref.shouldAllowClickThrough, shouldAllowClickThrough = _ref$shouldAllowClick === void 0 ? false : _ref$shouldAllowClick, _ref$isTinted = _ref.isTinted, isTinted = _ref$isTinted === void 0 ? false : _ref$isTinted, _ref$onBlanketClicked = _ref.onBlanketClicked, onBlanketClicked = _ref$onBlanketClicked === void 0 ? (0, _noopDefault.default) : _ref$onBlanketClicked, testId = _ref.testId, children = _ref.children, analyticsContext = _ref.analyticsContext;
+    var mouseDownTarget = (0, _react.useRef)(null);
+    var onBlanketClickedWithAnalytics = (0, _usePlatformLeafEventHandler.usePlatformLeafEventHandler)(_objectSpread({
+        fn: onBlanketClicked,
+        action: 'clicked',
+        analyticsData: analyticsContext
+    }, analyticsAttributes));
+    var blanketClickOutsideChildren = (0, _react.useCallback)(function(e) {
+        return e.currentTarget === e.target && mouseDownTarget.current === e.target ? onBlanketClickedWithAnalytics(e) : undefined;
+    }, [
+        onBlanketClickedWithAnalytics
+    ]);
+    var onClick = shouldAllowClickThrough ? undefined : blanketClickOutsideChildren;
+    var onMouseDown = (0, _react.useCallback)(function(e) {
+        mouseDownTarget.current = e.target;
+    }, []);
+    return /*#__PURE__*/ _react.createElement("div", {
+        role: "presentation",
+        onClick: onClick,
+        onMouseDown: onMouseDown,
+        "data-testid": testId,
+        ref: ref,
+        className: (0, _runtime.ax)([
+            "_1r04idpf _kqsw1n9t _1pbybfng _bfhk705f _18m91wug _lcxv1wug",
+            shouldAllowClickThrough && "_lcxvglyw",
+            !isTinted && "_bfhk1j28"
+        ]),
+        style: {
+            "--_10avjlk": (0, _runtime.ix)("var(--ds-blanket, ".concat((0, _colors.N100A), ")"))
+        }
+    }, children);
+}));
+Blanket.displayName = 'Blanket';
+exports.default = Blanket;
+
+},{"@babel/runtime/helpers/defineProperty":"azbUC","react":"jMk1U","@compiled/react/runtime":"3JrDb","@atlaskit/analytics-next/usePlatformLeafEventHandler":"jTLaA","@atlaskit/ds-lib/noop":"gcHCG","@atlaskit/theme/colors":"iIuwU","@atlaskit/theme/constants":"6kRPo","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3JrDb":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CC", ()=>(0, _index.CC));
+parcelHelpers.export(exports, "CS", ()=>(0, _index.CS));
+parcelHelpers.export(exports, "ax", ()=>(0, _index.ax));
+parcelHelpers.export(exports, "ac", ()=>(0, _index.ac));
+parcelHelpers.export(exports, "clearAcCache", ()=>(0, _index.clearAcCache));
+parcelHelpers.export(exports, "ix", ()=>(0, _index.ix));
+var _index = require("./runtime/index");
+
+},{"./runtime/index":"l8MTN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"l8MTN":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CS", ()=>(0, _styleDefault.default));
+parcelHelpers.export(exports, "CC", ()=>(0, _styleCacheDefault.default));
+parcelHelpers.export(exports, "ax", ()=>(0, _axDefault.default));
+parcelHelpers.export(exports, "ac", ()=>(0, _acDefault.default));
+parcelHelpers.export(exports, "clearAcCache", ()=>(0, _ac.clearCache));
+parcelHelpers.export(exports, "ix", ()=>(0, _cssCustomPropertyDefault.default));
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+var _styleCache = require("./style-cache");
+var _styleCacheDefault = parcelHelpers.interopDefault(_styleCache);
+var _ax = require("./ax");
+var _axDefault = parcelHelpers.interopDefault(_ax);
+var _ac = require("./ac");
+var _acDefault = parcelHelpers.interopDefault(_ac);
+var _cssCustomProperty = require("./css-custom-property");
+var _cssCustomPropertyDefault = parcelHelpers.interopDefault(_cssCustomProperty);
+
+},{"./style":false,"./style-cache":false,"./ax":"lFuyu","./ac":false,"./css-custom-property":"1dWoU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lFuyu":[function(require,module,exports,__globalThis) {
+/**
+ * This length includes the underscore,
+ * e.g. `"_1s4A"` would be a valid atomic group hash.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>ax);
+const ATOMIC_GROUP_LENGTH = 5;
+function ax(classNames) {
+    // Shortcut: nothing to do
+    if (!classNames.length) return;
+    // Shortcut: don't need to do anything if we only have a single classname
+    if (classNames.length === 1 && classNames[0] && // checking to see if `classNames[0]` is a string that contains other classnames
+    !classNames[0].includes(' ')) return classNames[0];
+    // Using an object rather than a `Map` as it performed better in our benchmarks.
+    // Would be happy to move to `Map` if it proved to be better under real conditions.
+    const map = {};
+    // Note: using loops to minimize iterations over the collection
+    for (const value of classNames){
+        // Exclude all falsy values, which leaves us with populated strings
+        if (!value) continue;
+        // a `value` can contain multiple classnames
+        const list = value.split(' ');
+        for (const className of list){
+            /**
+             * For atomic style classnames: the `key` is the `group`
+             *
+             * - Later atomic classnames with the same `group` will override earlier ones
+             *   (which is what we want).
+             * - Assumes atomic classnames are the only things that start with `_`
+             * - Could use a regex to ensure that atomic classnames are structured how we expect,
+             *   but did not add that for now as it did slow things down a bit.
+             *
+             * For other classnames: the `key` is the whole classname
+             * - Okay to remove duplicates as doing so does not impact specificity
+             *
+             * */ const key = className.startsWith('_') ? className.slice(0, ATOMIC_GROUP_LENGTH) : className;
+            map[key] = className;
+        }
+    }
+    /**
+     * We are converting the `map` into a string.
+     *
+     * The simple way to do this would be `Object.values(map).join(' ')`.
+     * However, the approach below performs 10%-20% better in benchmarks.
+     *
+     * For `ax()` it feels right to squeeze as much runtime performance out as we can.
+     */ let result = '';
+    for(const key in map)result += map[key] + ' ';
+    // If we have an empty string, then our `map` was empty.
+    if (!result) return;
+    // remove last " " from the result (we added " " at the end of every value)
+    return result.trimEnd();
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1dWoU":[function(require,module,exports,__globalThis) {
+/**
+ * Returns a CSS custom property value with an optional suffix & prefix.
+ * Prefix will only be added if there is a suffix.
+ * If the value is undefined a fallback value will be returned to prevent children inheriting parent values.
+ *
+ * @param value
+ * @param suffix
+ * @param prefix
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>cssCustomPropertyValue);
+function cssCustomPropertyValue(value, suffix, prefix) {
+    if (value != undefined) {
+        if (suffix) {
+            if (prefix) return prefix + value + suffix;
+            return value + suffix;
+        }
+        return value;
+    }
+    // Currently React trims these values so we can't use a space " " to block the value.
+    // Instead we use a CSS variable that doesn't exist which falls back to " ".
+    // Bug raised here: https://github.com/facebook/react/issues/20497
+    return 'var(--c-, )';
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hp6qP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Layering", ()=>(0, _layeringContext.Layering));
+parcelHelpers.export(exports, "useCloseOnEscapePress", ()=>(0, _index.useCloseOnEscapePress));
+parcelHelpers.export(exports, "useLayering", ()=>(0, _index.useLayering));
+var _layeringContext = require("./components/layering-context");
+var _index = require("./hooks/index");
+
+},{"./components/layering-context":"6QhCl","./hooks/index":"SJ3Rl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6QhCl":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LevelContext", ()=>LevelContext);
+parcelHelpers.export(exports, "LevelNodeContext", ()=>LevelNodeContext);
+parcelHelpers.export(exports, "RootNodeContext", ()=>RootNodeContext);
+parcelHelpers.export(exports, "TopLevelContext", ()=>TopLevelContext);
+parcelHelpers.export(exports, "Layering", ()=>Layering);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _noop = require("@atlaskit/ds-lib/noop");
+var _noopDefault = parcelHelpers.interopDefault(_noop);
+var _platformFeatureFlagsReact = require("@atlaskit/platform-feature-flags-react");
+var _layerNode = require("../classes/layer-node");
+var LevelContext = /*#__PURE__*/ (0, _react.createContext)(0);
+var LevelNodeContext = /*#__PURE__*/ (0, _react.createContext)({
+    current: null
+});
+var RootNodeContext = /*#__PURE__*/ (0, _react.createContext)({
+    current: null
+});
+var TopLevelContext = /*#__PURE__*/ (0, _react.createContext)({
+    topLevelRef: {
+        current: null
+    },
+    layerList: {
+        current: null
+    },
+    setTopLevel: (0, _noopDefault.default)
+});
+/**
+ *
+ *  @internal
+ * Context Provider Component which provider the current level of nested layers
+ * It handles level management when it mounts and unmounts
+ *
+ */ var LevelProvider = function LevelProvider(_ref) {
+    var children = _ref.children, currentLevel = _ref.currentLevel, levelNode = _ref.node;
+    (0, _react.useEffect)(function() {
+        var levelNodeSafe = levelNode.current;
+        var parentNode = levelNodeSafe.parent;
+        parentNode === null || parentNode === void 0 || parentNode.addChild(levelNodeSafe);
+        return function() {
+            parentNode === null || parentNode === void 0 || parentNode.removeChild(levelNodeSafe);
+        };
+    }, [
+        levelNode
+    ]);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement(LevelContext.Provider, {
+        value: currentLevel
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement(LevelNodeContext.Provider, {
+        value: levelNode
+    }, children));
+};
+/**
+ *
+ *  @internal @deprecated
+ * Context Provider Component which provider the current level of nested layers
+ * It handles level management when it mounts and unmounts
+ *
+ */ var LevelProviderOld = function LevelProviderOld(_ref2) {
+    var children = _ref2.children, currentLevel = _ref2.currentLevel;
+    var _useContext = (0, _react.useContext)(TopLevelContext), layerList = _useContext.layerList;
+    // This is not unstable, it will run once for ref creation.
+    // eslint-disable-next-line  @repo/internal/react/disallow-unstable-values
+    var id = (0, _react.useRef)(Math.random().toString(36));
+    (0, _react.useEffect)(function() {
+        var safeLayerList = layerList === null || layerList === void 0 ? void 0 : layerList.current;
+        var safeId = id.current;
+        if (!safeLayerList) return;
+        safeLayerList.push(safeId);
+        return function() {
+            var index = safeLayerList.indexOf(safeId);
+            if (index > -1) safeLayerList.splice(index, 1);
+        };
+    }, [
+        layerList,
+        id
+    ]);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement(LevelContext.Provider, {
+        value: currentLevel
+    }, children);
+};
+/**
+ *
+ *  @internal @deprecated
+ * Context Provider Component which provides the top level of all nested layers
+ * It provides initial top level ref value as 0 and set top level method
+ *
+ */ var LayeringProvider = function LayeringProvider(_ref3) {
+    var children = _ref3.children;
+    var topLevelRef = (0, _react.useRef)(0);
+    var layerList = (0, _react.useRef)([]);
+    var value = (0, _react.useMemo)(function() {
+        return {
+            topLevelRef: topLevelRef,
+            setTopLevel: function setTopLevel(level) {
+                topLevelRef.current = level;
+            },
+            layerList: layerList
+        };
+    }, [
+        topLevelRef,
+        layerList
+    ]);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement(TopLevelContext.Provider, {
+        value: value
+    }, children);
+};
+/**
+ *
+ * @deprecated
+ * @important the component is toggled by isDisabled props, the default isDisabled is true
+ *
+ * Layering component is a wrapper to let children to consume layer contexts and hooks.
+ *
+ */ var LayeringOld = function LayeringOld(_ref4) {
+    var children = _ref4.children, _ref4$isDisabled = _ref4.isDisabled, isDisabled = _ref4$isDisabled === void 0 ? true : _ref4$isDisabled;
+    var currentLevel = (0, _react.useContext)(LevelContext);
+    if (isDisabled) return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, children);
+    var isNested = currentLevel > 0;
+    var content = /*#__PURE__*/ (0, _reactDefault.default).createElement(LevelProviderOld, {
+        currentLevel: currentLevel + 1
+    }, children);
+    return isNested ? content : /*#__PURE__*/ (0, _reactDefault.default).createElement(LayeringProvider, null, content);
+};
+/**
+ *
+ * @important the component is toggled by isDisabled props, the default isDisabled is true
+ *
+ * Layering component is a wrapper to let children to consume layer contexts and hooks.
+ *
+ */ var LayeringNew = function LayeringNew(_ref5) {
+    var children = _ref5.children, _ref5$isDisabled = _ref5.isDisabled, isDisabled = _ref5$isDisabled === void 0 ? true : _ref5$isDisabled;
+    var currentLevel = (0, _react.useContext)(LevelContext);
+    var parentNode = (0, _react.useContext)(LevelNodeContext);
+    // eslint-disable-next-line  @repo/internal/react/disallow-unstable-values
+    var newNode = (0, _react.useRef)(new (0, _layerNode.LayerNode)(Math.random().toString(36), parentNode.current));
+    if (isDisabled) return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, children);
+    var isNested = currentLevel > 0;
+    var content = /*#__PURE__*/ (0, _reactDefault.default).createElement(LevelProvider, {
+        currentLevel: currentLevel + 1,
+        node: newNode
+    }, children);
+    return isNested ? content : /*#__PURE__*/ (0, _reactDefault.default).createElement(RootNodeContext.Provider, {
+        value: newNode
+    }, content);
+};
+var Layering = (0, _platformFeatureFlagsReact.componentWithFG)('layering-tree-graph', LayeringNew, LayeringOld);
+
+},{"react":"jMk1U","@atlaskit/ds-lib/noop":"gcHCG","@atlaskit/platform-feature-flags-react":"fyTLT","../classes/layer-node":"cbOJ4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fyTLT":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "componentWithCondition", ()=>(0, _componentWithCondition.componentWithCondition));
+parcelHelpers.export(exports, "componentWithFG", ()=>(0, _componentWithFg.componentWithFG));
+parcelHelpers.export(exports, "functionUnionWithCondition", ()=>(0, _functionWithCondition.functionUnionWithCondition));
+parcelHelpers.export(exports, "functionWithCondition", ()=>(0, _functionWithCondition.functionWithCondition));
+parcelHelpers.export(exports, "functionWithFG", ()=>(0, _functionWithFg.functionWithFG));
+parcelHelpers.export(exports, "conditionalHooksFactory", ()=>(0, _conditionalHooksFactory.conditionalHooksFactory));
+var _componentWithCondition = require("./utils/component-with-condition");
+var _componentWithFg = require("./utils/component-with-fg");
+var _functionWithCondition = require("./utils/function-with-condition");
+var _functionWithFg = require("./utils/function-with-fg");
+var _conditionalHooksFactory = require("./utils/conditional-hooks-factory");
+
+},{"./utils/component-with-condition":false,"./utils/component-with-fg":"zZW2Y","./utils/function-with-condition":false,"./utils/function-with-fg":false,"./utils/conditional-hooks-factory":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"axakp":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Gets all available ref types from two prop sets and returns
+ * them in a ref prop
+ *
+ * @example
+ * ```
+ * type P1 = { ref: Ref(HTMLDivElement), ... };
+ * type P2 = { ref: Ref(HTMLSpanElement), ... };
+ *
+ * GetRefAttributes(P1, P2) // {ref: Ref(HTMLDivElement | HTMLSpanElement)}
+ * ```
+ */ /**
+ * Returns one of components depending on a boolean condition.
+ * The result component will be a union of the two props and
+ * an or on both ref types.
+ *
+ * @example
+ * ```
+ * const Component = componentWithCondition(
+ *      isBooleanConditionMet,
+ *      ComponentWithConditionMet,
+ *      ComponentWithConditionNotMet,
+ * );
+ *
+ * @param condition Function returning boolean value
+ * @param componentTrue Component that will be returned if conditionGetter is "true"
+ * @param componentFalse Component that will be returned if conditionGetter is "false"
+ * @returns Component Depending on a Condition result
+ */ parcelHelpers.export(exports, "componentWithCondition", ()=>componentWithCondition);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function componentWithCondition(condition, ComponentTrue, ComponentFalse) {
+    var ComponentWithCondition = /*#__PURE__*/ (0, _react.forwardRef)(function(props, ref) {
+        return condition() ? /*#__PURE__*/ (0, _reactDefault.default).createElement(ComponentTrue, (0, _extendsDefault.default)({}, props, {
+            ref: ref
+        })) : /*#__PURE__*/ (0, _reactDefault.default).createElement(ComponentFalse, (0, _extendsDefault.default)({}, props, {
+            ref: ref
+        }));
+    });
+    if (ComponentTrue.name !== '') ComponentWithCondition.displayName = "ComponentWithCondition[".concat(condition.name, "]");
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+    return ComponentWithCondition;
+}
+
+},{"@babel/runtime/helpers/extends":"lKa0J","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"zZW2Y":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "componentWithFG", ()=>componentWithFG);
+var _platformFeatureFlags = require("@atlaskit/platform-feature-flags");
+var _componentWithCondition = require("../component-with-condition");
+var componentWithFG = function componentWithFG(featureFlagName, ComponentTrue, ComponentFalse) {
+    return (0, _componentWithCondition.componentWithCondition)(function() {
+        return (0, _platformFeatureFlags.fg)(featureFlagName);
+    }, ComponentTrue, ComponentFalse);
+};
+
+},{"@atlaskit/platform-feature-flags":"3H8e6","../component-with-condition":"axakp","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cbOJ4":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LayerNode", ()=>LayerNode);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _classCallCheck = require("@babel/runtime/helpers/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var LayerNode = /*#__PURE__*/ function() {
+    function LayerNode(id, parent) {
+        (0, _classCallCheckDefault.default)(this, LayerNode);
+        this.id = id;
+        this.childNodes = [];
+        this.parent = parent;
+    }
+    return (0, _createClassDefault.default)(LayerNode, [
+        {
+            key: "addChild",
+            value: function addChild(node) {
+                this.childNodes.push(node);
+            }
+        },
+        {
+            key: "removeChild",
+            value: function removeChild(node) {
+                this.childNodes = this.childNodes.filter(function(child) {
+                    return child.id !== node.id;
+                });
+            }
+        },
+        {
+            key: "getLevel",
+            value: function getLevel() {
+                if (!this.parent) return 1;
+                return this.parent.getLevel() + 1;
+            }
+        },
+        {
+            key: "getHeight",
+            value: function getHeight() {
+                if (this.childNodes.length === 0) return 1;
+                return Math.max.apply(Math, (0, _toConsumableArrayDefault.default)(this.childNodes.map(function(child) {
+                    return child.getHeight();
+                }))) + 1;
+            }
+        }
+    ]);
+}();
+
+},{"@babel/runtime/helpers/toConsumableArray":"lkYCr","@babel/runtime/helpers/classCallCheck":"fbbZA","@babel/runtime/helpers/createClass":"lr6gv","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"SJ3Rl":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Calls back when the escape key is pressed.
+ * To be used exclusively for closing layered components.
+ * Use the `isDisabled` argument to ignore closing events.
+ *
+ * ```js
+ * useCloseOnEscapePress({
+ *   onClose: () => {},
+ *   isDisabled: false,
+ * });
+ * ```
+ */ parcelHelpers.export(exports, "useCloseOnEscapePress", ()=>useCloseOnEscapePress);
+/**
+ *
+ * Layering hook to get layering info like the current level, the top level of the given component
+ *
+ */ parcelHelpers.export(exports, "useLayering", ()=>useLayering);
+var _react = require("react");
+var _bindEventListener = require("bind-event-listener");
+var _platformFeatureFlags = require("@atlaskit/platform-feature-flags");
+var _layeringContext = require("../components/layering-context");
+var ESCAPE = 'Escape';
+function useCloseOnEscapePress(_ref) {
+    var onClose = _ref.onClose, isDisabled = _ref.isDisabled;
+    var escapePressed = (0, _react.useRef)(false);
+    var _useLayering = useLayering(), isLayerDisabled = _useLayering.isLayerDisabled;
+    var onKeyDown = (0, _react.useCallback)(function(e) {
+        var isDisabledLayer = isLayerDisabled();
+        if (isDisabled || escapePressed.current || e.key !== ESCAPE || isDisabledLayer) // We're either already handling the key down event or it's not escape or disabled.
+        // Bail early!
+        return;
+        escapePressed.current = true;
+        onClose(e);
+    }, [
+        onClose,
+        isDisabled,
+        isLayerDisabled
+    ]);
+    var onKeyUp = (0, _react.useCallback)(function() {
+        escapePressed.current = false;
+    }, []);
+    (0, _react.useEffect)(function() {
+        return (0, _bindEventListener.bindAll)(window, [
+            {
+                type: 'keydown',
+                listener: onKeyDown
+            },
+            {
+                type: 'keyup',
+                listener: onKeyUp
+            }
+        ], {
+            capture: false
+        });
+    }, [
+        onKeyDown,
+        onKeyUp
+    ]);
+}
+function useLayering() {
+    var currentLevel = (0, _react.useContext)((0, _layeringContext.LevelContext));
+    // Remove TopLevelContext on FG cleanup layering-tree-graph
+    var _useContext = (0, _react.useContext)((0, _layeringContext.TopLevelContext)), topLevelRef = _useContext.topLevelRef, layerList = _useContext.layerList;
+    var layerNode;
+    var rootNode;
+    if ((0, _platformFeatureFlags.fg)('layering-tree-graph')) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        layerNode = (0, _react.useContext)((0, _layeringContext.LevelNodeContext));
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        rootNode = (0, _react.useContext)((0, _layeringContext.RootNodeContext));
+    }
+    var isLayerDisabled = (0, _react.useCallback)(function() {
+        var _layerList$current$le, _layerList$current;
+        if ((0, _platformFeatureFlags.fg)('layering-tree-graph')) {
+            var _layerNode, _rootNode;
+            // This is an impossible case, added for type safety
+            if (!((_layerNode = layerNode) !== null && _layerNode !== void 0 && _layerNode.current) || !((_rootNode = rootNode) !== null && _rootNode !== void 0 && _rootNode.current)) return false;
+            return layerNode.current.getLevel() < rootNode.current.getHeight();
+        }
+        return ((_layerList$current$le = layerList === null || layerList === void 0 || (_layerList$current = layerList.current) === null || _layerList$current === void 0 ? void 0 : _layerList$current.length) !== null && _layerList$current$le !== void 0 ? _layerList$current$le : 0) !== currentLevel;
+    }, [
+        currentLevel,
+        layerList,
+        layerNode,
+        rootNode
+    ]);
+    var getTopLevel = (0, _react.useCallback)(function() {
+        var _rootNode2;
+        return (_rootNode2 = rootNode) !== null && _rootNode2 !== void 0 && _rootNode2.current ? rootNode.current.getHeight() : null;
+    }, [
+        rootNode
+    ]);
+    return (0, _platformFeatureFlags.fg)('layering-tree-graph') ? {
+        currentLevel: currentLevel,
+        isLayerDisabled: isLayerDisabled,
+        getTopLevel: getTopLevel
+    } : {
+        currentLevel: currentLevel,
+        topLevelRef: topLevelRef,
+        isLayerDisabled: isLayerDisabled,
+        layerList: layerList
+    };
+}
+
+},{"react":"jMk1U","bind-event-listener":"2wrYK","@atlaskit/platform-feature-flags":"3H8e6","../components/layering-context":"6QhCl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eb1Ct":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _fadeInDefault.default));
+var _fadeIn = require("../entering/fade-in");
+var _fadeInDefault = parcelHelpers.interopDefault(_fadeIn);
+
+},{"../entering/fade-in":"01dXD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cVqiF":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useModalStack);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _useLazyCallback = require("@atlaskit/ds-lib/use-lazy-callback");
+var _useLazyCallbackDefault = parcelHelpers.interopDefault(_useLazyCallback);
+var _usePreviousValue = require("@atlaskit/ds-lib/use-previous-value");
+var _usePreviousValueDefault = parcelHelpers.interopDefault(_usePreviousValue);
+var _useStateRef = require("@atlaskit/ds-lib/use-state-ref");
+var _useStateRefDefault = parcelHelpers.interopDefault(_useStateRef);
+var _exitingPersistence = require("@atlaskit/motion/exiting-persistence");
+/**
+ *  ________________________________________________
+ * | MAJOR VERSIONS WILL NOT KNOW ABOUT EACH OTHER! |
+ *  ------------------------------------------------
+ *
+ * An array which holds references to all currently open modal dialogs.
+ * This will only work for modal dialogs of the same major version,
+ * as the reference will be different between them.
+ *
+ * E.g. V11 won't know about any from V12.
+ */ var modalStackRegister = [];
+function useModalStack(_ref) {
+    var onStackChange = _ref.onStackChange;
+    var _useExitingPersistenc = (0, _exitingPersistence.useExitingPersistence)(), isExiting = _useExitingPersistenc.isExiting;
+    var _useStateRef = (0, _useStateRefDefault.default)(0), _useStateRef2 = (0, _slicedToArrayDefault.default)(_useStateRef, 2), stackIndexRef = _useStateRef2[0], setStackIndex = _useStateRef2[1];
+    var currentStackIndex = stackIndexRef.current;
+    var previousStackIndex = (0, _usePreviousValueDefault.default)(stackIndexRef.current);
+    // We want to ensure this function **never changes** during the lifecycle of this component.
+    // This is why it's assigned to a ref and not in a useMemo/useCallback.
+    var updateStack = (0, _useLazyCallbackDefault.default)(function() {
+        var newStackIndex = modalStackRegister.indexOf(updateStack);
+        // We access the stack index ref instead of state because this closure will always only
+        // have the initial state and not any of the later values.
+        if (stackIndexRef.current !== newStackIndex) {
+            setStackIndex(newStackIndex);
+            stackIndexRef.current = newStackIndex;
+        }
+    });
+    (0, _react.useEffect)(function() {
+        var currentStackIndex = modalStackRegister.indexOf(updateStack);
+        if (!isExiting && currentStackIndex === -1) // We are opening the modal dialog.
+        // Add ourselves to the modal stack register!
+        modalStackRegister.unshift(updateStack);
+        if (isExiting && currentStackIndex !== -1) // We are closing the modal dialog using a wrapping modal transition component.
+        // Remove ourselves from the modal stack register!
+        // NOTE: Modal dialogs that don't have a wrapping modal transition component won't flow through here!
+        // For that scenario we cleanup when the component unmounts.
+        modalStackRegister.splice(currentStackIndex, 1);
+        // Fire all registered modal dialogs to update their position in the stack.
+        modalStackRegister.forEach(function(cb) {
+            return cb();
+        });
+    }, [
+        updateStack,
+        isExiting
+    ]);
+    (0, _react.useEffect)(function() {
+        return function() {
+            // Final cleanup just in case this modal dialog did not have a wrapping modal transition.
+            var currentStackIndex = modalStackRegister.indexOf(updateStack);
+            if (currentStackIndex !== -1) {
+                modalStackRegister.splice(currentStackIndex, 1);
+                modalStackRegister.forEach(function(cb) {
+                    return cb();
+                });
+            }
+        };
+    }, [
+        updateStack
+    ]);
+    (0, _react.useEffect)(function() {
+        if (previousStackIndex === undefined) // Initial case that we don't need to notify about.
+        return;
+        if (previousStackIndex !== currentStackIndex) onStackChange(currentStackIndex);
+    }, [
+        onStackChange,
+        previousStackIndex,
+        currentStackIndex
+    ]);
+    return currentStackIndex;
+}
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","react":"jMk1U","@atlaskit/ds-lib/use-lazy-callback":"3niyD","@atlaskit/ds-lib/use-previous-value":"17gqM","@atlaskit/ds-lib/use-state-ref":"4lp5b","@atlaskit/motion/exiting-persistence":"7Z12n","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3niyD":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useLazyCallback);
+var _useLazyRef = require("./use-lazy-ref");
+var _useLazyRefDefault = parcelHelpers.interopDefault(_useLazyRef);
+function useLazyCallback(callback) {
+    var ref = (0, _useLazyRefDefault.default)(function() {
+        return callback;
+    });
+    return ref.current;
+}
+
+},{"./use-lazy-ref":"4mfKx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4mfKx":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useLazyRef);
+var _react = require("react");
+var uniqueReferencedValue = {};
+function useLazyRef(initializer) {
+    var ref = (0, _react.useRef)(uniqueReferencedValue);
+    if (ref.current === uniqueReferencedValue) ref.current = initializer();
+    return ref;
+}
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"17gqM":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>usePreviousValue);
+var _react = require("react");
+function usePreviousValue(value) {
+    var ref = (0, _react.useRef)();
+    (0, _react.useEffect)(function() {
+        ref.current = value;
+    }, [
+        value
+    ]);
+    return ref.current;
+}
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4lp5b":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useStateRef);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+function useStateRef(initialState) {
+    var _useState = (0, _react.useState)(initialState), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), value = _useState2[0], setValue = _useState2[1];
+    var valueRef = (0, _react.useRef)(value);
+    valueRef.current = value;
+    return [
+        valueRef,
+        setValue
+    ];
+}
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7Z12n":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _exitingPersistenceDefault.default));
+parcelHelpers.export(exports, "useExitingPersistence", ()=>(0, _exitingPersistence.useExitingPersistence));
+var _exitingPersistence = require("../entering/exiting-persistence");
+var _exitingPersistenceDefault = parcelHelpers.interopDefault(_exitingPersistence);
+
+},{"../entering/exiting-persistence":"3mJ6Z","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bVvvt":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>usePreventProgrammaticScroll);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _bindEventListener = require("bind-event-listener");
+/**
+ * Returns how far the body is scrolled from the top of the viewport.
+ *
+ *   ____
+ * ||____|| <-- overflow
+ *  |    |  <-- viewport
+ *  |____|
+ *
+ * Scroll distance is the height of overflow outside the viewport.
+ */ function getScrollDistance() {
+    var _document$documentEle, _document$body;
+    return window.pageYOffset || ((_document$documentEle = document.documentElement) === null || _document$documentEle === void 0 ? void 0 : _document$documentEle.scrollTop) || ((_document$body = document.body) === null || _document$body === void 0 ? void 0 : _document$body.scrollTop) || 0;
+}
+function usePreventProgrammaticScroll() {
+    var _useState = (0, _react.useState)(0), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), scrollTopOffset = _useState2[0], setScrollTopOffset = _useState2[1];
+    (0, _react.useLayoutEffect)(function() {
+        setScrollTopOffset(getScrollDistance());
+    }, []);
+    var onWindowScroll = (0, _react.useCallback)(function() {
+        if (getScrollDistance() !== scrollTopOffset) window.scrollTo(window.pageXOffset, scrollTopOffset);
+    }, [
+        scrollTopOffset
+    ]);
+    (0, _react.useEffect)(function() {
+        return (0, _bindEventListener.bind)(window, {
+            type: 'scroll',
+            listener: onWindowScroll
+        });
+    }, [
+        onWindowScroll
+    ]);
+    return scrollTopOffset;
+}
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","react":"jMk1U","bind-event-listener":"2wrYK","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bR0IL":[function(require,module,exports,__globalThis) {
+/* modal-dialog.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _typeof = require("@babel/runtime/helpers/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _mergeRefs = require("@atlaskit/ds-lib/merge-refs");
+var _mergeRefsDefault = parcelHelpers.interopDefault(_mergeRefs);
+var _useAutoFocus = require("@atlaskit/ds-lib/use-auto-focus");
+var _useAutoFocusDefault = parcelHelpers.interopDefault(_useAutoFocus);
+var _useId = require("@atlaskit/ds-lib/use-id");
+var _layering = require("@atlaskit/layering");
+var _fadeIn = require("@atlaskit/motion/fade-in");
+var _fadeInDefault = parcelHelpers.interopDefault(_fadeIn);
+var _combine = require("@atlaskit/pragmatic-drag-and-drop/combine");
+var _context = require("../context");
+var _useOnMotionFinish = require("../hooks/use-on-motion-finish");
+var _useOnMotionFinishDefault = parcelHelpers.interopDefault(_useOnMotionFinish);
+var _element = require("../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/element");
+var _external = require("../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/external");
+var _textSelection = require("../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/text-selection");
+var _utils = require("../utils");
+var _positioner = require("./positioner");
+var _positionerDefault = parcelHelpers.interopDefault(_positioner);
+var LOCAL_CURRENT_SURFACE_CSS_VAR = '--ds-elevation-surface-current';
+var dialogStyles = {
+    root: "_16jlidpf _1o9zkb7n _i0dl1wug _1e0c1txw _1bsb1osq _p12fauwl _4t3i1osq _1tkeidpf _c71l1kxc _2lx21bp4 _bfhk1bhr _syaz1fxt _1q1l1bhr _lcxv1wug _1mq81kw7 _m01u1kw7 _1dg11kw7 _mizu1p6i _1ah31bk5 _ra3xnqa1 _128m1bk5 _1cvmnqa1 _4davt94y _we1i1kw7 _zg7p1cd0 _yakv1kw7 _4lht1kw7 _1xlt6m9r",
+    borderRadius: "_epkx1sit"
+};
+var viewportScrollStyles = null;
+var bodyScrollStyles = null;
+var ModalDialog = function ModalDialog(props) {
+    var _props$width = props.width, width = _props$width === void 0 ? 'medium' : _props$width, _props$shouldScrollIn = props.shouldScrollInViewport, shouldScrollInViewport = _props$shouldScrollIn === void 0 ? false : _props$shouldScrollIn, shouldCloseOnEscapePress = props.shouldCloseOnEscapePress, autoFocus = props.autoFocus, stackIndex = props.stackIndex, onClose = props.onClose, onCloseComplete = props.onCloseComplete, onOpenComplete = props.onOpenComplete, height = props.height, hasProvidedOnClose = props.hasProvidedOnClose, children = props.children, label = props.label, testId = props.testId, _props$isFullScreen = props.isFullScreen, isFullScreen = _props$isFullScreen === void 0 ? false : _props$isFullScreen;
+    var id = (0, _useId.useId)();
+    var titleId = "modal-dialog-title-".concat(id);
+    var defaultTestId = testId || 'modal-dialog';
+    (0, _react.useEffect)(function() {
+        // Modal dialogs can appear on top of iframe elements that are on another domain.
+        // There is a Chrome bug where drag and drop in an element on top of a cross domain
+        // iframe is not working. We are applying the workaround for this bug in modal so
+        // that consumers of our modal don't have to worry about this bug and are free to
+        // create whatever drag and drop experience they like inside a modal
+        //
+        // Chrome bug: https://issues.chromium.org/issues/362301053
+        return (0, _combine.combine)((0, _element.disableDraggingToCrossOriginIFramesForElement)(), (0, _textSelection.disableDraggingToCrossOriginIFramesForTextSelection)(), (0, _external.disableDraggingToCrossOriginIFramesForExternal)());
+    }, []);
+    (0, _useAutoFocusDefault.default)((0, _typeofDefault.default)(autoFocus) === 'object' ? autoFocus : undefined, // When a user supplies  a ref to focus we enable this hook
+    (0, _typeofDefault.default)(autoFocus) === 'object');
+    var _useOnMotionFinish = (0, _useOnMotionFinishDefault.default)({
+        onOpenComplete: onOpenComplete,
+        onCloseComplete: onCloseComplete
+    }), _useOnMotionFinish2 = (0, _slicedToArrayDefault.default)(_useOnMotionFinish, 2), motionRef = _useOnMotionFinish2[0], onMotionFinish = _useOnMotionFinish2[1];
+    var modalDialogContext = (0, _react.useMemo)(function() {
+        return {
+            testId: defaultTestId,
+            titleId: titleId,
+            onClose: onClose,
+            hasProvidedOnClose: hasProvidedOnClose,
+            isFullScreen: isFullScreen
+        };
+    }, [
+        defaultTestId,
+        titleId,
+        onClose,
+        hasProvidedOnClose,
+        isFullScreen
+    ]);
+    (0, _layering.useCloseOnEscapePress)({
+        onClose: onClose,
+        isDisabled: !shouldCloseOnEscapePress
+    });
+    var _useLayering = (0, _layering.useLayering)(), currentLevel = _useLayering.currentLevel;
+    return /*#__PURE__*/ _react.createElement((0, _positionerDefault.default), {
+        stackIndex: stackIndex,
+        shouldScrollInViewport: shouldScrollInViewport,
+        testId: defaultTestId,
+        isFullScreen: isFullScreen
+    }, /*#__PURE__*/ _react.createElement((0, _context.ModalContext).Provider, {
+        value: modalDialogContext
+    }, /*#__PURE__*/ _react.createElement((0, _context.ScrollContext).Provider, {
+        value: shouldScrollInViewport
+    }, /*#__PURE__*/ _react.createElement((0, _fadeInDefault.default), {
+        entranceDirection: isFullScreen ? undefined : 'bottom',
+        onFinish: onMotionFinish
+    }, function(bottomFadeInProps) {
+        return /*#__PURE__*/ _react.createElement("section", (0, _extendsDefault.default)({}, bottomFadeInProps, {
+            "aria-label": label,
+            ref: (0, _mergeRefsDefault.default)([
+                bottomFadeInProps.ref,
+                motionRef
+            ]),
+            style: {
+                // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+                '--modal-dialog-width': (0, _utils.dialogWidth)(width),
+                // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+                '--modal-dialog-height': (0, _utils.dialogHeight)(height)
+            },
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-classname-prop
+            className: (0, _runtime.ax)([
+                dialogStyles.root,
+                !isFullScreen && dialogStyles.borderRadius,
+                shouldScrollInViewport ? "_1tke1kxc _c71lglyw _8kn617ks" : "_cbiz17ks _bolh1kw7",
+                bottomFadeInProps.className
+            ]),
+            role: "dialog",
+            "aria-labelledby": label ? undefined : titleId,
+            "data-testid": defaultTestId,
+            "data-modal-stack": stackIndex,
+            tabIndex: -1,
+            "aria-modal": true,
+            "data-ds--level": currentLevel
+        }), children);
+    }))));
+};
+// eslint-disable-next-line @repo/internal/react/require-jsdoc
+exports.default = ModalDialog;
+
+},{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/slicedToArray":"lvO5K","@babel/runtime/helpers/typeof":"7EL9t","react":"jMk1U","@compiled/react/runtime":"8r5np","@atlaskit/ds-lib/merge-refs":"5mvl7","@atlaskit/ds-lib/use-auto-focus":"493DL","@atlaskit/ds-lib/use-id":"jrARK","@atlaskit/layering":"hp6qP","@atlaskit/motion/fade-in":"eb1Ct","@atlaskit/pragmatic-drag-and-drop/combine":"7FxfW","../context":"evR7H","../hooks/use-on-motion-finish":"2F1wM","../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/element":"36jll","../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/external":"7pbBm","../pragmatic-drag-and-drop/disable-dragging-to-cross-origin-iframes/text-selection":"8dTrW","../utils":"7zWo7","./positioner":"6An05","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7FxfW":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "combine", ()=>(0, _combine.combine));
+var _combine = require("../public-utils/combine");
+
+},{"../public-utils/combine":"6kYtf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6kYtf":[function(require,module,exports,__globalThis) {
+/** Create a new combined function that will call all the provided functions */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "combine", ()=>combine);
+function combine() {
+    for(var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++)fns[_key] = arguments[_key];
+    return function cleanup() {
+        fns.forEach(function(fn) {
+            return fn();
+        });
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"evR7H":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ModalContext", ()=>ModalContext);
+parcelHelpers.export(exports, "ScrollContext", ()=>ScrollContext);
+var _react = require("react");
+var ModalContext = /*#__PURE__*/ (0, _react.createContext)(null);
+var ScrollContext = /*#__PURE__*/ (0, _react.createContext)(null);
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2F1wM":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useOnMotionFinish);
+var _react = require("react");
+function useOnMotionFinish(_ref) {
+    var onOpenComplete = _ref.onOpenComplete, onCloseComplete = _ref.onCloseComplete;
+    var motionRef = (0, _react.useRef)(null);
+    var onMotionFinish = (0, _react.useCallback)(function(state) {
+        if (state === 'entering' && onOpenComplete) onOpenComplete(motionRef.current, true);
+        if (state === 'exiting' && onCloseComplete) onCloseComplete(motionRef.current);
+    }, [
+        onOpenComplete,
+        onCloseComplete
+    ]);
+    return [
+        motionRef,
+        onMotionFinish
+    ];
+}
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"36jll":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "disableDraggingToCrossOriginIFramesForElement", ()=>disableDraggingToCrossOriginIFramesForElement);
+var _bindEventListener = require("bind-event-listener");
+var _combine = require("@atlaskit/pragmatic-drag-and-drop/combine");
+var _adapter = require("@atlaskit/pragmatic-drag-and-drop/element/adapter");
+var _makeFixForAdapter = require("./make-fix-for-adapter");
+function watchForInteractionEnd(_ref) {
+    var stop = _ref.stop;
+    var isDragging = false;
+    function stopIfNotDragging() {
+        if (isDragging) return;
+        stop();
+    }
+    var unbindEvents = (0, _bindEventListener.bindAll)(window, [
+        {
+            // Another interaction is starting, this fix should be removed.
+            type: 'pointerdown',
+            listener: stop
+        },
+        {
+            // The user did not start a drag
+            type: 'pointerup',
+            listener: stopIfNotDragging
+        },
+        {
+            // if a "dragstart" occurs and the flag is not set,
+            // then a drag has not started.
+            // Note: could not use "pointercancel" as it is not
+            // published in Safari
+            // → https://bugs.webkit.org/show_bug.cgi?id=222632
+            type: 'dragstart',
+            listener: stopIfNotDragging,
+            // Need to come after the element adapter
+            options: {
+                capture: false
+            }
+        }
+    ], {
+        // Listening in the capture phase to increase resilience
+        // against events being stopped.
+        capture: true,
+        // Being super clear these should only run once
+        once: true
+    });
+    var unbindMonitor = (0, _adapter.monitorForElements)({
+        onGenerateDragPreview: function onGenerateDragPreview() {
+            isDragging = true;
+        },
+        onDrop: function onDrop() {
+            isDragging = false;
+            stop();
+        }
+    });
+    return (0, _combine.combine)(unbindEvents, unbindMonitor);
+}
+function watchForInteractionStart(_ref2) {
+    var start = _ref2.start;
+    return (0, _bindEventListener.bind)(window, {
+        // Note: Using "mousedown" rather than "pointerdown" due to a Safari bug.
+        // Safari not publish a "pointerdown" on the interaction after a drag
+        // → https://bugs.webkit.org/show_bug.cgi?id=279749
+        type: 'mousedown',
+        listener: function listener(event) {
+            // Only starting if pressing down inside a draggable element
+            // At this point, we are not sure which if:
+            // 1. a text selection drag is starting
+            // 2. a draggable managed by pdnd is going to be dragged
+            // 3. a draggable not managed by pdnd is going to be dragged
+            // 4. The user will be dragging anything at all (might be doing a click)
+            if (event.target instanceof HTMLElement && event.target.closest('[draggable="true"]')) start();
+        }
+    });
+}
+var api = (0, _makeFixForAdapter.makeFixForAdapter)({
+    watchForInteractionStart: watchForInteractionStart,
+    watchForInteractionEnd: watchForInteractionEnd
+});
+function disableDraggingToCrossOriginIFramesForElement() {
+    return api.registerUsage();
+}
+
+},{"bind-event-listener":"2wrYK","@atlaskit/pragmatic-drag-and-drop/combine":"7FxfW","@atlaskit/pragmatic-drag-and-drop/element/adapter":"K0PL1","./make-fix-for-adapter":"fPBdh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"K0PL1":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "draggable", ()=>(0, _elementAdapter.draggable)) // Payload for the draggable being dragged
+;
+parcelHelpers.export(exports, "dropTargetForElements", ()=>(0, _elementAdapter.dropTargetForElements));
+parcelHelpers.export(exports, "monitorForElements", ()=>(0, _elementAdapter.monitorForElements));
+var _elementAdapter = require("../../adapter/element-adapter");
+
+},{"../../adapter/element-adapter":"e1eQF","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"e1eQF":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "dropTargetForElements", ()=>dropTargetForElements);
+parcelHelpers.export(exports, "monitorForElements", ()=>monitorForElements);
+parcelHelpers.export(exports, "draggable", ()=>draggable) /** Common event payload for all events */  /** A map containing payloads for all events */  /** Common event payload for all drop target events */  /** A map containing payloads for all events on drop targets */  /** Arguments given to all feedback functions (eg `canDrag()`) on for a `draggable()` */  /** Arguments given to all feedback functions (eg `canDrop()`) on a `dropTargetForElements()` */  /** Arguments given to all monitor feedback functions (eg `canMonitor()`) for a `monitorForElements` */ ;
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _bindEventListener = require("bind-event-listener");
+var _getElementFromPointWithoutHoneyPot = require("../honey-pot-fix/get-element-from-point-without-honey-pot");
+var _makeHoneyPotFix = require("../honey-pot-fix/make-honey-pot-fix");
+var _makeAdapter = require("../make-adapter/make-adapter");
+var _combine = require("../public-utils/combine");
+var _once = require("../public-utils/once");
+var _addAttribute = require("../util/add-attribute");
+var _android = require("../util/android");
+var _getInput = require("../util/get-input");
+var _textMediaType = require("../util/media-types/text-media-type");
+var _urlMediaType = require("../util/media-types/url-media-type");
+var _elementAdapterNativeDataKey = require("./element-adapter-native-data-key");
+var draggableRegistry = new WeakMap();
+function addToRegistry(args) {
+    draggableRegistry.set(args.element, args);
+    return function cleanup() {
+        draggableRegistry.delete(args.element);
+    };
+}
+var honeyPotFix = (0, _makeHoneyPotFix.makeHoneyPotFix)();
+var adapter = (0, _makeAdapter.makeAdapter)({
+    typeKey: 'element',
+    defaultDropEffect: 'move',
+    mount: function mount(api) {
+        /**  Binding event listeners the `document` rather than `window` so that
+     * this adapter always gets preference over the text adapter.
+     * `document` is the first `EventTarget` under `window`
+     * https://twitter.com/alexandereardon/status/1604658588311465985
+     */ return (0, _combine.combine)(honeyPotFix.bindEvents(), (0, _bindEventListener.bind)(document, {
+            type: 'dragstart',
+            listener: function listener(event) {
+                var _entry$dragHandle, _entry$getInitialData, _entry$getInitialData2, _entry$dragHandle2, _entry$getInitialData3, _entry$getInitialData4;
+                if (!api.canStart(event)) return;
+                // If the "dragstart" event is cancelled, then a drag won't start
+                // There will be no further drag operation events (eg no "dragend" event)
+                if (event.defaultPrevented) return;
+                // Technically `dataTransfer` can be `null` according to the types
+                // But that behaviour does not seem to appear in the spec.
+                // If there is not `dataTransfer`, we can assume something is wrong and not
+                // start a drag
+                if (!event.dataTransfer) {
+                    // eslint-disable-next-line no-console
+                    console.warn("\n              It appears as though you have are not testing DragEvents correctly.\n\n              - If you are unit testing, ensure you have polyfilled DragEvent.\n              - If you are browser testing, ensure you are dispatching drag events correctly.\n\n              Please see our testing guides for more information:\n              https://atlassian.design/components/pragmatic-drag-and-drop/core-package/testing\n            ".replace(/ {2}/g, ''));
+                    return;
+                }
+                // the closest parent that is a draggable element will be marked as
+                // the `event.target` for the event
+                var target = event.target;
+                // this source is only for elements
+                // Note: only HTMLElements can have the "draggable" attribute
+                if (!(target instanceof HTMLElement)) return null;
+                // see if the thing being dragged is owned by us
+                var entry = draggableRegistry.get(target);
+                // no matching element found
+                // → dragging an element with `draggable="true"` that is not controlled by us
+                if (!entry) return null;
+                /**
+         * A text selection drag _can_ have the `draggable` element be
+         * the `event.target` if the user is dragging the text selection
+         * from the `draggable`.
+         *
+         * To know if the `draggable` is being dragged, we look at whether any
+         * `"text/plain"` data is being dragged. If it is, then a text selection
+         * drag is occurring.
+         *
+         * This behaviour has been validated on:
+         *
+         * - Chrome@128 on Android@14
+         * - Chrome@128 on iOS@17.6.1
+         * - Chrome@128 on Windows@11
+         * - Chrome@128 on MacOS@14.6.1
+         * - Firefox@129 on Windows@11 (not possible for user to select text in a draggable)
+         * - Firefox@129 on MacOS@14.6.1 (not possible for user to select text in a draggable)
+         *
+         * Note: Could usually just use: `event.dataTransfer.types.includes(textMediaType)`
+         * but unfortunately ProseMirror is always setting `""` as the dragged text
+         *
+         * Note: Unfortunately editor is (heavily) leaning on the current functionality today
+         * and unwinding it will be a decent amount of effort. So for now, a text selection
+         * where the `event.target` is a `draggable` element will still trigger the
+         * element adapter.
+         *
+         * // Future state:
+         * if(event.dataTransfer.getData(textMediaType)) {
+         * 	return;
+         * }
+         *
+         */ var input = (0, _getInput.getInput)(event);
+                var feedback = {
+                    element: entry.element,
+                    dragHandle: (_entry$dragHandle = entry.dragHandle) !== null && _entry$dragHandle !== void 0 ? _entry$dragHandle : null,
+                    input: input
+                };
+                // Check: does the draggable want to allow dragging?
+                if (entry.canDrag && !entry.canDrag(feedback)) {
+                    // cancel drag operation if we cannot drag
+                    event.preventDefault();
+                    return null;
+                }
+                // Check: is there a drag handle and is the user using it?
+                if (entry.dragHandle) {
+                    // technically don't need this util, but just being
+                    // consistent with how we look up what is under the users
+                    // cursor.
+                    var over = (0, _getElementFromPointWithoutHoneyPot.getElementFromPointWithoutHoneypot)({
+                        x: input.clientX,
+                        y: input.clientY
+                    });
+                    // if we are not dragging from the drag handle (or something inside the drag handle)
+                    // then we will cancel the active drag
+                    if (!entry.dragHandle.contains(over)) {
+                        event.preventDefault();
+                        return null;
+                    }
+                }
+                /**
+         *  **Goal**
+         *  Pass information to other applications
+         *
+         * **Approach**
+         *  Put data into the native data store
+         *
+         *  **What about the native adapter?**
+         *  When the element adapter puts native data into the native data store
+         *  the native adapter is not triggered in the current window,
+         *  but a native adapter in an external window _can_ be triggered
+         *
+         *  **Why bake this into core?**
+         *  This functionality could be pulled out and exposed inside of
+         *  `onGenerateDragPreview`. But decided to make it a part of the
+         *  base API as it felt like a common enough use case and ended
+         *  up being a similar amount of code to include this function as
+         *  it was to expose the hook for it
+         */ var nativeData = (_entry$getInitialData = (_entry$getInitialData2 = entry.getInitialDataForExternal) === null || _entry$getInitialData2 === void 0 ? void 0 : _entry$getInitialData2.call(entry, feedback)) !== null && _entry$getInitialData !== void 0 ? _entry$getInitialData : null;
+                if (nativeData) for(var _i = 0, _Object$entries = Object.entries(nativeData); _i < _Object$entries.length; _i++){
+                    var _Object$entries$_i = (0, _slicedToArrayDefault.default)(_Object$entries[_i], 2), key = _Object$entries$_i[0], data = _Object$entries$_i[1];
+                    event.dataTransfer.setData(key, data !== null && data !== void 0 ? data : '');
+                }
+                /**
+         *  📱 For Android devices, a drag operation will not start unless
+         * "text/plain" or "text/uri-list" data exists in the native data store
+         * https://twitter.com/alexandereardon/status/1732189803754713424
+         *
+         * Tested on:
+         * Device: Google Pixel 5
+         * Android version: 14 (November 5, 2023)
+         * Chrome version: 120.0
+         */ if ((0, _android.isAndroid)() && !event.dataTransfer.types.includes((0, _textMediaType.textMediaType)) && !event.dataTransfer.types.includes((0, _urlMediaType.URLMediaType))) event.dataTransfer.setData((0, _textMediaType.textMediaType), (0, _android.androidFallbackText));
+                /**
+         * 1. Must set any media type for `iOS15` to work
+         * 2. We are also doing adding data so that the native adapter
+         * can know that the element adapter has handled this drag
+         *
+         * We used to wrap this `setData()` in a `try/catch` for Firefox,
+         * but it looks like that was not needed.
+         *
+         * Tested using: https://codesandbox.io/s/checking-firefox-throw-behaviour-on-dragstart-qt8h4f
+         *
+         * - ✅ Firefox@70.0 (Oct 2019) on macOS Sonoma
+         * - ✅ Firefox@70.0 (Oct 2019) on macOS Big Sur
+         * - ✅ Firefox@70.0 (Oct 2019) on Windows 10
+         *
+         * // just checking a few more combinations to be super safe
+         *
+         * - ✅ Chrome@78 (Oct 2019) on macOS Big Sur
+         * - ✅ Chrome@78 (Oct 2019) on Windows 10
+         * - ✅ Safari@14.1 on macOS Big Sur
+         */ event.dataTransfer.setData((0, _elementAdapterNativeDataKey.elementAdapterNativeDataKey), '');
+                var payload = {
+                    element: entry.element,
+                    dragHandle: (_entry$dragHandle2 = entry.dragHandle) !== null && _entry$dragHandle2 !== void 0 ? _entry$dragHandle2 : null,
+                    data: (_entry$getInitialData3 = (_entry$getInitialData4 = entry.getInitialData) === null || _entry$getInitialData4 === void 0 ? void 0 : _entry$getInitialData4.call(entry, feedback)) !== null && _entry$getInitialData3 !== void 0 ? _entry$getInitialData3 : {}
+                };
+                var dragType = {
+                    type: 'element',
+                    payload: payload,
+                    startedFrom: 'internal'
+                };
+                api.start({
+                    event: event,
+                    dragType: dragType
+                });
+            }
+        }));
+    },
+    dispatchEventToSource: function dispatchEventToSource(_ref) {
+        var _draggableRegistry$ge, _draggableRegistry$ge2;
+        var eventName = _ref.eventName, payload = _ref.payload;
+        // During a drag operation, a draggable can be:
+        // - remounted with different functions
+        // - removed completely
+        // So we need to get the latest entry from the registry in order
+        // to call the latest event functions
+        (_draggableRegistry$ge = draggableRegistry.get(payload.source.element)) === null || _draggableRegistry$ge === void 0 || (_draggableRegistry$ge2 = _draggableRegistry$ge[eventName]) === null || _draggableRegistry$ge2 === void 0 || _draggableRegistry$ge2.call(_draggableRegistry$ge, // I cannot seem to get the types right here.
+        // TS doesn't seem to like that one event can need `nativeSetDragImage`
+        // @ts-expect-error
+        payload);
+    },
+    onPostDispatch: honeyPotFix.getOnPostDispatch()
+});
+var dropTargetForElements = adapter.dropTarget;
+var monitorForElements = adapter.monitor;
+function draggable(args) {
+    if (args.dragHandle && !args.element.contains(args.dragHandle)) // eslint-disable-next-line no-console
+    console.warn('Drag handle element must be contained in draggable element', {
+        element: args.element,
+        dragHandle: args.dragHandle
+    });
+    var existing = draggableRegistry.get(args.element);
+    if (existing) // eslint-disable-next-line no-console
+    console.warn('You have already registered a `draggable` on the same element', {
+        existing: existing,
+        proposed: args
+    });
+    var cleanup = (0, _combine.combine)(// making the draggable register the adapter rather than drop targets
+    // this is because you *must* have a draggable element to start a drag
+    // but you _might_ not have any drop targets immediately
+    // (You might create drop targets async)
+    adapter.registerUsage(), addToRegistry(args), (0, _addAttribute.addAttribute)(args.element, {
+        attribute: 'draggable',
+        value: 'true'
+    }));
+    // Wrapping in `once` to prevent unexpected side effects if consumers call
+    // the clean up function multiple times.
+    return (0, _once.once)(cleanup);
+}
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","bind-event-listener":"2wrYK","../honey-pot-fix/get-element-from-point-without-honey-pot":"33rob","../honey-pot-fix/make-honey-pot-fix":"7cMWT","../make-adapter/make-adapter":"geYPo","../public-utils/combine":"6kYtf","../public-utils/once":"2nBLC","../util/add-attribute":"cd2xU","../util/android":"k39DA","../util/get-input":"aory5","../util/media-types/text-media-type":"6XN7D","../util/media-types/url-media-type":"hWbz4","./element-adapter-native-data-key":"4dJqM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"33rob":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getElementFromPointWithoutHoneypot", ()=>getElementFromPointWithoutHoneypot);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _isHoneyPotElement = require("./is-honey-pot-element");
+function getElementFromPointWithoutHoneypot(client) {
+    // eslint-disable-next-line no-restricted-syntax
+    var _document$elementsFro = document.elementsFromPoint(client.x, client.y), _document$elementsFro2 = (0, _slicedToArrayDefault.default)(_document$elementsFro, 2), top = _document$elementsFro2[0], second = _document$elementsFro2[1];
+    if (!top) return null;
+    if ((0, _isHoneyPotElement.isHoneyPotElement)(top)) return second !== null && second !== void 0 ? second : null;
+    return top;
+}
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","./is-honey-pot-element":"1tWJP","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1tWJP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isHoneyPotElement", ()=>isHoneyPotElement);
+var _honeyPotDataAttribute = require("./honey-pot-data-attribute");
+function isHoneyPotElement(target) {
+    return target instanceof Element && target.hasAttribute((0, _honeyPotDataAttribute.honeyPotDataAttribute));
+}
+
+},{"./honey-pot-data-attribute":"FO5Q5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"FO5Q5":[function(require,module,exports,__globalThis) {
+// pulling this into a separate file so adapter(s) that don't
+// need the honey pot can pay as little as possible for it.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "honeyPotDataAttribute", ()=>honeyPotDataAttribute);
+var honeyPotDataAttribute = 'data-pdnd-honey-pot';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7cMWT":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeHoneyPotFix", ()=>makeHoneyPotFix);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _bindEventListener = require("bind-event-listener");
+var _maxZIndex = require("../util/max-z-index");
+var _honeyPotDataAttribute = require("./honey-pot-data-attribute");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+var honeyPotSize = 2;
+var halfHoneyPotSize = honeyPotSize / 2;
+/**
+ * `clientX` and `clientY` can be in sub pixels (eg `2.332`)
+ * However, browser hitbox testing is commonly do to the closest pixel.
+ *
+ * → https://issues.chromium.org/issues/40940531
+ *
+ * To be sure that the honey pot will be over the `client` position,
+ * we `.floor()` `clientX` and`clientY` and then make it `2px` in size.
+ **/ function floorToClosestPixel(point) {
+    return {
+        x: Math.floor(point.x),
+        y: Math.floor(point.y)
+    };
+}
+/**
+ * We want to make sure the honey pot sits around the users position.
+ * This seemed to be the most resilient while testing.
+ */ function pullBackByHalfHoneyPotSize(point) {
+    return {
+        x: point.x - halfHoneyPotSize,
+        y: point.y - halfHoneyPotSize
+    };
+}
+/**
+ * Prevent the honey pot from changing the window size.
+ * This is super unlikely to occur, but just being safe.
+ */ function preventGoingBackwardsOffScreen(point) {
+    return {
+        x: Math.max(point.x, 0),
+        y: Math.max(point.y, 0)
+    };
+}
+/**
+ * Prevent the honey pot from changing the window size.
+ * This is super unlikely to occur, but just being safe.
+ */ function preventGoingForwardsOffScreen(point) {
+    return {
+        x: Math.min(point.x, window.innerWidth - honeyPotSize),
+        y: Math.min(point.y, window.innerHeight - honeyPotSize)
+    };
+}
+/**
+ * Create a `2x2` `DOMRect` around the `client` position
+ */ function getHoneyPotRectFor(_ref) {
+    var client = _ref.client;
+    var point = preventGoingForwardsOffScreen(preventGoingBackwardsOffScreen(pullBackByHalfHoneyPotSize(floorToClosestPixel(client))));
+    // When debugging, it is helpful to
+    // make this element a bit bigger
+    return DOMRect.fromRect({
+        x: point.x,
+        y: point.y,
+        width: honeyPotSize,
+        height: honeyPotSize
+    });
+}
+function getRectStyles(_ref2) {
+    var clientRect = _ref2.clientRect;
+    return {
+        left: "".concat(clientRect.left, "px"),
+        top: "".concat(clientRect.top, "px"),
+        width: "".concat(clientRect.width, "px"),
+        height: "".concat(clientRect.height, "px")
+    };
+}
+function isWithin(_ref3) {
+    var client = _ref3.client, clientRect = _ref3.clientRect;
+    return(// is within horizontal bounds
+    client.x >= clientRect.x && client.x <= clientRect.x + clientRect.width && // is within vertical bounds
+    client.y >= clientRect.y && client.y <= clientRect.y + clientRect.height);
+}
+/**
+ * The honey pot fix is designed to get around a painful bug in all browsers.
+ *
+ * [Overview](https://www.youtube.com/watch?v=udE9qbFTeQg)
+ *
+ * **Background**
+ *
+ * When a drag starts, browsers incorrectly think that the users pointer is
+ * still depressed where the drag started. Any element that goes under this position
+ * will be entered into, causing `"mouseenter"` events and `":hover"` styles to be applied.
+ *
+ * _This is a violation of the spec_
+ *
+ * > "From the moment that the user agent is to initiate the drag-and-drop operation,
+ * > until the end 	of the drag-and-drop operation, device input events
+ * > (e.g. mouse and keyboard events) must be suppressed."
+ * >
+ * > - https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model
+ *
+ * _Some impacts_
+ *
+ * - `":hover"` styles being applied where they shouldn't (looks messy)
+ * - components such as tooltips responding to `"mouseenter"` can show during a drag,
+ *   and on an element the user isn't even over
+ *
+ * Bug: https://issues.chromium.org/issues/41129937
+ *
+ * **Honey pot fix**
+ *
+ * 1. Create an element where the browser thinks the depressed pointer is
+ *    to absorb the incorrect pointer events
+ * 2. Remove that element when it is no longer needed
+ */ function mountHoneyPot(_ref4) {
+    var initial = _ref4.initial;
+    var element = document.createElement('div');
+    element.setAttribute((0, _honeyPotDataAttribute.honeyPotDataAttribute), 'true');
+    // can shift during the drag thanks to Firefox
+    var clientRect = getHoneyPotRectFor({
+        client: initial
+    });
+    Object.assign(element.style, _objectSpread(_objectSpread({
+        // Setting a background color explicitly to avoid any inherited styles.
+        // Looks like this could be `opacity: 0`, but worried that _might_
+        // cause the element to be ignored on some platforms.
+        // When debugging, set backgroundColor to something like "red".
+        backgroundColor: 'transparent',
+        position: 'fixed',
+        // Being explicit to avoid inheriting styles
+        padding: 0,
+        margin: 0,
+        boxSizing: 'border-box'
+    }, getRectStyles({
+        clientRect: clientRect
+    })), {}, {
+        // We want this element to absorb pointer events,
+        // it's kind of the whole point 😉
+        pointerEvents: 'auto',
+        // Want to make sure the honey pot is top of everything else.
+        // Don't need to worry about native drag previews, as they will
+        // have been rendered (and removed) before the honey pot is rendered
+        zIndex: (0, _maxZIndex.maxZIndex)
+    }));
+    document.body.appendChild(element);
+    /**
+   *  🦊 In firefox we can get `"pointermove"` events after the drag
+   * has started, which is a spec violation.
+   * The final `"pointermove"` will reveal where the "depressed" position
+   * is for our honey pot fix.
+   */ var unbindPointerMove = (0, _bindEventListener.bind)(window, {
+        type: 'pointermove',
+        listener: function listener(event) {
+            var client = {
+                x: event.clientX,
+                y: event.clientY
+            };
+            clientRect = getHoneyPotRectFor({
+                client: client
+            });
+            Object.assign(element.style, getRectStyles({
+                clientRect: clientRect
+            }));
+        },
+        // using capture so we are less likely to be impacted by event stopping
+        options: {
+            capture: true
+        }
+    });
+    return function finish(_ref5) {
+        var current = _ref5.current;
+        // Don't need this any more
+        unbindPointerMove();
+        // If the user is hover the honey pot, we remove it
+        // so that the user can continue to interact with the page normally.
+        if (isWithin({
+            client: current,
+            clientRect: clientRect
+        })) {
+            element.remove();
+            return;
+        }
+        function cleanup() {
+            unbindPostDragEvents();
+            element.remove();
+        }
+        var unbindPostDragEvents = (0, _bindEventListener.bindAll)(window, [
+            {
+                type: 'pointerdown',
+                listener: cleanup
+            },
+            {
+                type: 'pointermove',
+                listener: cleanup
+            },
+            {
+                type: 'focusin',
+                listener: cleanup
+            },
+            {
+                type: 'focusout',
+                listener: cleanup
+            },
+            // a 'pointerdown' should happen before 'dragstart', but just being super safe
+            {
+                type: 'dragstart',
+                listener: cleanup
+            },
+            // if the user has dragged something out of the window
+            // and then is dragging something back into the window
+            // the first events we will see are "dragenter" (and then "dragover").
+            // So if we see any of these we need to clear the post drag fix.
+            {
+                type: 'dragenter',
+                listener: cleanup
+            },
+            {
+                type: 'dragover',
+                listener: cleanup
+            }
+        ], {
+            // Using `capture` so less likely to be impacted by other code stopping events
+            capture: true
+        });
+    };
+}
+function makeHoneyPotFix() {
+    var latestPointerMove = null;
+    function bindEvents() {
+        // For sanity, only collecting this value from when events are first bound.
+        // This prevents the case where a super old "pointermove" could be used
+        // from a prior interaction.
+        latestPointerMove = null;
+        return (0, _bindEventListener.bind)(window, {
+            type: 'pointermove',
+            listener: function listener(event) {
+                latestPointerMove = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+            },
+            // listening for pointer move in capture phase
+            // so we are less likely to be impacted by events being stopped.
+            options: {
+                capture: true
+            }
+        });
+    }
+    function getOnPostDispatch() {
+        var finish = null;
+        return function onPostEvent(_ref6) {
+            var eventName = _ref6.eventName, payload = _ref6.payload;
+            // We are adding the honey pot `onDragStart` so we don't
+            // impact the creation of the native drag preview.
+            if (eventName === 'onDragStart') {
+                var input = payload.location.initial.input;
+                // Sometimes there will be no latest "pointermove" (eg iOS).
+                // In which case, we use the start position of the drag.
+                var initial = latestPointerMove !== null && latestPointerMove !== void 0 ? latestPointerMove : {
+                    x: input.clientX,
+                    y: input.clientY
+                };
+                // Don't need to defensively call `finish()` as `onDrop` from
+                // one interaction is guaranteed to be called before `onDragStart`
+                // of the next.
+                finish = mountHoneyPot({
+                    initial: initial
+                });
+            }
+            if (eventName === 'onDrop') {
+                var _finish;
+                var _input = payload.location.current.input;
+                (_finish = finish) === null || _finish === void 0 || _finish({
+                    current: {
+                        x: _input.clientX,
+                        y: _input.clientY
+                    }
+                });
+                finish = null;
+                // this interaction is finished, we want to use
+                // the latest "pointermove" for each interaction
+                latestPointerMove = null;
+            }
+        };
+    }
+    return {
+        bindEvents: bindEvents,
+        getOnPostDispatch: getOnPostDispatch
+    };
+}
+
+},{"@babel/runtime/helpers/defineProperty":"azbUC","bind-event-listener":"2wrYK","../util/max-z-index":"3YBfg","./honey-pot-data-attribute":"FO5Q5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3YBfg":[function(require,module,exports,__globalThis) {
+// Maximum possible z-index
+// https://stackoverflow.com/questions/491052/minimum-and-maximum-value-of-z-index
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "maxZIndex", ()=>maxZIndex);
+var maxZIndex = 2147483647;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"geYPo":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeAdapter", ()=>makeAdapter);
+var _lifecycleManager = require("../ledger/lifecycle-manager");
+var _usageLedger = require("../ledger/usage-ledger");
+var _makeDropTarget = require("./make-drop-target");
+var _makeMonitor = require("./make-monitor");
+function makeAdapter(_ref) {
+    var typeKey = _ref.typeKey, mount = _ref.mount, dispatchEventToSource = _ref.dispatchEventToSource, onPostDispatch = _ref.onPostDispatch, defaultDropEffect = _ref.defaultDropEffect;
+    var monitorAPI = (0, _makeMonitor.makeMonitor)();
+    var dropTargetAPI = (0, _makeDropTarget.makeDropTarget)({
+        typeKey: typeKey,
+        defaultDropEffect: defaultDropEffect
+    });
+    function dispatchEvent(args) {
+        // 1. forward the event to source
+        dispatchEventToSource === null || dispatchEventToSource === void 0 || dispatchEventToSource(args);
+        // 2. forward the event to relevant dropTargets
+        dropTargetAPI.dispatchEvent(args);
+        // 3. forward event to monitors
+        monitorAPI.dispatchEvent(args);
+        // 4. post consumer dispatch (used for honey pot fix)
+        onPostDispatch === null || onPostDispatch === void 0 || onPostDispatch(args);
+    }
+    function start(_ref2) {
+        var event = _ref2.event, dragType = _ref2.dragType;
+        (0, _lifecycleManager.lifecycle).start({
+            event: event,
+            dragType: dragType,
+            getDropTargetsOver: dropTargetAPI.getIsOver,
+            dispatchEvent: dispatchEvent
+        });
+    }
+    function registerUsage() {
+        function mountAdapter() {
+            var api = {
+                canStart: (0, _lifecycleManager.lifecycle).canStart,
+                start: start
+            };
+            return mount(api);
+        }
+        return (0, _usageLedger.register)({
+            typeKey: typeKey,
+            mount: mountAdapter
+        });
+    }
+    return {
+        registerUsage: registerUsage,
+        dropTarget: dropTargetAPI.dropTargetForConsumers,
+        monitor: monitorAPI.monitorForConsumers
+    };
+}
+
+},{"../ledger/lifecycle-manager":"7Iq69","../ledger/usage-ledger":"aD4pk","./make-drop-target":"5ozJA","./make-monitor":"16WjR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7Iq69":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "lifecycle", ()=>lifecycle);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _bindEventListener = require("bind-event-listener");
+var _getElementFromPointWithoutHoneyPot = require("../honey-pot-fix/get-element-from-point-without-honey-pot");
+var _isHoneyPotElement = require("../honey-pot-fix/is-honey-pot-element");
+var _isLeavingWindow = require("../util/changing-window/is-leaving-window");
+var _detectBrokenDrag = require("../util/detect-broken-drag");
+var _getInput = require("../util/get-input");
+var _dispatchConsumerEvent = require("./dispatch-consumer-event");
+var globalState = {
+    isActive: false
+};
+function canStart() {
+    return !globalState.isActive;
+}
+function getNativeSetDragImage(event) {
+    if (event.dataTransfer) // need to use `.bind` as `setDragImage` is required
+    // to be run with `event.dataTransfer` as the "this" context
+    return event.dataTransfer.setDragImage.bind(event.dataTransfer);
+    return null;
+}
+function hasHierarchyChanged(_ref) {
+    var current = _ref.current, next = _ref.next;
+    if (current.length !== next.length) return true;
+    // not checking stickiness, data or dropEffect,
+    // just whether the hierarchy has changed
+    for(var i = 0; i < current.length; i++){
+        if (current[i].element !== next[i].element) return true;
+    }
+    return false;
+}
+function start(_ref2) {
+    var event = _ref2.event, dragType = _ref2.dragType, getDropTargetsOver = _ref2.getDropTargetsOver, dispatchEvent = _ref2.dispatchEvent;
+    if (!canStart()) return;
+    var initial = getStartLocation({
+        event: event,
+        dragType: dragType,
+        getDropTargetsOver: getDropTargetsOver
+    });
+    globalState.isActive = true;
+    var state = {
+        current: initial
+    };
+    // Setting initial drop effect for the drag
+    setDropEffectOnEvent({
+        event: event,
+        current: initial.dropTargets
+    });
+    var dispatch = (0, _dispatchConsumerEvent.makeDispatch)({
+        source: dragType.payload,
+        dispatchEvent: dispatchEvent,
+        initial: initial
+    });
+    function updateState(next) {
+        // only looking at whether hierarchy has changed to determine whether something as 'changed'
+        var hasChanged = hasHierarchyChanged({
+            current: state.current.dropTargets,
+            next: next.dropTargets
+        });
+        // Always updating the state to include latest data, dropEffect and stickiness
+        // Only updating consumers if the hierarchy has changed in some way
+        // Consumers can get the latest data by using `onDrag`
+        state.current = next;
+        if (hasChanged) dispatch.dragUpdate({
+            current: state.current
+        });
+    }
+    function onUpdateEvent(event) {
+        var input = (0, _getInput.getInput)(event);
+        // If we are over the honey pot, we need to get the element
+        // that the user would have been over if not for the honey pot
+        var target = (0, _isHoneyPotElement.isHoneyPotElement)(event.target) ? (0, _getElementFromPointWithoutHoneyPot.getElementFromPointWithoutHoneypot)({
+            x: input.clientX,
+            y: input.clientY
+        }) : event.target;
+        var nextDropTargets = getDropTargetsOver({
+            target: target,
+            input: input,
+            source: dragType.payload,
+            current: state.current.dropTargets
+        });
+        if (nextDropTargets.length) {
+            // 🩸 must call `event.preventDefault()` to allow a browser drop to occur
+            event.preventDefault();
+            setDropEffectOnEvent({
+                event: event,
+                current: nextDropTargets
+            });
+        }
+        updateState({
+            dropTargets: nextDropTargets,
+            input: input
+        });
+    }
+    function cancel() {
+        // The spec behaviour is that when a drag is cancelled, or when dropping on no drop targets,
+        // a "dragleave" event is fired on the active drop target before a "dragend" event.
+        // We are replicating that behaviour in `cancel` if there are any active drop targets to
+        // ensure consistent behaviour.
+        //
+        // Note: When cancelling, or dropping on no drop targets, a "dragleave" event
+        // will have already cleared the dropTargets to `[]` (as that particular "dragleave" has a `relatedTarget` of `null`)
+        if (state.current.dropTargets.length) updateState({
+            dropTargets: [],
+            input: state.current.input
+        });
+        dispatch.drop({
+            current: state.current,
+            updatedSourcePayload: null
+        });
+        finish();
+    }
+    function finish() {
+        globalState.isActive = false;
+        unbindEvents();
+    }
+    var unbindEvents = (0, _bindEventListener.bindAll)(window, [
+        {
+            // 👋 Note: we are repurposing the `dragover` event as our `drag` event
+            // this is because firefox does not publish pointer coordinates during
+            // a `drag` event, but does for every other type of drag event
+            // `dragover` fires on all elements that are being dragged over
+            // Because we are binding to `window` - our `dragover` is effectively the same as a `drag`
+            // 🦊😤
+            type: 'dragover',
+            listener: function listener(event) {
+                // We need to regularly calculate the drop targets in order to allow:
+                //  - dynamic `canDrop()` checks
+                //  - rapid updating `getData()` calls to attach data in response to user input (eg for edge detection)
+                // Sadly we cannot schedule inspecting changes resulting from this event
+                // we need to be able to conditionally cancel the event with `event.preventDefault()`
+                // to enable the correct native drop experience.
+                // 1. check to see if anything has changed
+                onUpdateEvent(event);
+                // 2. let consumers know a move has occurred
+                // This will include the latest 'input' values
+                dispatch.drag({
+                    current: state.current
+                });
+            }
+        },
+        {
+            type: 'dragenter',
+            listener: onUpdateEvent
+        },
+        {
+            type: 'dragleave',
+            listener: function listener(event) {
+                if (!(0, _isLeavingWindow.isLeavingWindow)({
+                    dragLeave: event
+                })) return;
+                /**
+       * At this point we don't know if a drag is being cancelled,
+       * or if a drag is leaving the `window`.
+       *
+       * Both have:
+       *   1. "dragleave" (with `relatedTarget: null`)
+       *   2. "dragend" (a "dragend" can occur when outside the `window`)
+       *
+       * **Clearing drop targets**
+       *
+       * For either case we are clearing the the drop targets
+       *
+       * - cancelling: we clear drop targets in `"dragend"` anyway
+       * - leaving the `window`: we clear the drop targets (to clear stickiness)
+       *
+       * **Leaving the window and finishing the drag**
+       *
+       * _internal drags_
+       *
+       * - The drag continues when the user is outside the `window`
+       *   and can resume if the user drags back over the `window`,
+       *   or end when the user drops in an external `window`.
+       * - We will get a `"dragend"`, or we can listen for other
+       *   events to determine the drag is finished when the user re-enters the `window`).
+       *
+       * _external drags_
+       *
+       * - We conclude the drag operation.
+       * - We have no idea if the user will drag back over the `window`,
+       *   or if the drag ends elsewhere.
+       * - We will create a new drag if the user re-enters the `window`.
+       *
+       * **Not updating `input`**
+       *
+       * 🐛 Bug[Chrome] the final `"dragleave"` has default input values (eg `clientX == 0`)
+       * Workaround: intentionally not updating `input` in "dragleave"
+       * rather than the users current input values
+       * - [Conversation](https://twitter.com/alexandereardon/status/1642697633864241152)
+       * - [Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1429937)
+       **/ updateState({
+                    input: state.current.input,
+                    dropTargets: []
+                });
+                if (dragType.startedFrom === 'external') cancel();
+            }
+        },
+        {
+            // A "drop" can only happen if the browser allowed the drop
+            type: 'drop',
+            listener: function listener(event) {
+                // Capture the final input.
+                // We are capturing the final `input` for the
+                // most accurate honey pot experience
+                state.current = {
+                    dropTargets: state.current.dropTargets,
+                    input: (0, _getInput.getInput)(event)
+                };
+                /** If there are no drop targets, then we will get
+       * a "drop" event if:
+       * - `preventUnhandled()` is being used
+       * - there is an unmanaged drop target (eg another library)
+       * In these cases, it's up to the consumer
+       * to handle the drop if it's not over one of our drop targets
+       * - `preventUnhandled()` will cancel the "drop"
+       * - unmanaged drop targets can handle the "drop" how they want to
+       * We won't call `event.preventDefault()` in this call path */ if (!state.current.dropTargets.length) {
+                    cancel();
+                    return;
+                }
+                event.preventDefault();
+                // applying the latest drop effect to the event
+                setDropEffectOnEvent({
+                    event: event,
+                    current: state.current.dropTargets
+                });
+                dispatch.drop({
+                    current: state.current,
+                    // When dropping something native, we need to extract the latest
+                    // `.items` from the "drop" event as it is now accessible
+                    updatedSourcePayload: dragType.type === 'external' ? dragType.getDropPayload(event) : null
+                });
+                finish();
+            }
+        },
+        {
+            // "dragend" fires when on the drag source (eg a draggable element)
+            // when the drag is finished.
+            // "dragend" will fire after "drop" (if there was a successful drop)
+            // "dragend" does not fire if the draggable source has been removed during the drag
+            // or for external drag sources (eg files)
+            // This "dragend" listener will not fire if there was a successful drop
+            // as we will have already removed the event listener
+            type: 'dragend',
+            listener: function listener(event) {
+                // In firefox, the position of the "dragend" event can
+                // be a bit different to the last "dragover" event.
+                // Updating the input so we can get the best possible
+                // information for the honey pot.
+                state.current = {
+                    dropTargets: state.current.dropTargets,
+                    input: (0, _getInput.getInput)(event)
+                };
+                cancel();
+            }
+        }
+    ].concat((0, _toConsumableArrayDefault.default)((0, _detectBrokenDrag.getBindingsForBrokenDrags)({
+        onDragEnd: cancel
+    }))), // Once we have started a managed drag operation it is important that we see / own all drag events
+    // We got one adoption bug pop up where some code was stopping (`event.stopPropagation()`)
+    // all "drop" events in the bubble phase on the `document.body`.
+    // This meant that we never saw the "drop" event.
+    {
+        capture: true
+    });
+    dispatch.start({
+        nativeSetDragImage: getNativeSetDragImage(event)
+    });
+}
+function setDropEffectOnEvent(_ref3) {
+    var _current$;
+    var event = _ref3.event, current = _ref3.current;
+    // setting the `dropEffect` to be the innerMost drop targets dropEffect
+    var innerMost = (_current$ = current[0]) === null || _current$ === void 0 ? void 0 : _current$.dropEffect;
+    if (innerMost != null && event.dataTransfer) event.dataTransfer.dropEffect = innerMost;
+}
+function getStartLocation(_ref4) {
+    var event = _ref4.event, dragType = _ref4.dragType, getDropTargetsOver = _ref4.getDropTargetsOver;
+    var input = (0, _getInput.getInput)(event);
+    // When dragging from outside of the browser,
+    // the drag is not being sourced from any local drop targets
+    if (dragType.startedFrom === 'external') return {
+        input: input,
+        dropTargets: []
+    };
+    var dropTargets = getDropTargetsOver({
+        input: input,
+        source: dragType.payload,
+        target: event.target,
+        current: []
+    });
+    return {
+        input: input,
+        dropTargets: dropTargets
+    };
+}
+var lifecycle = {
+    canStart: canStart,
+    start: start
+};
+
+},{"@babel/runtime/helpers/toConsumableArray":"lkYCr","bind-event-listener":"2wrYK","../honey-pot-fix/get-element-from-point-without-honey-pot":"33rob","../honey-pot-fix/is-honey-pot-element":"1tWJP","../util/changing-window/is-leaving-window":"7v7sc","../util/detect-broken-drag":"gcRM4","../util/get-input":"aory5","./dispatch-consumer-event":"iXiC4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7v7sc":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isLeavingWindow", ()=>isLeavingWindow);
+var _isFirefox = require("../is-firefox");
+var _isSafari = require("../is-safari");
+var _countEventsForSafari = require("./count-events-for-safari");
+var _isFromAnotherWindow = require("./is-from-another-window");
+function isLeavingWindow(_ref) {
+    var dragLeave = _ref.dragLeave;
+    var type = dragLeave.type, relatedTarget = dragLeave.relatedTarget;
+    if (type !== 'dragleave') return false;
+    if ((0, _isSafari.isSafari)()) return (0, _countEventsForSafari.isLeavingWindowInSafari)({
+        dragLeave: dragLeave
+    });
+    // Standard check: if going to `null` we are leaving the `window`
+    if (relatedTarget == null) return true;
+    /**
+   * 🦊 Exception: `iframe` in Firefox (`125.0`)
+   *
+   * Case 1: parent `window` → child `iframe`
+   * `dragLeave.relatedTarget` is element _inside_ the child `iframe`
+   * (foreign element)
+   *
+   * Case 2: child `iframe` → parent `window`
+   * `dragLeave.relatedTarget` is the `iframe` in the parent `window`
+   * (foreign element)
+   */ if ((0, _isFirefox.isFirefox)()) return (0, _isFromAnotherWindow.isFromAnotherWindow)(relatedTarget);
+    /**
+   * 🌏 Exception: `iframe` in Chrome (`124.0`)
+   *
+   * Case 1: parent `window` → child `iframe`
+   * `dragLeave.relatedTarget` is the `iframe` in the parent `window`
+   *
+   * Case 2: child `iframe` → parent `window`
+   * `dragLeave.relatedTarget` is `null` *(standard check)*
+   */ // Case 2
+    // Using `instanceof` check as the element will be in the same `window`
+    return relatedTarget instanceof HTMLIFrameElement;
+}
+
+},{"../is-firefox":"1GbDG","../is-safari":"dx1gN","./count-events-for-safari":"5EwCI","./is-from-another-window":"a1tI1","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1GbDG":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isFirefox", ()=>isFirefox);
+var _once = require("../public-utils/once");
+var isFirefox = (0, _once.once)(function isFirefox() {
+    return navigator.userAgent.includes('Firefox');
+});
+
+},{"../public-utils/once":"2nBLC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2nBLC":[function(require,module,exports,__globalThis) {
+/** Provide a function that you only ever want to be called a single time */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "once", ()=>once);
+function once(fn) {
+    var cache = null;
+    return function wrapped() {
+        if (!cache) {
+            for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            var result = fn.apply(this, args);
+            cache = {
+                result: result
+            };
+        }
+        return cache.result;
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dx1gN":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isSafari", ()=>isSafari);
+var _once = require("../public-utils/once");
+var isSafari = (0, _once.once)(function isSafari() {
+    var _navigator = navigator, userAgent = _navigator.userAgent;
+    return userAgent.includes('AppleWebKit') && !userAgent.includes('Chrome');
+});
+
+},{"../public-utils/once":"2nBLC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5EwCI":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isEnteringWindowInSafari", ()=>isEnteringWindowInSafari);
+parcelHelpers.export(exports, "isLeavingWindowInSafari", ()=>isLeavingWindowInSafari);
+var _bindEventListener = require("bind-event-listener");
+var _isSafari = require("../is-safari");
+/* For "dragenter" events, the browser should set `relatedTarget` to the previous element.
+ * For external drag operations, our first "dragenter" event should have a `event.relatedTarget` of `null`.
+ *
+ *  Unfortunately in Safari `event.relatedTarget` is *always* set to `null`
+ *  Safari bug: https://bugs.webkit.org/show_bug.cgi?id=242627
+ *  To work around this we count "dragenter" and "dragleave" events */ // Using symbols for event properties so we don't clash with
+// anything on the `event` object
+var symbols = {
+    isLeavingWindow: Symbol('leaving'),
+    isEnteringWindow: Symbol('entering')
+};
+function isEnteringWindowInSafari(_ref) {
+    var dragEnter = _ref.dragEnter;
+    if (!(0, _isSafari.isSafari)()) return false;
+    return dragEnter.hasOwnProperty(symbols.isEnteringWindow);
+}
+function isLeavingWindowInSafari(_ref2) {
+    var dragLeave = _ref2.dragLeave;
+    if (!(0, _isSafari.isSafari)()) return false;
+    return dragLeave.hasOwnProperty(symbols.isLeavingWindow);
+}
+(function fixSafari() {
+    // Don't do anything when server side rendering
+    if (typeof window === 'undefined') return;
+    if (!(0, _isSafari.isSafari)()) return;
+    function getInitialState() {
+        return {
+            enterCount: 0,
+            isOverWindow: false
+        };
+    }
+    var state = getInitialState();
+    function resetState() {
+        state = getInitialState();
+    }
+    // These event listeners are bound _forever_ and _never_ removed
+    // We don't bother cleaning up these event listeners (for now)
+    // as this workaround is only for Safari
+    // This is how the event count works:
+    //
+    // lift (+1 enterCount)
+    // - dragstart(draggable) [enterCount: 0]
+    // - dragenter(draggable) [enterCount: 1]
+    // leaving draggable (+0 enterCount)
+    // - dragenter(document.body) [enterCount: 2]
+    // - dragleave(draggable) [enterCount: 1]
+    // leaving window (-1 enterCount)
+    // - dragleave(document.body) [enterCount: 0] {leaving the window}
+    // Things to note:
+    // - dragenter and dragleave bubble
+    // - the first dragenter when entering a window might not be on `window`
+    //   - it could be on an element that is pressed up against the window
+    //   - (so we cannot rely on `event.target` values)
+    (0, _bindEventListener.bindAll)(window, [
+        {
+            type: 'dragstart',
+            listener: function listener() {
+                state.enterCount = 0;
+                // drag start occurs in the source window
+                state.isOverWindow = true;
+            // When a drag first starts it will also trigger a "dragenter" on the draggable element
+            }
+        },
+        {
+            type: 'drop',
+            listener: resetState
+        },
+        {
+            type: 'dragend',
+            listener: resetState
+        },
+        {
+            type: 'dragenter',
+            listener: function listener(event) {
+                if (!state.isOverWindow && state.enterCount === 0) // Patching the `event` object
+                // The `event` object is shared with all event listeners for the event
+                // @ts-expect-error: adding property to the event object
+                event[symbols.isEnteringWindow] = true;
+                state.isOverWindow = true;
+                state.enterCount++;
+            }
+        },
+        {
+            type: 'dragleave',
+            listener: function listener(event) {
+                state.enterCount--;
+                if (state.isOverWindow && state.enterCount === 0) {
+                    // Patching the `event` object as it is shared with all event listeners
+                    // The `event` object is shared with all event listeners for the event
+                    // @ts-expect-error: adding property to the event object
+                    event[symbols.isLeavingWindow] = true;
+                    state.isOverWindow = false;
+                }
+            }
+        }
+    ], // using `capture: true` so that adding event listeners
+    // in bubble phase will have the correct symbols
+    {
+        capture: true
+    });
+})();
+
+},{"bind-event-listener":"2wrYK","../is-safari":"dx1gN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"a1tI1":[function(require,module,exports,__globalThis) {
+/**
+ * Does the `EventTarget` look like a `Node` based on "duck typing".
+ *
+ * Helpful when the `Node` might be outside of the current document
+ * so we cannot to an `target instanceof Node` check.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Is an `EventTarget` a `Node` from another `window`?
+ */ parcelHelpers.export(exports, "isFromAnotherWindow", ()=>isFromAnotherWindow);
+function isNodeLike(target) {
+    return 'nodeName' in target;
+}
+function isFromAnotherWindow(eventTarget) {
+    return isNodeLike(eventTarget) && eventTarget.ownerDocument !== document;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gcRM4":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getBindingsForBrokenDrags", ()=>getBindingsForBrokenDrags);
+function getBindingsForBrokenDrags(_ref) {
+    var onDragEnd = _ref.onDragEnd;
+    return [
+        // ## Detecting drag ending for removed draggables
+        //
+        // If a draggable element is removed during a drag and the user drops:
+        // 1. if over a valid drop target: we get a "drop" event to know the drag is finished
+        // 2. if not over a valid drop target (or cancelled): we get nothing
+        // The "dragend" event will not fire on the source draggable if it has been
+        // removed from the DOM.
+        // So we need to figure out if a drag operation has finished by looking at other events
+        // We can do this by looking at other events
+        // ### First detection: "pointermove" events
+        // 1. "pointermove" events cannot fire during a drag and drop operation
+        // according to the spec. So if we get a "pointermove" it means that
+        // the drag and drop operations has finished. So if we get a "pointermove"
+        // we know that the drag is over
+        // 2. 🦊😤 Drag and drop operations are _supposed_ to suppress
+        // other pointer events. However, firefox will allow a few
+        // pointer event to get through after a drag starts.
+        // The most I've seen is 3
+        {
+            type: 'pointermove',
+            listener: function() {
+                var callCount = 0;
+                return function listener() {
+                    // Using 20 as it is far bigger than the most observed (3)
+                    if (callCount < 20) {
+                        callCount++;
+                        return;
+                    }
+                    onDragEnd();
+                };
+            }()
+        },
+        // ### Second detection: "pointerdown" events
+        // If we receive this event then we know that a drag operation has finished
+        // and potentially another one is about to start.
+        // Note: `pointerdown` fires on all browsers / platforms before "dragstart"
+        {
+            type: 'pointerdown',
+            listener: onDragEnd
+        }
+    ];
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aory5":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getInput", ()=>getInput);
+function getInput(event) {
+    return {
+        altKey: event.altKey,
+        button: event.button,
+        buttons: event.buttons,
+        ctrlKey: event.ctrlKey,
+        metaKey: event.metaKey,
+        shiftKey: event.shiftKey,
+        clientX: event.clientX,
+        clientY: event.clientY,
+        pageX: event.pageX,
+        pageY: event.pageY
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iXiC4":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeDispatch", ()=>makeDispatch);
+var _rafSchd = require("raf-schd");
+var _rafSchdDefault = parcelHelpers.interopDefault(_rafSchd);
+var scheduleOnDrag = (0, _rafSchdDefault.default)(function(fn) {
+    return fn();
+});
+var dragStart = function() {
+    var scheduled = null;
+    function schedule(fn) {
+        var frameId = requestAnimationFrame(function() {
+            scheduled = null;
+            fn();
+        });
+        scheduled = {
+            frameId: frameId,
+            fn: fn
+        };
+    }
+    function flush() {
+        if (scheduled) {
+            cancelAnimationFrame(scheduled.frameId);
+            scheduled.fn();
+            scheduled = null;
+        }
+    }
+    return {
+        schedule: schedule,
+        flush: flush
+    };
+}();
+function makeDispatch(_ref) {
+    var source = _ref.source, initial = _ref.initial, dispatchEvent = _ref.dispatchEvent;
+    var previous = {
+        dropTargets: []
+    };
+    function safeDispatch(args) {
+        dispatchEvent(args);
+        previous = {
+            dropTargets: args.payload.location.current.dropTargets
+        };
+    }
+    var dispatch = {
+        start: function start(_ref2) {
+            var nativeSetDragImage = _ref2.nativeSetDragImage;
+            // Ensuring that both `onGenerateDragPreview` and `onDragStart` get the same location.
+            // We do this so that `previous` is`[]` in `onDragStart` (which is logical)
+            var location = {
+                current: initial,
+                previous: previous,
+                initial: initial
+            };
+            // a `onGenerateDragPreview` does _not_ add another entry for `previous`
+            // onDragPreview
+            safeDispatch({
+                eventName: 'onGenerateDragPreview',
+                payload: {
+                    source: source,
+                    location: location,
+                    nativeSetDragImage: nativeSetDragImage
+                }
+            });
+            dragStart.schedule(function() {
+                safeDispatch({
+                    eventName: 'onDragStart',
+                    payload: {
+                        source: source,
+                        location: location
+                    }
+                });
+            });
+        },
+        dragUpdate: function dragUpdate(_ref3) {
+            var current = _ref3.current;
+            dragStart.flush();
+            scheduleOnDrag.cancel();
+            safeDispatch({
+                eventName: 'onDropTargetChange',
+                payload: {
+                    source: source,
+                    location: {
+                        initial: initial,
+                        previous: previous,
+                        current: current
+                    }
+                }
+            });
+        },
+        drag: function drag(_ref4) {
+            var current = _ref4.current;
+            scheduleOnDrag(function() {
+                dragStart.flush();
+                var location = {
+                    initial: initial,
+                    previous: previous,
+                    current: current
+                };
+                safeDispatch({
+                    eventName: 'onDrag',
+                    payload: {
+                        source: source,
+                        location: location
+                    }
+                });
+            });
+        },
+        drop: function drop(_ref5) {
+            var current = _ref5.current, updatedSourcePayload = _ref5.updatedSourcePayload;
+            dragStart.flush();
+            scheduleOnDrag.cancel();
+            safeDispatch({
+                eventName: 'onDrop',
+                payload: {
+                    source: updatedSourcePayload !== null && updatedSourcePayload !== void 0 ? updatedSourcePayload : source,
+                    location: {
+                        current: current,
+                        previous: previous,
+                        initial: initial
+                    }
+                }
+            });
+        }
+    };
+    return dispatch;
+}
+
+},{"raf-schd":"je3lA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"je3lA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var rafSchd = function rafSchd(fn) {
+    var lastArgs = [];
+    var frameId = null;
+    var wrapperFn = function wrapperFn() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        lastArgs = args;
+        if (frameId) return;
+        frameId = requestAnimationFrame(function() {
+            frameId = null;
+            fn.apply(void 0, lastArgs);
+        });
+    };
+    wrapperFn.cancel = function() {
+        if (!frameId) return;
+        cancelAnimationFrame(frameId);
+        frameId = null;
+    };
+    return wrapperFn;
+};
+exports.default = rafSchd;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aD4pk":[function(require,module,exports,__globalThis) {
+// Extending `Map` to allow us to link Key and Values together
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "register", ()=>register);
+var ledger = new Map();
+function registerUsage(_ref) {
+    var typeKey = _ref.typeKey, mount = _ref.mount;
+    var entry = ledger.get(typeKey);
+    if (entry) {
+        entry.usageCount++;
+        return entry;
+    }
+    var initial = {
+        typeKey: typeKey,
+        unmount: mount(),
+        usageCount: 1
+    };
+    ledger.set(typeKey, initial);
+    return initial;
+}
+function register(args) {
+    var entry = registerUsage(args);
+    return function unregister() {
+        entry.usageCount--;
+        if (entry.usageCount > 0) return;
+        // Only a single usage left, remove it
+        entry.unmount();
+        ledger.delete(args.typeKey);
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5ozJA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeDropTarget", ()=>makeDropTarget);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _combine = require("../public-utils/combine");
+var _once = require("../public-utils/once");
+var _addAttribute = require("../util/add-attribute");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function _createForOfIteratorHelper(r, e) {
+    var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (!t) {
+        if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) {
+            t && (r = t);
+            var _n = 0, F = function F() {};
+            return {
+                s: F,
+                n: function n() {
+                    return _n >= r.length ? {
+                        done: !0
+                    } : {
+                        done: !1,
+                        value: r[_n++]
+                    };
+                },
+                e: function e(r) {
+                    throw r;
+                },
+                f: F
+            };
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+    var o, a = !0, u = !1;
+    return {
+        s: function s() {
+            t = t.call(r);
+        },
+        n: function n() {
+            var r = t.next();
+            return a = r.done, r;
+        },
+        e: function e(r) {
+            u = !0, o = r;
+        },
+        f: function f() {
+            try {
+                a || null == t.return || t.return();
+            } finally{
+                if (u) throw o;
+            }
+        }
+    };
+}
+function _unsupportedIterableToArray(r, a) {
+    if (r) {
+        if ("string" == typeof r) return _arrayLikeToArray(r, a);
+        var t = ({}).toString.call(r).slice(8, -1);
+        return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+    }
+}
+function _arrayLikeToArray(r, a) {
+    (null == a || a > r.length) && (a = r.length);
+    for(var e = 0, n = Array(a); e < a; e++)n[e] = r[e];
+    return n;
+}
+function copyReverse(array) {
+    return array.slice(0).reverse();
+}
+function makeDropTarget(_ref) {
+    var typeKey = _ref.typeKey, defaultDropEffect = _ref.defaultDropEffect;
+    var registry = new WeakMap();
+    var dropTargetDataAtt = "data-drop-target-for-".concat(typeKey);
+    var dropTargetSelector = "[".concat(dropTargetDataAtt, "]");
+    function addToRegistry(args) {
+        registry.set(args.element, args);
+        return function() {
+            return registry.delete(args.element);
+        };
+    }
+    function dropTargetForConsumers(args) {
+        var existing = registry.get(args.element);
+        if (existing) // eslint-disable-next-line no-console
+        console.warn("You have already registered a [".concat(typeKey, "] dropTarget on the same element"), {
+            existing: existing,
+            proposed: args
+        });
+        if (args.element instanceof HTMLIFrameElement) // eslint-disable-next-line no-console
+        console.warn("\n            We recommend not registering <iframe> elements as drop targets\n            as it can result in some strange browser event ordering.\n          " // Removing newlines and excessive whitespace
+        .replace(/\s{2,}/g, ' ').trim());
+        var cleanup = (0, _combine.combine)((0, _addAttribute.addAttribute)(args.element, {
+            attribute: dropTargetDataAtt,
+            value: 'true'
+        }), addToRegistry(args));
+        // Wrapping in `once` to prevent unexpected side effects if consumers call
+        // the clean up function multiple times.
+        return (0, _once.once)(cleanup);
+    }
+    function getActualDropTargets(_ref2) {
+        var _args$getData, _args$getData2, _args$getDropEffect, _args$getDropEffect2;
+        var source = _ref2.source, target = _ref2.target, input = _ref2.input, _ref2$result = _ref2.result, result = _ref2$result === void 0 ? [] : _ref2$result;
+        if (target == null) return result;
+        if (!(target instanceof Element)) {
+            // For "text-selection" drags, the original `target`
+            // is not an `Element`, so we need to start looking from
+            // the parent element
+            if (target instanceof Node) return getActualDropTargets({
+                source: source,
+                target: target.parentElement,
+                input: input,
+                result: result
+            });
+            // not sure what we are working with,
+            // so we can exit.
+            return result;
+        }
+        var closest = target.closest(dropTargetSelector);
+        // Cannot find anything else
+        if (closest == null) return result;
+        var args = registry.get(closest);
+        // error: something had a dropTargetSelector but we could not
+        // find a match. For now, failing silently
+        if (args == null) return result;
+        var feedback = {
+            input: input,
+            source: source,
+            element: args.element
+        };
+        // if dropping is not allowed, skip this drop target
+        // and continue looking up the DOM tree
+        if (args.canDrop && !args.canDrop(feedback)) return getActualDropTargets({
+            source: source,
+            target: args.element.parentElement,
+            input: input,
+            result: result
+        });
+        // calculate our new record
+        var data = (_args$getData = (_args$getData2 = args.getData) === null || _args$getData2 === void 0 ? void 0 : _args$getData2.call(args, feedback)) !== null && _args$getData !== void 0 ? _args$getData : {};
+        var dropEffect = (_args$getDropEffect = (_args$getDropEffect2 = args.getDropEffect) === null || _args$getDropEffect2 === void 0 ? void 0 : _args$getDropEffect2.call(args, feedback)) !== null && _args$getDropEffect !== void 0 ? _args$getDropEffect : defaultDropEffect;
+        var record = {
+            data: data,
+            element: args.element,
+            dropEffect: dropEffect,
+            // we are collecting _actual_ drop targets, so these are
+            // being applied _not_ due to stickiness
+            isActiveDueToStickiness: false
+        };
+        return getActualDropTargets({
+            source: source,
+            target: args.element.parentElement,
+            input: input,
+            // Using bubble ordering. Same ordering as `event.getPath()`
+            result: [].concat((0, _toConsumableArrayDefault.default)(result), [
+                record
+            ])
+        });
+    }
+    function notifyCurrent(_ref3) {
+        var eventName = _ref3.eventName, payload = _ref3.payload;
+        var _iterator = _createForOfIteratorHelper(payload.location.current.dropTargets), _step;
+        try {
+            for(_iterator.s(); !(_step = _iterator.n()).done;){
+                var _entry$eventName;
+                var record = _step.value;
+                var entry = registry.get(record.element);
+                var args = _objectSpread(_objectSpread({}, payload), {}, {
+                    self: record
+                });
+                entry === null || entry === void 0 || (_entry$eventName = entry[eventName]) === null || _entry$eventName === void 0 || _entry$eventName.call(entry, // I cannot seem to get the types right here.
+                // TS doesn't seem to like that one event can need `nativeSetDragImage`
+                // @ts-expect-error
+                args);
+            }
+        } catch (err) {
+            _iterator.e(err);
+        } finally{
+            _iterator.f();
+        }
+    }
+    var actions = {
+        onGenerateDragPreview: notifyCurrent,
+        onDrag: notifyCurrent,
+        onDragStart: notifyCurrent,
+        onDrop: notifyCurrent,
+        onDropTargetChange: function onDropTargetChange(_ref4) {
+            var payload = _ref4.payload;
+            var isCurrent = new Set(payload.location.current.dropTargets.map(function(record) {
+                return record.element;
+            }));
+            var visited = new Set();
+            var _iterator2 = _createForOfIteratorHelper(payload.location.previous.dropTargets), _step2;
+            try {
+                for(_iterator2.s(); !(_step2 = _iterator2.n()).done;){
+                    var _entry$onDropTargetCh;
+                    var record = _step2.value;
+                    visited.add(record.element);
+                    var entry = registry.get(record.element);
+                    var isOver = isCurrent.has(record.element);
+                    var args = _objectSpread(_objectSpread({}, payload), {}, {
+                        self: record
+                    });
+                    entry === null || entry === void 0 || (_entry$onDropTargetCh = entry.onDropTargetChange) === null || _entry$onDropTargetCh === void 0 || _entry$onDropTargetCh.call(entry, args);
+                    // if we cannot find the drop target in the current array, then it has been left
+                    if (!isOver) {
+                        var _entry$onDragLeave;
+                        entry === null || entry === void 0 || (_entry$onDragLeave = entry.onDragLeave) === null || _entry$onDragLeave === void 0 || _entry$onDragLeave.call(entry, args);
+                    }
+                }
+            } catch (err) {
+                _iterator2.e(err);
+            } finally{
+                _iterator2.f();
+            }
+            var _iterator3 = _createForOfIteratorHelper(payload.location.current.dropTargets), _step3;
+            try {
+                for(_iterator3.s(); !(_step3 = _iterator3.n()).done;){
+                    var _entry$onDropTargetCh2, _entry$onDragEnter;
+                    var _record = _step3.value;
+                    // already published an update to this drop target
+                    if (visited.has(_record.element)) continue;
+                    // at this point we have a new drop target that is being entered into
+                    var _args = _objectSpread(_objectSpread({}, payload), {}, {
+                        self: _record
+                    });
+                    var _entry = registry.get(_record.element);
+                    _entry === null || _entry === void 0 || (_entry$onDropTargetCh2 = _entry.onDropTargetChange) === null || _entry$onDropTargetCh2 === void 0 || _entry$onDropTargetCh2.call(_entry, _args);
+                    _entry === null || _entry === void 0 || (_entry$onDragEnter = _entry.onDragEnter) === null || _entry$onDragEnter === void 0 || _entry$onDragEnter.call(_entry, _args);
+                }
+            } catch (err) {
+                _iterator3.e(err);
+            } finally{
+                _iterator3.f();
+            }
+        }
+    };
+    function dispatchEvent(args) {
+        actions[args.eventName](args);
+    }
+    function getIsOver(_ref5) {
+        var source = _ref5.source, target = _ref5.target, input = _ref5.input, current = _ref5.current;
+        var actual = getActualDropTargets({
+            source: source,
+            target: target,
+            input: input
+        });
+        // stickiness is only relevant when we have less
+        // drop targets than we did before
+        if (actual.length >= current.length) return actual;
+        // less 'actual' drop targets than before,
+        // we need to see if 'stickiness' applies
+        // An old drop target will continue to be dropped on if:
+        // 1. it has the same parent
+        // 2. nothing exists in it's previous index
+        var lastCaptureOrdered = copyReverse(current);
+        var actualCaptureOrdered = copyReverse(actual);
+        var resultCaptureOrdered = [];
+        for(var index = 0; index < lastCaptureOrdered.length; index++){
+            var _argsForLast$getIsSti;
+            var last = lastCaptureOrdered[index];
+            var fresh = actualCaptureOrdered[index];
+            // if a record is in the new index -> use that
+            // it will have the latest data + dropEffect
+            if (fresh != null) {
+                resultCaptureOrdered.push(fresh);
+                continue;
+            }
+            // At this point we have no drop target in the old spot
+            // Check to see if we can use a previous sticky drop target
+            // The "parent" is the one inside of `resultCaptureOrdered`
+            // (the parent might be a drop target that was sticky)
+            var parent = resultCaptureOrdered[index - 1];
+            var lastParent = lastCaptureOrdered[index - 1];
+            // Stickiness is based on parent relationships, so if the parent relationship has change
+            // then we can stop our search
+            if ((parent === null || parent === void 0 ? void 0 : parent.element) !== (lastParent === null || lastParent === void 0 ? void 0 : lastParent.element)) break;
+            // We need to check whether the old drop target can still be dropped on
+            var argsForLast = registry.get(last.element);
+            // We cannot drop on a drop target that is no longer mounted
+            if (!argsForLast) break;
+            var feedback = {
+                input: input,
+                source: source,
+                element: argsForLast.element
+            };
+            // We cannot drop on a drop target that no longer allows being dropped on
+            if (argsForLast.canDrop && !argsForLast.canDrop(feedback)) break;
+            // We cannot drop on a drop target that is no longer sticky
+            if (!((_argsForLast$getIsSti = argsForLast.getIsSticky) !== null && _argsForLast$getIsSti !== void 0 && _argsForLast$getIsSti.call(argsForLast, feedback))) break;
+            // Note: intentionally not recollecting `getData()` or `getDropEffect()`
+            // Previous values for `data` and `dropEffect` will be borrowed
+            // This is to prevent things like the 'closest edge' changing when
+            // no longer over a drop target.
+            // We could change our mind on this behaviour in the future
+            resultCaptureOrdered.push(_objectSpread(_objectSpread({}, last), {}, {
+                // making it clear to consumers this drop target is active due to stickiness
+                isActiveDueToStickiness: true
+            }));
+        }
+        // return bubble ordered result
+        return copyReverse(resultCaptureOrdered);
+    }
+    return {
+        dropTargetForConsumers: dropTargetForConsumers,
+        getIsOver: getIsOver,
+        dispatchEvent: dispatchEvent
+    };
+}
+
+},{"@babel/runtime/helpers/defineProperty":"azbUC","@babel/runtime/helpers/toConsumableArray":"lkYCr","../public-utils/combine":"6kYtf","../public-utils/once":"2nBLC","../util/add-attribute":"cd2xU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cd2xU":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addAttribute", ()=>addAttribute);
+function addAttribute(element, _ref) {
+    var attribute = _ref.attribute, value = _ref.value;
+    element.setAttribute(attribute, value);
+    return function() {
+        return element.removeAttribute(attribute);
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"16WjR":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeMonitor", ()=>makeMonitor);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _once = require("../public-utils/once");
+function _createForOfIteratorHelper(r, e) {
+    var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (!t) {
+        if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) {
+            t && (r = t);
+            var _n = 0, F = function F() {};
+            return {
+                s: F,
+                n: function n() {
+                    return _n >= r.length ? {
+                        done: !0
+                    } : {
+                        done: !1,
+                        value: r[_n++]
+                    };
+                },
+                e: function e(r) {
+                    throw r;
+                },
+                f: F
+            };
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+    var o, a = !0, u = !1;
+    return {
+        s: function s() {
+            t = t.call(r);
+        },
+        n: function n() {
+            var r = t.next();
+            return a = r.done, r;
+        },
+        e: function e(r) {
+            u = !0, o = r;
+        },
+        f: function f() {
+            try {
+                a || null == t.return || t.return();
+            } finally{
+                if (u) throw o;
+            }
+        }
+    };
+}
+function _unsupportedIterableToArray(r, a) {
+    if (r) {
+        if ("string" == typeof r) return _arrayLikeToArray(r, a);
+        var t = ({}).toString.call(r).slice(8, -1);
+        return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+    }
+}
+function _arrayLikeToArray(r, a) {
+    (null == a || a > r.length) && (a = r.length);
+    for(var e = 0, n = Array(a); e < a; e++)n[e] = r[e];
+    return n;
+}
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function makeMonitor() {
+    var registry = new Set();
+    var dragging = null;
+    function tryAddToActive(monitor) {
+        if (!dragging) return;
+        // Monitor is allowed to monitor events if:
+        // 1. It has no `canMonitor` function (default is that a monitor can listen to everything)
+        // 2. `canMonitor` returns true
+        if (!monitor.canMonitor || monitor.canMonitor(dragging.canMonitorArgs)) dragging.active.add(monitor);
+    }
+    function monitorForConsumers(args) {
+        // We are giving each `args` a new reference so that you
+        // can create multiple monitors with the same `args`.
+        var entry = _objectSpread({}, args);
+        registry.add(entry);
+        // if there is an active drag we need to see if this new monitor is relevant
+        tryAddToActive(entry);
+        function cleanup() {
+            registry.delete(entry);
+            // We need to stop publishing events during a drag to this monitor!
+            if (dragging) dragging.active.delete(entry);
+        }
+        // Wrapping in `once` to prevent unexpected side effects if consumers call
+        // the clean up function multiple times.
+        return (0, _once.once)(cleanup);
+    }
+    function dispatchEvent(_ref) {
+        var eventName = _ref.eventName, payload = _ref.payload;
+        if (eventName === 'onGenerateDragPreview') {
+            dragging = {
+                canMonitorArgs: {
+                    initial: payload.location.initial,
+                    source: payload.source
+                },
+                active: new Set()
+            };
+            var _iterator = _createForOfIteratorHelper(registry), _step;
+            try {
+                for(_iterator.s(); !(_step = _iterator.n()).done;){
+                    var monitor = _step.value;
+                    tryAddToActive(monitor);
+                }
+            } catch (err) {
+                _iterator.e(err);
+            } finally{
+                _iterator.f();
+            }
+        }
+        // This should never happen.
+        if (!dragging) return;
+        // Creating an array from the set _before_ iterating
+        // This is so that monitors added during the current event will not be called.
+        // This behaviour matches native EventTargets where an event listener
+        // cannot add another event listener during an active event to the same
+        // event target in the same event (for us we have a single global event target)
+        var active = Array.from(dragging.active);
+        for(var _i = 0, _active = active; _i < _active.length; _i++){
+            var _monitor = _active[_i];
+            // A monitor can be removed by another monitor during an event.
+            // We need to check that the monitor is still registered before calling it
+            if (dragging.active.has(_monitor)) {
+                var _monitor$eventName;
+                // @ts-expect-error: I cannot get this type working!
+                (_monitor$eventName = _monitor[eventName]) === null || _monitor$eventName === void 0 || _monitor$eventName.call(_monitor, payload);
+            }
+        }
+        if (eventName === 'onDrop') {
+            dragging.active.clear();
+            dragging = null;
+        }
+    }
+    return {
+        dispatchEvent: dispatchEvent,
+        monitorForConsumers: monitorForConsumers
+    };
+}
+
+},{"@babel/runtime/helpers/defineProperty":"azbUC","../public-utils/once":"2nBLC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"k39DA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isAndroid", ()=>isAndroid);
+parcelHelpers.export(exports, "androidFallbackText", ()=>androidFallbackText);
+var _once = require("../public-utils/once");
+var isAndroid = (0, _once.once)(function isAndroid() {
+    return navigator.userAgent.toLocaleLowerCase().includes('android');
+});
+var androidFallbackText = 'pdnd:android-fallback';
+
+},{"../public-utils/once":"2nBLC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6XN7D":[function(require,module,exports,__globalThis) {
+// Why we put the media types in their own files:
+//
+// - we are not putting them all in one file as not all adapters need all types
+// - we are not putting them in the external helpers as some things just need the
+//   types and not the external functions code
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "textMediaType", ()=>textMediaType);
+var textMediaType = 'text/plain';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hWbz4":[function(require,module,exports,__globalThis) {
+// Why we put the media types in their own files:
+//
+// - we are not putting them all in one file as not all adapters need all types
+// - we are not putting them in the external helpers as some things just need the
+//   types and not the external functions code
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "URLMediaType", ()=>URLMediaType);
+var URLMediaType = 'text/uri-list';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4dJqM":[function(require,module,exports,__globalThis) {
+/**
+ * This key has been pulled into a separate module
+ * so that the external adapter does not need to import
+ * the element adapter
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "elementAdapterNativeDataKey", ()=>elementAdapterNativeDataKey);
+var elementAdapterNativeDataKey = 'application/vnd.pdnd';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fPBdh":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeFixForAdapter", ()=>makeFixForAdapter);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _combine = require("@atlaskit/pragmatic-drag-and-drop/combine");
+/**
+ * Set a `style` property on a `HTMLElement`
+ *
+ * @returns a `cleanup` function to restore the `style` property to it's original state
+ */ function setStyle(el, _ref) {
+    var property = _ref.property, rule = _ref.rule, _ref$priority = _ref.priority, priority = _ref$priority === void 0 ? '' : _ref$priority;
+    var originalValue = el.style.getPropertyValue(property);
+    var originalPriority = el.style.getPropertyPriority(property);
+    el.style.setProperty(property, rule, priority);
+    return function cleanup() {
+        el.style.setProperty(property, originalValue, originalPriority);
+    };
+}
+function hasSameOrigin(href1, href2) {
+    var url1;
+    var url2;
+    try {
+        url1 = new URL(href1);
+        url2 = new URL(href2);
+    } catch (error) {
+        // failed to parse a href
+        return false;
+    }
+    // https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+    return url1.protocol === url2.protocol && url1.host === url2.host && url1.port === url2.port;
+}
+function isIframeOnAnotherDomain(iframe) {
+    /**
+   * iframe with contents defined inline. Runs on the current origin.
+   * `<iframe srcdoc="<!doctype html><body>Hello</body>" />`
+   */ if (iframe.srcdoc) return false;
+    /**
+   * iframe with contents defined inline. Runs on the current origin.
+   * `<iframe src={`data:text/html;charset=utf-8,${encodeURI('<!doctype html><body>Hello</body>')}`} />`
+   */ if (iframe.src.startsWith('data:')) return false;
+    return !hasSameOrigin(window.location.href, iframe.src);
+}
+var registry = new Map();
+function applyFix(watchForEndOfInteraction) {
+    var iframes = Array.from(document.querySelectorAll('iframe')).filter(isIframeOnAnotherDomain);
+    var cleanups = iframes.map(function(iframe) {
+        var entry = registry.get(iframe);
+        if (!entry) {
+            entry = {
+                reset: setStyle(iframe, {
+                    property: 'pointer-events',
+                    rule: 'none',
+                    priority: 'important'
+                }),
+                count: 1
+            };
+            registry.set(iframe, entry);
+        } else // pointer-events:none already applied to the iframe
+        // increment how many things requested the fix
+        entry.count++;
+        return function cleanup() {
+            entry.count--;
+            if (entry.count < 1) {
+                entry.reset();
+                registry.delete(iframe);
+            }
+        };
+    });
+    function stop() {
+        cleanupWatcher();
+        (0, _combine.combine).apply(void 0, (0, _toConsumableArrayDefault.default)(cleanups))();
+    }
+    var cleanupWatcher = watchForEndOfInteraction({
+        stop: stop
+    });
+}
+function makeFixForAdapter(_ref2) {
+    var watchForInteractionStart = _ref2.watchForInteractionStart, watchForInteractionEnd = _ref2.watchForInteractionEnd;
+    var registrationCount = 0;
+    var stopWatchingInteractionStart = null;
+    function start() {
+        applyFix(watchForInteractionEnd);
+    }
+    function registerUsage() {
+        if (registrationCount === 0) stopWatchingInteractionStart = watchForInteractionStart({
+            start: start
+        });
+        registrationCount++;
+        return function unregisterUsage() {
+            var _stopWatchingInteract;
+            registrationCount--;
+            if (registrationCount !== 0) return;
+            (_stopWatchingInteract = stopWatchingInteractionStart) === null || _stopWatchingInteract === void 0 || _stopWatchingInteract();
+            stopWatchingInteractionStart = null;
+        };
+    }
+    return {
+        registerUsage: registerUsage
+    };
+}
+
+},{"@babel/runtime/helpers/toConsumableArray":"lkYCr","@atlaskit/pragmatic-drag-and-drop/combine":"7FxfW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7pbBm":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "disableDraggingToCrossOriginIFramesForExternal", ()=>disableDraggingToCrossOriginIFramesForExternal);
+var _adapter = require("@atlaskit/pragmatic-drag-and-drop/external/adapter");
+var _makeFixForAdapter = require("./make-fix-for-adapter");
+function watchForInteractionStart(_ref) {
+    var start = _ref.start;
+    return (0, _adapter.monitorForExternal)({
+        onDragStart: function onDragStart() {
+            start();
+        }
+    });
+}
+function watchForInteractionEnd(_ref2) {
+    var stop = _ref2.stop;
+    return (0, _adapter.monitorForExternal)({
+        onDrop: function onDrop() {
+            stop();
+        }
+    });
+}
+var api = (0, _makeFixForAdapter.makeFixForAdapter)({
+    watchForInteractionStart: watchForInteractionStart,
+    watchForInteractionEnd: watchForInteractionEnd
+});
+function disableDraggingToCrossOriginIFramesForExternal() {
+    return api.registerUsage();
+}
+
+},{"@atlaskit/pragmatic-drag-and-drop/external/adapter":"8qmTE","./make-fix-for-adapter":"fPBdh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8qmTE":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "monitorForExternal", ()=>(0, _externalAdapter.monitorForExternal)) // The data that is being dragged
+;
+parcelHelpers.export(exports, "dropTargetForExternal", ()=>(0, _externalAdapter.dropTargetForExternal));
+var _externalAdapter = require("../../adapter/external-adapter");
+
+},{"../../adapter/external-adapter":"kcq5d","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kcq5d":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isAnAvailableType", ()=>isAnAvailableType);
+parcelHelpers.export(exports, "getAvailableTypes", ()=>getAvailableTypes);
+parcelHelpers.export(exports, "getAvailableItems", ()=>getAvailableItems);
+/**
+ * Some events don't make sense for the external adapter
+ *
+ * `onGenerateDragPreview`
+ * The browser creates the drag preview for external drags, so we don't
+ * need an event to generate the preview for _monitors_ or the _dropTarget_
+ *
+ * `onDragStart`
+ * An external drag can never start from in the `window`, so _dropTarget_'s
+ * don't need `onDragStart`
+ */ parcelHelpers.export(exports, "dropTargetForExternal", ()=>dropTargetForExternal);
+parcelHelpers.export(exports, "monitorForExternal", ()=>monitorForExternal);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _bindEventListener = require("bind-event-listener");
+var _makeAdapter = require("../make-adapter/make-adapter");
+var _android = require("../util/android");
+var _isEnteringWindow = require("../util/changing-window/is-entering-window");
+var _detectBrokenDrag = require("../util/detect-broken-drag");
+var _textMediaType = require("../util/media-types/text-media-type");
+var _elementAdapterNativeDataKey = require("./element-adapter-native-data-key");
+function isAnAvailableType(_ref) {
+    var type = _ref.type, value = _ref.value;
+    // We don't want to expose our private elementAdapter key / value
+    if (type === (0, _elementAdapterNativeDataKey.elementAdapterNativeDataKey)) return false;
+    // Not exposing "text/plain" if it contains the android fallback text
+    // We _could_ add an `isAndroid()` check, but it's probably safest
+    // to trim this data out, regardless of what OS we see it on.
+    if (type === (0, _textMediaType.textMediaType) && value === (0, _android.androidFallbackText)) return false;
+    return true;
+}
+function getAvailableTypes(transfer) {
+    return Array.from(transfer.types).filter(function(type) {
+        return isAnAvailableType({
+            type: type,
+            value: transfer.getData(type)
+        });
+    });
+}
+function getAvailableItems(dataTransfer) {
+    // item.kind is 'string' | 'file'
+    // For 'string' item.type is the mimeType (eg 'text/plain')
+    // For 'file' item.type is the file type (eg 'image/jpg')
+    return Array.from(dataTransfer.items).filter(function(item) {
+        return item.kind === 'file' || isAnAvailableType({
+            type: item.type,
+            value: dataTransfer.getData(item.type)
+        });
+    });
+}
+var didDragStartLocally = false;
+var adapter = (0, _makeAdapter.makeAdapter)({
+    typeKey: 'external',
+    // for external drags, we are generally making a copy of something that is being dragged
+    defaultDropEffect: 'copy',
+    mount: function mount(api) {
+        // Binding to the `window` so that the element adapter
+        // has a chance to get in first on the`document`.
+        // We are giving preference to the element adapter.
+        return (0, _bindEventListener.bind)(window, {
+            type: 'dragenter',
+            listener: function listener(event) {
+                // drag operation was started within the document, it won't be an "external" drag
+                if (didDragStartLocally) return;
+                // Note: not checking if event was cancelled (`event.defaultPrevented`) as
+                // cancelling a "dragenter" accepts the drag operation (not prevent it)
+                // Something has gone wrong with our drag event
+                if (!event.dataTransfer) {
+                    // eslint-disable-next-line no-console
+                    console.warn("\n              It appears as though you have are not testing DragEvents correctly.\n\n              - If you are unit testing, ensure you have polyfilled DragEvent.\n              - If you are browser testing, ensure you are dispatching drag events correctly.\n\n              Please see our testing guides for more information:\n              https://atlassian.design/components/pragmatic-drag-and-drop/core-package/testing\n            ".replace(/ {2}/g, ''));
+                    return;
+                }
+                if (!api.canStart(event)) return;
+                if (!(0, _isEnteringWindow.isEnteringWindow)({
+                    dragEnter: event
+                })) return;
+                // Note: not checking types for `elementAdapterNativeDataKey` as we expect to see that
+                // key when pdnd started the drag in another document
+                var types = getAvailableTypes(event.dataTransfer);
+                if (!types.length) return;
+                var locked = {
+                    types: types,
+                    items: [],
+                    getStringData: function getStringData() {
+                        return null;
+                    }
+                };
+                api.start({
+                    event: event,
+                    dragType: {
+                        type: 'external',
+                        startedFrom: 'external',
+                        payload: locked,
+                        getDropPayload: function getDropPayload(event) {
+                            // this would be a platform error
+                            // trying to handle it gracefully rather than throwing (for now)
+                            if (!event.dataTransfer) return locked;
+                            var items = getAvailableItems(event.dataTransfer);
+                            // need to use `.bind` as `getData` is required
+                            // to be run with `event.dataTransfer` as the "this" context
+                            var nativeGetData = event.dataTransfer.getData.bind(event.dataTransfer);
+                            return {
+                                types: types,
+                                items: items,
+                                // return `null` if there is no result, otherwise string
+                                getStringData: function getStringData(mediaType) {
+                                    // not dragging the requested type
+                                    // return `null` (no result)
+                                    if (!types.includes(mediaType)) return null;
+                                    // nativeGetData will return `""` when there is no value,
+                                    // but at this point we know we will only get explicitly set
+                                    // values back as we have checked the `types`.
+                                    // `""` can be an explicitly set value.
+                                    var value = nativeGetData(mediaType);
+                                    // not exposing data for unavailable types
+                                    if (!isAnAvailableType({
+                                        type: mediaType,
+                                        value: value
+                                    })) return null;
+                                    return value;
+                                }
+                            };
+                        }
+                    }
+                });
+            }
+        });
+    }
+});
+function dropTargetForExternal(args) {
+    // not removing unused events, just leaning on the type system
+    return adapter.dropTarget(args);
+}
+function monitorForExternal(args) {
+    // not removing unused events, just leaning on the type system
+    return adapter.monitor(args);
+}
+(function startup() {
+    // server side rendering check
+    if (typeof window === 'undefined') return;
+    // A shared single usage registration as we want to capture
+    // all external drag operations, even if there are no drop targets
+    // on the page yet
+    adapter.registerUsage();
+    // independent of pdnd, we need to keep track of
+    // all drag operations so that we can know if a drag operation
+    // has started locally
+    var idle = {
+        type: 'idle'
+    };
+    var state = idle;
+    function clear() {
+        if (state.type !== 'dragging') return;
+        didDragStartLocally = false;
+        state.cleanup();
+        state = idle;
+    }
+    function bindEndEvents() {
+        return (0, _bindEventListener.bindAll)(window, [
+            {
+                type: 'dragend',
+                listener: clear
+            }
+        ].concat((0, _toConsumableArrayDefault.default)((0, _detectBrokenDrag.getBindingsForBrokenDrags)({
+            onDragEnd: clear
+        }))), // we want to make sure we get all the events,
+        // and this helps avoid not seeing events when folks stop
+        // them later on the event path
+        {
+            capture: true
+        });
+    }
+    // we always keep this event listener active
+    (0, _bindEventListener.bind)(window, {
+        type: 'dragstart',
+        listener: function listener() {
+            // something bad has happened if this is true!
+            if (state.type !== 'idle') return;
+            // set our global flag
+            didDragStartLocally = true;
+            state = {
+                type: 'dragging',
+                cleanup: bindEndEvents()
+            };
+        },
+        // binding in the capture phase so these listeners are called
+        // before our listeners in the adapters `mount` function
+        options: {
+            capture: true
+        }
+    });
+})(); /** Common event payload for all events */  /** A map containing payloads for all events */  /** Common event payload for all drop target events */  /** A map containing payloads for all events on drop targets */  /** Arguments given to all feedback functions (eg `canDrop()`) on a `dropTargetForExternal` */  /** Arguments given to all monitor feedback functions (eg `canMonitor()`) for a `monitorForExternal` */ 
+
+},{"@babel/runtime/helpers/toConsumableArray":"lkYCr","bind-event-listener":"2wrYK","../make-adapter/make-adapter":"geYPo","../util/android":"k39DA","../util/changing-window/is-entering-window":"ll31t","../util/detect-broken-drag":"gcRM4","../util/media-types/text-media-type":"6XN7D","./element-adapter-native-data-key":"4dJqM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ll31t":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isEnteringWindow", ()=>isEnteringWindow);
+var _isFirefox = require("../is-firefox");
+var _isSafari = require("../is-safari");
+var _countEventsForSafari = require("./count-events-for-safari");
+var _isFromAnotherWindow = require("./is-from-another-window");
+function isEnteringWindow(_ref) {
+    var dragEnter = _ref.dragEnter;
+    var type = dragEnter.type, relatedTarget = dragEnter.relatedTarget;
+    if (type !== 'dragenter') return false;
+    if ((0, _isSafari.isSafari)()) return (0, _countEventsForSafari.isEnteringWindowInSafari)({
+        dragEnter: dragEnter
+    });
+    // standard check
+    if (relatedTarget == null) return true;
+    /**
+   * 🦊 Exception: `iframe` in Firefox (`125.0`)
+   *
+   * Case 1: parent `window` → child `iframe`
+   * `relatedTarget` is the `iframe` element in the parent `window`
+   * (foreign element)
+   *
+   * Case 2: child `iframe` → parent `window`
+   * `relatedTarget` is an element inside the child `iframe`
+   * (foreign element)
+   */ if ((0, _isFirefox.isFirefox)()) return (0, _isFromAnotherWindow.isFromAnotherWindow)(relatedTarget);
+    /**
+   * 🌏 Exception: `iframe` in Chrome (`124.0`)
+   *
+   * Case 1: parent `window` → child `iframe`
+   * `relatedTarget` is `null` *(standard check)*
+   *
+   * Case 2: child `iframe` → parent `window`
+   * `relatedTarget` is the `iframe` element in the parent `window`
+   */ // Case 2
+    // Using `instanceof` check as the element will be in the same `window`
+    return relatedTarget instanceof HTMLIFrameElement;
+}
+
+},{"../is-firefox":"1GbDG","../is-safari":"dx1gN","./count-events-for-safari":"5EwCI","./is-from-another-window":"a1tI1","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8dTrW":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "disableDraggingToCrossOriginIFramesForTextSelection", ()=>disableDraggingToCrossOriginIFramesForTextSelection);
+var _bindEventListener = require("bind-event-listener");
+var _combine = require("@atlaskit/pragmatic-drag-and-drop/combine");
+var _adapter = require("@atlaskit/pragmatic-drag-and-drop/text-selection/adapter");
+var _makeFixForAdapter = require("./make-fix-for-adapter");
+function watchForInteractionEnd(_ref) {
+    var stop = _ref.stop;
+    var isDragging = false;
+    function stopIfNotDragging() {
+        if (isDragging) return;
+        stop();
+    }
+    var frameId = null;
+    var unbindEvents = (0, _bindEventListener.bindAll)(window, [
+        {
+            // User is starting another interaction
+            type: 'pointerdown',
+            listener: stop
+        },
+        {
+            // User did not start a drag.
+            // "pointerdown" won't be fired if a drag started
+            type: 'pointerup',
+            listener: stopIfNotDragging
+        },
+        {
+            type: 'dragstart',
+            listener: function listener() {
+                /**
+       * The pdnd `onDragStart()` fires in the frame after "dragstart"
+       * So we are delaying our isDragging check to give a chance
+       * for `onDragStart()` to set the value correctly.
+       *
+       * Note: could not use "pointercancel" as it is not
+       * published in Safari → https://bugs.webkit.org/show_bug.cgi?id=222632
+       */ frameId = requestAnimationFrame(function() {
+                    frameId = null;
+                    stopIfNotDragging();
+                });
+            },
+            // need to schedule our frame after the text-selection
+            // adapter queues it's `onDragStart` frame.
+            options: {
+                capture: false
+            }
+        }
+    ], {
+        // Listening in the capture phase to increase resilience
+        // against events being stopped.
+        capture: true,
+        // being super clear these should only run once
+        once: true
+    });
+    var unbindMonitor = (0, _adapter.monitorForTextSelection)({
+        onDragStart: function onDragStart() {
+            isDragging = true;
+        },
+        onDrop: function onDrop() {
+            isDragging = false;
+            stop();
+        }
+    });
+    return (0, _combine.combine)(unbindEvents, unbindMonitor, function abortFrame() {
+        if (frameId != null) cancelAnimationFrame(frameId);
+    });
+}
+function watchForInteractionStart(_ref2) {
+    var start = _ref2.start;
+    return (0, _bindEventListener.bind)(window, {
+        // Note: Using "mousedown" rather than "pointerdown" due to a Safari bug.
+        // Safari not publish a "pointerdown" on the interaction after a drag
+        // → https://bugs.webkit.org/show_bug.cgi?id=279749
+        type: 'mousedown',
+        listener: function listener() {
+            // A text selection drag will only start when there is
+            // an active text selection.
+            var selection = window.getSelection();
+            // No selection object found
+            if (!selection) return;
+            // `isCollapsed` is "true" if there is currently no selected text
+            if (selection.isCollapsed) return;
+            start();
+        }
+    });
+}
+var api = (0, _makeFixForAdapter.makeFixForAdapter)({
+    watchForInteractionStart: watchForInteractionStart,
+    watchForInteractionEnd: watchForInteractionEnd
+});
+function disableDraggingToCrossOriginIFramesForTextSelection() {
+    return api.registerUsage();
+}
+
+},{"bind-event-listener":"2wrYK","@atlaskit/pragmatic-drag-and-drop/combine":"7FxfW","@atlaskit/pragmatic-drag-and-drop/text-selection/adapter":"qA4Xh","./make-fix-for-adapter":"fPBdh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"qA4Xh":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "monitorForTextSelection", ()=>(0, _textSelectionAdapter.monitorForTextSelection)) // Payload for the text selection being dragged
+;
+parcelHelpers.export(exports, "dropTargetForTextSelection", ()=>(0, _textSelectionAdapter.dropTargetForTextSelection));
+var _textSelectionAdapter = require("../../adapter/text-selection-adapter");
+
+},{"../../adapter/text-selection-adapter":"hCUjk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hCUjk":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// The `onGenerateDragPreview` does not make sense to publish for text selection
+// as the browser is completely in control of the drag preview
+parcelHelpers.export(exports, "dropTargetForTextSelection", ()=>dropTargetForTextSelection);
+parcelHelpers.export(exports, "monitorForTextSelection", ()=>monitorForTextSelection) /** Common event payload for all events */  /** A map containing payloads for all events */  /** Common event payload for all drop target events */  /** A map containing payloads for all events on drop targets */  /** Argument given to all feedback functions (eg `canDrop()`) on a `dropTargetForExternal` */  /** Argument given to all monitor feedback functions (eg `canMonitor()`) for a `monitorForExternal` */ ;
+var _bindEventListener = require("bind-event-listener");
+var _makeHoneyPotFix = require("../honey-pot-fix/make-honey-pot-fix");
+var _makeAdapter = require("../make-adapter/make-adapter");
+var _combine = require("../public-utils/combine");
+var _isSafari = require("../util/is-safari");
+var _htmlMediaType = require("../util/media-types/html-media-type");
+var _textMediaType = require("../util/media-types/text-media-type");
+var _elementAdapterNativeDataKey = require("./element-adapter-native-data-key");
+function findTextNode(event) {
+    var _event$dataTransfer;
+    // Standard: the `event.target` should be the closest `Text` node.
+    if (event.target instanceof Text) return event.target;
+    // Structuring things this way so that if Safari fixes their bug
+    // then the standard check will start working
+    if (!(0, _isSafari.isSafari)()) return null;
+    /**
+   * According to the spec, `event.target` should be the `Text` node that
+   * the drag started from when dragging a text selection.
+   *
+   * → https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model
+   *
+   * However, in Safari the closest `HTMLElement` is returned.
+   * So we need to figure out if text is dragging ourselves.
+   *
+   * → https://bugs.webkit.org/show_bug.cgi?id=268959
+   */ if (!(event.target instanceof HTMLElement)) return null;
+    // Unlikely that this particular drag is a text selection drag
+    if (event.target.draggable) return null;
+    // if the drag contains no text data, then not dragging selected text
+    // return `null` if there is no dataTransfer, or if `getData()` returns ""
+    if (!((_event$dataTransfer = event.dataTransfer) !== null && _event$dataTransfer !== void 0 && _event$dataTransfer.getData((0, _textMediaType.textMediaType)))) return null;
+    /**
+   * Grab the first Text node and use that.
+   * Only doing a single level search as that is all we need for this bug.
+   */ var text = Array.from(event.target.childNodes).find(function(node) {
+        return node.nodeType === Node.TEXT_NODE;
+    });
+    return text !== null && text !== void 0 ? text : null;
+}
+var honeyPotFix = (0, _makeHoneyPotFix.makeHoneyPotFix)();
+var adapter = (0, _makeAdapter.makeAdapter)({
+    typeKey: 'text-selection',
+    // for text selection, we will usually be making a copy of the text
+    defaultDropEffect: 'copy',
+    mount: function mount(api) {
+        // Binding to the `window` so that the element adapter has a
+        // chance to get in first on the `document`.
+        // We are giving preference to the element adapter.
+        return (0, _combine.combine)(honeyPotFix.bindEvents(), (0, _bindEventListener.bind)(window, {
+            type: 'dragstart',
+            listener: function listener(event) {
+                // If the "dragstart" event is cancelled, then a drag won't start
+                // There will be no further drag operation events (eg no "dragend" event)
+                if (event.defaultPrevented) return;
+                // Something has gone wrong with our drag event
+                if (!event.dataTransfer) {
+                    // eslint-disable-next-line no-console
+                    console.warn("\n                It appears as though you have are not testing DragEvents correctly.\n\n                - If you are unit testing, ensure you have polyfilled DragEvent.\n                - If you are browser testing, ensure you are dispatching drag events correctly.\n\n                Please see our testing guides for more information:\n                https://atlassian.design/components/pragmatic-drag-and-drop/core-package/testing\n              ".replace(/ {2}/g, ''));
+                    return;
+                }
+                // Drag is being handled by the element adapter
+                if (event.dataTransfer.types.includes((0, _elementAdapterNativeDataKey.elementAdapterNativeDataKey))) return;
+                // Something else is handling this drag
+                if (!api.canStart(event)) return;
+                // no text being dragged
+                if (!event.dataTransfer.types.includes((0, _textMediaType.textMediaType))) return;
+                var target = findTextNode(event);
+                // could not find `Text` node that is being dragged from
+                if (!target) return;
+                var payload = {
+                    // The `Text` node that is the `target` is the `Text` node
+                    // that the user started the drag from.
+                    // The full text being dragged can be looked up from the `dataTransfer`.
+                    target: target,
+                    plain: event.dataTransfer.getData((0, _textMediaType.textMediaType)),
+                    HTML: event.dataTransfer.getData((0, _htmlMediaType.HTMLMediaType))
+                };
+                api.start({
+                    event: event,
+                    dragType: {
+                        type: 'text-selection',
+                        startedFrom: 'internal',
+                        payload: payload
+                    }
+                });
+            }
+        }));
+    },
+    onPostDispatch: honeyPotFix.getOnPostDispatch()
+});
+function dropTargetForTextSelection(args) {
+    // note: not removing `onGenerateDragPreview`; just leaning on the type system
+    return adapter.dropTarget(args);
+}
+// A shared single usage registration as any text can be dragged at any time
+(function register() {
+    // server side rendering check
+    if (typeof window === 'undefined') return;
+    adapter.registerUsage();
+})();
+function monitorForTextSelection(args) {
+    // note: not removing `onGenerateDragPreview`; just leaning on the type system
+    return adapter.monitor(args);
+}
+
+},{"bind-event-listener":"2wrYK","../honey-pot-fix/make-honey-pot-fix":"7cMWT","../make-adapter/make-adapter":"geYPo","../public-utils/combine":"6kYtf","../util/is-safari":"dx1gN","../util/media-types/html-media-type":"1Mu84","../util/media-types/text-media-type":"6XN7D","./element-adapter-native-data-key":"4dJqM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1Mu84":[function(require,module,exports,__globalThis) {
+// Why we put the media types in their own files:
+//
+// - we are not putting them all in one file as not all adapters need all types
+// - we are not putting them in the external helpers as some things just need the
+//   types and not the external functions code
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HTMLMediaType", ()=>HTMLMediaType);
+var HTMLMediaType = 'text/html';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7zWo7":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "width", ()=>width);
+parcelHelpers.export(exports, "dialogWidth", ()=>dialogWidth);
+parcelHelpers.export(exports, "dialogHeight", ()=>dialogHeight);
+var width = {
+    values: [
+        'small',
+        'medium',
+        'large',
+        'x-large'
+    ],
+    widths: {
+        small: 400,
+        medium: 600,
+        large: 800,
+        'x-large': 968
+    },
+    defaultValue: 'medium'
+};
+var dialogWidth = function dialogWidth(input) {
+    if (!input) return 'auto';
+    var isWidthName = width.values.indexOf(input.toString()) !== -1;
+    var widthName = isWidthName && input;
+    if (widthName) return "".concat(width.widths[widthName], "px");
+    return typeof input === 'number' ? "".concat(input, "px") : input;
+};
+var dialogHeight = function dialogHeight(input) {
+    if (!input) return 'auto';
+    return typeof input === 'number' ? "".concat(input, "px") : input;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6An05":[function(require,module,exports,__globalThis) {
+/* positioner.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _curves = require("@atlaskit/motion/curves");
+var _durations = require("@atlaskit/motion/durations");
+var _constants = require("@atlaskit/theme/constants");
+var gutter = 60;
+var maxWidthDimensions = "calc(100vw - ".concat(gutter * 2, "px)");
+var maxHeightDimensions = "calc(100vh - ".concat(gutter * 2 - 1, "px)");
+// Flex and min-content are set to constrain the height of the body and support multi-column scrolling experiences
+var positionerStyles = null;
+var scrollStyles = {
+    viewport: "_4t3i1wug _kqswh2mm _1sg41wqb _maxs1wug _1jvh1wqb _1uca1wug _eoawglyw",
+    body: "_we1i18uh _e8uozwhf _y1k5stnw _5ee41wqb _1urridpf _1juqidpf _yakv1wug _4lht1wug _eoawglyw",
+    fullScreen: ""
+};
+var stackTransitionStyles = null;
+var stackTransformStyles = null;
+var stackIdleStyles = null;
+function getScrollBehavior(_ref) {
+    var isFullScreen = _ref.isFullScreen, shouldScrollInViewport = _ref.shouldScrollInViewport;
+    if (isFullScreen) return 'fullScreen';
+    if (shouldScrollInViewport) return 'viewport';
+    return 'body';
+}
+var Positioner = function Positioner(props) {
+    var children = props.children, stackIndex = props.stackIndex, shouldScrollInViewport = props.shouldScrollInViewport, testId = props.testId, isFullScreen = props.isFullScreen;
+    var scrollBehavior = getScrollBehavior({
+        isFullScreen: isFullScreen,
+        shouldScrollInViewport: shouldScrollInViewport
+    });
+    return /*#__PURE__*/ _react.createElement("div", {
+        style: {
+            '--modal-dialog-translate-y': "calc(".concat(stackIndex, "px * ", "var(--ds-space-100, 8px)", ")"),
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            transitionDuration: "".concat((0, _durations.durations).medium, "ms"),
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/enforce-style-prop
+            transitionTimingFunction: (0, _curves.easeInOut)
+        },
+        "data-testid": testId && "".concat(testId, "--positioner"),
+        className: (0, _runtime.ax)([
+            "_1e0c1txw _1bsb1osq _p12f1osq _4t3i1osq _kqsw1n9t _1pby16oo _2lx21bp4 _152tidpf _1e02idpf",
+            "_k8m01e03 _1bumglyw _sedtglyw",
+            stackIndex > 0 ? "_t9ec1b95" : "_t9ecglyw",
+            scrollStyles[scrollBehavior]
+        ])
+    }, children);
+};
+// eslint-disable-next-line @repo/internal/react/require-jsdoc
+exports.default = Positioner;
+
+},{"react":"jMk1U","@compiled/react/runtime":"8r5np","@atlaskit/motion/curves":"8S4oE","@atlaskit/motion/durations":"9pwNA","@atlaskit/theme/constants":"6kRPo","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8S4oE":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "easeIn", ()=>(0, _curves.easeIn));
+parcelHelpers.export(exports, "easeInOut", ()=>(0, _curves.easeInOut));
+parcelHelpers.export(exports, "easeOut", ()=>(0, _curves.easeOut));
+parcelHelpers.export(exports, "linear", ()=>(0, _curves.linear));
+var _curves = require("../utils/curves");
+
+},{"../utils/curves":"i4R7D","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9pwNA":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "durationStep", ()=>(0, _durations.durationStep));
+parcelHelpers.export(exports, "durations", ()=>(0, _durations.durations));
+var _durations = require("../utils/durations");
+
+},{"../utils/durations":"1zZbT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bUJ3a":[function(require,module,exports,__globalThis) {
+/* modal-header.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _runtime = require("@compiled/react/runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// eslint-disable-next-line @atlaskit/design-system/no-emotion-primitives -- to be migrated to @atlaskit/primitives/compiled – go/akcss
+var _primitives = require("@atlaskit/primitives");
+var _closeButton = require("./close-button");
+var _hooks = require("./hooks");
+var headerStyles = null;
+var flexStyles = (0, _primitives.xcss)({
+    flexDirection: 'row-reverse',
+    width: '100%'
+});
+/**
+ * __Modal header__
+ *
+ * A modal header contains the title of the modal and can contain other React elements such as a close button.
+ *
+ * - [Examples](https://atlassian.design/components/modal-dialog/examples#modal-header)
+ * - [Code](https://atlassian.design/components/modal-dialog/code#modal-header-props)
+ * - [Usage](https://atlassian.design/components/modal-dialog/usage)
+ */ var ModalHeader = function ModalHeader(props) {
+    var children = props.children, userDefinedTestId = props.testId, _props$hasCloseButton = props.hasCloseButton, hasCloseButton = _props$hasCloseButton === void 0 ? false : _props$hasCloseButton;
+    var _useModal = (0, _hooks.useModal)(), hasProvidedOnClose = _useModal.hasProvidedOnClose, onClose = _useModal.onClose, modalTestId = _useModal.testId;
+    var testId = userDefinedTestId || modalTestId && "".concat(modalTestId, "--header");
+    // Only show if an onClose was provided for the modal dialog
+    var shouldShowCloseButton = hasCloseButton && hasProvidedOnClose && onClose;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        "data-testid": testId,
+        className: (0, _runtime.ax)([
+            "_18zr1ejb _1e0c1txw _kqswh2mm _4cvr1h6o _1bah1yb4 _6rthmufe _85i5pxbi _1q511ejb"
+        ]),
+        style: {
+            "--_t7lu6v": (0, _runtime.ix)("calc(-1 * ".concat("var(--ds-border-width-outline, 2px)", ")"))
+        }
+    }, shouldShowCloseButton ? /*#__PURE__*/ // The reason we are putting the close button first in the DOM and then
+    // reordering them is to ensure that users of assistive technology get
+    // all the context of a modal when initial focus is placed on the close
+    // button, since it's the first interactive element.
+    (0, _reactDefault.default).createElement((0, _primitives.Flex), {
+        gap: "space.200",
+        justifyContent: "space-between",
+        xcss: flexStyles
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _primitives.Flex), {
+        justifyContent: "end"
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _closeButton.CloseButton), {
+        onClick: onClose,
+        testId: modalTestId
+    })), /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _primitives.Flex), {
+        justifyContent: "start",
+        alignItems: "center"
+    }, children)) : children);
+};
+exports.default = ModalHeader;
+
+},{"@compiled/react/runtime":"8r5np","react":"jMk1U","@atlaskit/primitives":"gDepD","./close-button":"g4i2A","./hooks":"d9GaV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gDepD":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Box", ()=>(0, _boxDefault.default));
+parcelHelpers.export(exports, "Inline", ()=>(0, _inlineDefault.default));
+parcelHelpers.export(exports, "xcss", ()=>(0, _xcss.xcss));
+parcelHelpers.export(exports, "tokensMap", ()=>(0, _xcss.tokensMap));
+parcelHelpers.export(exports, "Stack", ()=>(0, _stackDefault.default));
+parcelHelpers.export(exports, "Flex", ()=>(0, _flexDefault.default));
+parcelHelpers.export(exports, "Grid", ()=>(0, _gridDefault.default));
+parcelHelpers.export(exports, "Bleed", ()=>(0, _bleedDefault.default));
+parcelHelpers.export(exports, "Text", ()=>(0, _textDefault.default));
+parcelHelpers.export(exports, "MetricText", ()=>(0, _metricTextDefault.default));
+parcelHelpers.export(exports, "Pressable", ()=>(0, _pressableDefault.default));
+parcelHelpers.export(exports, "Anchor", ()=>(0, _anchorDefault.default));
+parcelHelpers.export(exports, "media", ()=>(0, _responsive.media));
+parcelHelpers.export(exports, "UNSAFE_media", ()=>(0, _responsive.UNSAFE_media));
+parcelHelpers.export(exports, "UNSAFE_BREAKPOINTS_CONFIG", ()=>(0, _responsive.UNSAFE_BREAKPOINTS_CONFIG));
+parcelHelpers.export(exports, "UNSAFE_useSurface", ()=>(0, _surfaceProvider.useSurface));
+parcelHelpers.export(exports, "UNSAFE_inverseColorMap", ()=>(0, _styleMapsPartial.inverseColorMap));
+var _box = require("./components/box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _inline = require("./components/inline");
+var _inlineDefault = parcelHelpers.interopDefault(_inline);
+var _xcss = require("./xcss/xcss");
+var _stack = require("./components/stack");
+var _stackDefault = parcelHelpers.interopDefault(_stack);
+var _flex = require("./components/flex");
+var _flexDefault = parcelHelpers.interopDefault(_flex);
+var _grid = require("./components/grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _bleed = require("./components/bleed");
+var _bleedDefault = parcelHelpers.interopDefault(_bleed);
+var _text = require("./components/text");
+var _textDefault = parcelHelpers.interopDefault(_text);
+var _metricText = require("./components/metric-text");
+var _metricTextDefault = parcelHelpers.interopDefault(_metricText);
+var _pressable = require("./components/pressable");
+var _pressableDefault = parcelHelpers.interopDefault(_pressable);
+var _anchor = require("./components/anchor");
+var _anchorDefault = parcelHelpers.interopDefault(_anchor);
+var _responsive = require("./responsive");
+var _surfaceProvider = require("./utils/surface-provider");
+var _styleMapsPartial = require("./xcss/style-maps.partial");
+
+},{"./components/box":false,"./components/inline":false,"./xcss/xcss":"jDay7","./components/stack":false,"./components/flex":"bLu4Y","./components/grid":false,"./components/bleed":false,"./components/text":false,"./components/metric-text":false,"./components/pressable":false,"./components/anchor":false,"./responsive":false,"./utils/surface-provider":false,"./xcss/style-maps.partial":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jDay7":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "tokensMap", ()=>tokensMap);
+parcelHelpers.export(exports, "parseXcss", ()=>_parseXcss) // Media queries should not contain nested media queries
+;
+// Allow only a specific subset of chained selectors to maintain workable TypeScript performance
+// Pseudos should not contain nested pseudos, or media queries
+/**
+ * ### xcss
+ *
+ * `xcss` is a safer, tokens-first approach to CSS-in-JS. It allows token-backed values for
+ * CSS application.
+ *
+ * ```tsx
+ * const styles = xcss({
+ *   padding: 'space.100'
+ * })
+ * ```
+ */ parcelHelpers.export(exports, "xcss", ()=>xcss);
+var _toConsumableArray = require("@babel/runtime/helpers/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _typeof = require("@babel/runtime/helpers/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+// eslint-disable-next-line @atlaskit/ui-styling-standard/use-compiled -- Ignored via go/DSP-18766
+var _react = require("@emotion/react");
+var _styleMapsPartial = require("./style-maps.partial");
+function _createForOfIteratorHelper(r, e) {
+    var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (!t) {
+        if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) {
+            t && (r = t);
+            var _n = 0, F = function F() {};
+            return {
+                s: F,
+                n: function n() {
+                    return _n >= r.length ? {
+                        done: !0
+                    } : {
+                        done: !1,
+                        value: r[_n++]
+                    };
+                },
+                e: function e(r) {
+                    throw r;
+                },
+                f: F
+            };
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+    var o, a = !0, u = !1;
+    return {
+        s: function s() {
+            t = t.call(r);
+        },
+        n: function n() {
+            var r = t.next();
+            return a = r.done, r;
+        },
+        e: function e(r) {
+            u = !0, o = r;
+        },
+        f: function f() {
+            try {
+                a || null == t.return || t.return();
+            } finally{
+                if (u) throw o;
+            }
+        }
+    };
+}
+function _unsupportedIterableToArray(r, a) {
+    if (r) {
+        if ("string" == typeof r) return _arrayLikeToArray(r, a);
+        var t = ({}).toString.call(r).slice(8, -1);
+        return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+    }
+}
+function _arrayLikeToArray(r, a) {
+    (null == a || a > r.length) && (a = r.length);
+    for(var e = 0, n = Array(a); e < a; e++)n[e] = r[e];
+    return n;
+}
+var tokensMap = {
+    backgroundColor: (0, _styleMapsPartial.backgroundColorMap),
+    blockSize: (0, _styleMapsPartial.dimensionMap),
+    borderBlockColor: (0, _styleMapsPartial.borderColorMap),
+    borderBlockEndColor: (0, _styleMapsPartial.borderColorMap),
+    borderBlockEndWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderBlockStartColor: (0, _styleMapsPartial.borderColorMap),
+    borderBlockStartWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderBlockWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderBottomColor: (0, _styleMapsPartial.borderColorMap),
+    borderBottomLeftRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderBottomRightRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderBottomWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderColor: (0, _styleMapsPartial.borderColorMap),
+    borderEndEndRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderEndStartRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderInlineColor: (0, _styleMapsPartial.borderColorMap),
+    borderInlineEndColor: (0, _styleMapsPartial.borderColorMap),
+    borderInlineEndWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderInlineStartColor: (0, _styleMapsPartial.borderColorMap),
+    borderInlineStartWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderInlineWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderLeftColor: (0, _styleMapsPartial.borderColorMap),
+    borderLeftWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderRightColor: (0, _styleMapsPartial.borderColorMap),
+    borderRightWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderStartEndRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderStartStartRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderTopColor: (0, _styleMapsPartial.borderColorMap),
+    borderTopLeftRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderTopRightRadius: (0, _styleMapsPartial.borderRadiusMap),
+    borderTopWidth: (0, _styleMapsPartial.borderWidthMap),
+    borderWidth: (0, _styleMapsPartial.borderWidthMap),
+    bottom: (0, _styleMapsPartial.allSpaceMap),
+    boxShadow: (0, _styleMapsPartial.shadowMap),
+    color: (0, _styleMapsPartial.textColorMap),
+    columnGap: (0, _styleMapsPartial.positiveSpaceMap),
+    font: (0, _styleMapsPartial.fontMap),
+    fontFamily: (0, _styleMapsPartial.fontFamilyMap),
+    fontWeight: (0, _styleMapsPartial.fontWeightMap),
+    gap: (0, _styleMapsPartial.positiveSpaceMap),
+    height: (0, _styleMapsPartial.dimensionMap),
+    inlineSize: (0, _styleMapsPartial.dimensionMap),
+    inset: (0, _styleMapsPartial.allSpaceMap),
+    insetBlock: (0, _styleMapsPartial.allSpaceMap),
+    insetBlockEnd: (0, _styleMapsPartial.allSpaceMap),
+    insetBlockStart: (0, _styleMapsPartial.allSpaceMap),
+    insetInline: (0, _styleMapsPartial.allSpaceMap),
+    insetInlineEnd: (0, _styleMapsPartial.allSpaceMap),
+    insetInlineStart: (0, _styleMapsPartial.allSpaceMap),
+    left: (0, _styleMapsPartial.allSpaceMap),
+    margin: (0, _styleMapsPartial.allSpaceMap),
+    marginBlock: (0, _styleMapsPartial.allSpaceMap),
+    marginBlockEnd: (0, _styleMapsPartial.allSpaceMap),
+    marginBlockStart: (0, _styleMapsPartial.allSpaceMap),
+    marginBottom: (0, _styleMapsPartial.allSpaceMap),
+    marginInline: (0, _styleMapsPartial.allSpaceMap),
+    marginInlineEnd: (0, _styleMapsPartial.allSpaceMap),
+    marginInlineStart: (0, _styleMapsPartial.allSpaceMap),
+    marginLeft: (0, _styleMapsPartial.allSpaceMap),
+    marginRight: (0, _styleMapsPartial.allSpaceMap),
+    marginTop: (0, _styleMapsPartial.allSpaceMap),
+    maxBlockSize: (0, _styleMapsPartial.dimensionMap),
+    maxHeight: (0, _styleMapsPartial.dimensionMap),
+    maxInlineSize: (0, _styleMapsPartial.dimensionMap),
+    maxWidth: (0, _styleMapsPartial.dimensionMap),
+    minBlockSize: (0, _styleMapsPartial.dimensionMap),
+    minHeight: (0, _styleMapsPartial.dimensionMap),
+    minInlineSize: (0, _styleMapsPartial.dimensionMap),
+    minWidth: (0, _styleMapsPartial.dimensionMap),
+    opacity: (0, _styleMapsPartial.opacityMap),
+    outlineColor: (0, _styleMapsPartial.borderColorMap),
+    outlineOffset: (0, _styleMapsPartial.allSpaceMap),
+    outlineWidth: (0, _styleMapsPartial.borderWidthMap),
+    padding: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingBlock: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingBlockEnd: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingBlockStart: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingBottom: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingInline: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingInlineEnd: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingInlineStart: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingLeft: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingRight: (0, _styleMapsPartial.positiveSpaceMap),
+    paddingTop: (0, _styleMapsPartial.positiveSpaceMap),
+    right: (0, _styleMapsPartial.allSpaceMap),
+    rowGap: (0, _styleMapsPartial.positiveSpaceMap),
+    top: (0, _styleMapsPartial.allSpaceMap),
+    width: (0, _styleMapsPartial.dimensionMap),
+    zIndex: (0, _styleMapsPartial.layerMap)
+};
+var uniqueSymbol = Symbol('UNSAFE_INTERNAL_styles');
+var isSafeEnvToThrow = function isSafeEnvToThrow() {
+    return false;
+};
+var reNestedSelectors = /(\.|\s|&+|\*\>|#|\[.*\])/;
+var safeSelectors = /^@media .*$|^::?.*$|^@supports .*$/;
+var _transformStyles = function transformStyles(styleObj) {
+    if (!styleObj || (0, _typeofDefault.default)(styleObj) !== 'object') return styleObj;
+    // If styles are defined as a CSSObject[], recursively call on each element until we reach CSSObject
+    if (Array.isArray(styleObj)) return styleObj.map(_transformStyles);
+    // Modifies styleObj in place. Be careful.
+    Object.entries(styleObj).forEach(function(_ref) {
+        var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), key = _ref2[0], value = _ref2[1];
+        // If key is a pseudo class or a pseudo element, then value should be an object.
+        // So, call transformStyles on the value
+        if ((0, _typeofDefault.default)(value) === 'object' && safeSelectors.test(key)) {
+            styleObj[key] = _transformStyles(value);
+            return;
+        }
+        if (isSafeEnvToThrow()) {
+            // We don't support `.class`, `[data-testid]`, `> *`, `#some-id`
+            if (reNestedSelectors.test(key)) throw new Error("Styles not supported for key '".concat(key, "'."));
+        }
+        // We have now dealt with all the special cases, so,
+        // check whether what remains is a style property
+        // that can be transformed.
+        if (!(key in tokensMap)) return;
+        var tokenValue = tokensMap[key][value];
+        styleObj[key] = tokenValue !== null && tokenValue !== void 0 ? tokenValue : value;
+    });
+    return styleObj;
+};
+var baseXcss = function baseXcss(style) {
+    var transformedStyles = _transformStyles(style);
+    return (0, _definePropertyDefault.default)({}, uniqueSymbol, (0, _react.css)(transformedStyles));
+};
+/**
+ * Picks out runtime XCSS objects and build-time XCSS strings. This is needed
+ * to supported both Emotion and Compiled styles until we've fully migrated
+ * to Compiled.
+ *
+ * @private
+ * @deprecated
+ */ var _parseXcss = function parseXcss(args) {
+    if (Array.isArray(args)) {
+        var emotion = [];
+        var staticArr = [];
+        var _iterator = _createForOfIteratorHelper(args), _step;
+        try {
+            for(_iterator.s(); !(_step = _iterator.n()).done;){
+                var arg = _step.value;
+                var result = _parseXcss(arg);
+                if (result.emotion) emotion.push.apply(emotion, (0, _toConsumableArrayDefault.default)(result.emotion));
+                if (result.static) staticArr.push(result.static);
+            }
+        } catch (err) {
+            _iterator.e(err);
+        } finally{
+            _iterator.f();
+        }
+        return {
+            emotion: emotion,
+            static: staticArr.join(' ')
+        };
+    }
+    var objArgs = args;
+    var _ref4 = objArgs || {}, styles = _ref4[uniqueSymbol];
+    if (styles) return {
+        emotion: [
+            styles
+        ]
+    };
+    if (args) {
+        // We use string interpolation here instead of .toString() just
+        // in case the resulting object doesn't have the method available.
+        var stringifiedArgs = "".concat(args);
+        if (stringifiedArgs) return {
+            static: stringifiedArgs
+        };
+    }
+    return {};
+};
+function xcss(style) {
+    return baseXcss(style);
+}
+
+},{"@babel/runtime/helpers/toConsumableArray":"lkYCr","@babel/runtime/helpers/defineProperty":"azbUC","@babel/runtime/helpers/slicedToArray":"lvO5K","@babel/runtime/helpers/typeof":"7EL9t","@emotion/react":"cLTfV","./style-maps.partial":"i6gMp","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i6gMp":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "dimensionMap", ()=>dimensionMap);
+parcelHelpers.export(exports, "positiveSpaceMap", ()=>positiveSpaceMap);
+parcelHelpers.export(exports, "negativeSpaceMap", ()=>negativeSpaceMap);
+parcelHelpers.export(exports, "allSpaceMap", ()=>allSpaceMap);
+parcelHelpers.export(exports, "inverseColorMap", ()=>inverseColorMap);
+parcelHelpers.export(exports, "opacityMap", ()=>opacityMap);
+parcelHelpers.export(exports, "shadowMap", ()=>shadowMap);
+parcelHelpers.export(exports, "surfaceColorMap", ()=>surfaceColorMap);
+parcelHelpers.export(exports, "borderColorMap", ()=>borderColorMap);
+parcelHelpers.export(exports, "backgroundColorMap", ()=>backgroundColorMap);
+parcelHelpers.export(exports, "textColorMap", ()=>textColorMap);
+parcelHelpers.export(exports, "fillMap", ()=>fillMap);
+parcelHelpers.export(exports, "layerMap", ()=>layerMap);
+parcelHelpers.export(exports, "borderWidthMap", ()=>borderWidthMap);
+parcelHelpers.export(exports, "borderRadiusMap", ()=>borderRadiusMap);
+parcelHelpers.export(exports, "fontMap", ()=>fontMap);
+parcelHelpers.export(exports, "fontWeightMap", ()=>fontWeightMap);
+parcelHelpers.export(exports, "fontFamilyMap", ()=>fontFamilyMap);
+parcelHelpers.export(exports, "textSizeMap", ()=>textSizeMap);
+parcelHelpers.export(exports, "textWeightMap", ()=>textWeightMap);
+parcelHelpers.export(exports, "metricTextSizeMap", ()=>metricTextSizeMap);
+parcelHelpers.export(exports, "getSerializedStylesMap", ()=>getSerializedStylesMap);
+parcelHelpers.export(exports, "paddingStylesMap", ()=>paddingStylesMap);
+parcelHelpers.export(exports, "spaceStylesMap", ()=>spaceStylesMap);
+parcelHelpers.export(exports, "backgroundColorStylesMap", ()=>backgroundColorStylesMap);
+parcelHelpers.export(exports, "textColorStylesMap", ()=>textColorStylesMap);
+parcelHelpers.export(exports, "fontWeightStylesMap", ()=>fontWeightStylesMap);
+parcelHelpers.export(exports, "fontFamilyStylesMap", ()=>fontFamilyStylesMap);
+parcelHelpers.export(exports, "fontStylesMap", ()=>fontStylesMap);
+parcelHelpers.export(exports, "textSizeStylesMap", ()=>textSizeStylesMap);
+parcelHelpers.export(exports, "textWeightStylesMap", ()=>textWeightStylesMap);
+parcelHelpers.export(exports, "surfaceColorStylesMap", ()=>surfaceColorStylesMap);
+parcelHelpers.export(exports, "isSurfaceColorToken", ()=>isSurfaceColorToken);
+parcelHelpers.export(exports, "metricTextSizeStylesMap", ()=>metricTextSizeStylesMap);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+// eslint-disable-next-line @atlaskit/ui-styling-standard/use-compiled -- Ignored via go/DSP-18766
+var _react = require("@emotion/react");
+var _tokens = require("@atlaskit/tokens");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+var dimensionMap = {
+    '100%': '100%',
+    'size.100': '1rem',
+    'size.200': '1.5rem',
+    'size.300': '2rem',
+    'size.400': '2.5rem',
+    'size.500': '3rem',
+    'size.600': '6rem',
+    'size.1000': '12rem'
+};
+var positiveSpaceMap = {
+    'space.0': "var(--ds-space-0, 0px)",
+    'space.025': "var(--ds-space-025, 2px)",
+    'space.050': "var(--ds-space-050, 4px)",
+    'space.075': "var(--ds-space-075, 6px)",
+    'space.100': "var(--ds-space-100, 8px)",
+    'space.150': "var(--ds-space-150, 12px)",
+    'space.200': "var(--ds-space-200, 16px)",
+    'space.250': "var(--ds-space-250, 20px)",
+    'space.300': "var(--ds-space-300, 24px)",
+    'space.400': "var(--ds-space-400, 32px)",
+    'space.500': "var(--ds-space-500, 40px)",
+    'space.600': "var(--ds-space-600, 48px)",
+    'space.800': "var(--ds-space-800, 64px)",
+    'space.1000': "var(--ds-space-1000, 80px)"
+};
+var negativeSpaceMap = {
+    'space.negative.025': "var(--ds-space-negative-025, -2px)",
+    'space.negative.050': "var(--ds-space-negative-050, -4px)",
+    'space.negative.075': "var(--ds-space-negative-075, -6px)",
+    'space.negative.100': "var(--ds-space-negative-100, -8px)",
+    'space.negative.150': "var(--ds-space-negative-150, -12px)",
+    'space.negative.200': "var(--ds-space-negative-200, -16px)",
+    'space.negative.250': "var(--ds-space-negative-250, -20px)",
+    'space.negative.300': "var(--ds-space-negative-300, -24px)",
+    'space.negative.400': "var(--ds-space-negative-400, -32px)"
+};
+var allSpaceMap = _objectSpread(_objectSpread({}, positiveSpaceMap), negativeSpaceMap);
+var inverseColorMap = {
+    'color.background.neutral.bold': 'color.text.inverse',
+    'color.background.neutral.bold.hovered': 'color.text.inverse',
+    'color.background.neutral.bold.pressed': 'color.text.inverse',
+    'color.background.selected.bold': 'color.text.inverse',
+    'color.background.selected.bold.hovered': 'color.text.inverse',
+    'color.background.selected.bold.pressed': 'color.text.inverse',
+    'color.background.brand.bold': 'color.text.inverse',
+    'color.background.brand.bold.hovered': 'color.text.inverse',
+    'color.background.brand.bold.pressed': 'color.text.inverse',
+    'color.background.brand.boldest': 'color.text.inverse',
+    'color.background.brand.boldest.hovered': 'color.text.inverse',
+    'color.background.brand.boldest.pressed': 'color.text.inverse',
+    'color.background.danger.bold': 'color.text.inverse',
+    'color.background.danger.bold.hovered': 'color.text.inverse',
+    'color.background.danger.bold.pressed': 'color.text.inverse',
+    'color.background.warning.bold': 'color.text.warning.inverse',
+    'color.background.warning.bold.hovered': 'color.text.warning.inverse',
+    'color.background.warning.bold.pressed': 'color.text.warning.inverse',
+    'color.background.success.bold': 'color.text.inverse',
+    'color.background.success.bold.hovered': 'color.text.inverse',
+    'color.background.success.bold.pressed': 'color.text.inverse',
+    'color.background.discovery.bold': 'color.text.inverse',
+    'color.background.discovery.bold.hovered': 'color.text.inverse',
+    'color.background.discovery.bold.pressed': 'color.text.inverse',
+    'color.background.information.bold': 'color.text.inverse',
+    'color.background.information.bold.hovered': 'color.text.inverse',
+    'color.background.information.bold.pressed': 'color.text.inverse'
+};
+var opacityMap = {
+    'opacity.disabled': "var(--ds-opacity-disabled, 0.4)",
+    'opacity.loading': "var(--ds-opacity-loading, 0.2)"
+};
+var shadowMap = {
+    'elevation.shadow.overflow': "var(--ds-shadow-overflow, 0px 0px 8px #091e423f, 0px 0px 1px #091e424f)",
+    'elevation.shadow.overflow.perimeter': "var(--ds-shadow-overflow-perimeter, #091e421f)",
+    'elevation.shadow.overflow.spread': "var(--ds-shadow-overflow-spread, #091e4229)",
+    'elevation.shadow.overlay': "var(--ds-shadow-overlay, 0px 8px 12px #091e423f, 0px 0px 1px #091e424f)",
+    'elevation.shadow.raised': "var(--ds-shadow-raised, 0px 1px 1px #091e423f, 0px 0px 1px #091e4221)"
+};
+var surfaceColorMap = {
+    'elevation.surface': "var(--ds-surface, #FFFFFF)",
+    'elevation.surface.hovered': "var(--ds-surface-hovered, #FAFBFC)",
+    'elevation.surface.pressed': "var(--ds-surface-pressed, #F4F5F7)",
+    'elevation.surface.overlay': "var(--ds-surface-overlay, #FFFFFF)",
+    'elevation.surface.overlay.hovered': "var(--ds-surface-overlay-hovered, #FAFBFC)",
+    'elevation.surface.overlay.pressed': "var(--ds-surface-overlay-pressed, #F4F5F7)",
+    'elevation.surface.raised': "var(--ds-surface-raised, #FFFFFF)",
+    'elevation.surface.raised.hovered': "var(--ds-surface-raised-hovered, #FAFBFC)",
+    'elevation.surface.raised.pressed': "var(--ds-surface-raised-pressed, #F4F5F7)",
+    'elevation.surface.sunken': "var(--ds-surface-sunken, #F4F5F7)"
+};
+var borderColorMap = {
+    'color.border': "var(--ds-border, #091e4221)",
+    'color.border.accent.lime': "var(--ds-border-accent-lime, #6A9A23)",
+    'color.border.accent.red': "var(--ds-border-accent-red, #FF5630)",
+    'color.border.accent.orange': "var(--ds-border-accent-orange, #D94008)",
+    'color.border.accent.yellow': "var(--ds-border-accent-yellow, #FFAB00)",
+    'color.border.accent.green': "var(--ds-border-accent-green, #36B37E)",
+    'color.border.accent.teal': "var(--ds-border-accent-teal, #00B8D9)",
+    'color.border.accent.blue': "var(--ds-border-accent-blue, #0065FF)",
+    'color.border.accent.purple': "var(--ds-border-accent-purple, #6554C0)",
+    'color.border.accent.magenta': "var(--ds-border-accent-magenta, #CD519D)",
+    'color.border.accent.gray': "var(--ds-border-accent-gray, #5E6C84)",
+    'color.border.disabled': "var(--ds-border-disabled, #FAFBFC)",
+    'color.border.focused': "var(--ds-border-focused, #2684FF)",
+    'color.border.input': "var(--ds-border-input, #FAFBFC)",
+    'color.border.inverse': "var(--ds-border-inverse, #FFFFFF)",
+    'color.border.selected': "var(--ds-border-selected, #0052CC)",
+    'color.border.brand': "var(--ds-border-brand, #0052CC)",
+    'color.border.danger': "var(--ds-border-danger, #FF5630)",
+    'color.border.warning': "var(--ds-border-warning, #FFC400)",
+    'color.border.success': "var(--ds-border-success, #00875A)",
+    'color.border.discovery': "var(--ds-border-discovery, #998DD9)",
+    'color.border.information': "var(--ds-border-information, #0065FF)",
+    'color.border.bold': "var(--ds-border-bold, #344563)"
+};
+var backgroundColorMap = {
+    'color.background.accent.lime.subtlest': "var(--ds-background-accent-lime-subtlest, #EEFBDA)",
+    'color.background.accent.lime.subtlest.hovered': "var(--ds-background-accent-lime-subtlest-hovered, #D3F1A7)",
+    'color.background.accent.lime.subtlest.pressed': "var(--ds-background-accent-lime-subtlest-pressed, #B3DF72)",
+    'color.background.accent.lime.subtler': "var(--ds-background-accent-lime-subtler, #D3F1A7)",
+    'color.background.accent.lime.subtler.hovered': "var(--ds-background-accent-lime-subtler-hovered, #B3DF72)",
+    'color.background.accent.lime.subtler.pressed': "var(--ds-background-accent-lime-subtler-pressed, #94C748)",
+    'color.background.accent.lime.subtle': "var(--ds-background-accent-lime-subtle, #94C748)",
+    'color.background.accent.lime.subtle.hovered': "var(--ds-background-accent-lime-subtle-hovered, #B3DF72)",
+    'color.background.accent.lime.subtle.pressed': "var(--ds-background-accent-lime-subtle-pressed, #D3F1A7)",
+    'color.background.accent.lime.bolder': "var(--ds-background-accent-lime-bolder, #5B7F24)",
+    'color.background.accent.lime.bolder.hovered': "var(--ds-background-accent-lime-bolder-hovered, #37471F)",
+    'color.background.accent.lime.bolder.pressed': "var(--ds-background-accent-lime-bolder-pressed, #37471F)",
+    'color.background.accent.red.subtlest': "var(--ds-background-accent-red-subtlest, #FF8F73)",
+    'color.background.accent.red.subtlest.hovered': "var(--ds-background-accent-red-subtlest-hovered, #FF7452)",
+    'color.background.accent.red.subtlest.pressed': "var(--ds-background-accent-red-subtlest-pressed, #FF5630)",
+    'color.background.accent.red.subtler': "var(--ds-background-accent-red-subtler, #FF7452)",
+    'color.background.accent.red.subtler.hovered': "var(--ds-background-accent-red-subtler-hovered, #FF5630)",
+    'color.background.accent.red.subtler.pressed': "var(--ds-background-accent-red-subtler-pressed, #DE350B)",
+    'color.background.accent.red.subtle': "var(--ds-background-accent-red-subtle, #DE350B)",
+    'color.background.accent.red.subtle.hovered': "var(--ds-background-accent-red-subtle-hovered, #FF5630)",
+    'color.background.accent.red.subtle.pressed': "var(--ds-background-accent-red-subtle-pressed, #FF7452)",
+    'color.background.accent.red.bolder': "var(--ds-background-accent-red-bolder, #DE350B)",
+    'color.background.accent.red.bolder.hovered': "var(--ds-background-accent-red-bolder-hovered, #FF5630)",
+    'color.background.accent.red.bolder.pressed': "var(--ds-background-accent-red-bolder-pressed, #FF7452)",
+    'color.background.accent.orange.subtlest': "var(--ds-background-accent-orange-subtlest, #F18D13)",
+    'color.background.accent.orange.subtlest.hovered': "var(--ds-background-accent-orange-subtlest-hovered, #FEC57B)",
+    'color.background.accent.orange.subtlest.pressed': "var(--ds-background-accent-orange-subtlest-pressed, #FFE2BD)",
+    'color.background.accent.orange.subtler': "var(--ds-background-accent-orange-subtler, #B65C02)",
+    'color.background.accent.orange.subtler.hovered': "var(--ds-background-accent-orange-subtler-hovered, #F18D13)",
+    'color.background.accent.orange.subtler.pressed': "var(--ds-background-accent-orange-subtler-pressed, #FEC57B)",
+    'color.background.accent.orange.subtle': "var(--ds-background-accent-orange-subtle, #5F3811)",
+    'color.background.accent.orange.subtle.hovered': "var(--ds-background-accent-orange-subtle-hovered, #974F0C)",
+    'color.background.accent.orange.subtle.pressed': "var(--ds-background-accent-orange-subtle-pressed, #B65C02)",
+    'color.background.accent.orange.bolder': "var(--ds-background-accent-orange-bolder, #43290F)",
+    'color.background.accent.orange.bolder.hovered': "var(--ds-background-accent-orange-bolder-hovered, #5F3811)",
+    'color.background.accent.orange.bolder.pressed': "var(--ds-background-accent-orange-bolder-pressed, #974F0C)",
+    'color.background.accent.yellow.subtlest': "var(--ds-background-accent-yellow-subtlest, #FFE380)",
+    'color.background.accent.yellow.subtlest.hovered': "var(--ds-background-accent-yellow-subtlest-hovered, #FFC400)",
+    'color.background.accent.yellow.subtlest.pressed': "var(--ds-background-accent-yellow-subtlest-pressed, #FFAB00)",
+    'color.background.accent.yellow.subtler': "var(--ds-background-accent-yellow-subtler, #FFC400)",
+    'color.background.accent.yellow.subtler.hovered': "var(--ds-background-accent-yellow-subtler-hovered, #FFAB00)",
+    'color.background.accent.yellow.subtler.pressed': "var(--ds-background-accent-yellow-subtler-pressed, #FF991F)",
+    'color.background.accent.yellow.subtle': "var(--ds-background-accent-yellow-subtle, #FF991F)",
+    'color.background.accent.yellow.subtle.hovered': "var(--ds-background-accent-yellow-subtle-hovered, #FFAB00)",
+    'color.background.accent.yellow.subtle.pressed': "var(--ds-background-accent-yellow-subtle-pressed, #FFC400)",
+    'color.background.accent.yellow.bolder': "var(--ds-background-accent-yellow-bolder, #FF991F)",
+    'color.background.accent.yellow.bolder.hovered': "var(--ds-background-accent-yellow-bolder-hovered, #FFAB00)",
+    'color.background.accent.yellow.bolder.pressed': "var(--ds-background-accent-yellow-bolder-pressed, #FFC400)",
+    'color.background.accent.green.subtlest': "var(--ds-background-accent-green-subtlest, #79F2C0)",
+    'color.background.accent.green.subtlest.hovered': "var(--ds-background-accent-green-subtlest-hovered, #57D9A3)",
+    'color.background.accent.green.subtlest.pressed': "var(--ds-background-accent-green-subtlest-pressed, #36B37E)",
+    'color.background.accent.green.subtler': "var(--ds-background-accent-green-subtler, #57D9A3)",
+    'color.background.accent.green.subtler.hovered': "var(--ds-background-accent-green-subtler-hovered, #36B37E)",
+    'color.background.accent.green.subtler.pressed': "var(--ds-background-accent-green-subtler-pressed, #00875A)",
+    'color.background.accent.green.subtle': "var(--ds-background-accent-green-subtle, #00875A)",
+    'color.background.accent.green.subtle.hovered': "var(--ds-background-accent-green-subtle-hovered, #36B37E)",
+    'color.background.accent.green.subtle.pressed': "var(--ds-background-accent-green-subtle-pressed, #57D9A3)",
+    'color.background.accent.green.bolder': "var(--ds-background-accent-green-bolder, #00875A)",
+    'color.background.accent.green.bolder.hovered': "var(--ds-background-accent-green-bolder-hovered, #36B37E)",
+    'color.background.accent.green.bolder.pressed': "var(--ds-background-accent-green-bolder-pressed, #57D9A3)",
+    'color.background.accent.teal.subtlest': "var(--ds-background-accent-teal-subtlest, #79E2F2)",
+    'color.background.accent.teal.subtlest.hovered': "var(--ds-background-accent-teal-subtlest-hovered, #00C7E6)",
+    'color.background.accent.teal.subtlest.pressed': "var(--ds-background-accent-teal-subtlest-pressed, #00B8D9)",
+    'color.background.accent.teal.subtler': "var(--ds-background-accent-teal-subtler, #00C7E6)",
+    'color.background.accent.teal.subtler.hovered': "var(--ds-background-accent-teal-subtler-hovered, #00B8D9)",
+    'color.background.accent.teal.subtler.pressed': "var(--ds-background-accent-teal-subtler-pressed, #00A3BF)",
+    'color.background.accent.teal.subtle': "var(--ds-background-accent-teal-subtle, #00A3BF)",
+    'color.background.accent.teal.subtle.hovered': "var(--ds-background-accent-teal-subtle-hovered, #00B8D9)",
+    'color.background.accent.teal.subtle.pressed': "var(--ds-background-accent-teal-subtle-pressed, #00C7E6)",
+    'color.background.accent.teal.bolder': "var(--ds-background-accent-teal-bolder, #00A3BF)",
+    'color.background.accent.teal.bolder.hovered': "var(--ds-background-accent-teal-bolder-hovered, #00B8D9)",
+    'color.background.accent.teal.bolder.pressed': "var(--ds-background-accent-teal-bolder-pressed, #00C7E6)",
+    'color.background.accent.blue.subtlest': "var(--ds-background-accent-blue-subtlest, #4C9AFF)",
+    'color.background.accent.blue.subtlest.hovered': "var(--ds-background-accent-blue-subtlest-hovered, #2684FF)",
+    'color.background.accent.blue.subtlest.pressed': "var(--ds-background-accent-blue-subtlest-pressed, #0065FF)",
+    'color.background.accent.blue.subtler': "var(--ds-background-accent-blue-subtler, #2684FF)",
+    'color.background.accent.blue.subtler.hovered': "var(--ds-background-accent-blue-subtler-hovered, #0065FF)",
+    'color.background.accent.blue.subtler.pressed': "var(--ds-background-accent-blue-subtler-pressed, #0052CC)",
+    'color.background.accent.blue.subtle': "var(--ds-background-accent-blue-subtle, #0052CC)",
+    'color.background.accent.blue.subtle.hovered': "var(--ds-background-accent-blue-subtle-hovered, #0065FF)",
+    'color.background.accent.blue.subtle.pressed': "var(--ds-background-accent-blue-subtle-pressed, #2684FF)",
+    'color.background.accent.blue.bolder': "var(--ds-background-accent-blue-bolder, #0052CC)",
+    'color.background.accent.blue.bolder.hovered': "var(--ds-background-accent-blue-bolder-hovered, #0065FF)",
+    'color.background.accent.blue.bolder.pressed': "var(--ds-background-accent-blue-bolder-pressed, #2684FF)",
+    'color.background.accent.purple.subtlest': "var(--ds-background-accent-purple-subtlest, #998DD9)",
+    'color.background.accent.purple.subtlest.hovered': "var(--ds-background-accent-purple-subtlest-hovered, #8777D9)",
+    'color.background.accent.purple.subtlest.pressed': "var(--ds-background-accent-purple-subtlest-pressed, #6554C0)",
+    'color.background.accent.purple.subtler': "var(--ds-background-accent-purple-subtler, #8777D9)",
+    'color.background.accent.purple.subtler.hovered': "var(--ds-background-accent-purple-subtler-hovered, #6554C0)",
+    'color.background.accent.purple.subtler.pressed': "var(--ds-background-accent-purple-subtler-pressed, #5243AA)",
+    'color.background.accent.purple.subtle': "var(--ds-background-accent-purple-subtle, #5243AA)",
+    'color.background.accent.purple.subtle.hovered': "var(--ds-background-accent-purple-subtle-hovered, #6554C0)",
+    'color.background.accent.purple.subtle.pressed': "var(--ds-background-accent-purple-subtle-pressed, #8777D9)",
+    'color.background.accent.purple.bolder': "var(--ds-background-accent-purple-bolder, #5243AA)",
+    'color.background.accent.purple.bolder.hovered': "var(--ds-background-accent-purple-bolder-hovered, #6554C0)",
+    'color.background.accent.purple.bolder.pressed': "var(--ds-background-accent-purple-bolder-pressed, #8777D9)",
+    'color.background.accent.magenta.subtlest': "var(--ds-background-accent-magenta-subtlest, #FFECF8)",
+    'color.background.accent.magenta.subtlest.hovered': "var(--ds-background-accent-magenta-subtlest-hovered, #FDD0EC)",
+    'color.background.accent.magenta.subtlest.pressed': "var(--ds-background-accent-magenta-subtlest-pressed, #F797D2)",
+    'color.background.accent.magenta.subtler': "var(--ds-background-accent-magenta-subtler, #FDD0EC)",
+    'color.background.accent.magenta.subtler.hovered': "var(--ds-background-accent-magenta-subtler-hovered, #F797D2)",
+    'color.background.accent.magenta.subtler.pressed': "var(--ds-background-accent-magenta-subtler-pressed, #E774BB)",
+    'color.background.accent.magenta.subtle': "var(--ds-background-accent-magenta-subtle, #E774BB)",
+    'color.background.accent.magenta.subtle.hovered': "var(--ds-background-accent-magenta-subtle-hovered, #F797D2)",
+    'color.background.accent.magenta.subtle.pressed': "var(--ds-background-accent-magenta-subtle-pressed, #FDD0EC)",
+    'color.background.accent.magenta.bolder': "var(--ds-background-accent-magenta-bolder, #AE4787)",
+    'color.background.accent.magenta.bolder.hovered': "var(--ds-background-accent-magenta-bolder-hovered, #943D73)",
+    'color.background.accent.magenta.bolder.pressed': "var(--ds-background-accent-magenta-bolder-pressed, #50253F)",
+    'color.background.accent.gray.subtlest': "var(--ds-background-accent-gray-subtlest, #6B778C)",
+    'color.background.accent.gray.subtlest.hovered': "var(--ds-background-accent-gray-subtlest-hovered, #5E6C84)",
+    'color.background.accent.gray.subtlest.pressed': "var(--ds-background-accent-gray-subtlest-pressed, #505F79)",
+    'color.background.accent.gray.subtler': "var(--ds-background-accent-gray-subtler, #5E6C84)",
+    'color.background.accent.gray.subtler.hovered': "var(--ds-background-accent-gray-subtler-hovered, #505F79)",
+    'color.background.accent.gray.subtler.pressed': "var(--ds-background-accent-gray-subtler-pressed, #42526E)",
+    'color.background.accent.gray.subtle': "var(--ds-background-accent-gray-subtle, #505F79)",
+    'color.background.accent.gray.subtle.hovered': "var(--ds-background-accent-gray-subtle-hovered, #5E6C84)",
+    'color.background.accent.gray.subtle.pressed': "var(--ds-background-accent-gray-subtle-pressed, #6B778C)",
+    'color.background.accent.gray.bolder': "var(--ds-background-accent-gray-bolder, #42526E)",
+    'color.background.accent.gray.bolder.hovered': "var(--ds-background-accent-gray-bolder-hovered, #344563)",
+    'color.background.accent.gray.bolder.pressed': "var(--ds-background-accent-gray-bolder-pressed, #253858)",
+    'color.background.disabled': "var(--ds-background-disabled, #091e4289)",
+    'color.background.input': "var(--ds-background-input, #FAFBFC)",
+    'color.background.input.hovered': "var(--ds-background-input-hovered, #EBECF0)",
+    'color.background.input.pressed': "var(--ds-background-input-pressed, #FFFFFF)",
+    'color.background.inverse.subtle': "var(--ds-background-inverse-subtle, #00000029)",
+    'color.background.inverse.subtle.hovered': "var(--ds-background-inverse-subtle-hovered, #0000003D)",
+    'color.background.inverse.subtle.pressed': "var(--ds-background-inverse-subtle-pressed, #00000052)",
+    'color.background.neutral': "var(--ds-background-neutral, #DFE1E6)",
+    'color.background.neutral.hovered': "var(--ds-background-neutral-hovered, #091e4214)",
+    'color.background.neutral.pressed': "var(--ds-background-neutral-pressed, #B3D4FF)",
+    'color.background.neutral.subtle': "var(--ds-background-neutral-subtle, transparent)",
+    'color.background.neutral.subtle.hovered': "var(--ds-background-neutral-subtle-hovered, #091e4214)",
+    'color.background.neutral.subtle.pressed': "var(--ds-background-neutral-subtle-pressed, #B3D4FF)",
+    'color.background.neutral.bold': "var(--ds-background-neutral-bold, #42526E)",
+    'color.background.neutral.bold.hovered': "var(--ds-background-neutral-bold-hovered, #505F79)",
+    'color.background.neutral.bold.pressed': "var(--ds-background-neutral-bold-pressed, #344563)",
+    'color.background.selected': "var(--ds-background-selected, #DEEBFF)",
+    'color.background.selected.hovered': "var(--ds-background-selected-hovered, #B3D4FF)",
+    'color.background.selected.pressed': "var(--ds-background-selected-pressed, #4C9AFF)",
+    'color.background.selected.bold': "var(--ds-background-selected-bold, #0052CC)",
+    'color.background.selected.bold.hovered': "var(--ds-background-selected-bold-hovered, #2684FF)",
+    'color.background.selected.bold.pressed': "var(--ds-background-selected-bold-pressed, #0052CC)",
+    'color.background.brand.subtlest': "var(--ds-background-brand-subtlest, #B3D4FF)",
+    'color.background.brand.subtlest.hovered': "var(--ds-background-brand-subtlest-hovered, #DEEBFF)",
+    'color.background.brand.subtlest.pressed': "var(--ds-background-brand-subtlest-pressed, #4C9AFF)",
+    'color.background.brand.bold': "var(--ds-background-brand-bold, #0052CC)",
+    'color.background.brand.bold.hovered': "var(--ds-background-brand-bold-hovered, #0065FF)",
+    'color.background.brand.bold.pressed': "var(--ds-background-brand-bold-pressed, #0747A6)",
+    'color.background.brand.boldest': "var(--ds-background-brand-boldest, #0747A6)",
+    'color.background.brand.boldest.hovered': "var(--ds-background-brand-boldest-hovered, #0052CC)",
+    'color.background.brand.boldest.pressed': "var(--ds-background-brand-boldest-pressed, #0747A6)",
+    'color.background.danger': "var(--ds-background-danger, #FFEBE6)",
+    'color.background.danger.hovered': "var(--ds-background-danger-hovered, #FFBDAD)",
+    'color.background.danger.pressed': "var(--ds-background-danger-pressed, #FF8F73)",
+    'color.background.danger.bold': "var(--ds-background-danger-bold, #DE350B)",
+    'color.background.danger.bold.hovered': "var(--ds-background-danger-bold-hovered, #FF5630)",
+    'color.background.danger.bold.pressed': "var(--ds-background-danger-bold-pressed, #BF2600)",
+    'color.background.warning': "var(--ds-background-warning, #FFFAE6)",
+    'color.background.warning.hovered': "var(--ds-background-warning-hovered, #FFF0B3)",
+    'color.background.warning.pressed': "var(--ds-background-warning-pressed, #FFE380)",
+    'color.background.warning.bold': "var(--ds-background-warning-bold, #FFAB00)",
+    'color.background.warning.bold.hovered': "var(--ds-background-warning-bold-hovered, #FFC400)",
+    'color.background.warning.bold.pressed': "var(--ds-background-warning-bold-pressed, #FF991F)",
+    'color.background.success': "var(--ds-background-success, #E3FCEF)",
+    'color.background.success.hovered': "var(--ds-background-success-hovered, #ABF5D1)",
+    'color.background.success.pressed': "var(--ds-background-success-pressed, #79F2C0)",
+    'color.background.success.bold': "var(--ds-background-success-bold, #00875A)",
+    'color.background.success.bold.hovered': "var(--ds-background-success-bold-hovered, #57D9A3)",
+    'color.background.success.bold.pressed': "var(--ds-background-success-bold-pressed, #00875A)",
+    'color.background.discovery': "var(--ds-background-discovery, #EAE6FF)",
+    'color.background.discovery.hovered': "var(--ds-background-discovery-hovered, #C0B6F2)",
+    'color.background.discovery.pressed': "var(--ds-background-discovery-pressed, #998DD9)",
+    'color.background.discovery.bold': "var(--ds-background-discovery-bold, #5243AA)",
+    'color.background.discovery.bold.hovered': "var(--ds-background-discovery-bold-hovered, #8777D9)",
+    'color.background.discovery.bold.pressed': "var(--ds-background-discovery-bold-pressed, #5243AA)",
+    'color.background.information': "var(--ds-background-information, #DEEBFF)",
+    'color.background.information.hovered': "var(--ds-background-information-hovered, #B3D4FF)",
+    'color.background.information.pressed': "var(--ds-background-information-pressed, #4C9AFF)",
+    'color.background.information.bold': "var(--ds-background-information-bold, #0052CC)",
+    'color.background.information.bold.hovered': "var(--ds-background-information-bold-hovered, #2684FF)",
+    'color.background.information.bold.pressed': "var(--ds-background-information-bold-pressed, #0052CC)",
+    'color.blanket': "var(--ds-blanket, #091e4289)",
+    'color.blanket.selected': "var(--ds-blanket-selected, #388BFF14)",
+    'color.blanket.danger': "var(--ds-blanket-danger, #EF5C4814)",
+    'color.skeleton': "var(--ds-skeleton, #F4F5F7)",
+    'color.skeleton.subtle': "var(--ds-skeleton-subtle, #091e420a)",
+    'elevation.surface': "var(--ds-surface, #FFFFFF)",
+    'elevation.surface.hovered': "var(--ds-surface-hovered, #FAFBFC)",
+    'elevation.surface.pressed': "var(--ds-surface-pressed, #F4F5F7)",
+    'elevation.surface.overlay': "var(--ds-surface-overlay, #FFFFFF)",
+    'elevation.surface.overlay.hovered': "var(--ds-surface-overlay-hovered, #FAFBFC)",
+    'elevation.surface.overlay.pressed': "var(--ds-surface-overlay-pressed, #F4F5F7)",
+    'elevation.surface.raised': "var(--ds-surface-raised, #FFFFFF)",
+    'elevation.surface.raised.hovered': "var(--ds-surface-raised-hovered, #FAFBFC)",
+    'elevation.surface.raised.pressed': "var(--ds-surface-raised-pressed, #F4F5F7)",
+    'elevation.surface.sunken': "var(--ds-surface-sunken, #F4F5F7)",
+    'utility.elevation.surface.current': "var(--ds-elevation-surface-current, #FFFFFF)"
+};
+var textColorMap = {
+    'color.text': "var(--ds-text, #172B4D)",
+    'color.text.accent.lime': "var(--ds-text-accent-lime, #4C6B1F)",
+    'color.text.accent.lime.bolder': "var(--ds-text-accent-lime-bolder, #37471F)",
+    'color.text.accent.red': "var(--ds-text-accent-red, #DE350B)",
+    'color.text.accent.red.bolder': "var(--ds-text-accent-red-bolder, #BF2600)",
+    'color.text.accent.orange': "var(--ds-text-accent-orange, #F18D13)",
+    'color.text.accent.orange.bolder': "var(--ds-text-accent-orange-bolder, #B65C02)",
+    'color.text.accent.yellow': "var(--ds-text-accent-yellow, #FF991F)",
+    'color.text.accent.yellow.bolder': "var(--ds-text-accent-yellow-bolder, #FF8B00)",
+    'color.text.accent.green': "var(--ds-text-accent-green, #00875A)",
+    'color.text.accent.green.bolder': "var(--ds-text-accent-green-bolder, #006644)",
+    'color.text.accent.teal': "var(--ds-text-accent-teal, #00A3BF)",
+    'color.text.accent.teal.bolder': "var(--ds-text-accent-teal-bolder, #008DA6)",
+    'color.text.accent.blue': "var(--ds-text-accent-blue, #0052CC)",
+    'color.text.accent.blue.bolder': "var(--ds-text-accent-blue-bolder, #0747A6)",
+    'color.text.accent.purple': "var(--ds-text-accent-purple, #5243AA)",
+    'color.text.accent.purple.bolder': "var(--ds-text-accent-purple-bolder, #403294)",
+    'color.text.accent.magenta': "var(--ds-text-accent-magenta, #E774BB)",
+    'color.text.accent.magenta.bolder': "var(--ds-text-accent-magenta-bolder, #DA62AC)",
+    'color.text.accent.gray': "var(--ds-text-accent-gray, #505F79)",
+    'color.text.accent.gray.bolder': "var(--ds-text-accent-gray-bolder, #172B4D)",
+    'color.text.disabled': "var(--ds-text-disabled, #A5ADBA)",
+    'color.text.inverse': "var(--ds-text-inverse, #FFFFFF)",
+    'color.text.selected': "var(--ds-text-selected, #0052CC)",
+    'color.text.brand': "var(--ds-text-brand, #0065FF)",
+    'color.text.danger': "var(--ds-text-danger, #DE350B)",
+    'color.text.warning': "var(--ds-text-warning, #974F0C)",
+    'color.text.warning.inverse': "var(--ds-text-warning-inverse, #172B4D)",
+    'color.text.success': "var(--ds-text-success, #006644)",
+    'color.text.discovery': "var(--ds-text-discovery, #403294)",
+    'color.text.information': "var(--ds-text-information, #0052CC)",
+    'color.text.subtlest': "var(--ds-text-subtlest, #7A869A)",
+    'color.text.subtle': "var(--ds-text-subtle, #42526E)",
+    'color.link': "var(--ds-link, #0052CC)",
+    'color.link.pressed': "var(--ds-link-pressed, #0747A6)",
+    'color.link.visited': "var(--ds-link-visited, #403294)",
+    'color.link.visited.pressed': "var(--ds-link-visited-pressed, #403294)"
+};
+var fillMap = {
+    'color.icon': "var(--ds-icon, #505F79)",
+    'color.icon.accent.lime': "var(--ds-icon-accent-lime, #6A9A23)",
+    'color.icon.accent.red': "var(--ds-icon-accent-red, #FF5630)",
+    'color.icon.accent.orange': "var(--ds-icon-accent-orange, #D94008)",
+    'color.icon.accent.yellow': "var(--ds-icon-accent-yellow, #FFAB00)",
+    'color.icon.accent.green': "var(--ds-icon-accent-green, #36B37E)",
+    'color.icon.accent.teal': "var(--ds-icon-accent-teal, #00B8D9)",
+    'color.icon.accent.blue': "var(--ds-icon-accent-blue, #0065FF)",
+    'color.icon.accent.purple': "var(--ds-icon-accent-purple, #6554C0)",
+    'color.icon.accent.magenta': "var(--ds-icon-accent-magenta, #CD519D)",
+    'color.icon.accent.gray': "var(--ds-icon-accent-gray, #5E6C84)",
+    'color.icon.disabled': "var(--ds-icon-disabled, #8993A4)",
+    'color.icon.inverse': "var(--ds-icon-inverse, #FFFFFF)",
+    'color.icon.selected': "var(--ds-icon-selected, #0052CC)",
+    'color.icon.brand': "var(--ds-icon-brand, #0065FF)",
+    'color.icon.danger': "var(--ds-icon-danger, #DE350B)",
+    'color.icon.warning': "var(--ds-icon-warning, #FFC400)",
+    'color.icon.warning.inverse': "var(--ds-icon-warning-inverse, #253858)",
+    'color.icon.success': "var(--ds-icon-success, #00875A)",
+    'color.icon.discovery': "var(--ds-icon-discovery, #8777D9)",
+    'color.icon.information': "var(--ds-icon-information, #0747A6)",
+    'color.icon.subtlest': "var(--ds-icon-subtlest, #6B778C)",
+    'color.icon.subtle': "var(--ds-icon-subtle, #6B778C)"
+};
+var layerMap = {
+    '1': 1,
+    card: 100,
+    navigation: 200,
+    dialog: 300,
+    layer: 400,
+    blanket: 500,
+    modal: 510,
+    flag: 600,
+    spotlight: 700,
+    tooltip: 800
+};
+var borderWidthMap = {
+    'border.width': "var(--ds-border-width, 1px)",
+    'border.width.0': "var(--ds-border-width-0, 0px)",
+    'border.width.indicator': "var(--ds-border-width-indicator, 3px)",
+    'border.width.outline': "var(--ds-border-width-outline, 2px)"
+};
+var borderRadiusMap = {
+    'border.radius.050': "var(--ds-border-radius-050, 2px)",
+    'border.radius': "var(--ds-border-radius, 3px)",
+    'border.radius.100': "var(--ds-border-radius-100, 3px)",
+    'border.radius.200': "var(--ds-border-radius-200, 8px)",
+    'border.radius.300': "var(--ds-border-radius-300, 12px)",
+    'border.radius.400': "var(--ds-border-radius-400, 16px)",
+    'border.radius.circle': "var(--ds-border-radius-circle, 32032px)"
+};
+var fontMap = {
+    'font.body': "var(--ds-font-body, normal 400 14px/20px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.body.UNSAFE_small': "var(--ds-font-body-UNSAFE_small, normal 400 12px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.body.large': "var(--ds-font-body-large, normal 400 16px/24px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.body.small': "var(--ds-font-body-small, normal 400 11px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.code': "var(--ds-font-code, normal 400 0.875em/1 ui-monospace, Menlo, \"Segoe UI Mono\", \"Ubuntu Mono\", monospace)",
+    'font.heading.large': "var(--ds-font-heading-large, normal 500 24px/28px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.medium': "var(--ds-font-heading-medium, normal 500 20px/24px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.small': "var(--ds-font-heading-small, normal 600 16px/20px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.xlarge': "var(--ds-font-heading-xlarge, normal 600 29px/32px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.xsmall': "var(--ds-font-heading-xsmall, normal 600 14px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.xxlarge': "var(--ds-font-heading-xxlarge, normal 500 35px/40px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.heading.xxsmall': "var(--ds-font-heading-xxsmall, normal 600 12px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.metric.large': "var(--ds-font-metric-large, normal 653 28px/32px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.metric.medium': "var(--ds-font-metric-medium, normal 653 24px/28px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.metric.small': "var(--ds-font-metric-small, normal 653 16px/20px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)"
+};
+var fontWeightMap = {
+    'font.weight.bold': "var(--ds-font-weight-bold, 700)",
+    'font.weight.medium': "var(--ds-font-weight-medium, 500)",
+    'font.weight.regular': "var(--ds-font-weight-regular, 400)",
+    'font.weight.semibold': "var(--ds-font-weight-semibold, 600)"
+};
+var fontFamilyMap = {
+    'font.family.body': "var(--ds-font-family-body, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.family.brand.body': "var(--ds-font-family-brand-body, \"Charlie Text\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.family.brand.heading': "var(--ds-font-family-brand-heading, \"Charlie Display\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    'font.family.code': "var(--ds-font-family-code, ui-monospace, Menlo, \"Segoe UI Mono\", \"Ubuntu Mono\", monospace)",
+    'font.family.heading': "var(--ds-font-family-heading, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)"
+};
+var textSizeMap = {
+    medium: "var(--ds-font-body, normal 400 14px/20px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    UNSAFE_small: "var(--ds-font-body-UNSAFE_small, normal 400 12px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    large: "var(--ds-font-body-large, normal 400 16px/24px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    small: "var(--ds-font-body-small, normal 400 11px/16px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)"
+};
+var textWeightMap = {
+    bold: "var(--ds-font-weight-bold, 700)",
+    medium: "var(--ds-font-weight-medium, 500)",
+    regular: "var(--ds-font-weight-regular, 400)",
+    semibold: "var(--ds-font-weight-semibold, 600)"
+};
+var metricTextSizeMap = {
+    large: "var(--ds-font-metric-large, normal 653 28px/32px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    medium: "var(--ds-font-metric-medium, normal 653 24px/28px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)",
+    small: "var(--ds-font-metric-small, normal 653 16px/20px ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif)"
+};
+/**
+ * @codegenEnd
+ */ // Margin needs some bespoke types: https://atlassian.slack.com/archives/CKRHB23K8/p1712623192772909
+// Generate maps for Box props. backgroundColor, padding, etc
+var spacingProperties = [
+    // Used by Box
+    'padding',
+    'paddingBlock',
+    'paddingBlockStart',
+    'paddingBlockEnd',
+    'paddingInline',
+    'paddingInlineStart',
+    'paddingInlineEnd',
+    // Used by Inline and Stack
+    'gap',
+    'rowGap',
+    'columnGap'
+];
+var getSerializedStylesMap = function getSerializedStylesMap(cssProperty, tokenMap) {
+    return Object.keys(tokenMap).reduce(function(emotionSpacingMap, token) {
+        // eslint-disable-next-line @repo/internal/styles/no-exported-styles
+        emotionSpacingMap[token] = (0, _react.css)((0, _definePropertyDefault.default)({}, cssProperty, tokenMap[token]));
+        return emotionSpacingMap;
+    }, {});
+};
+var paddingStylesMap = spacingProperties.reduce(function(styleMap, spacingProperty) {
+    styleMap[spacingProperty] = getSerializedStylesMap(spacingProperty, positiveSpaceMap);
+    return styleMap;
+}, {});
+var spaceStylesMap = spacingProperties.reduce(function(styleMap, spacingProperty) {
+    styleMap[spacingProperty] = getSerializedStylesMap(spacingProperty, positiveSpaceMap);
+    return styleMap;
+}, {});
+var backgroundColorStylesMap = getSerializedStylesMap('backgroundColor', backgroundColorMap);
+var textColorStylesMap = getSerializedStylesMap('color', textColorMap);
+var fontWeightStylesMap = getSerializedStylesMap('fontWeight', fontWeightMap);
+var fontFamilyStylesMap = getSerializedStylesMap('fontFamily', fontFamilyMap);
+var fontStylesMap = getSerializedStylesMap('font', fontMap);
+var textSizeStylesMap = getSerializedStylesMap('font', textSizeMap);
+var textWeightStylesMap = getSerializedStylesMap('fontWeight', textWeightMap);
+var surfaceColorStylesMap = getSerializedStylesMap((0, _tokens.CURRENT_SURFACE_CSS_VAR), surfaceColorMap);
+var isSurfaceColorToken = function isSurfaceColorToken(color) {
+    return surfaceColorMap[color] !== undefined;
+};
+var metricTextSizeStylesMap = getSerializedStylesMap('font', metricTextSizeMap);
+
+},{"@babel/runtime/helpers/defineProperty":"azbUC","@emotion/react":"cLTfV","@atlaskit/tokens":"cmVFI","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cmVFI":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "themeConfig", ()=>(0, _themeConfigDefault.default));
@@ -58609,7 +67101,7 @@ var _getGlobalThemeDefault = parcelHelpers.interopDefault(_getGlobalTheme);
 var _themeStateTransformer = require("./theme-state-transformer");
 var _constants = require("./constants");
 
-},{"./theme-config":false,"./get-token":false,"./get-token-value":false,"./set-global-theme":false,"./enable-global-theme":false,"./get-theme-styles":false,"./get-theme-html-attrs":false,"./get-ssr-auto-script":false,"./use-theme-observer":"1rR7K","./theme-mutation-observer":false,"./get-global-theme":false,"./theme-state-transformer":false,"./constants":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"drTEg":[function(require,module,exports,__globalThis) {
+},{"./theme-config":false,"./get-token":false,"./get-token-value":false,"./set-global-theme":false,"./enable-global-theme":false,"./get-theme-styles":false,"./get-theme-html-attrs":false,"./get-ssr-auto-script":false,"./use-theme-observer":"1rR7K","./theme-mutation-observer":false,"./get-global-theme":false,"./theme-state-transformer":false,"./constants":"26Wz9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"drTEg":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "themeColorModes", ()=>themeColorModes);
@@ -59065,7 +67557,1575 @@ var _getGlobalThemeDefault = parcelHelpers.interopDefault(_getGlobalTheme);
 (0, _definePropertyDefault.default)(ThemeMutationObserver, "observer", null);
 (0, _definePropertyDefault.default)(ThemeMutationObserver, "callbacks", new Set());
 
-},{"@babel/runtime/helpers/classCallCheck":"fbbZA","@babel/runtime/helpers/createClass":"lr6gv","@babel/runtime/helpers/defineProperty":"azbUC","./constants":"26Wz9","./get-global-theme":"8ikH2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iGGg9":[function(require,module,exports,__globalThis) {
+},{"@babel/runtime/helpers/classCallCheck":"fbbZA","@babel/runtime/helpers/createClass":"lr6gv","@babel/runtime/helpers/defineProperty":"azbUC","./constants":"26Wz9","./get-global-theme":"8ikH2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bLu4Y":[function(require,module,exports,__globalThis) {
+/**
+ * @jsxRuntime classic
+ * @jsx jsx
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+// eslint-disable-next-line @atlaskit/ui-styling-standard/use-compiled -- Ignored via go/DSP-18766
+var _react1 = require("@emotion/react");
+var _styleMapsPartial = require("../xcss/style-maps.partial");
+var _xcss = require("../xcss/xcss");
+var justifyContentMap = {
+    start: (0, _react1.css)({
+        justifyContent: 'start'
+    }),
+    center: (0, _react1.css)({
+        justifyContent: 'center'
+    }),
+    end: (0, _react1.css)({
+        justifyContent: 'end'
+    }),
+    'space-between': (0, _react1.css)({
+        justifyContent: 'space-between'
+    }),
+    'space-around': (0, _react1.css)({
+        justifyContent: 'space-around'
+    }),
+    'space-evenly': (0, _react1.css)({
+        justifyContent: 'space-evenly'
+    }),
+    stretch: (0, _react1.css)({
+        justifyContent: 'stretch'
+    })
+};
+var flexDirectionMap = {
+    column: (0, _react1.css)({
+        flexDirection: 'column'
+    }),
+    row: (0, _react1.css)({
+        flexDirection: 'row'
+    })
+};
+var flexWrapMap = {
+    wrap: (0, _react1.css)({
+        flexWrap: 'wrap'
+    }),
+    nowrap: (0, _react1.css)({
+        flexWrap: 'nowrap'
+    })
+};
+var alignItemsMap = {
+    start: (0, _react1.css)({
+        alignItems: 'start'
+    }),
+    center: (0, _react1.css)({
+        alignItems: 'center'
+    }),
+    baseline: (0, _react1.css)({
+        alignItems: 'baseline'
+    }),
+    end: (0, _react1.css)({
+        alignItems: 'end'
+    }),
+    stretch: (0, _react1.css)({
+        alignItems: 'stretch'
+    })
+};
+var baseStyles = (0, _react1.css)({
+    display: 'flex',
+    boxSizing: 'border-box'
+});
+/**
+ * __Flex__
+ *
+ * `Flex` is a primitive component that implements the CSS Flexbox API.
+ *
+ * - [Examples](https://atlassian.design/components/primitives/flex/examples)
+ * - [Code](https://atlassian.design/components/primitives/flex/code)
+ *
+ * @example
+ * ```tsx
+ * import { Flex, Box } from '@atlaskit/primitives'
+ *
+ * const Component = () => (
+ *   <Flex direction="column">
+ *     <Box padding="space.100" backgroundColor="neutral"></Box>
+ *     <Box padding="space.100" backgroundColor="neutral"></Box>
+ *   </Flex>
+ * )
+ * ```
+ */ var Flex = /*#__PURE__*/ (0, _react.memo)(/*#__PURE__*/ (0, _react.forwardRef)(function(_ref, ref) {
+    var _ref$as = _ref.as, Component = _ref$as === void 0 ? 'div' : _ref$as, role = _ref.role, alignItems = _ref.alignItems, justifyContent = _ref.justifyContent, gap = _ref.gap, columnGap = _ref.columnGap, rowGap = _ref.rowGap, children = _ref.children, testId = _ref.testId, direction = _ref.direction, wrap = _ref.wrap, xcss = _ref.xcss;
+    var resolvedStyles = (0, _xcss.parseXcss)(xcss);
+    return (0, _react1.jsx)(Component, {
+        role: role,
+        className: resolvedStyles.static,
+        css: [
+            baseStyles,
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            gap && (0, _styleMapsPartial.spaceStylesMap).gap[gap],
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            columnGap && (0, _styleMapsPartial.spaceStylesMap).columnGap[columnGap],
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            rowGap && (0, _styleMapsPartial.spaceStylesMap).rowGap[rowGap],
+            alignItems && alignItemsMap[alignItems],
+            direction && flexDirectionMap[direction],
+            justifyContent && justifyContentMap[justifyContent],
+            wrap && flexWrapMap[wrap],
+            resolvedStyles.emotion
+        ],
+        "data-testid": testId,
+        ref: ref
+    }, children);
+}));
+Flex.displayName = 'Flex';
+exports.default = Flex;
+
+},{"react":"jMk1U","@emotion/react":"cLTfV","../xcss/style-maps.partial":"i6gMp","../xcss/xcss":"jDay7","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"g4i2A":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CloseButton", ()=>CloseButton);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _new = require("@atlaskit/button/new");
+var _closeCross = require("@atlaskit/icon/core/migration/close--cross");
+var _closeCrossDefault = parcelHelpers.interopDefault(_closeCross);
+var CloseButton = function CloseButton(_ref) {
+    var label = _ref.label, onClick = _ref.onClick, testId = _ref.testId;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _new.IconButton), {
+        testId: testId && "".concat(testId, "--close-button"),
+        appearance: "subtle",
+        icon: (0, _closeCrossDefault.default),
+        label: label || 'Close Modal',
+        onClick: onClick
+    });
+};
+
+},{"react":"jMk1U","@atlaskit/button/new":"jGwqc","@atlaskit/icon/core/migration/close--cross":"042ON","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"042ON":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::35b8c6b585772b9406ca86ab3c3befd4>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("71c1406c94033d93"));
+var _close = _interopRequireDefault(require("4c427a522581d97c"));
+var _cross = _interopRequireDefault(require("8847cca4f9ecb605"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Migration Icon component for CloseIcon.
+ * This component is CloseIcon, with `UNSAFE_fallbackIcon` set to "CrossIcon".
+ *
+ * Category: multi-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Known uses: closing modals, panels, and transient views; removing tags
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const CloseIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_close.default, Object.assign({
+        LEGACY_fallbackIcon: _cross.default
+    }, props));
+CloseIcon.Name = 'CloseIconMigration';
+var _default = exports.default = CloseIcon;
+
+},{"71c1406c94033d93":"jMk1U","4c427a522581d97c":"cmQw1","8847cca4f9ecb605":"91Wl5"}],"cmQw1":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::b2832ce3758295ab6ed0286f39d79816>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("9c639f268a1f3369"));
+var _baseNew = _interopRequireDefault(require("8da88e3004b49ff5"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "Close".
+ * Category: multi-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Known uses: closing modals, panels, and transient views; removing tags
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const CloseIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" fill-rule="evenodd" d="m9.06 8 4.97-4.97-1.06-1.06L8 6.94 3.03 1.97 1.97 3.03 6.94 8l-4.97 4.97 1.06 1.06L8 9.06l4.97 4.97 1.06-1.06z" clip-rule="evenodd"/>`
+    }, props));
+CloseIcon.displayName = 'CloseIcon';
+var _default = exports.default = CloseIcon;
+
+},{"9c639f268a1f3369":"jMk1U","8da88e3004b49ff5":"8iv7w"}],"8iv7w":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _iconNewDefault.default));
+parcelHelpers.export(exports, "Icon", ()=>(0, _iconNew.Icon));
+var _iconNew = require("../components/icon-new");
+var _iconNewDefault = parcelHelpers.interopDefault(_iconNew);
+
+},{"../components/icon-new":"blDw6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"blDw6":[function(require,module,exports,__globalThis) {
+/* icon-new.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Icon", ()=>Icon);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _platformFeatureFlags = require("@atlaskit/platform-feature-flags");
+/**
+ * We are hiding this props from consumers as it's reserved
+ * for use by Icon Tile.
+ */ var svgStyles = null;
+var iconStyles = null;
+var utilityIconStyles = null;
+var scaleStyles = null;
+/**
+ * For windows high contrast mode
+ */ var baseHcmStyles = null;
+var scaleSize = null;
+var coreSizeMedium = {
+    none: "_1bsbpxbi _4t3ipxbi",
+    compact: "_1bsb1ejb _4t3i1ejb",
+    spacious: "_1bsb1ejb _4t3i1ejb"
+};
+var coreSizeSmall = {
+    none: "_1bsbutpp _4t3iutpp",
+    compact: "_1bsbpxbi _4t3ipxbi",
+    spacious: "_1bsb1ejb _4t3i1ejb"
+};
+var utilSizes = {
+    none: "_1bsbutpp _4t3iutpp",
+    compact: "_1bsbpxbi _4t3ipxbi",
+    spacious: "_1bsb1ejb _4t3i1ejb"
+};
+var baseSizeMap = {
+    core: 16,
+    utility: 12
+};
+var paddingMap = {
+    core: {
+        medium: {
+            none: 0,
+            compact: 4,
+            spacious: 4
+        },
+        small: {
+            none: 0,
+            compact: 2.66,
+            spacious: 8
+        }
+    },
+    utility: {
+        medium: {
+            none: 0,
+            compact: 2,
+            spacious: 6
+        },
+        small: {
+            none: 0,
+            compact: 2,
+            spacious: 6
+        }
+    }
+};
+var Icon = /*#__PURE__*/ (0, _react.memo)(function Icon(props) {
+    var _props$type;
+    var _ref = props, _ref$color = _ref.color, color = _ref$color === void 0 ? 'currentColor' : _ref$color, testId = _ref.testId, label = _ref.label, LEGACY_primaryColor = _ref.LEGACY_primaryColor, LEGACY_secondaryColor = _ref.LEGACY_secondaryColor, LEGACY_size = _ref.LEGACY_size, FallbackIcon = _ref.LEGACY_fallbackIcon, dangerouslySetGlyph = _ref.dangerouslySetGlyph, shouldScale = _ref.shouldScale, LEGACY_margin = _ref.LEGACY_margin, _ref$spacing = _ref.spacing, spacing = _ref$spacing === void 0 ? 'none' : _ref$spacing;
+    var dangerouslySetInnerHTML = dangerouslySetGlyph ? {
+        __html: dangerouslySetGlyph
+    } : undefined;
+    // Fall back to old icon
+    // eslint-disable-next-line @atlaskit/platform/ensure-feature-flag-prefix
+    if (FallbackIcon && !(0, _platformFeatureFlags.fg)('platform-visual-refresh-icons')) // parse out unnecessary props
+    return /*#__PURE__*/ _react.createElement(FallbackIcon, {
+        primaryColor: LEGACY_primaryColor !== null && LEGACY_primaryColor !== void 0 ? LEGACY_primaryColor : color,
+        secondaryColor: LEGACY_secondaryColor,
+        size: LEGACY_size,
+        label: label,
+        testId: testId,
+        UNSAFE_margin: LEGACY_margin
+    });
+    var type = (_props$type = props.type) !== null && _props$type !== void 0 ? _props$type : 'core';
+    var size = 'size' in props && props.size !== undefined && // This prevents invalid sizes being passed in, which is required
+    // for handling unsupported legacy icon sizes which can
+    // cause errors.
+    (props.size === 'small' || props.size === 'medium') ? props.size : 'medium';
+    var baseSize = baseSizeMap[type];
+    var viewBoxPadding = paddingMap[type][size][spacing];
+    var viewBoxSize = baseSize + 2 * viewBoxPadding;
+    return /*#__PURE__*/ _react.createElement("span", {
+        "data-testid": testId,
+        role: label ? 'img' : undefined,
+        "aria-label": label ? label : undefined,
+        "aria-hidden": label ? undefined : true,
+        style: {
+            color: color
+        },
+        className: (0, _runtime.ax)([
+            "_1e0c1o8l _vchhusvi _1o9zidpf _vwz4kb7n _y4ti1igz _bozg1mb9",
+            "_12va1onz _jcxd1r8n",
+            shouldScale && "_1bsb1kw7 _4t3i1kw7",
+            (type === 'utility' || size === 'small') && "_vwz4utpp"
+        ])
+    }, /*#__PURE__*/ _react.createElement("svg", {
+        fill: "none",
+        viewBox: "".concat(0 - viewBoxPadding, " ").concat(0 - viewBoxPadding, " ").concat(viewBoxSize, " ").concat(viewBoxSize),
+        role: "presentation",
+        dangerouslySetInnerHTML: dangerouslySetInnerHTML,
+        className: (0, _runtime.ax)([
+            "_1reo15vq _18m915vq _syaz1r31 _lcxvglyw _s7n4yfq0 _vc881r31",
+            shouldScale ? "_1bsb1kw7 _4t3i1kw7" : type === 'utility' ? utilSizes[spacing] : size === 'small' ? coreSizeSmall[spacing] : coreSizeMedium[spacing]
+        ])
+    }));
+});
+exports.default = Icon;
+
+},{"react":"jMk1U","@compiled/react/runtime":"8r5np","@atlaskit/platform-feature-flags":"3H8e6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"91Wl5":[function(require,module,exports,__globalThis) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("2e82a8d292b872cb"));
+var _base = require("6ddb58a5908fd194");
+var _cross = _interopRequireDefault(require("6dab7dcfea92f70a"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+const CrossIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.IconFacade, Object.assign({
+        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" d="M12 10.586 6.707 5.293a1 1 0 0 0-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 0 0 1.414 1.414L12 13.414l5.293 5.293a1 1 0 0 0 1.414-1.414L13.414 12l5.293-5.293a1 1 0 1 0-1.414-1.414z"/></svg>`
+    }, props, {
+        newIcon: _cross.default
+    }));
+CrossIcon.displayName = 'CrossIcon';
+var _default = exports.default = CrossIcon;
+
+},{"2e82a8d292b872cb":"jMk1U","6ddb58a5908fd194":"1cdUG","6dab7dcfea92f70a":"eeZYs"}],"1cdUG":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _iconDefault.default));
+parcelHelpers.export(exports, "Icon", ()=>(0, _icon.Icon));
+parcelHelpers.export(exports, "IconFacade", ()=>(0, _iconFacade.IconFacade));
+var _icon = require("../components/icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
+var _iconFacade = require("../components/icon-facade");
+
+},{"../components/icon":"2HnQA","../components/icon-facade":"k7mOB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2HnQA":[function(require,module,exports,__globalThis) {
+/* icon.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Icon", ()=>Icon);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+/**
+ * We are hiding these props from consumers as they're used to
+ * hack around icon sizing specifically for icon-file-type.
+ */ var iconStyles = null;
+var sizeStyles = {
+    small: "_1bsb7vkz _4t3i7vkz _5fdi7vkz _zbji7vkz",
+    medium: "_1bsb1tcg _4t3i1tcg _5fdi1tcg _zbji1tcg",
+    large: "_1bsbzwfg _4t3izwfg _5fdizwfg _zbjizwfg",
+    xlarge: "_1bsbckbl _4t3ickbl _5fdickbl _zbjickbl"
+};
+/**
+ * For windows high contrast mode
+ */ var baseHcmStyles = null;
+var primaryEqualsSecondaryHcmStyles = null;
+var secondaryTransparentHcmStyles = null;
+var Icon = /*#__PURE__*/ (0, _react.memo)(function Icon(props) {
+    var _ref = props, Glyph = _ref.glyph, dangerouslySetGlyph = _ref.dangerouslySetGlyph, _ref$primaryColor = _ref.primaryColor, primaryColor = _ref$primaryColor === void 0 ? 'currentColor' : _ref$primaryColor, secondaryColor = _ref.secondaryColor, size = _ref.size, testId = _ref.testId, label = _ref.label, width = _ref.width, height = _ref.height, UNSAFE_margin = _ref.UNSAFE_margin;
+    var glyphProps = dangerouslySetGlyph ? {
+        dangerouslySetInnerHTML: {
+            __html: dangerouslySetGlyph
+        }
+    } : {
+        children: Glyph ? /*#__PURE__*/ _react.createElement(Glyph, {
+            role: "presentation"
+        }) : null
+    };
+    var customDimensions = width && height ? {
+        width: width + 'px',
+        height: height + 'px'
+    } : null;
+    return /*#__PURE__*/ _react.createElement("span", (0, _extendsDefault.default)({
+        "data-testid": testId,
+        "data-vc": "icon-".concat(testId),
+        role: label ? 'img' : undefined,
+        "aria-label": label ? label : undefined,
+        "aria-hidden": label ? undefined : true,
+        style: _objectSpread(_objectSpread({}, customDimensions), {}, {
+            '--icon-primary-color': primaryColor,
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            '--icon-secondary-color': secondaryColor,
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values -- Ignored via go/DSP-18766
+            margin: UNSAFE_margin
+        })
+    }, glyphProps, {
+        className: (0, _runtime.ax)([
+            "_1e0c1o8l _1o9zidpf _vyfuvuon _vwz4kb7n _1szv15vq _1tly15vq _rzyw1osq _17jb1osq _1ksvoz0e _3se1x1jp _re2rglyw _1veoyfq0 _1kg81r31",
+            "_jcxd1r8n _gq0g1onz _1trkwc43",
+            primaryColor === secondaryColor && "_18hbwc43",
+            secondaryColor === 'transparent' && "_4fyi1j28",
+            size && sizeStyles[size]
+        ])
+    }));
+});
+exports.default = Icon;
+
+},{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/defineProperty":"azbUC","react":"jMk1U","@compiled/react/runtime":"8r5np","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"k7mOB":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IconFacade", ()=>IconFacade);
+var _extends = require("@babel/runtime/helpers/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _platformFeatureFlags = require("@atlaskit/platform-feature-flags");
+var _icon = require("./icon");
+var _excluded = [
+    "dangerouslySetGlyph",
+    "size"
+];
+var sizeSpacingMap = {
+    utility: {
+        small: 'compact',
+        medium: 'spacious'
+    },
+    core: {
+        small: 'none',
+        medium: 'spacious'
+    }
+};
+var IconFacade = /*#__PURE__*/ (0, _react.memo)(function IconFacade(_ref) {
+    var dangerouslySetGlyph = _ref.dangerouslySetGlyph, size = _ref.size, props = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var NewIcon = props.newIcon;
+    // By default, the icon size will be medium for core icons and small for utility icons
+    var iconSize = size !== null && size !== void 0 ? size : 'medium';
+    var useNewIcon = !props.isFacadeDisabled && // eslint-disable-next-line @atlaskit/platform/ensure-feature-flag-prefix
+    (0, _platformFeatureFlags.fg)('platform-visual-refresh-icons-legacy-facade');
+    if (useNewIcon && NewIcon && (iconSize === 'small' || iconSize === 'medium')) {
+        if (props.iconType === 'utility') {
+            var Icon = NewIcon;
+            return /*#__PURE__*/ (0, _reactDefault.default).createElement(Icon, (0, _extendsDefault.default)({}, props, {
+                spacing: (0, _platformFeatureFlags.fg)('platform-visual-refresh-icons-facade-button-fix') ? sizeSpacingMap['utility'][iconSize] : 'none',
+                color: props.primaryColor || 'currentColor',
+                type: props.iconType
+            }));
+        } else {
+            var _Icon = NewIcon;
+            return /*#__PURE__*/ (0, _reactDefault.default).createElement(_Icon, (0, _extendsDefault.default)({}, props, {
+                size: iconSize,
+                spacing: sizeSpacingMap['core'][iconSize],
+                color: props.primaryColor || 'currentColor',
+                type: props.iconType
+            }));
+        }
+    }
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _icon.Icon), (0, _extendsDefault.default)({
+        dangerouslySetGlyph: dangerouslySetGlyph,
+        size: size
+    }, props));
+});
+
+},{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/objectWithoutProperties":"j8lr0","react":"jMk1U","@atlaskit/platform-feature-flags":"3H8e6","./icon":"2HnQA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eeZYs":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::85cb292de644104b34b7dd23f5bdf435>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("db13a4a95c41c652"));
+var _baseNew = _interopRequireDefault(require("55667cac8a7cbee3"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "Cross".
+ * Category: multi-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Known uses: closing modals, panels, and transient views; removing tags
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const CrossIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" d="M14.03 3.03 9.06 8l4.97 4.97-1.06 1.06L8 9.06l-4.97 4.97-1.06-1.06L6.94 8 1.97 3.03l1.06-1.06L8 6.94l4.97-4.97z"/>`
+    }, props));
+CrossIcon.displayName = 'CrossIcon';
+var _default = exports.default = CrossIcon;
+
+},{"db13a4a95c41c652":"jMk1U","55667cac8a7cbee3":"8iv7w"}],"d9GaV":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useModal", ()=>useModal);
+var _react = require("react");
+var _context = require("./internal/context");
+var useModal = function useModal() {
+    var modalContext = (0, _react.useContext)((0, _context.ModalContext));
+    if (modalContext == null) throw Error("@atlaskit/modal-dialog: Modal context unavailable \u2013 this component needs to be a child of ModalDialog.");
+    return modalContext;
+};
+
+},{"react":"jMk1U","./internal/context":"evR7H","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ewqbJ":[function(require,module,exports,__globalThis) {
+/* modal-title.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _error = require("@atlaskit/icon/core/migration/error");
+var _errorDefault = parcelHelpers.interopDefault(_error);
+var _warning = require("@atlaskit/icon/core/migration/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _hooks = require("./hooks");
+var iconColor = {
+    danger: "var(--ds-icon-danger, #C9372C)",
+    warning: "var(--ds-icon-warning, #E56910)"
+};
+var iconStyles = null;
+var titleStyles = null;
+var textStyles = null;
+var truncatedTextStyles = null;
+var TitleIcon = function TitleIcon(_ref) {
+    var appearance = _ref.appearance;
+    var Icon = appearance === 'danger' ? (0, _errorDefault.default) : (0, _warningDefault.default);
+    return /*#__PURE__*/ _react.createElement("span", {
+        className: (0, _runtime.ax)([
+            "_16jlidpf _1o9zidpf _i0dl1wug _syaz1kw7 _1wyb1kw7 _zg8l1kw7 _k48p1kw7 _1dyz1kw7 _vwz41kw7"
+        ])
+    }, /*#__PURE__*/ _react.createElement(Icon, {
+        label: appearance,
+        color: iconColor[appearance],
+        spacing: "spacious"
+    }));
+};
+/**
+ * __Modal title__
+ *
+ * A modal title is used to display a title within a modal.
+ *
+ * - [Examples](https://atlassian.design/components/modal-dialog/examples)
+ * - [Code](https://atlassian.design/components/modal-dialog/code)
+ * - [Usage](https://atlassian.design/components/modal-dialog/usage)
+ */ var ModalTitle = function ModalTitle(props) {
+    var appearance = props.appearance, children = props.children, _props$isMultiline = props.isMultiline, isMultiline = _props$isMultiline === void 0 ? true : _props$isMultiline, userDefinedTestId = props.testId;
+    var _useModal = (0, _hooks.useModal)(), titleId = _useModal.titleId, modalTestId = _useModal.testId;
+    var testId = userDefinedTestId || modalTestId && "".concat(modalTestId, "--title");
+    return /*#__PURE__*/ _react.createElement("h1", {
+        "data-testid": testId,
+        className: (0, _runtime.ax)([
+            "_zulpu2gc _11c8lodh _1e0c1txw _1ul9idpf _6rthze3t _1pfhze3t _12l2ze3t _ahbqze3t"
+        ])
+    }, appearance && /*#__PURE__*/ _react.createElement(TitleIcon, {
+        appearance: appearance
+    }), /*#__PURE__*/ _react.createElement("span", {
+        id: titleId,
+        "data-testid": testId && "".concat(testId, "-text"),
+        className: (0, _runtime.ax)([
+            "_16jlkb7n _1o9zkb7n _i0dl1wug _1ul9idpf _slp31hna",
+            !isMultiline && "_1reo15vq _18m915vq _1bto1l2s _o5721q9c"
+        ])
+    }, children));
+};
+exports.default = ModalTitle;
+
+},{"react":"jMk1U","@compiled/react/runtime":"8r5np","@atlaskit/icon/core/migration/error":"aVJLR","@atlaskit/icon/core/migration/warning":"dp5Kk","./hooks":"d9GaV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aVJLR":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::65cdc00c41545a5e974b615c0e363097>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("392f0eb9e32b7eea"));
+var _error = _interopRequireDefault(require("4a951e2f404e505b"));
+var _error2 = _interopRequireDefault(require("b59b845ece4e4500"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Migration Icon component for ErrorIcon.
+ * This component is ErrorIcon, with `UNSAFE_fallbackIcon` set to "ErrorIcon".
+ *
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for error statuses and messaging.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const ErrorIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_error.default, Object.assign({
+        LEGACY_fallbackIcon: _error2.default
+    }, props));
+ErrorIcon.Name = 'ErrorIconMigration';
+var _default = exports.default = ErrorIcon;
+
+},{"392f0eb9e32b7eea":"jMk1U","4a951e2f404e505b":"fuhsD","b59b845ece4e4500":"d9kbh"}],"fuhsD":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::a2cd3105f02ad146f4ebeeb5e7e40633>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("7e881a97f2c880f8"));
+var _baseNew = _interopRequireDefault(require("ea005e85fb4359b9"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "Error".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for error statuses and messaging.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const ErrorIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" fill-rule="evenodd" d="M6.586.604a2 2 0 0 1 2.828 0l5.982 5.982a2 2 0 0 1 0 2.828l-5.982 5.983a2 2 0 0 1-2.828 0L.604 9.414a2 2 0 0 1 0-2.828zM7.25 9V3.75h1.5V9zM8 12.25a1 1 0 1 0 0-2 1 1 0 0 0 0 2" clip-rule="evenodd"/>`
+    }, props));
+ErrorIcon.displayName = 'ErrorIcon';
+var _default = exports.default = ErrorIcon;
+
+},{"7e881a97f2c880f8":"jMk1U","ea005e85fb4359b9":"8iv7w"}],"d9kbh":[function(require,module,exports,__globalThis) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("7a42f8243f16fb4"));
+var _base = require("f8df24da9d82fb5d");
+var _statusError = _interopRequireDefault(require("f71fd9018336edc4"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+const ErrorIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.IconFacade, Object.assign({
+        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill-rule="evenodd"><path fill="currentcolor" d="M13.416 4.417a2 2 0 0 0-2.832 0l-6.168 6.167a2 2 0 0 0 0 2.833l6.168 6.167a2 2 0 0 0 2.832 0l6.168-6.167a2 2 0 0 0 0-2.833z"/><path fill="inherit" d="M12 14a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v5a1 1 0 0 1-1 1m0 3a1 1 0 0 1 0-2 1 1 0 0 1 0 2"/></g></svg>`
+    }, props, {
+        newIcon: _statusError.default
+    }));
+ErrorIcon.displayName = 'ErrorIcon';
+var _default = exports.default = ErrorIcon;
+
+},{"7a42f8243f16fb4":"jMk1U","f8df24da9d82fb5d":"1cdUG","f71fd9018336edc4":"afMpz"}],"afMpz":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::f99ea99a006a4f29d6a537b27790dcf5>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("6d07b2fad6100c89"));
+var _baseNew = _interopRequireDefault(require("60a98d2d67f157ec"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "StatusError".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for error statuses and messaging.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const StatusErrorIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" fill-rule="evenodd" d="M6.586.603a2 2 0 0 1 2.828 0l5.983 5.983a2 2 0 0 1 0 2.828l-5.983 5.982a2 2 0 0 1-2.828 0L.604 9.414a2 2 0 0 1 0-2.828zM8 10.25a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-.75-6.5V9h1.5V3.75z" clip-rule="evenodd"/>`
+    }, props));
+StatusErrorIcon.displayName = 'StatusErrorIcon';
+var _default = exports.default = StatusErrorIcon;
+
+},{"6d07b2fad6100c89":"jMk1U","60a98d2d67f157ec":"8iv7w"}],"dp5Kk":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::d5fac6bc179ab80298f715340f91ebf9>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("b2cac6f12199974e"));
+var _warning = _interopRequireDefault(require("a5fa3a7ec04fa457"));
+var _warning2 = _interopRequireDefault(require("292c5d5faae33697"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Migration Icon component for WarningIcon.
+ * This component is WarningIcon, with `UNSAFE_fallbackIcon` set to "WarningIcon".
+ *
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for warning statuses.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const WarningIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_warning.default, Object.assign({
+        LEGACY_fallbackIcon: _warning2.default
+    }, props));
+WarningIcon.Name = 'WarningIconMigration';
+var _default = exports.default = WarningIcon;
+
+},{"b2cac6f12199974e":"jMk1U","a5fa3a7ec04fa457":"clbgj","292c5d5faae33697":"4mdXN"}],"clbgj":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::c615014b011664b243a37531e093f861>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("b116a85b9f8a2120"));
+var _baseNew = _interopRequireDefault(require("27eb76993b1cf3db"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "Warning".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for warning statuses.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const WarningIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" fill-rule="evenodd" d="M6.242 1.169c.757-1.396 2.76-1.396 3.516 0l5.9 10.878C16.381 13.379 15.416 15 13.9 15H2.1C.584 15-.38 13.38.342 12.047zM7.25 9.5v-5h1.5v5zM8 12.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2" clip-rule="evenodd"/>`
+    }, props));
+WarningIcon.displayName = 'WarningIcon';
+var _default = exports.default = WarningIcon;
+
+},{"b116a85b9f8a2120":"jMk1U","27eb76993b1cf3db":"8iv7w"}],"4mdXN":[function(require,module,exports,__globalThis) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("8f82da9502bf8933"));
+var _base = require("dd71f2c16b6bd55d");
+var _statusWarning = _interopRequireDefault(require("329f50412b29926f"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+const WarningIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.IconFacade, Object.assign({
+        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill-rule="evenodd"><path fill="currentcolor" d="M12.938 4.967c-.518-.978-1.36-.974-1.876 0L3.938 18.425c-.518.978-.045 1.771 1.057 1.771h14.01c1.102 0 1.573-.797 1.057-1.771z"/><path fill="inherit" d="M12 15a1 1 0 0 1-1-1V9a1 1 0 0 1 2 0v5a1 1 0 0 1-1 1m0 3a1 1 0 0 1 0-2 1 1 0 0 1 0 2"/></g></svg>`
+    }, props, {
+        newIcon: _statusWarning.default
+    }));
+WarningIcon.displayName = 'WarningIcon';
+var _default = exports.default = WarningIcon;
+
+},{"8f82da9502bf8933":"jMk1U","dd71f2c16b6bd55d":"1cdUG","329f50412b29926f":"8Z4RA"}],"8Z4RA":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::435e803a057e79e21a0d31c5b12f3f81>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("de8b90d87cc19582"));
+var _baseNew = _interopRequireDefault(require("acc7bea56f3bac26"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * Icon: "StatusWarning".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Reserved for warning statuses.
+Filled status icons provide higher visual contrast to draw attention to important information.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const StatusWarningIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path fill="currentcolor" fill-rule="evenodd" d="M6.242 1.168c.756-1.395 2.76-1.395 3.516 0l5.9 10.878c.723 1.333-.242 2.953-1.758 2.953H2.1C.584 15-.38 13.38.342 12.046zM8 10.75a1 1 0 1 0 0 2.001 1 1 0 0 0 0-2M7.25 4.5v5h1.5v-5z" clip-rule="evenodd"/>`
+    }, props));
+StatusWarningIcon.displayName = 'StatusWarningIcon';
+var _default = exports.default = StatusWarningIcon;
+
+},{"de8b90d87cc19582":"jMk1U","acc7bea56f3bac26":"8iv7w"}],"kOlnr":[function(require,module,exports,__globalThis) {
+/* modal-body.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _runtime = require("@compiled/react/runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactScrolllock = require("react-scrolllock");
+var _platformFeatureFlags = require("@atlaskit/platform-feature-flags");
+var _hooks = require("./hooks");
+var _scrollContainer = require("./internal/components/scroll-container");
+var _scrollContainerDefault = parcelHelpers.interopDefault(_scrollContainer);
+var _useScroll = require("./internal/hooks/use-scroll");
+var _useScrollDefault = parcelHelpers.interopDefault(_useScroll);
+var styles = {
+    root: "_16jlkb7n _1o9zkb7n _i0dl1wug",
+    font: "_11c82smr",
+    paddingBlock: "_1rjc1bk5",
+    paddingInline: "_18zr1ejb"
+};
+/**
+ * __Modal body__
+ *
+ * A modal body is used to display the main content of a modal.
+ *
+ * - [Examples](https://atlassian.design/components/modal-dialog/examples)
+ * - [Code](https://atlassian.design/components/modal-dialog/code#modal-body-props)
+ * - [Usage](https://atlassian.design/components/modal-dialog/usage)
+ */ var ModalBody = function ModalBody(props) {
+    var children = props.children, userDefinedTestId = props.testId, _props$hasInlinePaddi = props.hasInlinePadding, hasInlinePadding = _props$hasInlinePaddi === void 0 ? true : _props$hasInlinePaddi;
+    var _useModal = (0, _hooks.useModal)(), modalTestId = _useModal.testId;
+    var shouldScrollInViewport = (0, _useScrollDefault.default)();
+    var testId = userDefinedTestId || modalTestId && "".concat(modalTestId, "--body");
+    return shouldScrollInViewport ? /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        "data-testid": testId,
+        className: (0, _runtime.ax)([
+            styles.root,
+            hasInlinePadding && styles.paddingInline,
+            (0, _platformFeatureFlags.fg)('platform_ads_explicit_font_styles') && styles.font
+        ])
+    }, children) : /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactScrolllock.TouchScrollable), null, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _scrollContainerDefault.default), {
+        testId: userDefinedTestId || modalTestId
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        "data-testid": testId,
+        className: (0, _runtime.ax)([
+            styles.root,
+            /**
+     * Adding block padding for scroll keylines, which are only shown when the scrolling
+     * is on the container.
+     */ styles.paddingBlock,
+            hasInlinePadding && styles.paddingInline,
+            (0, _platformFeatureFlags.fg)('platform_ads_explicit_font_styles') && styles.font
+        ])
+    }, children)));
+};
+exports.default = ModalBody;
+
+},{"@compiled/react/runtime":"8r5np","react":"jMk1U","react-scrolllock":"4lcpi","@atlaskit/platform-feature-flags":"3H8e6","./hooks":"d9GaV","./internal/components/scroll-container":"8Lo4q","./internal/hooks/use-scroll":"8PblJ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8Lo4q":[function(require,module,exports,__globalThis) {
+/* scroll-container.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _runtime = require("@compiled/react/runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _bindEventListener = require("bind-event-listener");
+var _rafSchd = require("raf-schd");
+var _rafSchdDefault = parcelHelpers.interopDefault(_rafSchd);
+var _css = require("@atlaskit/css");
+var _mergeRefs = require("@atlaskit/ds-lib/merge-refs");
+var _mergeRefsDefault = parcelHelpers.interopDefault(_mergeRefs);
+var _noop = require("@atlaskit/ds-lib/noop");
+var _noopDefault = parcelHelpers.interopDefault(_noop);
+var _useLazyCallback = require("@atlaskit/ds-lib/use-lazy-callback");
+var _useLazyCallbackDefault = parcelHelpers.interopDefault(_useLazyCallback);
+var _compiled = require("@atlaskit/primitives/compiled");
+var keylineColor = "var(--ds-border, #091E4224)";
+var styles = {
+    base: "_16jlkb7n _1o9zkb7n _i0dl1kw7 _1e0c1kw7 _2lx21kw7 _6rthze3t _1pfhze3t _12l2ze3t _ahbqze3t _1reo15vq _18m91wug _1jykn7od _wzg61wug",
+    topKeyline: "_mqm2v2xi",
+    bottomKeyline: "_179rv2xi"
+};
+var keylineHeight = 2;
+/**
+ * A container that shows top and bottom keylines when the
+ * content overflows into the scrollable element.
+ */ var ScrollContainer = /*#__PURE__*/ (0, _react.forwardRef)(function(_ref, ref) {
+    var testId = _ref.testId, children = _ref.children;
+    var scrollableRef = (0, _react.useRef)(null);
+    var _useState = (0, _react.useState)(false), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), showTopKeyline = _useState2[0], setTopKeyline = _useState2[1];
+    var _useState3 = (0, _react.useState)(false), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), showBottomKeyline = _useState4[0], setBottomKeyline = _useState4[1];
+    var _useState5 = (0, _react.useState)(false), _useState6 = (0, _slicedToArrayDefault.default)(_useState5, 2), showContentFocus = _useState6[0], setContentFocus = _useState6[1];
+    // Schedule a content focus on the target element
+    // WARNING: In theory, `target` may not be available when `rafSchedule` hits in concurrent rendering
+    (0, _react.useEffect)(function() {
+        var schedule = (0, _rafSchdDefault.default)(function() {
+            var target = scrollableRef.current;
+            target && setContentFocus(target.scrollHeight > target.clientHeight);
+        });
+        schedule();
+    }, [
+        scrollableRef
+    ]);
+    var setLazyKeylines = (0, _useLazyCallbackDefault.default)((0, _rafSchdDefault.default)(function() {
+        var target = scrollableRef.current;
+        if (target) {
+            var scrollableDistance = target.scrollHeight - target.clientHeight;
+            if (target.previousElementSibling) setTopKeyline(target.scrollTop > keylineHeight);
+            if (target.nextElementSibling) setBottomKeyline(target.scrollTop <= scrollableDistance - keylineHeight);
+        }
+    }));
+    // On load (and scroll/resize events), we set "keylines"
+    // these border the content to indicate scrollability when content underflows the header or footer
+    (0, _react.useEffect)(function() {
+        var target = scrollableRef.current;
+        setLazyKeylines();
+        var unbindWindowEvent = (0, _bindEventListener.bind)(window, {
+            type: 'resize',
+            listener: setLazyKeylines
+        });
+        var unbindTargetEvent = target ? (0, _bindEventListener.bind)(target, {
+            type: 'scroll',
+            listener: setLazyKeylines
+        }) : (0, _noopDefault.default);
+        return function() {
+            unbindWindowEvent();
+            unbindTargetEvent();
+        };
+    }, [
+        setLazyKeylines
+    ]);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _compiled.Focusable), {
+        as: "div",
+        isInset: true,
+        tabIndex: showContentFocus ? 0 : undefined,
+        role: showContentFocus ? 'region' : undefined,
+        "aria-label": showContentFocus ? 'Scrollable content' : undefined,
+        testId: testId && "".concat(testId, "--scrollable"),
+        ref: (0, _mergeRefsDefault.default)([
+            ref,
+            scrollableRef
+        ]),
+        xcss: (0, _css.cx)(styles.base, showTopKeyline && styles.topKeyline, showBottomKeyline && styles.bottomKeyline)
+    }, children);
+});
+ScrollContainer.displayName = 'ScrollContainer';
+exports.default = ScrollContainer;
+
+},{"@babel/runtime/helpers/slicedToArray":"lvO5K","@compiled/react/runtime":"8r5np","react":"jMk1U","bind-event-listener":"2wrYK","raf-schd":"je3lA","@atlaskit/css":"4KsBe","@atlaskit/ds-lib/merge-refs":"5mvl7","@atlaskit/ds-lib/noop":"gcHCG","@atlaskit/ds-lib/use-lazy-callback":"3niyD","@atlaskit/primitives/compiled":"29Id4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8PblJ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useScroll);
+var _react = require("react");
+var _context = require("../context");
+function useScroll() {
+    var shouldScrollInViewport = (0, _react.useContext)((0, _context.ScrollContext));
+    if (shouldScrollInViewport == null) throw Error("@atlaskit/modal-dialog: Scroll context unavailable \u2013 this component needs to be a child of ModalDialog.");
+    return shouldScrollInViewport;
+}
+
+},{"react":"jMk1U","../context":"evR7H","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fW5Bk":[function(require,module,exports,__globalThis) {
+/* modal-footer.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _hooks = require("./hooks");
+var footerStyles = null;
+/**
+ * __Modal footer__
+ *
+ * A modal footer often contains a primary action and the ability to cancel and close the dialog, though can contain any React element.
+ *
+ * - [Examples](https://atlassian.design/components/modal-dialog/examples#modal-footer)
+ * - [Code](https://atlassian.design/components/modal-dialog/code#modal-footer-props)
+ * - [Usage](https://atlassian.design/components/modal-dialog/usage)
+ */ var ModalFooter = function ModalFooter(props) {
+    var children = props.children, userDefinedTestId = props.testId;
+    var _useModal = (0, _hooks.useModal)(), modalTestId = _useModal.testId;
+    var testId = userDefinedTestId || modalTestId && "".concat(modalTestId, "--footer");
+    return /*#__PURE__*/ _react.createElement("div", {
+        "data-testid": testId,
+        className: (0, _runtime.ax)([
+            "_zulpu2gc _18zr1ejb _1e0c1txw _kqswh2mm _4cvr1h6o _1bahesu3 _1pfhmufe _85i51ejb _1q51pxbi"
+        ]),
+        style: {
+            "--_t7lu6v": (0, _runtime.ix)("calc(-1 * ".concat("var(--ds-border-width-outline, 2px)", ")"))
+        }
+    }, children);
+};
+exports.default = ModalFooter;
+
+},{"react":"jMk1U","@compiled/react/runtime":"8r5np","./hooks":"d9GaV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gfSKs":[function(require,module,exports,__globalThis) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("dabfdf05ae562c31"));
+var _base = require("4abfa074cd4c3eea");
+var _delete = _interopRequireDefault(require("25d38fc24289b921"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+const TrashIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.UNSAFE_IconFacade, Object.assign({
+        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M5 5a1 1 0 0 0-1 1v1h16V6a1 1 0 0 0-1-1zm11.15 15h-8.3a1 1 0 0 1-.99-.83L5 8h14l-1.86 11.17a1 1 0 0 1-.99.83M9 4.5a.5.5 0 0 1 .49-.5h5.02a.5.5 0 0 1 .49.5V5H9z"/></svg>`
+    }, props, {
+        newIcon: _delete.default
+    }));
+TrashIcon.displayName = 'TrashIcon';
+var _default = exports.default = TrashIcon;
+
+},{"dabfdf05ae562c31":"jMk1U","4abfa074cd4c3eea":"iJoYh","25d38fc24289b921":"jovPt"}],"jovPt":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::a0de62c85427fa688b203192cfaed36b>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("bd776f65d72659c3"));
+var _UNSAFE_baseNew = _interopRequireDefault(require("9b0e628cd3576015"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * ⚠️ EXPERIMENTAL ⚠️ - New icons are in alpha - and subject to change or removal in future minor or patch releases.
+ * Please reach out in #icon-contributions before using these in production.
+ *
+ * Icon: "Delete".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Single purpose - Reserved for removing or deleting an object.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const DeleteIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_UNSAFE_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path stroke="currentcolor" stroke-linejoin="round" stroke-width="1.5" d="M12.75 3.25V14c0 .69-.56 1.25-1.25 1.25h-7c-.69 0-1.25-.56-1.25-1.25V3.25m9.5 0h1.75m-1.75 0h-2.5m-7 0H1.5m1.75 0h2.5m0 0V.75h4.5v2.5m-4.5 0h4.5M6.5 5.5V13m3-7.5V13"/>`
+    }, props));
+DeleteIcon.displayName = 'DeleteIcon';
+var _default = exports.default = DeleteIcon;
+
+},{"bd776f65d72659c3":"jMk1U","9b0e628cd3576015":"4oZdW"}],"kgNUm":[function(require,module,exports,__globalThis) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("e01d316691c7c1f5"));
+var _base = require("6162f754753b4fc8");
+var _edit = _interopRequireDefault(require("7b45ad4e726d6370"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+const EditIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.UNSAFE_IconFacade, Object.assign({
+        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M4.02 19.23a1 1 0 0 0 1.18 1.18l3.81-.78-4.21-4.21zm5.92-2.62-2.12-2.12L16.31 6l2.12 2.12zm9.9-9.9-2.12-2.12A2 2 0 0 0 16.31 4c-.51 0-1.02.2-1.41.59l-9.76 9.76 4.95 4.95 9.76-9.76a2 2 0 0 0 0-2.83"/></svg>`
+    }, props, {
+        newIcon: _edit.default
+    }));
+EditIcon.displayName = 'EditIcon';
+var _default = exports.default = EditIcon;
+
+},{"e01d316691c7c1f5":"jMk1U","6162f754753b4fc8":"iJoYh","7b45ad4e726d6370":"hZVeM"}],"hZVeM":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::d48c51235c7072e6617b637653c3f4fe>>
+ * @codegenCommand yarn build:icon-glyphs
+ */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("c010bc75cf8a569b"));
+var _UNSAFE_baseNew = _interopRequireDefault(require("19a2b5528b952487"));
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        default: e
+    };
+}
+/**
+ * ⚠️ EXPERIMENTAL ⚠️ - New icons are in alpha - and subject to change or removal in future minor or patch releases.
+ * Please reach out in #icon-contributions before using these in production.
+ *
+ * Icon: "Edit".
+ * Category: single-purpose
+ * Location: @atlaskit/icon
+ * Usage guidance: Single purpose - Reserved for editing objects.
+ * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
+ * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
+ */ const EditIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_UNSAFE_baseNew.default, Object.assign({
+        dangerouslySetGlyph: `<path stroke="currentcolor" stroke-linejoin="round" stroke-width="1.5" d="M6 1.751H3c-.69 0-1.25.56-1.25 1.25v10c0 .69.56 1.25 1.25 1.25h10c.69 0 1.25-.56 1.25-1.25V10m-.75-5 1.116-1.116a1.25 1.25 0 0 0 0-1.768l-.732-.732a1.25 1.25 0 0 0-1.768 0L11 2.5M13.5 5 9.479 9.021c-.15.15-.336.26-.54.318l-3.189.911.911-3.189a1.25 1.25 0 0 1 .318-.54L11 2.5M13.5 5 11 2.5"/>`
+    }, props));
+EditIcon.displayName = 'EditIcon';
+var _default = exports.default = EditIcon;
+
+},{"c010bc75cf8a569b":"jMk1U","19a2b5528b952487":"4oZdW"}],"4T6WN":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AtlasIcon", ()=>(0, _atlas.AtlasIcon));
+parcelHelpers.export(exports, "AtlasLogo", ()=>(0, _atlas.AtlasLogo));
+parcelHelpers.export(exports, "AtlassianMarketplaceIcon", ()=>(0, _atlassianMarketplace.AtlassianMarketplaceIcon));
+parcelHelpers.export(exports, "AtlassianMarketplaceLogo", ()=>(0, _atlassianMarketplace.AtlassianMarketplaceLogo));
+parcelHelpers.export(exports, "AtlassianAccessIcon", ()=>(0, _atlassianAccess.AtlassianAccessIcon));
+parcelHelpers.export(exports, "AtlassianAccessLogo", ()=>(0, _atlassianAccess.AtlassianAccessLogo));
+parcelHelpers.export(exports, "JiraWorkManagementLogo", ()=>(0, _jiraWorkManagement.JiraWorkManagementLogo));
+parcelHelpers.export(exports, "JiraWorkManagementIcon", ()=>(0, _jiraWorkManagement.JiraWorkManagementIcon));
+parcelHelpers.export(exports, "AtlassianIcon", ()=>(0, _atlassian.AtlassianIcon));
+parcelHelpers.export(exports, "AtlassianLogo", ()=>(0, _atlassian.AtlassianLogo));
+parcelHelpers.export(exports, "JiraSoftwareIcon", ()=>(0, _jiraSoftware.JiraSoftwareIcon));
+parcelHelpers.export(exports, "JiraSoftwareLogo", ()=>(0, _jiraSoftware.JiraSoftwareLogo));
+parcelHelpers.export(exports, "AdminIcon", ()=>AdminIcon);
+parcelHelpers.export(exports, "AdminLogo", ()=>AdminLogo);
+parcelHelpers.export(exports, "AnalyticsIcon", ()=>AnalyticsIcon);
+parcelHelpers.export(exports, "AnalyticsLogo", ()=>AnalyticsLogo);
+parcelHelpers.export(exports, "AssetsIcon", ()=>AssetsIcon);
+parcelHelpers.export(exports, "AssetsLogo", ()=>AssetsLogo);
+parcelHelpers.export(exports, "ChatIcon", ()=>ChatIcon);
+parcelHelpers.export(exports, "ChatLogo", ()=>ChatLogo);
+parcelHelpers.export(exports, "CustomerServiceManagementIcon", ()=>CustomerServiceManagementIcon);
+parcelHelpers.export(exports, "CustomerServiceManagementLogo", ()=>CustomerServiceManagementLogo);
+parcelHelpers.export(exports, "GoalsIcon", ()=>GoalsIcon);
+parcelHelpers.export(exports, "GoalsLogo", ()=>GoalsLogo);
+parcelHelpers.export(exports, "HomeIcon", ()=>HomeIcon);
+parcelHelpers.export(exports, "HomeLogo", ()=>HomeLogo);
+parcelHelpers.export(exports, "HubIcon", ()=>HubIcon);
+parcelHelpers.export(exports, "HubLogo", ()=>HubLogo);
+parcelHelpers.export(exports, "ProjectsIcon", ()=>ProjectsIcon);
+parcelHelpers.export(exports, "ProjectsLogo", ()=>ProjectsLogo);
+parcelHelpers.export(exports, "SearchIcon", ()=>SearchIcon);
+parcelHelpers.export(exports, "SearchLogo", ()=>SearchLogo);
+parcelHelpers.export(exports, "StudioIcon", ()=>StudioIcon);
+parcelHelpers.export(exports, "StudioLogo", ()=>StudioLogo);
+parcelHelpers.export(exports, "TalentIcon", ()=>TalentIcon);
+parcelHelpers.export(exports, "TalentLogo", ()=>TalentLogo);
+parcelHelpers.export(exports, "TeamsIcon", ()=>TeamsIcon);
+parcelHelpers.export(exports, "TeamsLogo", ()=>TeamsLogo);
+parcelHelpers.export(exports, "BambooIcon", ()=>BambooIcon);
+parcelHelpers.export(exports, "BambooLogo", ()=>BambooLogo);
+parcelHelpers.export(exports, "BitbucketDataCenterIcon", ()=>BitbucketDataCenterIcon);
+parcelHelpers.export(exports, "BitbucketDataCenterLogo", ()=>BitbucketDataCenterLogo);
+parcelHelpers.export(exports, "ConfluenceDataCenterIcon", ()=>ConfluenceDataCenterIcon);
+parcelHelpers.export(exports, "ConfluenceDataCenterLogo", ()=>ConfluenceDataCenterLogo);
+parcelHelpers.export(exports, "CrowdIcon", ()=>CrowdIcon);
+parcelHelpers.export(exports, "CrowdLogo", ()=>CrowdLogo);
+parcelHelpers.export(exports, "JiraDataCenterIcon", ()=>JiraDataCenterIcon);
+parcelHelpers.export(exports, "JiraDataCenterLogo", ()=>JiraDataCenterLogo);
+parcelHelpers.export(exports, "AtlassianAdministrationIcon", ()=>AtlassianAdministrationIcon);
+parcelHelpers.export(exports, "AtlassianAdministrationLogo", ()=>AtlassianAdministrationLogo);
+parcelHelpers.export(exports, "AtlassianAdminIcon", ()=>AtlassianAdminIcon);
+parcelHelpers.export(exports, "AtlassianAdminLogo", ()=>AtlassianAdminLogo);
+parcelHelpers.export(exports, "AtlassianAnalyticsIcon", ()=>AtlassianAnalyticsIcon);
+parcelHelpers.export(exports, "AtlassianAnalyticsLogo", ()=>AtlassianAnalyticsLogo);
+parcelHelpers.export(exports, "BitbucketIcon", ()=>BitbucketIcon);
+parcelHelpers.export(exports, "BitbucketLogo", ()=>BitbucketLogo);
+parcelHelpers.export(exports, "CompassIcon", ()=>CompassIcon);
+parcelHelpers.export(exports, "CompassLogo", ()=>CompassLogo);
+parcelHelpers.export(exports, "ConfluenceIcon", ()=>ConfluenceIcon);
+parcelHelpers.export(exports, "ConfluenceLogo", ()=>ConfluenceLogo);
+parcelHelpers.export(exports, "AlignIcon", ()=>AlignIcon);
+parcelHelpers.export(exports, "AlignLogo", ()=>AlignLogo);
+parcelHelpers.export(exports, "JiraAlignIcon", ()=>JiraAlignIcon);
+parcelHelpers.export(exports, "JiraAlignLogo", ()=>JiraAlignLogo);
+parcelHelpers.export(exports, "JiraIcon", ()=>JiraIcon);
+parcelHelpers.export(exports, "JiraLogo", ()=>JiraLogo);
+parcelHelpers.export(exports, "JiraProductDiscoveryIcon", ()=>JiraProductDiscoveryIcon);
+parcelHelpers.export(exports, "JiraProductDiscoveryLogo", ()=>JiraProductDiscoveryLogo);
+parcelHelpers.export(exports, "JiraServiceManagementIcon", ()=>JiraServiceManagementIcon);
+parcelHelpers.export(exports, "JiraServiceManagementLogo", ()=>JiraServiceManagementLogo);
+parcelHelpers.export(exports, "LoomIcon", ()=>LoomIcon);
+parcelHelpers.export(exports, "LoomLogo", ()=>LoomLogo);
+parcelHelpers.export(exports, "LoomAttributionIcon", ()=>LoomAttributionIcon);
+parcelHelpers.export(exports, "LoomAttributionLogo", ()=>LoomAttributionLogo);
+parcelHelpers.export(exports, "LoomBlurpleLogo", ()=>LoomBlurpleLogo);
+parcelHelpers.export(exports, "LoomBlurpleIcon", ()=>LoomBlurpleIcon);
+parcelHelpers.export(exports, "OpsgenieIcon", ()=>OpsgenieIcon);
+parcelHelpers.export(exports, "OpsgenieLogo", ()=>OpsgenieLogo);
+parcelHelpers.export(exports, "StatuspageIcon", ()=>StatuspageIcon);
+parcelHelpers.export(exports, "StatuspageLogo", ()=>StatuspageLogo);
+parcelHelpers.export(exports, "TrelloIcon", ()=>TrelloIcon);
+parcelHelpers.export(exports, "TrelloLogo", ()=>TrelloLogo);
+parcelHelpers.export(exports, "RovoIcon", ()=>RovoIcon);
+parcelHelpers.export(exports, "RovoLogo", ()=>RovoLogo);
+parcelHelpers.export(exports, "GuardIcon", ()=>GuardIcon);
+parcelHelpers.export(exports, "GuardLogo", ()=>GuardLogo);
+parcelHelpers.export(exports, "FocusIcon", ()=>FocusIcon);
+parcelHelpers.export(exports, "FocusLogo", ()=>FocusLogo);
+var _admin = require("@atlaskit/temp-nav-app-icons/admin");
+var _align = require("@atlaskit/temp-nav-app-icons/align");
+var _analytics = require("@atlaskit/temp-nav-app-icons/analytics");
+var _assets = require("@atlaskit/temp-nav-app-icons/assets");
+var _bamboo = require("@atlaskit/temp-nav-app-icons/bamboo");
+var _bitbucket = require("@atlaskit/temp-nav-app-icons/bitbucket");
+var _bitbucketDataCenter = require("@atlaskit/temp-nav-app-icons/bitbucket-data-center");
+var _chat = require("@atlaskit/temp-nav-app-icons/chat");
+var _compass = require("@atlaskit/temp-nav-app-icons/compass");
+var _confluence = require("@atlaskit/temp-nav-app-icons/confluence");
+var _confluenceDataCenter = require("@atlaskit/temp-nav-app-icons/confluence-data-center");
+var _crowd = require("@atlaskit/temp-nav-app-icons/crowd");
+var _customerServiceManagement = require("@atlaskit/temp-nav-app-icons/customer-service-management");
+var _focus = require("@atlaskit/temp-nav-app-icons/focus");
+var _goals = require("@atlaskit/temp-nav-app-icons/goals");
+var _guard = require("@atlaskit/temp-nav-app-icons/guard");
+var _home = require("@atlaskit/temp-nav-app-icons/home");
+var _hub = require("@atlaskit/temp-nav-app-icons/hub");
+var _jira = require("@atlaskit/temp-nav-app-icons/jira");
+var _jiraDataCenter = require("@atlaskit/temp-nav-app-icons/jira-data-center");
+var _jiraProductDiscovery = require("@atlaskit/temp-nav-app-icons/jira-product-discovery");
+var _jiraServiceManagement = require("@atlaskit/temp-nav-app-icons/jira-service-management");
+var _loom = require("@atlaskit/temp-nav-app-icons/loom");
+var _loomAttribution = require("@atlaskit/temp-nav-app-icons/loom-attribution");
+var _loomInternal = require("@atlaskit/temp-nav-app-icons/loom-internal");
+var _opsgenie = require("@atlaskit/temp-nav-app-icons/opsgenie");
+var _projects = require("@atlaskit/temp-nav-app-icons/projects");
+var _rovo = require("@atlaskit/temp-nav-app-icons/rovo");
+var _search = require("@atlaskit/temp-nav-app-icons/search");
+var _statuspage = require("@atlaskit/temp-nav-app-icons/statuspage");
+var _studio = require("@atlaskit/temp-nav-app-icons/studio");
+var _talent = require("@atlaskit/temp-nav-app-icons/talent");
+var _teams = require("@atlaskit/temp-nav-app-icons/teams");
+var _trello = require("@atlaskit/temp-nav-app-icons/trello");
+var _atlassianAdmin = require("./legacy-logos/atlassian-admin");
+var _atlassianAdministration = require("./legacy-logos/atlassian-administration");
+var _atlassianAnalytics = require("./legacy-logos/atlassian-analytics");
+var _bitbucket1 = require("./legacy-logos/bitbucket");
+var _compass1 = require("./legacy-logos/compass");
+var _confluence1 = require("./legacy-logos/confluence");
+var _focus1 = require("./legacy-logos/focus");
+var _guard1 = require("./legacy-logos/guard");
+var _jira1 = require("./legacy-logos/jira");
+var _jiraAlign = require("./legacy-logos/jira-align");
+var _jiraProductDiscovery1 = require("./legacy-logos/jira-product-discovery");
+var _jiraServiceManagement1 = require("./legacy-logos/jira-service-management");
+var _loom1 = require("./legacy-logos/loom");
+var _loomAttribution1 = require("./legacy-logos/loom-attribution");
+var _opsgenie1 = require("./legacy-logos/opsgenie");
+var _rovo1 = require("./legacy-logos/rovo");
+var _statuspage1 = require("./legacy-logos/statuspage");
+var _trello1 = require("./legacy-logos/trello");
+var _atlas = require("./legacy-logos/atlas");
+var _atlassianMarketplace = require("./legacy-logos/atlassian-marketplace");
+var _atlassianAccess = require("./legacy-logos/atlassian-access");
+var _jiraWorkManagement = require("./legacy-logos/jira-work-management");
+var _atlassian = require("./legacy-logos/atlassian");
+var _jiraSoftware = require("./legacy-logos/jira-software");
+var _logoConfig = require("./logo-config");
+var AdminIcon = (0, _logoConfig.tempSizeWrapper)((0, _admin.AdminIcon));
+var AdminLogo = (0, _logoConfig.tempSizeWrapper)((0, _admin.AdminLogoCS));
+var AnalyticsIcon = (0, _logoConfig.tempSizeWrapper)((0, _analytics.AnalyticsIcon));
+var AnalyticsLogo = (0, _logoConfig.tempSizeWrapper)((0, _analytics.AnalyticsLogoCS));
+var AssetsIcon = (0, _logoConfig.tempSizeWrapper)((0, _assets.AssetsIcon));
+var AssetsLogo = (0, _logoConfig.tempSizeWrapper)((0, _assets.AssetsLogoCS));
+var ChatIcon = (0, _logoConfig.tempSizeWrapper)((0, _chat.ChatIcon));
+var ChatLogo = (0, _logoConfig.tempSizeWrapper)((0, _chat.ChatLogoCS));
+var CustomerServiceManagementIcon = (0, _logoConfig.tempSizeWrapper)((0, _customerServiceManagement.CustomerServiceManagementIcon));
+var CustomerServiceManagementLogo = (0, _logoConfig.tempSizeWrapper)((0, _customerServiceManagement.CustomerServiceManagementLogoCS));
+var GoalsIcon = (0, _logoConfig.tempSizeWrapper)((0, _goals.GoalsIcon));
+var GoalsLogo = (0, _logoConfig.tempSizeWrapper)((0, _goals.GoalsLogoCS));
+var HomeIcon = (0, _logoConfig.tempSizeWrapper)((0, _home.HomeIcon));
+var HomeLogo = (0, _logoConfig.tempSizeWrapper)((0, _home.HomeLogoCS));
+var HubIcon = (0, _logoConfig.tempSizeWrapper)((0, _hub.HubIcon));
+var HubLogo = (0, _logoConfig.tempSizeWrapper)((0, _hub.HubLogoCS));
+var ProjectsIcon = (0, _logoConfig.tempSizeWrapper)((0, _projects.ProjectsIcon));
+var ProjectsLogo = (0, _logoConfig.tempSizeWrapper)((0, _projects.ProjectsLogoCS));
+var SearchIcon = (0, _logoConfig.tempSizeWrapper)((0, _search.SearchIcon));
+var SearchLogo = (0, _logoConfig.tempSizeWrapper)((0, _search.SearchLogoCS));
+var StudioIcon = (0, _logoConfig.tempSizeWrapper)((0, _studio.StudioIcon));
+var StudioLogo = (0, _logoConfig.tempSizeWrapper)((0, _studio.StudioLogoCS));
+var TalentIcon = (0, _logoConfig.tempSizeWrapper)((0, _talent.TalentIcon));
+var TalentLogo = (0, _logoConfig.tempSizeWrapper)((0, _talent.TalentLogoCS));
+var TeamsIcon = (0, _logoConfig.tempSizeWrapper)((0, _teams.TeamsIcon));
+var TeamsLogo = (0, _logoConfig.tempSizeWrapper)((0, _teams.TeamsLogoCS));
+var BambooIcon = (0, _logoConfig.tempSizeWrapper)((0, _bamboo.BambooIcon));
+var BambooLogo = (0, _logoConfig.tempSizeWrapper)((0, _bamboo.BambooLogoCS));
+var BitbucketDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _bitbucketDataCenter.BitbucketDataCenterIcon));
+var BitbucketDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _bitbucketDataCenter.BitbucketDataCenterLogoCS));
+var ConfluenceDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _confluenceDataCenter.ConfluenceDataCenterIcon));
+var ConfluenceDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _confluenceDataCenter.ConfluenceDataCenterLogoCS));
+var CrowdIcon = (0, _logoConfig.tempSizeWrapper)((0, _crowd.CrowdIcon));
+var CrowdLogo = (0, _logoConfig.tempSizeWrapper)((0, _crowd.CrowdLogoCS));
+var JiraDataCenterIcon = (0, _logoConfig.tempSizeWrapper)((0, _jiraDataCenter.JiraDataCenterIcon));
+var JiraDataCenterLogo = (0, _logoConfig.tempSizeWrapper)((0, _jiraDataCenter.JiraDataCenterLogoCS));
+var AtlassianAdministrationIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdministration.AtlassianAdministrationIcon), (0, _admin.AdminIcon));
+var AtlassianAdministrationLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdministration.AtlassianAdministrationLogo), (0, _admin.AdminLogoCS));
+var AtlassianAdminIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdmin.AtlassianAdminIcon), (0, _admin.AdminIcon));
+var AtlassianAdminLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAdmin.AtlassianAdminLogo), (0, _admin.AdminLogoCS));
+var AtlassianAnalyticsIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAnalytics.AtlassianAnalyticsIcon), (0, _analytics.AnalyticsIcon));
+var AtlassianAnalyticsLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _atlassianAnalytics.AtlassianAnalyticsLogo), (0, _analytics.AnalyticsLogoCS));
+var BitbucketIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _bitbucket1.BitbucketIcon), (0, _bitbucket.BitbucketIcon));
+var BitbucketLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _bitbucket1.BitbucketLogo), (0, _bitbucket.BitbucketLogoCS));
+var CompassIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _compass1.CompassIcon), (0, _compass.CompassIcon));
+var CompassLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _compass1.CompassLogo), (0, _compass.CompassLogoCS));
+var ConfluenceIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _confluence1.ConfluenceIcon), (0, _confluence.ConfluenceIcon));
+var ConfluenceLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _confluence1.ConfluenceLogo), (0, _confluence.ConfluenceLogoCS));
+var AlignIcon = (0, _logoConfig.tempSizeWrapper)((0, _align.AlignIcon));
+var AlignLogo = (0, _logoConfig.tempSizeWrapper)((0, _align.AlignLogoCS));
+var JiraAlignIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraAlign.JiraAlignIcon), (0, _align.AlignIcon));
+var JiraAlignLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraAlign.JiraAlignLogo), (0, _align.AlignLogoCS));
+var JiraIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jira1.JiraIcon), (0, _jira.JiraIcon));
+var JiraLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jira1.JiraLogo), (0, _jira.JiraLogoCS));
+var JiraProductDiscoveryIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraProductDiscovery1.JiraProductDiscoveryIcon), (0, _jiraProductDiscovery.JiraProductDiscoveryIcon));
+var JiraProductDiscoveryLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraProductDiscovery1.JiraProductDiscoveryLogo), (0, _jiraProductDiscovery.JiraProductDiscoveryLogoCS));
+var JiraServiceManagementIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraServiceManagement1.JiraServiceManagementIcon), (0, _jiraServiceManagement.JiraServiceManagementIcon));
+var JiraServiceManagementLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _jiraServiceManagement1.JiraServiceManagementLogo), (0, _jiraServiceManagement.JiraServiceManagementLogoCS));
+var LoomIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loom1.LoomIcon), (0, _loom.LoomIcon));
+var LoomLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loom1.LoomLogo), (0, _loom.LoomLogoCS));
+var LoomAttributionIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loomAttribution1.LoomAttributionIcon), (0, _loom.LoomIcon));
+var LoomAttributionLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _loomAttribution1.LoomAttributionLogo), (0, _loomAttribution.LoomAttributionLogoCS));
+var LoomBlurpleLogo = (0, _logoConfig.tempSizeWrapper)((0, _loomInternal.LoomInternalLogoCS));
+var LoomBlurpleIcon = (0, _logoConfig.tempSizeWrapper)((0, _loomInternal.LoomInternalIcon));
+var OpsgenieIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _opsgenie1.OpsgenieIcon), (0, _opsgenie.OpsgenieIcon));
+var OpsgenieLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _opsgenie1.OpsgenieLogo), (0, _opsgenie.OpsgenieLogoCS));
+var StatuspageIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _statuspage1.StatuspageIcon), (0, _statuspage.StatuspageIcon));
+var StatuspageLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _statuspage1.StatuspageLogo), (0, _statuspage.StatuspageLogoCS));
+var TrelloIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _trello1.TrelloIcon), (0, _trello.TrelloIcon));
+var TrelloLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _trello1.TrelloLogo), (0, _trello.TrelloLogoCS));
+var RovoIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _rovo1.RovoIcon), (0, _rovo.RovoIcon));
+var RovoLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _rovo1.RovoLogo), (0, _rovo.RovoLogoCS));
+var GuardIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _guard1.GuardIcon), (0, _guard.GuardIcon));
+var GuardLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _guard1.GuardLogo), (0, _guard.GuardLogoCS));
+var FocusIcon = (0, _logoConfig.createFeatureFlaggedComponent)((0, _focus1.FocusIcon), (0, _focus.FocusIcon));
+var FocusLogo = (0, _logoConfig.createFeatureFlaggedComponent)((0, _focus1.FocusLogo), (0, _focus.FocusLogoCS));
+
+},{"@atlaskit/temp-nav-app-icons/admin":"44skA","@atlaskit/temp-nav-app-icons/align":"aQReq","@atlaskit/temp-nav-app-icons/analytics":"jRJ9m","@atlaskit/temp-nav-app-icons/assets":"d8sSp","@atlaskit/temp-nav-app-icons/bamboo":"jpQ77","@atlaskit/temp-nav-app-icons/bitbucket":"k0e7I","@atlaskit/temp-nav-app-icons/bitbucket-data-center":"x9EvF","@atlaskit/temp-nav-app-icons/chat":"2r3Wa","@atlaskit/temp-nav-app-icons/compass":"h9jo8","@atlaskit/temp-nav-app-icons/confluence":"6vJRz","@atlaskit/temp-nav-app-icons/confluence-data-center":"gJqlT","@atlaskit/temp-nav-app-icons/crowd":"lS1aX","@atlaskit/temp-nav-app-icons/customer-service-management":"4lKd4","@atlaskit/temp-nav-app-icons/focus":"69sOI","@atlaskit/temp-nav-app-icons/goals":"d8GqK","@atlaskit/temp-nav-app-icons/guard":"9lHbq","@atlaskit/temp-nav-app-icons/home":"ia4MW","@atlaskit/temp-nav-app-icons/hub":"h2R4a","@atlaskit/temp-nav-app-icons/jira":"4SvKN","@atlaskit/temp-nav-app-icons/jira-data-center":"bRXCr","@atlaskit/temp-nav-app-icons/jira-product-discovery":"aCESF","@atlaskit/temp-nav-app-icons/jira-service-management":"lQrKh","@atlaskit/temp-nav-app-icons/loom":"bgxyf","@atlaskit/temp-nav-app-icons/loom-attribution":"dxLsB","@atlaskit/temp-nav-app-icons/loom-internal":"30R6Q","@atlaskit/temp-nav-app-icons/opsgenie":"6sWOw","@atlaskit/temp-nav-app-icons/projects":"hGf4e","@atlaskit/temp-nav-app-icons/rovo":"6susR","@atlaskit/temp-nav-app-icons/search":"5nrXh","@atlaskit/temp-nav-app-icons/statuspage":"1RUF7","@atlaskit/temp-nav-app-icons/studio":"ewOSd","@atlaskit/temp-nav-app-icons/talent":"j9RtV","@atlaskit/temp-nav-app-icons/teams":"02xTx","@atlaskit/temp-nav-app-icons/trello":"jHNqy","./legacy-logos/atlassian-admin":"cfB6H","./legacy-logos/atlassian-administration":"eOp9n","./legacy-logos/atlassian-analytics":"kMc8s","./legacy-logos/bitbucket":"40fXz","./legacy-logos/compass":"ieC6Y","./legacy-logos/confluence":"bAjHy","./legacy-logos/focus":"rQCUQ","./legacy-logos/guard":"bVBvF","./legacy-logos/jira":"aKV0g","./legacy-logos/jira-align":"hYE78","./legacy-logos/jira-product-discovery":"47Ksv","./legacy-logos/jira-service-management":"bzHbR","./legacy-logos/loom":"5l6mv","./legacy-logos/loom-attribution":"0Qp4W","./legacy-logos/opsgenie":"hjIrq","./legacy-logos/rovo":"54y5j","./legacy-logos/statuspage":"1a7OU","./legacy-logos/trello":"59Cnq","./legacy-logos/atlas":false,"./legacy-logos/atlassian-marketplace":false,"./legacy-logos/atlassian-access":false,"./legacy-logos/jira-work-management":false,"./legacy-logos/atlassian":false,"./legacy-logos/jira-software":false,"./logo-config":"2QhWk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"44skA":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::c3e1d5a18c215f1b61c36e90f2bb1ec4>>
+ * @codegenCommand yarn workspace @atlaskit/temp-nav-app-icons build-temp-logos
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AdminIcon", ()=>(0, _icon.AdminIcon));
+parcelHelpers.export(exports, "AdminLogo", ()=>(0, _logo.AdminLogo));
+parcelHelpers.export(exports, "AdminLogoCS", ()=>(0, _logoCs.AdminLogoCS));
+var _icon = require("../ui/admin/icon");
+var _logo = require("../ui/admin/logo");
+var _logoCs = require("../ui/admin/logo-cs");
+
+},{"../ui/admin/icon":"i8nGK","../ui/admin/logo":false,"../ui/admin/logo-cs":"iGGg9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i8nGK":[function(require,module,exports,__globalThis) {
+/**
+ * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
+ * @codegen <<SignedSource::1b4c2b482d26b1be8309fdd18226deba>>
+ * @codegenCommand yarn workspace @atlaskit/temp-nav-app-icons build-temp-logos
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * __AdminIcon__
+ *
+ * A temporary component to represent the icon for Admin.
+ * @deprecated This component has been replaced by the component `AdminIcon` in `@atlaskit/logo`.
+ * Please migrate any usages of this temporary component, using the prop `shouldUseNewLogoDesign` where necessary
+ * to enable the new design by default.
+ *
+ */ parcelHelpers.export(exports, "AdminIcon", ()=>AdminIcon);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _iconWrapper = require("../../utils/icon-wrapper");
+// `height` is set to 100% to allow the SVG to scale with the parent element
+var svg = "<svg height=\"100%\" viewBox=\"0 0 24 24\">\n    <path fill=\"var(--tile-color,#dddee1)\" d=\"M0 6a6 6 0 0 1 6-6h12a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6z\"/>\n    <path fill=\"var(--icon-color, #101214)\" fill-rule=\"evenodd\" d=\"M10.444 5h3.111l.98 2.61 2.75-.457 1.555 2.694L17.07 12l1.77 2.153-1.555 2.694-2.75-.457-.979 2.61h-3.11l-.98-2.61-2.75.457-1.555-2.694L6.931 12 5.16 9.847l1.555-2.694 2.75.457zM12 14.625a2.625 2.625 0 1 0 0-5.25 2.625 2.625 0 0 0 0 5.25\" clip-rule=\"evenodd\"/>\n</svg>\n";
+function AdminIcon(_ref) {
+    var size = _ref.size, _ref$appearance = _ref.appearance, appearance = _ref$appearance === void 0 ? 'brand' : _ref$appearance, _ref$label = _ref.label, label = _ref$label === void 0 ? 'Admin' : _ref$label, testId = _ref.testId;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _iconWrapper.IconWrapper), {
+        svg: svg,
+        label: label,
+        appearance: appearance,
+        size: size,
+        testId: testId
+    });
+}
+
+},{"react":"jMk1U","../../utils/icon-wrapper":"j6gnN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j6gnN":[function(require,module,exports,__globalThis) {
+/* icon-wrapper.tsx generated by @compiled/babel-plugin v0.36.1 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IconWrapper", ()=>IconWrapper);
+var _react = require("react");
+var _runtime = require("@compiled/react/runtime");
+var _tokens = require("@atlaskit/tokens");
+var styles = {
+    root: "_1e0c1o8l"
+};
+/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var cloudLightAppearanceMap = {
+    brand: "_1b3i18uv _9aea18uv",
+    neutral: "_1b3i1e01 _9aea1fkg",
+    inverse: "_1b3i5a6q _9aeau67f",
+    legacy: "_1b3iu67f _9aeadoyu"
+};
+/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var cloudDarkAppearanceMap = {
+    brand: "_1b3i18uv _9aea18uv",
+    neutral: "_1b3i1gvk _9aea8hz0",
+    inverse: "_1b3iu67f _9aea5a6q",
+    legacy: "_1b3iu67f _9aeadoyu"
+};
+/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var dataCenterLightAppearanceMap = {
+    brand: "_1b3idoyu _9aeau67f _3wu01fkg",
+    neutral: "_1b3i1e01 _9aea1fkg _3wu01e01",
+    inverse: "_1b3iu67f _9aeaqlpt _3wu0u67f",
+    legacy: "_1b3idoyu _9aeau67f _3wu01fkg"
+};
+/* eslint-disable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-disable @atlaskit/ui-styling-standard/no-unsafe-values */ var dataCenterDarkAppearanceMap = {
+    brand: "_1b3idoyu _9aeaqlpt _3wu08hz0",
+    neutral: "_1b3i1gvk _9aea8hz0 _3wu01gvk",
+    inverse: "_1b3i1501 _9aeau67f _3wu01501",
+    legacy: "_1b3idoyu _9aeaqlpt _3wu08hz0"
+};
+/* eslint-enable @atlaskit/ui-styling-standard/no-imported-style-values */ /* eslint-enable @atlaskit/ui-styling-standard/no-unsafe-values */ var sizeMap = {
+    xxsmall: "_4t3i7vkz",
+    xsmall: "_4t3igktf",
+    small: "_4t3i1tcg",
+    medium: "_4t3izwfg",
+    large: "_4t3i1ylp",
+    xlarge: "_4t3ickbl",
+    '12': "_4t3i1crf",
+    '16': "_4t3i7vkz",
+    '20': "_4t3igktf",
+    '24': "_4t3i1tcg",
+    '32': "_4t3izwfg"
+};
+function IconWrapper(_ref) {
+    var _ref$size = _ref.size, size = _ref$size === void 0 ? '20' : _ref$size, label = _ref.label, svg = _ref.svg, customThemeSvg = _ref.customThemeSvg, userDefinedTestId = _ref.testId, _ref$appearance = _ref.appearance, appearance = _ref$appearance === void 0 ? 'brand' : _ref$appearance, customIconColor = _ref.iconColor, _ref$isDataCenter = _ref.isDataCenter, isDataCenter = _ref$isDataCenter === void 0 ? false : _ref$isDataCenter;
+    var testId = userDefinedTestId && "".concat(userDefinedTestId, "--wrapper");
+    var isCustomThemed = customThemeSvg && customIconColor;
+    var _useThemeObserver = (0, _tokens.useThemeObserver)(), colorMode = _useThemeObserver.colorMode;
+    return /*#__PURE__*/ _react.createElement("span", {
+        "data-testid": testId,
+        style: {
+            // eslint-disable-next-line @atlaskit/ui-styling-standard/no-imported-style-values
+            '--themed-icon-color': customIconColor || 'initial'
+        },
+        "aria-label": label ? label : undefined,
+        role: label ? 'img' : undefined,
+        "aria-hidden": label === '' ? true : undefined,
+        dangerouslySetInnerHTML: {
+            __html: isCustomThemed ? customThemeSvg : svg
+        },
+        className: (0, _runtime.ax)([
+            styles.root,
+            sizeMap[size],
+            isDataCenter ? colorMode === 'dark' ? dataCenterDarkAppearanceMap[appearance] : dataCenterLightAppearanceMap[appearance] : colorMode === 'dark' ? cloudDarkAppearanceMap[appearance] : cloudLightAppearanceMap[appearance]
+        ])
+    });
+}
+
+},{"react":"jMk1U","@compiled/react/runtime":"j44i3","@atlaskit/tokens":"cmVFI","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j44i3":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CC", ()=>(0, _index.CC));
+parcelHelpers.export(exports, "CS", ()=>(0, _index.CS));
+parcelHelpers.export(exports, "ax", ()=>(0, _index.ax));
+parcelHelpers.export(exports, "ac", ()=>(0, _index.ac));
+parcelHelpers.export(exports, "clearAcCache", ()=>(0, _index.clearAcCache));
+parcelHelpers.export(exports, "ix", ()=>(0, _index.ix));
+var _index = require("./runtime/index");
+
+},{"./runtime/index":"1U7lK","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1U7lK":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CS", ()=>(0, _styleDefault.default));
+parcelHelpers.export(exports, "CC", ()=>(0, _styleCacheDefault.default));
+parcelHelpers.export(exports, "ax", ()=>(0, _axDefault.default));
+parcelHelpers.export(exports, "ac", ()=>(0, _acDefault.default));
+parcelHelpers.export(exports, "clearAcCache", ()=>(0, _ac.clearCache));
+parcelHelpers.export(exports, "ix", ()=>(0, _cssCustomPropertyDefault.default));
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+var _styleCache = require("./style-cache");
+var _styleCacheDefault = parcelHelpers.interopDefault(_styleCache);
+var _ax = require("./ax");
+var _axDefault = parcelHelpers.interopDefault(_ax);
+var _ac = require("./ac");
+var _acDefault = parcelHelpers.interopDefault(_ac);
+var _cssCustomProperty = require("./css-custom-property");
+var _cssCustomPropertyDefault = parcelHelpers.interopDefault(_cssCustomProperty);
+
+},{"./style":false,"./style-cache":false,"./ax":"5Gqnq","./ac":false,"./css-custom-property":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5Gqnq":[function(require,module,exports,__globalThis) {
+/**
+ * This length includes the underscore,
+ * e.g. `"_1s4A"` would be a valid atomic group hash.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>ax);
+const ATOMIC_GROUP_LENGTH = 5;
+function ax(classNames) {
+    // Shortcut: nothing to do
+    if (!classNames.length) return;
+    // Shortcut: don't need to do anything if we only have a single classname
+    if (classNames.length === 1 && classNames[0] && // checking to see if `classNames[0]` is a string that contains other classnames
+    !classNames[0].includes(' ')) return classNames[0];
+    // Using an object rather than a `Map` as it performed better in our benchmarks.
+    // Would be happy to move to `Map` if it proved to be better under real conditions.
+    const map = {};
+    // Note: using loops to minimize iterations over the collection
+    for (const value of classNames){
+        // Exclude all falsy values, which leaves us with populated strings
+        if (!value) continue;
+        // a `value` can contain multiple classnames
+        const list = value.split(' ');
+        for (const className of list){
+            /**
+             * For atomic style classnames: the `key` is the `group`
+             *
+             * - Later atomic classnames with the same `group` will override earlier ones
+             *   (which is what we want).
+             * - Assumes atomic classnames are the only things that start with `_`
+             * - Could use a regex to ensure that atomic classnames are structured how we expect,
+             *   but did not add that for now as it did slow things down a bit.
+             *
+             * For other classnames: the `key` is the whole classname
+             * - Okay to remove duplicates as doing so does not impact specificity
+             *
+             * */ const key = className.startsWith('_') ? className.slice(0, ATOMIC_GROUP_LENGTH) : className;
+            map[key] = className;
+        }
+    }
+    /**
+     * We are converting the `map` into a string.
+     *
+     * The simple way to do this would be `Object.values(map).join(' ')`.
+     * However, the approach below performs 10%-20% better in benchmarks.
+     *
+     * For `ax()` it feels right to squeeze as much runtime performance out as we can.
+     */ let result = '';
+    for(const key in map)result += map[key] + ' ';
+    // If we have an empty string, then our `map` was empty.
+    if (!result) return;
+    // remove last " " from the result (we added " " at the end of every value)
+    return result.trimEnd();
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iGGg9":[function(require,module,exports,__globalThis) {
 /**
  * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
  * @codegen <<SignedSource::d383c70bd143f919db0ed4486643f770>>
@@ -63740,61 +73800,6 @@ var NEW_ONLY_LOGOS = logoDocsSchema.filter(function(logo) {
     return logo.type === 'new';
 });
 
-},{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/objectWithoutProperties":"j8lr0","react":"jMk1U","@atlaskit/platform-feature-flags":"3H8e6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kgNUm":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("e01d316691c7c1f5"));
-var _base = require("6162f754753b4fc8");
-var _edit = _interopRequireDefault(require("7b45ad4e726d6370"));
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-const EditIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_base.UNSAFE_IconFacade, Object.assign({
-        dangerouslySetGlyph: `<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M4.02 19.23a1 1 0 0 0 1.18 1.18l3.81-.78-4.21-4.21zm5.92-2.62-2.12-2.12L16.31 6l2.12 2.12zm9.9-9.9-2.12-2.12A2 2 0 0 0 16.31 4c-.51 0-1.02.2-1.41.59l-9.76 9.76 4.95 4.95 9.76-9.76a2 2 0 0 0 0-2.83"/></svg>`
-    }, props, {
-        newIcon: _edit.default
-    }));
-EditIcon.displayName = 'EditIcon';
-var _default = exports.default = EditIcon;
-
-},{"e01d316691c7c1f5":"jMk1U","6162f754753b4fc8":"iJoYh","7b45ad4e726d6370":"hZVeM"}],"hZVeM":[function(require,module,exports,__globalThis) {
-/**
- * THIS FILE WAS CREATED VIA CODEGEN DO NOT MODIFY {@see http://go/af-codegen}
- * @codegen <<SignedSource::d48c51235c7072e6617b637653c3f4fe>>
- * @codegenCommand yarn build:icon-glyphs
- */ "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("c010bc75cf8a569b"));
-var _UNSAFE_baseNew = _interopRequireDefault(require("19a2b5528b952487"));
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-/**
- * ⚠️ EXPERIMENTAL ⚠️ - New icons are in alpha - and subject to change or removal in future minor or patch releases.
- * Please reach out in #icon-contributions before using these in production.
- *
- * Icon: "Edit".
- * Category: single-purpose
- * Location: @atlaskit/icon
- * Usage guidance: Single purpose - Reserved for editing objects.
- * - [Examples](https://atlaskit.atlassian.com/packages/design-system/icon)
- * - [Code](https://atlaskit.atlassian.com/packages/design-system/icon/docs/custom-icons)
- */ const EditIcon = (props)=>/*#__PURE__*/ _react.default.createElement(_UNSAFE_baseNew.default, Object.assign({
-        dangerouslySetGlyph: `<path stroke="currentcolor" stroke-linejoin="round" stroke-width="1.5" d="M6 1.751H3c-.69 0-1.25.56-1.25 1.25v10c0 .69.56 1.25 1.25 1.25h10c.69 0 1.25-.56 1.25-1.25V10m-.75-5 1.116-1.116a1.25 1.25 0 0 0 0-1.768l-.732-.732a1.25 1.25 0 0 0-1.768 0L11 2.5M13.5 5 9.479 9.021c-.15.15-.336.26-.54.318l-3.189.911.911-3.189a1.25 1.25 0 0 1 .318-.54L11 2.5M13.5 5 11 2.5"/>`
-    }, props));
-EditIcon.displayName = 'EditIcon';
-var _default = exports.default = EditIcon;
-
-},{"c010bc75cf8a569b":"jMk1U","19a2b5528b952487":"4oZdW"}]},["7KwkS","4dmnR"], "4dmnR", "parcelRequirede6b", {}, null, null, "http://localhost:1234")
+},{"@babel/runtime/helpers/extends":"lKa0J","@babel/runtime/helpers/objectWithoutProperties":"j8lr0","react":"jMk1U","@atlaskit/platform-feature-flags":"3H8e6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["4VwAv","4dmnR"], "4dmnR", "parcelRequirede6b", {}, null, null, "http://localhost:3000")
 
 //# sourceMappingURL=adminMCP.6efbc4f8.js.map

@@ -1,4 +1,4 @@
-import React, { useState, KeyboardEvent, FormEvent } from 'react';
+import React, { useState, KeyboardEvent, FormEvent, useEffect } from 'react';
 import { css } from '@compiled/react';
 import { token } from '@atlaskit/tokens';
 import '@atlaskit/css-reset';
@@ -8,6 +8,7 @@ import Button from '@atlaskit/button/new';
 import Tabs, { Tab, TabList, TabPanel } from '@atlaskit/tabs';
 import Textfield from '@atlaskit/textfield';
 import DynamicTable from '@atlaskit/dynamic-table';
+import ModalDialog, { ModalHeader, ModalTitle, ModalBody, ModalFooter } from '@atlaskit/modal-dialog';
 
 // Import Atlaskit icons
 import NotificationIcon from '@atlaskit/icon/glyph/notification';
@@ -208,6 +209,8 @@ const App: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState('home');
   const [editingUrlId, setEditingUrlId] = useState<number | null>(null);
   const [selectedSiteForEdit, setSelectedSiteForEdit] = useState<number | null>(null);
+  const [isRevertModalOpen, setIsRevertModalOpen] = useState(false);
+  const [siteIndexToRevert, setSiteIndexToRevert] = useState<number | null>(null);
   const [defaultUrls, setDefaultUrls] = useState([
     'https://api.github.com',
     'https://api.atlassian.com',
@@ -233,10 +236,10 @@ const App: React.FC = () => {
 
   // Site-specific URL lists for each site
   const [siteUrls, setSiteUrls] = useState<{[key: number]: string[]}>({
-    0: ['https://prod.api.example.com', 'https://prod.webhook.example.com'],
-    1: ['https://staging.api.example.com'],
-    2: ['https://dev.api.example.com', 'https://dev.test.example.com', 'https://dev.mock.example.com'],
-    3: ['https://test.api.example.com']
+    0: [...defaultUrls],
+    1: [...defaultUrls],
+    2: [...defaultUrls],
+    3: [...defaultUrls],
   });
 
   const [editingSiteUrlId, setEditingSiteUrlId] = useState<number | null>(null);
@@ -271,6 +274,11 @@ const App: React.FC = () => {
       product: 'trello'
     }
   ]);
+
+  // Debug modal state changes
+  useEffect(() => {
+    console.log('Modal state changed - isRevertModalOpen:', isRevertModalOpen);
+  }, [isRevertModalOpen]);
 
   // Helper function to get the appropriate logo for each product
   const getProductLogo = (product: string) => {
@@ -344,6 +352,13 @@ const App: React.FC = () => {
   const handleBackToMCPSettings = () => {
     setSelectedSiteForEdit(null);
     setSelectedItem('mcp-settings');
+    // Set the tab to Site Overrides when returning
+    setTimeout(() => {
+      const tabs = document.querySelectorAll('[role="tab"]');
+      if (tabs && tabs.length > 1) {
+        (tabs[1] as HTMLElement).click();
+      }
+    }, 0);
   };
 
   const handleAddSite = () => {
@@ -410,6 +425,54 @@ const App: React.FC = () => {
     }
   };
 
+  const handleRevertToOrgDefaults = (siteIndex: number) => {
+    setSiteIndexToRevert(siteIndex);
+    setIsRevertModalOpen(true);
+  };
+
+  const handleConfirmRevert = () => {
+    if (siteIndexToRevert !== null) {
+      const updatedSiteUrls = { ...siteUrls };
+      updatedSiteUrls[siteIndexToRevert] = [...defaultUrls];
+      setSiteUrls(updatedSiteUrls);
+    }
+    setIsRevertModalOpen(false);
+    setSiteIndexToRevert(null);
+  };
+
+  const handleCancelRevert = () => {
+    setIsRevertModalOpen(false);
+    setSiteIndexToRevert(null);
+  };
+
+  // Helper to check if a site is inherited from org
+  const isSiteInherited = (siteIndex: number) => {
+    const siteUrlsForIndex = siteUrls[siteIndex] || [];
+    return (
+      siteUrlsForIndex.length === defaultUrls.length &&
+      siteUrlsForIndex.every((url, i) => url === defaultUrls[i])
+    );
+  };
+
+  // Update all inherited site lists when org allow list changes
+  useEffect(() => {
+    setSiteUrls((prevSiteUrls) => {
+      const updated: {[key: number]: string[]} = { ...prevSiteUrls };
+      Object.keys(updated).forEach((key) => {
+        const idx = Number(key);
+        const urls = prevSiteUrls[idx] || [];
+        // Only update if the site is currently inherited from org (matches the previous org list exactly)
+        if (
+          urls.length === prevSiteUrls[0].length &&
+          urls.every((url, i) => url === prevSiteUrls[0][i])
+        ) {
+          updated[idx] = [...defaultUrls];
+        }
+      });
+      return updated;
+    });
+  }, [defaultUrls]);
+
   const navItems = [
     { id: 'home', label: 'Dashboard' },
     { id: 'users', label: 'Users' },
@@ -470,14 +533,14 @@ const App: React.FC = () => {
             <div css={css({ marginTop: token('space.400') })}>
               <Tabs id="mcp-settings-tabs" defaultSelected={selectedSiteForEdit !== null ? 1 : 0}>
                 <TabList>
-                  <Tab>Default List</Tab>
-                  <Tab>Site Lists</Tab>
+                  <Tab>Org allow list</Tab>
+                  <Tab>Site Overrides</Tab>
                 </TabList>
                 <TabPanel>
                   <div css={css({ marginTop: token('space.300') })}>
                     <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
                       <div>
-                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Default allow list</h4>
+                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Org allow list</h4>
                         <p css={css({ margin: 0, marginTop: '12px' })}>Below is the list of allowed sites set by default in your organisation.</p>
                       </div>
                       <Button appearance="default" onClick={handleAddUrl}>Add URL</Button>
@@ -581,12 +644,9 @@ const App: React.FC = () => {
                 </TabPanel>
                 <TabPanel>
                   <div css={css({ marginTop: token('space.300') })}>
-                    <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
-                      <div>
-                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
-                        <p css={css({ margin: 0, marginTop: '12px' })}>Set allow lists at a site level, these override your organisation's defaults.</p>
-                      </div>
-                      <Button appearance="default" onClick={handleAddSite}>Add Site</Button>
+                    <div css={css({ marginBottom: '24px' })}>
+                      <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site Overrides</h4>
+                      <p css={css({ margin: 0, marginTop: '12px' })}>Set allow lists at a site level, these override your organisation's defaults.</p>
                     </div>
                     <div css={css({ 
                       width: '100%',
@@ -615,66 +675,61 @@ const App: React.FC = () => {
                             cells: [
                               { key: 'name', content: 'Site Name', isSortable: false, width: 25 },
                               { key: 'url', content: 'URL', isSortable: false, width: 30 },
-                              { key: 'servers', content: 'Servers', isSortable: false, width: 15 },
                               { key: 'status', content: 'Status', isSortable: false, width: 20 },
                               { key: 'actions', content: '', isSortable: false, width: 10 },
                             ],
                           }}
-                          rows={siteLists.map((site, index) => ({
-                            key: `site-${index}`,
-                            cells: [
-                              {
-                                key: 'name',
-                                content: (
-                                  <div css={css({ 
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: token('space.100', '8px'),
-                                  })}>
-                                    {getProductLogo(site.product)}
-                                    <span>{site.name}</span>
-                                  </div>
-                                ),
-                              },
-                              {
-                                key: 'url',
-                                content: <span>{site.url}</span>,
-                              },
-                              {
-                                key: 'servers',
-                                content: (
-                                  <span>
-                                    {site.servers} server{site.servers !== 1 ? 's' : ''} configured
-                                  </span>
-                                ),
-                              },
-                              {
-                                key: 'status',
-                                content: (
-                                  <span css={css({ 
-                                    color: site.status === 'Active' ? token('color.text.success') : token('color.text.warning'), 
-                                    fontWeight: 500 
-                                  })}>
-                                    {site.status}
-                                  </span>
-                                ),
-                              },
-                              {
-                                key: 'actions',
-                                content: (
-                                  <Button
-                                    appearance="default"
-                                    iconBefore={EditIcon}
-                                    onClick={() => handleEditSite(index)}
-                                    aria-label="Edit Site"
-                                    css={css({ minWidth: 'auto', padding: '4px 8px' })}
-                                  >
-                                    &nbsp;
-                                  </Button>
-                                ),
-                              },
-                            ],
-                          }))}
+                          rows={siteLists.map((site, index) => {
+                            // Determine if siteUrls for this site matches defaultUrls
+                            const siteUrlsForIndex = siteUrls[index] || [];
+                            const isCustom =
+                              siteUrlsForIndex.length !== defaultUrls.length ||
+                              siteUrlsForIndex.some((url, i) => url !== defaultUrls[i]);
+                            return {
+                              key: `site-${index}`,
+                              cells: [
+                                {
+                                  key: 'name',
+                                  content: (
+                                    <div css={css({ 
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      gap: token('space.100', '8px'),
+                                    })}>
+                                      {getProductLogo(site.product)}
+                                      <span>{site.name}</span>
+                                    </div>
+                                  ),
+                                },
+                                {
+                                  key: 'url',
+                                  content: <span>{site.url}</span>,
+                                },
+                                {
+                                  key: 'status',
+                                  content: (
+                                    <span css={css({ fontWeight: 500 })}>
+                                      {isCustom ? 'Custom' : 'Inherited from org'}
+                                    </span>
+                                  ),
+                                },
+                                {
+                                  key: 'actions',
+                                  content: (
+                                    <Button
+                                      appearance="default"
+                                      iconBefore={EditIcon}
+                                      onClick={() => handleEditSite(index)}
+                                      aria-label="Edit Site"
+                                      css={css({ minWidth: 'auto', padding: '4px 8px' })}
+                                    >
+                                      &nbsp;
+                                    </Button>
+                                  ),
+                                },
+                              ],
+                            };
+                          })}
                           testId="site-lists-table"
                         />
                       )}
@@ -692,7 +747,7 @@ const App: React.FC = () => {
         }
         return (
           <div>
-            <div css={css({ marginBottom: token('space.400', '32px') })}>
+            <div css={css({ marginBottom: token('space.400', '32px')})}>
               <Button
                 appearance="subtle"
                 onClick={handleBackToMCPSettings}
@@ -717,11 +772,17 @@ const App: React.FC = () => {
             <div css={css({ marginTop: token('space.300') })}>
               <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
                 <div>
-                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow list</h4>
+                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site Overrides</h4>
                   <p css={css({ margin: 0, marginTop: '12px' })}>Configure the allowed URLs specifically for {siteToEdit.name}.</p>
                 </div>
                 <div css={css({ display: 'flex', gap: token('space.200', '16px') })}>
-                  <Button appearance="subtle">Revert to org defaults</Button>
+                  <Button 
+                    appearance="subtle"
+                    type="button"
+                    onClick={() => handleRevertToOrgDefaults(selectedSiteForEdit!)}
+                  >
+                    Revert to org defaults
+                  </Button>
                   <Button appearance="default" onClick={() => handleAddSiteUrl(selectedSiteForEdit!)}>Add URL</Button>
                 </div>
               </div>
@@ -813,9 +874,6 @@ const App: React.FC = () => {
                   />
                 )}
               </div>
-            </div>
-            <div css={css({ marginTop: token('space.400', '32px') })}>
-              <Button appearance="subtle">Revert to org defaults</Button>
             </div>
           </div>
         );
@@ -941,6 +999,36 @@ const App: React.FC = () => {
           {renderContent()}
         </div>
       </div>
+
+      {/* Revert to Org Defaults Confirmation Modal - always mounted at root */}
+      {isRevertModalOpen && (
+        <ModalDialog
+          onClose={handleCancelRevert}
+          width="small"
+          testId="danger-modal"
+        >
+          <ModalHeader>
+            <ModalTitle>Revert to organization defaults?</ModalTitle>
+          </ModalHeader>
+          <ModalBody>
+            <p>
+              This will replace all site-specific URLs with your organization's default URL list. 
+              Any custom URLs configured for this site will be lost.
+            </p>
+            <p>
+              <strong>This action cannot be undone.</strong>
+            </p>
+          </ModalBody>
+          <ModalFooter>
+            <Button appearance="subtle" onClick={handleCancelRevert}>
+              Cancel
+            </Button>
+            <Button appearance="danger" onClick={handleConfirmRevert}>
+              Revert to defaults
+            </Button>
+          </ModalFooter>
+        </ModalDialog>
+      )}
     </div>
   );
 };
