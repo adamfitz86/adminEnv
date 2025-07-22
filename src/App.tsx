@@ -9,6 +9,7 @@ import Tabs, { Tab, TabList, TabPanel } from '@atlaskit/tabs';
 import Textfield from '@atlaskit/textfield';
 import DynamicTable from '@atlaskit/dynamic-table';
 import ModalDialog, { ModalHeader, ModalTitle, ModalBody, ModalFooter } from '@atlaskit/modal-dialog';
+import Select from '@atlaskit/select';
 
 // Import Atlaskit icons
 import NotificationIcon from '@atlaskit/icon/glyph/notification';
@@ -274,6 +275,8 @@ const App: React.FC = () => {
       product: 'trello'
     }
   ]);
+
+  const [siteStatusOverrides, setSiteStatusOverrides] = useState<{[key:number]: 'inherited'|'custom'}>({});
 
   // Debug modal state changes
   useEffect(() => {
@@ -676,7 +679,7 @@ const App: React.FC = () => {
                               { key: 'name', content: 'Site Name', isSortable: false, width: 25 },
                               { key: 'url', content: 'URL', isSortable: false, width: 30 },
                               { key: 'status', content: 'Status', isSortable: false, width: 20 },
-                              { key: 'actions', content: '', isSortable: false, width: 10 },
+                              { key: 'actions', content: 'Allowed', isSortable: false, width: 10 },
                             ],
                           }}
                           rows={siteLists.map((site, index) => {
@@ -685,17 +688,21 @@ const App: React.FC = () => {
                             const isCustom =
                               siteUrlsForIndex.length !== defaultUrls.length ||
                               siteUrlsForIndex.some((url, i) => url !== defaultUrls[i]);
+                            const statusValue = siteStatusOverrides[index] || (isCustom ? 'custom' : 'inherited');
+                            // Handler for row click (except select)
+                            const handleRowClick = (e: React.MouseEvent) => {
+                              // Prevent navigation if clicking inside the select dropdown
+                              if ((e.target as HTMLElement).closest('.site-status-select')) return;
+                              handleEditSite(index);
+                            };
                             return {
                               key: `site-${index}`,
+                              onClick: handleRowClick,
                               cells: [
                                 {
                                   key: 'name',
                                   content: (
-                                    <div css={css({ 
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      gap: token('space.100', '8px'),
-                                    })}>
+                                    <div css={css({ display: 'flex', alignItems: 'center', gap: token('space.100', '8px') })}>
                                       {getProductLogo(site.product)}
                                       <span>{site.name}</span>
                                     </div>
@@ -708,23 +715,32 @@ const App: React.FC = () => {
                                 {
                                   key: 'status',
                                   content: (
-                                    <span css={css({ fontWeight: 500 })}>
-                                      {isCustom ? 'Custom' : 'Inherited from org'}
-                                    </span>
+                                    <div className="site-status-select">
+                                      <Select
+                                        inputId={`site-status-${index}`}
+                                        options={[
+                                          { label: 'Inherited from org', value: 'inherited' },
+                                          { label: 'Custom', value: 'custom' },
+                                        ]}
+                                        value={{ label: statusValue === 'custom' ? 'Custom' : 'Inherited from org', value: statusValue }}
+                                        onChange={(option) => handleSiteStatusChange(index, option?.value as 'inherited'|'custom')}
+                                        isSearchable={false}
+                                        menuPlacement="auto"
+                                        appearance="subtle"
+                                        styles={{
+                                          control: (base: any) => ({ ...base, minWidth: 180, fontWeight: 500 }),
+                                          singleValue: (base: any) => ({ ...base, fontWeight: 500 }),
+                                        }}
+                                      />
+                                    </div>
                                   ),
                                 },
                                 {
                                   key: 'actions',
                                   content: (
-                                    <Button
-                                      appearance="default"
-                                      iconBefore={EditIcon}
-                                      onClick={() => handleEditSite(index)}
-                                      aria-label="Edit Site"
-                                      css={css({ minWidth: 'auto', padding: '4px 8px' })}
-                                    >
-                                      &nbsp;
-                                    </Button>
+                                    <span css={css({ fontWeight: 500 })}>
+                                      {siteUrlsForIndex.length} URL{siteUrlsForIndex.length === 1 ? '' : 's'}
+                                    </span>
                                   ),
                                 },
                               ],
@@ -932,6 +948,23 @@ const App: React.FC = () => {
         );
       default:
         return <div>Page not found</div>;
+    }
+  };
+
+  const handleSiteStatusChange = (siteIndex: number, newValue: 'inherited'|'custom') => {
+    setSiteStatusOverrides((prev) => ({ ...prev, [siteIndex]: newValue }));
+    if (newValue === 'inherited') {
+      setSiteUrls((prev) => ({ ...prev, [siteIndex]: [...defaultUrls] }));
+    } else if (newValue === 'custom') {
+      setSiteUrls((prev) => {
+        // If already custom, keep as is; otherwise, copy org defaults
+        const current = prev[siteIndex] || [];
+        const isAlreadyCustom = current.length !== defaultUrls.length || current.some((url, i) => url !== defaultUrls[i]);
+        return {
+          ...prev,
+          [siteIndex]: isAlreadyCustom ? current : [...defaultUrls],
+        };
+      });
     }
   };
 
