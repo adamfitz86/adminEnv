@@ -211,6 +211,7 @@ const App: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState('home');
   const [editingUrlId, setEditingUrlId] = useState<number | null>(null);
   const [selectedSiteForEdit, setSelectedSiteForEdit] = useState<number | null>(null);
+  const [previousPage, setPreviousPage] = useState<string>('mcp-settings');
   const [isRevertModalOpen, setIsRevertModalOpen] = useState(false);
   const [siteIndexToRevert, setSiteIndexToRevert] = useState<number | null>(null);
   const [defaultUrls, setDefaultUrls] = useState([
@@ -280,6 +281,7 @@ const App: React.FC = () => {
   const [siteStatusOverrides, setSiteStatusOverrides] = useState<{[key:number]: 'inherited'|'custom'}>({});
 
   const [orgAllowListMode, setOrgAllowListMode] = useState('recommended');
+  const [siteAllowListModes, setSiteAllowListModes] = useState<{[key: number]: string}>({});
 
   // Debug modal state changes
   useEffect(() => {
@@ -351,20 +353,23 @@ const App: React.FC = () => {
 
   // Site list handler for navigation
   const handleEditSite = (index: number) => {
+    setPreviousPage(selectedItem); // Remember which page we came from
     setSelectedSiteForEdit(index);
     setSelectedItem('site-edit');
   };
 
   const handleBackToMCPSettings = () => {
     setSelectedSiteForEdit(null);
-    setSelectedItem('mcp-settings');
-    // Set the tab to Site Overrides when returning
-    setTimeout(() => {
-      const tabs = document.querySelectorAll('[role="tab"]');
-      if (tabs && tabs.length > 1) {
-        (tabs[1] as HTMLElement).click();
-      }
-    }, 0);
+    setSelectedItem(previousPage);
+    // Set the tab to Site Overrides when returning to mcp-settings
+    if (previousPage === 'mcp-settings') {
+      setTimeout(() => {
+        const tabs = document.querySelectorAll('[role="tab"]');
+        if (tabs && tabs.length > 1) {
+          (tabs[1] as HTMLElement).click();
+        }
+      }, 0);
+    }
   };
 
   const handleAddSite = () => {
@@ -483,6 +488,7 @@ const App: React.FC = () => {
     { id: 'home', label: 'Dashboard' },
     { id: 'users', label: 'Users' },
     { id: 'mcp-settings', label: 'MCP Server Settings' },
+    { id: 'mcp-settings-2', label: 'MCP Settings 2' },
     { id: 'settings', label: 'Settings' },
     { id: 'reports', label: 'Reports' },
   ];
@@ -552,7 +558,7 @@ const App: React.FC = () => {
                         <RadioGroup
                           name="org-allow-list-mode"
                           options={[
-                            { label: 'Enable Atlassian recommended sites', value: 'recommended' },
+                            { label: 'Define a list of allowed domains', value: 'recommended' },
                             { label: 'Block all domains', value: 'block' },
                             { label: 'Allow all domains', value: 'allow' },
                           ]}
@@ -696,6 +702,34 @@ const App: React.FC = () => {
                         </div>
                       </>
                     )}
+                    {orgAllowListMode === 'allow' && (
+                      <>
+                        <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Org allow list</h4>
+                        <p css={css({ margin: 0, marginTop: '12px' })}>All domains are allowed by your organisation.</p>
+                        <div css={css({
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          minHeight: '320px',
+                          backgroundColor: token('color.background.neutral.subtle'),
+                          borderRadius: token('border.radius.200'),
+                          padding: token('space.400', '32px'),
+                          margin: '32px 0',
+                          boxShadow: `0 0 0 1px ${token('color.border')}`,
+                          minWidth: '735px',
+                          maxWidth: '735px',
+                        })}>
+                          <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Allowed" style={{ width: 96, height: 96, marginBottom: 24, opacity: 0.7, filter: 'hue-rotate(120deg)' }} />
+                          <h3 css={css({ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: token('color.text.subtle') })}>
+                            All domains are allowed
+                          </h3>
+                          <p css={css({ fontSize: '16px', color: token('color.text.subtle'), textAlign: 'center', maxWidth: 400 })}>
+                            There are no restrictions. All sites and domains are permitted for access in your organisation.
+                          </p>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </TabPanel>
                 <TabPanel>
@@ -809,6 +843,88 @@ const App: React.FC = () => {
             </div>
           </div>
         );
+      case 'mcp-settings-2':
+        return (
+          <div>
+            <h1>MCP Settings 2</h1>
+            <p>Configure and manage Model Context Protocol server settings for individual sites.</p>
+            <div css={css({ marginTop: token('space.400') })}>
+              <div css={css({ marginBottom: '24px' })}>
+                <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
+                <p css={css({ margin: 0, marginTop: '12px' })}>Set allow lists at a site level, these override your organisation's defaults.</p>
+              </div>
+              <div css={css({ 
+                width: '100%',
+                '& table': {
+                  width: '100% !important',
+                  minWidth: '800px',
+                }
+              })}>
+                {siteLists.length === 0 ? (
+                  <div css={css({
+                    textAlign: 'center',
+                    padding: token('space.400', '32px'),
+                    color: token('color.text.subtle'),
+                    fontSize: '16px',
+                    border: `1px solid ${token('color.border')}`,
+                    borderRadius: token('border.radius.200'),
+                    backgroundColor: token('elevation.surface.raised'),
+                    minWidth: '735px',
+                    maxWidth:'735px',
+                  })}>
+                    No sites have been added
+                  </div>
+                ) : (
+                  <DynamicTable
+                    head={{
+                      cells: [
+                        { key: 'name', content: 'Site Name', isSortable: false, width: 35 },
+                        { key: 'url', content: 'URL', isSortable: false, width: 45 },
+                        { key: 'actions', content: 'Allowed', isSortable: false, width: 20 },
+                      ],
+                    }}
+                    rows={siteLists.map((site, index) => {
+                      // Determine if siteUrls for this site matches defaultUrls
+                      const siteUrlsForIndex = siteUrls[index] || [];
+                      // Handler for row click
+                      const handleRowClick = (e: React.MouseEvent) => {
+                        handleEditSite(index);
+                      };
+                      return {
+                        key: `site-${index}`,
+                        onClick: handleRowClick,
+                        cells: [
+                          {
+                            key: 'name',
+                            content: (
+                              <div css={css({ display: 'flex', alignItems: 'center', gap: token('space.100', '8px') })}>
+                                {getProductLogo(site.product)}
+                                <span>{site.name}</span>
+                              </div>
+                            ),
+                          },
+                          {
+                            key: 'url',
+                            content: <span>{site.url}</span>,
+                          },
+                          {
+                            key: 'actions',
+                            content: (
+                              <span css={css({ fontWeight: 500 })}>
+                                {siteUrlsForIndex.length} URL{siteUrlsForIndex.length === 1 ? '' : 's'}
+                              </span>
+                            ),
+                          },
+                        ],
+                      };
+                    })}
+                    testId="site-lists-table"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        );
       case 'site-edit':
         const siteToEdit = selectedSiteForEdit !== null ? siteLists[selectedSiteForEdit] : null;
         if (!siteToEdit) {
@@ -831,30 +947,49 @@ const App: React.FC = () => {
                   },
                 })}
               >
-                ← Back to MCP Server Settings
+                ← Back to {previousPage === 'mcp-settings' ? 'MCP Server Settings' : 'MCP Settings 2'}
               </Button>
             </div>
             <div css={css({ display: 'flex', alignItems: 'center', gap: token('space.200', '16px'), marginBottom: token('space.300', '24px') })}>
               {getProductLogo(siteToEdit.product)}
-              <h1 css={css({ margin: 0 })}>Edit {siteToEdit.name}</h1>
+              <h1 css={css({ margin: 0 })}>{siteToEdit.name}</h1>
             </div>
             <div css={css({ marginTop: token('space.300') })}>
-              <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
-                <div>
-                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
-                  <p css={css({ margin: 0, marginTop: '12px' })}>Configure the allowed URLs specifically for {siteToEdit.name}.</p>
-                </div>
-                <div css={css({ display: 'flex', gap: token('space.200', '16px') })}>
-                  <Button 
-                    appearance="subtle"
-                    type="button"
-                    onClick={() => handleRevertToOrgDefaults(selectedSiteForEdit!)}
-                  >
-                    Revert to org defaults
-                  </Button>
-                  <Button appearance="default" onClick={() => handleAddSiteUrl(selectedSiteForEdit!)}>Add URL</Button>
-                </div>
+              <div css={css({ marginBottom: '32px' })}>
+                <label htmlFor="site-allow-list-mode" css={css({ fontSize: '12px', color: token('color.text.subtle'), marginBottom: 4, display: 'block', fontWeight: 500 })}>
+                  Site settings
+                </label>
+                <RadioGroup
+                  name="site-allow-list-mode"
+                  options={[
+                    { label: 'Define a list of allowed domains', value: 'recommended' },
+                    { label: 'Block all domains', value: 'block' },
+                    { label: 'Allow all domains', value: 'allow' },
+                  ]}
+                  value={siteAllowListModes[selectedSiteForEdit!] || 'recommended'}
+                  onChange={e => setSiteAllowListModes(prev => ({ ...prev, [selectedSiteForEdit!]: e.target.value }))}
+                />
               </div>
+              {(siteAllowListModes[selectedSiteForEdit!] || 'recommended') === 'recommended' && (
+                <>
+                  <div css={css({ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' })}>
+                    <div>
+                      <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow lists</h4>
+                      <p css={css({ margin: 0, marginTop: '12px' })}>Configure the allowed URLs specifically for {siteToEdit.name}.</p>
+                    </div>
+                    <div css={css({ display: 'flex', gap: token('space.200', '16px') })}>
+                      {previousPage === 'mcp-settings' && (
+                        <Button 
+                          appearance="subtle"
+                          type="button"
+                          onClick={() => handleRevertToOrgDefaults(selectedSiteForEdit!)}
+                        >
+                          Revert to org defaults
+                        </Button>
+                      )}
+                      <Button appearance="default" onClick={() => handleAddSiteUrl(selectedSiteForEdit!)}>Add URL</Button>
+                    </div>
+                  </div>
               <div css={css({ 
                 width: '100%',
                 '& table': {
@@ -943,6 +1078,64 @@ const App: React.FC = () => {
                   />
                 )}
               </div>
+                </>
+              )}
+              {(siteAllowListModes[selectedSiteForEdit!] || 'recommended') === 'block' && (
+                <>
+                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow list</h4>
+                  <p css={css({ margin: 0, marginTop: '12px' })}>All domains are blocked for {siteToEdit.name}.</p>
+                  <div css={css({
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: '320px',
+                    backgroundColor: token('color.background.neutral.subtle'),
+                    borderRadius: token('border.radius.200'),
+                    padding: token('space.400', '32px'),
+                    margin: '32px 0',
+                    boxShadow: `0 0 0 1px ${token('color.border')}`,
+                    minWidth: '735px',
+                    maxWidth: '735px',
+                  })}>
+                    <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Blocked" style={{ width: 96, height: 96, marginBottom: 24, opacity: 0.7 }} />
+                    <h3 css={css({ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: token('color.text.subtle') })}>
+                      All domains are blocked
+                    </h3>
+                    <p css={css({ fontSize: '16px', color: token('color.text.subtle'), textAlign: 'center', maxWidth: 400 })}>
+                      No sites are allowed for {siteToEdit.name}. To permit access, switch to another mode.
+                    </p>
+                  </div>
+                </>
+              )}
+              {(siteAllowListModes[selectedSiteForEdit!] || 'recommended') === 'allow' && (
+                <>
+                  <h4 css={css({ fontSize: '14px', fontWeight: 'bold', marginBottom: '12px', margin: 0 })}>Site allow list</h4>
+                  <p css={css({ margin: 0, marginTop: '12px' })}>All domains are allowed for {siteToEdit.name}.</p>
+                  <div css={css({
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: '320px',
+                    backgroundColor: token('color.background.neutral.subtle'),
+                    borderRadius: token('border.radius.200'),
+                    padding: token('space.400', '32px'),
+                    margin: '32px 0',
+                    boxShadow: `0 0 0 1px ${token('color.border')}`,
+                    minWidth: '735px',
+                    maxWidth: '735px',
+                  })}>
+                    <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Allowed" style={{ width: 96, height: 96, marginBottom: 24, opacity: 0.7, filter: 'hue-rotate(120deg)' }} />
+                    <h3 css={css({ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: token('color.text.subtle') })}>
+                      All domains are allowed
+                    </h3>
+                    <p css={css({ fontSize: '16px', color: token('color.text.subtle'), textAlign: 'center', maxWidth: 400 })}>
+                      There are no restrictions for {siteToEdit.name}. All sites and domains are permitted for access.
+                    </p>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         );

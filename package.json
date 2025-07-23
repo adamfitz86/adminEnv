@@ -12,6 +12,7 @@
     "@atlaskit/dynamic-table": "^18.2.5",
     "@atlaskit/icon": "^22.11.0",
     "@atlaskit/logo": "^19.5.2",
+    "@atlaskit/lozenge": "^13.0.3",
     "@atlaskit/modal-dialog": "^14.3.0",
     "@atlaskit/navigation-system": "^0.174.0",
     "@atlaskit/radio": "^8.1.5",
